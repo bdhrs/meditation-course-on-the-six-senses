@@ -1,0 +1,18 @@
+/* Smooth transition for header hide/show */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+blockquote {
+    /* color: #7dc9fb !important; */
+    color: #add3e3 !important;
+    border-left: 2px solid #add3e3 !important;
+}
+
+
+
+ 

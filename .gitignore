@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.zip
+
+# mp3s
+*.wav
+*.mp3
+mkdocs_project/docs/assets/audio/*
+mkdocs_project/Meditation Course on the Six Senses/assets/audio/*
+
+# Waveform Project
+# waveform_project/Exported
+# waveform_project/Imported/
+# waveform_project/Recorded/
+# waveform_project/Rendered/
+# waveform_project/Backups/
+

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.2.0" projectID="830407/2361c9f" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="193b020f63a" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="597.6030385487528" scrubInterval="27.65433898810316"
+             start="530.8673217960737" snapToTimecode="1" loopPoint2="0.0"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7409999966621399" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="8bandEq" windowLocked="1" id="1080" enabled="1" width="660"
+            presetDirty="1" height="360" freq1lm="41.78829574584961" gain1lm="0.0"
+            q1lm="0.7080547213554382" freq2lm="59.67473602294922" gain2lm="-2.439374923706055"
+            q2lm="0.9862046837806702" freq3lm="92.39259338378906" gain3lm="4.0"
+            freq4lm="104.0506744384766" gain4lm="0.1666666716337204" freq8lm="130.4415893554688"
+            gain8lm="0.0" q8lm="2.083999872207642" shape1lm="6" enable8lm="1"
+            presetName="8-Band Equaliser: vox1" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/8-Band Equaliser vox1.trkpreset">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="comp" windowLocked="1" id="1090" enabled="1" threshold="-20.0"
+            presetDirty="1" ratio="10.0" attack="29.0" release="5.0" knee="0.0"
+            presetName="Compressor: Vintage Limit" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Factory Presets/Compressor/Compressor Vintage Limit.trkpreset"
+            windowX="732" windowY="643" showFaceplate="1" rms="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="naturalReverb" windowLocked="1" id="1083" enabled="1" preDelay="0.0"
+            presetDirty="1" size="0.4919999837875366" decay="0.1079999953508377"
+            slope="0.265999972820282" definition="0.4839999675750732" diffusion="0.5640000104904175"
+            highCut="0.871999979019165" lowDamp="0.4320000112056732" highDamp="1.0"
+            presetName="Natural Reverb: master" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/Natural Reverb master.trkpreset"
+            mix="0.1000000089406967" windowX="565" windowY="380">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="midiin_170f06" name="Midi Through Port-0"/>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_57204c54" name="channel 1">
+      <INPUTDEVICEDESTINATION targetID="1003" targetIndex="0" armed="1"/>
+    </INPUTDEVICE>
+    <INPUTDEVICE deviceID="wavein_57204c55" name="channel 2"/>
+    <INPUTDEVICE deviceID="wavein_57204c56" name="channel 3"/>
+    <INPUTDEVICE deviceID="wavein_57204c57" name="channel 4"/>
+    <INPUTDEVICE deviceID="wavein_57204c58" name="channel 5"/>
+    <INPUTDEVICE deviceID="wavein_57204c59" name="channel 6"/>
+    <INPUTDEVICE deviceID="wavein_57204c5a" name="channel 7"/>
+    <INPUTDEVICE deviceID="wavein_57204c5b" name="channel 8"/>
+    <INPUTDEVICE deviceID="wavein_57204c5c" name="channel 9"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5c" name="channel 10"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5d" name="channel 11"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5e" name="channel 12"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5f" name="channel 13"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e60" name="channel 14"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e61" name="channel 15"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e62" name="channel 16"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e63" name="channel 17"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e64" name="channel 18"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e65" name="channel 19"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7b" name="channel 20"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7c" name="channel 21"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7d" name="channel 22"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7e" name="channel 23"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7f" name="channel 24"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e80" name="channel 25"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e81" name="channel 26"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e82" name="channel 27"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e83" name="channel 28"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e84" name="channel 29"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
+             browserSelection="result/all" viewleft="-30.88719916765059" viewright="1351.829750237508"
+             globalTracksVisible="0" tracktop="0.0" actionsPanelVisible="0"
+             sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="0"
+             lastMarkerMode="0" masterTrackVisible="1" pluginsVisible="1"
+             controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
+             scrollSuspended="0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <ARRANGEVIEW>
+    <MIXERVIEWSTATE overviewVisible="0" smallMetersVisible="0" bigMetersVisible="0"
+                    outputsVisible="0" trackWidth="100.0" pluginsProportion="0.5"
+                    bigMetersProportion="0.5" clipsProportion="0.5" clipsScroll="0.0"
+                    clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
+                    pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
+  </ARRANGEVIEW>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa" comment=""
+                     date="2024" genre="" title="Sense of Smell" trackNumber="4"/>
+  <ARRANGERTRACK name="Arranger" id="1006"/>
+  <CHORDTRACK name="Chord" id="1008"/>
+  <MARKERTRACK id="1002" name="Marker">
+    <MARKERCLIP name="Marker 1" start="149.256755251696" length="37.32885183433197"
+                offset="0.0" id="1028" colour="ffffaa00" markerID="1" speed="1.0"
+                sync="1"/>
+  </MARKERTRACK>
+  <TEMPOTRACK name="Global" id="1007">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1009" height="40.0">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" height="247.7045029042439" mute="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="tasting" start="0.0" length="11.59129039828674" offset="7.068620675089411"
+               id="1162" source="830407/12b980" sync="0" autoCrossfade="1" elastiqueMode="0"
+               pan="0.0" colour="ff55ff00" fadeIn="3.316511807887387" fadeOut="0.0"
+               proxyAllowed="1" resamplingQuality="lagrange" autoTempo="0" fadeInType="4"
+               fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="11.5827317321118" length="32.88363372330763"
+               offset="20.86804694651103" id="1178" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="4" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="44.17449460981207" length="20.90413839259067"
+               offset="58.34864648813443" id="1179" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="4" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="62.81085868702365" length="38.20056839125084"
+               offset="326.7143025028971" id="1167" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="98.87060057083966" length="38.31485378547339"
+               offset="80.4596408653121" id="1180" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="134.9615745516723" length="44.95489945412086"
+               offset="350.355096688332" id="1169" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="2.409473483273981" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="177.3321727727288" length="13.01652249630337"
+               offset="119.6385796498143" id="1181" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="1.265418827053737" fadeOut="1.286714631130451" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="188.8372180777524" length="40.78018008089578"
+               offset="350.732327269196" id="1170" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="1.286714631130451" fadeOut="3.666120591258476" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="225.8763567140065" length="16.48648110315725"
+               offset="135.3789740992557" id="1182" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.666120591258476" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="240.2518388132253" length="39.84442527339027"
+               offset="315.969051299428" id="1165" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="277.4302063664296" length="18.51905789112823"
+               offset="152.6379269745527" id="1183" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="295.8551355165831" length="4.308605273389787"
+               offset="173.0160274999317" id="1184" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="298.8336870278895" length="41.20125006588728"
+               offset="336.391029719396" id="1173" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="335.6573169500691" length="20.39795998585629"
+               offset="182.8198238563929" id="1185" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="353.9146403379803" length="45.47891731191356"
+               offset="315.969051299428" id="1189" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="395.4722694897375" length="18.8890089671404"
+               offset="204.3208722000844" id="1186" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="413.2141807775162" length="36.88341203825013"
+               offset="315.969051299428" id="1175" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="446.295910323181" length="31.2935774780226"
+               offset="224.5122304511132" id="1187" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="472.7120665279332" length="37.5164939217654"
+               offset="365.0842997290282" id="1192" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="507.3475255552294" length="18.86312442603577"
+               offset="256.4947733495374" id="1190" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="526.0158092484882" length="8.675409152893963"
+               offset="281.5032081744073" id="1193" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="530.8673217960737" length="38.83950648263249"
+               offset="361.3288830805913" id="1197" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="568.9987401985201" length="13.41400404667763"
+               offset="290.6741070488434" id="1194" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="580.3605047831886" length="38.83950648263249"
+               offset="361.3288830805913" id="1199" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="616.8957609439839" length="11.37937408894697"
+               offset="304.5896772104811" id="1195" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="tasting" start="625.7086702846467" length="34.2913297153533"
+               offset="361.3288830805913" id="1177" source="830407/12b980" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="23.00115778980192" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="4">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ffff0000" mute="1" height="225.1130461162324">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="tasting" start="430.0" length="86.63174235136557" offset="315.969051299428"
+               id="1163" source="830407/12b980" sync="0" autoCrossfade="1" elastiqueMode="0"
+               pan="0.0" colour="ff55ff00" fadeIn="0.0" fadeOut="0.005" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="422.3120462300033" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
