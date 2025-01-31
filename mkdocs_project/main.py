@@ -24,7 +24,8 @@ def copy_files():
     # remove and recopy
     if Path(destination).exists():
         shutil.rmtree(destination)
-    shutil.copytree(source, destination, ignore=ignore_xxx_files)
+    # shutil.copytree(source, destination, ignore=ignore_xxx_files)
+    shutil.copytree(source, destination)
 
     # make assets folder if it doesn't exist
     assets_dir = Path(project_root / "docs/assets/")

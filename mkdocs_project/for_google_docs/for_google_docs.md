@@ -2715,6 +2715,47 @@ Insight
 
 "In this way he abides contemplating the body as a body internally, externally, and both internally and externally … And he abides independent, not clinging to anything in the world. That too is how a bhikkhu abides contemplating the body as a body.
 
+## AN6.55 Soṇa (excerpt)
+On balanced effort
+
+Thus have I heard. On one occasion the Blessed One was dwelling at Rājagaha on Mount Vulture Peak. Now on that occasion the Venerable Soṇa was dwelling at Rājagaha in the Cool Grove.
+
+Then, while the Venerable Soṇa was alone in seclusion, the following course of thought arose in his mind: "I am one of the Blessed One's most energetic disciples, yet my mind has not been liberated from the taints by non-clinging. Now there is wealth in my family, and it is possible for me to enjoy my wealth and do meritorious deeds. Let me then give up the training and return to the lower life, so that I can enjoy my wealth and do meritorious deeds."
+
+Then, having known with his own mind the course of thought in the Venerable Soṇa's mind, just as a strong man might extend his drawn-in arm or draw in his extended arm, the Blessed One disappeared on Mount Vulture Peak and appeared in the Cool Grove in the presence of the Venerable Soṇa. The Blessed One sat down on the seat prepared for him. The Venerable Soṇa paid homage to the Blessed One and sat down to one side. The Blessed One then said to him:
+
+"Soṇa, when you were alone in seclusion, didn’t the following course of thought arise in your mind: ‘I am one of the Blessed One's most energetic disciples, yet my mind has not been liberated from the taints by non-clinging. Now there is wealth in my family, and it is possible for me to enjoy my wealth and do meritorious deeds. Let me then give up the training and return to the lower life, so that I can enjoy my wealth and do meritorious deeds’?"
+
+"Yes, Bhante."
+
+"Tell me, Soṇa, in the past, when you lived at home, weren’t you skilled at the lute?"
+
+"Yes, Bhante."
+
+"What do you think, Soṇa? When its strings were too tight, was your lute well tuned and easy to play?"
+
+"No, Bhante."
+
+"When its strings were too loose, was your lute well tuned and easy to play?"
+
+"No, Bhante."
+
+"But, Soṇa, when its strings were neither too tight nor too loose but adjusted to a balanced pitch, was your lute well tuned and easy to play?"
+
+"Yes, Bhante."
+
+"So too, Soṇa, if energy is aroused too forcefully this leads to restlessness, and if energy is too lax this leads to laziness. Therefore, Soṇa, resolve on a balance of energy, achieve evenness of the spiritual faculties, and take up the object there."
+
+
+"Yes, Bhante," the Venerable Soṇa replied.
+
+When the Blessed One had finished giving the Venerable Soṇa this exhortation, just as a strong man might extend his drawn-in arm or draw in his extended arm, he disappeared in the Cool Grove and reappeared on Mount Vulture Peak.
+
+Then, some time later, the Venerable Soṇa resolved on a balance of energy, achieved evenness of the spiritual faculties, and took up the object there. Then, dwelling alone, withdrawn, heedful, ardent, and resolute, in no long time the Venerable Soṇa realized for himself with direct knowledge, in this very life, that unsurpassed consummation of the spiritual life for the sake of which clansmen rightly go forth from the household life into homelessness, and having entered upon it, he dwelled in it. He directly knew: "Destroyed is birth, the spiritual life has been lived, what had to be done has been done, there is no more coming back to any state of being." And the Venerable Soṇa became one of the arahants.
+
+
+
+
 [[5.02 Suttas on Six Senses|Next]]
 
 
@@ -3255,5 +3296,367 @@ Translated from the Pali by Acharya Buddharakkhita.
 
 - [5.04 Suttas on Emptiness](5.04 Suttas on Emptiness.md)
 
+- [xxx 4.02 Anicca](xxx 4.02 Anicca.md)
+
+- [xxx 4.04 The Factors of Awakening](xxx 4.04 The Factors of Awakening.md)
+
+- [xxx Notes to process](xxx Notes to process.md)
+
+- [xxx Unravelling patterns](xxx Unravelling patterns.md)
+
+
+
+# xxx 4.02 Anicca
+
+
+## SN35.93 dutiyadvayasuttaṃ
+> *dvayaṃ, bhikkhave, paṭicca viññāṇaṃ sambhoti. kathañca, bhikkhave, dvayaṃ paṭicca viññāṇaṃ sambhoti? cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ. cakkhu aniccaṃ vipariṇāmi aññathābhāvi. rūpā aniccā vipariṇāmino aññathābhāvino. itthetaṃ dvayaṃ calañceva byathañca aniccaṃ vipariṇāmi aññathābhāvi. cakkhuviññāṇaṃ aniccaṃ vipariṇāmi aññathābhāvi. yopi hetu yopi paccayo cakkhuviññāṇassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppannaṃ cakkhuviññāṇaṃ kuto niccaṃ bhavissati! yā kho, bhikkhave, imesaṃ tiṇṇaṃ dhammānaṃ saṅgati sannipāto samavāyo, ayaṃ vuccati cakkhusamphasso. cakkhusamphassopi anicco vipariṇāmī aññathābhāvī. yopi hetu yopi paccayo cakkhusamphassassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppanno cakkhusamphasso kuto nicco bhavissati! phuṭṭho, bhikkhave, vedeti, phuṭṭho ceteti, phuṭṭho sañjānāti. itthetepi dhammā calā ceva byathā ca aniccā vipariṇāmino aññathābhāvino.* 
+
+# xxx 4.04 The Factors of Awakening
+
+
+
+
+
+## the fetters
+Satipaṭṭhāna sutta talks about
+> Know the eye, know the forms and the fetter which arises upon both
+
+The fetters are a traditional list of ten things which bind root to the endless cycle of existence. The very first is sakkāyadiṭṭhi. This translates literally as the diṭṭhi view or belief in sat kāya, an existing body or being. It's the belief that this mind and body is I me mine, mine me I, belief in self-identity; the view that this mind-body complex is an independent entity. 
+
+# xxx Notes to process
+
+## Editing Round #2
+- Remove waffle and repetition
+- Sync voice, we, and occasionally you
+- Read everything aloud
+- Record guided meditations
+
+
+%% put after open awareness %%
+## All thoughts have the three characteristics of existence
+1. They come and go, impermanence
+2. Theres no control, which is suffering
+3. They come whether you want them to or not, impersonal
+
+%% general vocabulary %%
+## Words for the process
+Introspection
+Looking within
+Self awareness 
+
+
+%% general %%
+## links to suttas
+- bāhiya
+- saḷāyatana saṃyutta
+- sattabojjhanga
+- madhipiṇḍaka
+- chacakka
+- indriyabhāvana
+- satipaṭṭhāna section on saḷāyatana 
+- loko lokoti
+- suñño loko 
+- mogharāja
+- sabbasutta
+- fire sutta
+- bait of the world
+- cūḷarahūlovāda
+- just dukkha arising and passing away
+- vajirāsuttaṃ
+
+%% put into structure of sense experience %%
+
+
+## Mahāyāna Emptiness
+Mahāyāna took this idea further to mean that if nothing had it's own inherent essence then everything exists through interconnection, or interbeing as it is sometimes called. This is an interesting philosophical development on the concept of emptiness, but it's worth noting that this idea is never found in the earliest discourses of the Buddha, and was a later development in Buddhist thought.
+
+## Reality is an illusion
+The only reality you know is what is perceived through the senses. We've seen very clearly that sense experience is a shimmering and ephemeral illusion. But that illusion is the only thing you've got to work with, quite literally you know nothing else other than that, so back to work. 
+****
+
+
+## Objects
+Eye shapes colours light
+Ear frequency volume tone 
+Nose
+Tongue sweet salty sour bitter savoury
+Body see above
+Mind thoughts moods memories 
+
+## Body and mind training
+To train the body, you need to stretch it and move it. 
+To train the mind, you need to keep it still. 
+
+
+
+## psychology of sense reception
+There's an absolute minimum threshold below which sense perception does not occur, that is binary on or off. It's not like a sound keeps getting softer and softer, before a certain threshold it disappears entirely. How does this match with Buddhist idea? 
+
+Signal Detection Theory is about how you can focus on one stimulus among many, one voice in a room full of conversations, and give it exclusive attention, to the point that other voices are not audible. 
+
+Sensory Adaptation is when a sound is so regular and repetitive that you do heading it, and only hear it again when it changes in some way. Saliva has a flavour but you never taste it. 
+
+Sounds are collected by the external ear and funneled to the tympanic membrane ear drum which vibrates ... Technical stuff ... In short physical vibrations are converted into electrical signals which are carried adding the auditory nerve to your brain stem. 
+
+The main difference between cognitive psychology and Buddhist model of sense perception is that the one is objective, and the other is subjective. Psychology has much to say about which regions of the brain sounds and specifically speech get processed, but none of those processes are available to experience. The brain is really s black box as far as experience goes, you can't even feel most of it with the sense of touch. The first time sound becomes available to introspection is when it occurs in the mind, something which the physical sciences struggle to explain. There is literally no accepted theory of min mind or consciousness, despite the fact that every human being has subjective knowledge of conscious experiences. 
+
+## Vocabulary 
+cha ajjhattikāni āyatanāni
+cakkhāyatanaṃ
+sotāyatanaṃ
+ghānāyatanaṃ
+jivhāyatanaṃ
+kāyāyatanaṃ
+manāyatanaṃ
+
+cha bāhirāni āyatanāni
+rūpāyatanaṃ
+saddāyatanaṃ
+gandhāyatanaṃ
+rasāyatanaṃ
+phoṭṭhabbāyatanaṃ
+dhammāyatanaṃ
+
+cha viññāṇakāyā
+cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ
+sotañca paṭicca sadde ca uppajjati sotaviññāṇaṃ
+ghānañca paṭicca gandhe ca uppajjati ghānaviññāṇaṃ
+jivhañca paṭicca rase ca uppajjati jivhāviññāṇaṃ
+kāyañca paṭicca phoṭṭhabbe ca uppajjati kāyaviññāṇaṃ
+manañca paṭicca dhamme ca uppajjati manoviññāṇaṃ
+
+cha phassakāyā
+tiṇṇaṃ saṅgati phasso
+cha vedanākāyā
+phassapaccayā vedanā
+cha taṇhākāyā
+vedanāpaccayā taṇhā
+## Terms
+- Sense of sight
+- Field of sight: Visual field
+- Organ is the eyes
+- Also called visual sense
+- Seeing
+- Forms
+
+- Sense of hearing 
+- Field of hearing: Auditory field
+- Organ is the ears
+- Also called auditory sense
+- Hearing
+- Sound
+
+- Sense of smell
+- Field of smell: Olfactory field
+- Organ is the nose
+- Also called olfactory sense
+- Smelling
+- Odours
+
+- Sense of taste
+- Field of taste: Gustatory field
+- Organ is the tongue
+- Also called gustatory sense
+- Tasting
+- Flavours
+
+- Sense of touch
+- Field of touch: Tactile field
+- Organ is the skin
+- Also called tactile sense or somatosensory system
+- Touching
+- Tangible sensations
+
+- Sense of mind
+- Field of mind: Mental field (or consciousness field)
+- Organ is the brain
+- Also called mental sense or consciousness sense
+- Cognizing
+- Mental phenomena
+
+
+## Brain vs mind
+In Buddhist philosophy, "mano" (mind) is not anatomically equivalent to the brain as a physical organ, but rather a metaphysical construct representing consciousness, perception, and cognitive processes.
+
+This suggests an insight rather than a mistake. The Buddhist understanding of mind transcends mere neurological function, viewing it as a dynamic, experiential faculty capable of perceiving mental phenomena. Unlike Western scientific materialism, which locates consciousness in neural networks, Buddhist epistemology sees "mano" as a sophisticated sensing mechanism for thoughts, intentions, and mental states.
+
+The distinction highlights different paradigms of understanding consciousness: one rooted in physical structure, the other in experiential phenomenology.
+
+---
+
+## All wrong views are based on phassa
+> *tatra, bhikkhave, ye te samaṇabrāhmaṇā pubbantakappikā ca aparantakappikā ca pubbantāparantakappikā ca pubbantāparantānudiṭṭhino pubbantāparantaṃ ārabbha anekavihitāni adhimuttipadāni abhivadanti dvāsaṭṭhiyā vatthūhi, tadapi phassapaccayā.*  
+> 
+> *DN1 brahmajālasuttaṃ, phassapaccayāvāro*
+
+## Question and answers
+- Collect all the questions that people ask
+- answer them pre-preemptively at the end of each chapter 
+- build over time
+
+
+%% used already %%
+## Body sensations
+aching, burning, buzzing, cascading, chafing, clenching, clicking, coursing, cramping, drooping, floating, flowing, fluttering, freezing, gnawing, itching, jabbing, numbing, pinching, pinging, popping, pricking, pulling, pulsating, pulsing, pushing, quivering, radiating, rippling, sagging, scalding, searing, shooting, sizzling, smarting, spreading, squeezing, stabbing, stinging, streaming, surging, throbbing, tickling, tingling, trickling, twitching
+
+
+
+
+
+
+
+
+
+## Present moment awareness
+But what is present moment awareness? As you examine your own experience more, developing the skill of introspection, it will become apparent that present moment awareness is actually awareness of the most very recent past event, the very last thing that happened. Perceiving through the senses is one thing, and awareness of that experience is another thing. So mindfulness of sense experience is really being aware of what has just happened, present moment awareness following right behind the most recently passed sense experience.
+
+
+## How to deal with pain
+- normally we do everything to run away from pain
+- i'm recommending the exact opposite
+- go so deeply into that it stops being perceived as pain
+- what type of physical pain do you often experience?
+- what is the location?
+- what is the shape? 
+- what is the sensation?
+- there are only really a few sensations
+- pushing, pulling, burning or hot, tingling, 
+- go into the micro phenomena of the pain
+- physical experience is not painful
+- the body just passes on information about sensations
+- pain is only experienced in the mind., not in the body
+- go so deeply into the physical aspect that your perception alters
+
+
+# open awareness recording
+If the mind is distracted and confused, just know that this is the "mind channel". 
+
+If the mind is fast and highly perceptive, just know that this is the "mind channel". 
+
+You don't have to be in the mood to do this. Whatever mood you're in is just "mind channel". 
+
+ the experience might be in a different field no problem just you just follow whatever attention prsents to you. wherever the mind goes, just follow. the mind has been doing this for as long as you've been alive. how to do this now you're just watching what the mind does so that you can learn from it understand it. to build understanding all you have to do at this stage is know very briefly what channel the experiences happening on, this is seeing, this is hearing, this is smelling, this is tasting, this is physical experience, this is mental experience, that's all. and stay with the experience note the channel that's enough for now. if knowing the channel is difficult then at very least stay with the experience. 
+
+
+
+for some people this comes very naturally for other people it's an uphill battle from the word go. get the benefits its good. always useful things that come from this practice, every little bit of self understanding helps you to improve knowing yourself better. there's no disadvantage to knowing how you work how the mind works how this body works. on this the sense fields work is not disadvantage denying that advantage and further advantageous in every single possible way.
+
+your biggest challenge in the beginning is you're going to default to thinking and planning daydreaming memory memories are you going to go to the mind and do not going to know that you've gone to the mind as soon as you become aware note that this is mental experience. that's helps to give you just one step back, get a little bit of perspective. that's the most common default pattern with modern human beings is to go into the thought world and not actually know that you're in thought, just be so absorbed in the story that you're not aware that it's just a story. so this is the most important ground level practice this is the practice that you need to be able to default to at all times that is the foundation for everything which follows if you need to spend more time here spend as much time as you need to get a good foundation is really really important you don't need to build a perfect foundation you just need to have a basic awareness of what is happening and the further steps will help you to develop a more solid funded foundation. so don't think you need to do this perfectly even monks with twenty years of meditation experience are not perfect everyday, but good enough to to see what's happening that's that's enough of a basis for going deeper into the buddha's teachings on saḷāyatana so if you need to spend a day here spend a few days, spend a week. if you need to but don't don't get stuck here this this way but wait there's more, there's so much more but this is a necessary foundation a necessary prerequisite. it's also something that can be done throughout the day in daily life this is something that you can really bring into your life at all times there are some times where you have to fully engage with thinking while doing some work when interacting with other people but there's a lot of free time to sit and notice expereince. and using all your free time and my free time i mean eating time washing time toilet time brushing teeth time drinking time walking time all of these kind of less important activities you can be practicing open awareness.  the main thing is this practice doesn't need to be done in a sitting posture it can be done in any posture setting lying standing walking sitting lying down moving sitting still stretching anything in between. experience is always happening irrespective of what posture the body is in. so don't think this needs to be done in lotus position. my favorite is walking meditation. take this meditation and go for a solitary nature walk. its to wonderful wonderful way to get some fresh air, good exercise and get some good mental exercise as well. you could expand this into a little section how to walk in nature. each one of these is heading and paragraph,  heading and a paragraph. and then over time you'll build up but if content on each one.  is it then you can put your paragraphs into some kind of structure
+
+## One at a time
+The inner experience seems so rich and complex, so it might be surprising to learn that the mind can only take **one object of experience at a time**. Although the full six sense sensorium is *available* to experience at any one moment, only one thing at a time is in the spotlight of attention. The incredible speed of the mind is what gives the impression of things happening at the same time. This is usually not immediately apparent to most people, but I have confidence that, over the duration of this course, you can develop the acuity of attention to begin to see this for yourself through introspection. 
+
+## Taste
+Interestingly, the classification of tastes is not universal, and different cultures identify different tastes. The western world typically talks about the five primary tastes of sweet, salty, sour, bitter, and *umami* or savoury, although the latter was only discovered in 1908 in Japan and officially added in 1996 by researchers at the University of Miami.   
+
+Indian texts from ancient times have always referred to six tastes, which are in integral part of the *āyurveda* medical system. The order they are found in the oldest Buddhist texts is:
+
+1. *ambila* (sour) like lemon, tamarind
+2. tittaka (bitter) like bitter gourd, leafy greens, coffee, dark chocolate
+3. kaṭuka (pungent) like onion, garlic
+4. *madhura* (sweet) like dates, melon, pumpkin, sugar cane 
+5. *khārika* (alkaline or astringent) like unripe bananas, pomegranate, alfalfa sprouts
+6. *loṇika* (salty) like salt, seaweed, soy sauce, tamari
+
+## experiencing matter directly
+For example when you look at the world around you, matter seems to be a solid and stable - things that you see this morning will be the same later today, tomorrow, next week and next month. You might know from a scientific point of view that matter is much more unstable than it appears, but that knowledge is not available to experience, it is only theoretical.
+
+
+By training your attention, the instability of matter becomes something that can be experienced directly, it can become available to perception, and be very physically and very viscerally sensed. This is a very reliable outcome of training that many meditators progress to. Through basic training, it is possible to become aware of much more detail, with much more clarity than you are experiencing right now. 
+
+## Beyond your experience
+One thing to keep in mind is that we cannot imagine where this practice goes. It's like trying to imagine an undescribed place that's not on the map. We have so little knowledge about how our minds work, that it is impossible to predict the experiences, mental states, understandings, benefits and enhancements that come from doing this practice based on our current model of reality.
+
+It's not just from an appeal to antiquity that Buddhist monks say, "Hey! You should really try this meditation method, which is found in ancient Pāḷi texts". It's because the meditation works effectively at relieving the fundamental suffering of human beings, and offers new vistas of insight into the subjective world of experience that all human beings, ancient or modern, inhabit. 
+
+This is not the teaching of some philosopher or scientist or popular personality, this is the teaching of a Buddha, an awakened being. We are fortunate to have such an encounter with a teaching which slowly, successively, and with practice, leads to the same awakening that the Buddha himself experienced.
+
+Ultimately, this is about using experience to entirely transcend experience. Firstly the experience of the sense world, then the experience of the entire mental world, and ultimately all experience itself. That's a long journey from where we are right now, but know that this is where the practice goes. 
+
+So let's practice the meditation on emptiness to lighten the load.
+
+
+Someone came to the Buddha and asked him how to know when the job is done, the training is complete.  
+
+> "katamo ca, bhikkhave, pariyāyo, yaṃ pariyāyaṃ āgamma bhikkhu aññatreva saddhāya…pe… aññatra diṭṭhinijjhānakkhantiyā aññaṃ byākaroti – khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyāti pajānāmī’ti? idha, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. yaṃ taṃ, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. api nume, bhikkhave, dhammā saddhāya vā veditabbā, ruciyā vā veditabbā, anussavena vā veditabbā, ākāraparivitakkena vā veditabbā, diṭṭhinijjhānakkhantiyā vā veditabbā"ti?
+> 
+> xxx translation
+> 
+> 
+> 
+> *SN35.153 atthinukhopariyāyasuttaṃ*
+
+# xxx Unravelling patterns
+
+## Breaking the chain
+Over the duration of this course, we've built up a framework of concepts that the Buddha found useful for examining subjective experience. This is not only a conceptual framework, but all the important links in the chain of how, from simple sense experience, we produce greed, hatred and delusion that causes us very real suffering in our lives. 
+
+The chain might looks like this:
+
+sense experience > *vedanā* > mental response to *vedanā* > actions by body, speech and mind > repeated action > habit patterns > suffering
+
+The nearer to the beginning of the chain you recognise and understand this process, the easier it is to 'nip in the bud' and break the causal chain. The nearer to the end of the chain that recognise and understand this process, the harder it is to make any effective change. 
+
+## Creating new patterns
+Everything that arises in the mind is mostly just following previously created mental patterns. And how did you create those patterns? One thought at a time. To recondition the mind to perceive and think differently happens in exactly the same way. How to create new mental patterns? Response by response, thought by thought, action by action. How else to create lasting change?
+
+Certainly, some techniques may create a temporary change, but mostly they they don't last, and eventually you slip back into old patterns of thought and behaviour. 
+
+This is a very slow and reliable method, which requires nothing more than willingness to learn and attention. 
+
+## What is your current situation
+What does your current situation? As you receive input through the six senses, you respond with very strong preference and aversion to the most subtle stimuli. Even the smallest experience can completely throw you off kilter. Then you respond to people and situations inappropriately, which creates more stimulus, and so there's an ongoing cycle of being slightly off-balance all the time. 
+
+This practice presents an opportunity to know the smallest details of what you're experiencing, to have a very balanced mind in response to each and every one of those experiences, to respond calmly and appropriately, or not at all, as the case may be, as opposed to being pushed around, forced around, bullied by *vedanā* all the time. 
+
+This practice offers an opportunity to have a balanced mind and respond appropriately to normal stimulus. The net result is a decrease in suffering, a decrease in difficult situations which you've created through ill-formed responses, and an increase in pleasant life situations created by skilful responses. 
+
+
+## How to alter reality
+What we call reality is nothing more than the subjective experience of the five senses and the mind. Apart from that, what else has anyone ever known?
+
+The practice of returning to sense experience alters reality and reshapes the subjective world we live in for the better. The simple act of changing subjective experience changes the only reality you actually know.
+
+
+
+The normal way most people attempt to alter reality is by changing the material world out there. That is, of course, a viable option, but outside the scope of this course. 
+
+We're going to look at three internal ways of altering reality based on an understanding of how the senses work. 
+
+1. change the object of experience
+2. change the reaction to the object of experience. 
+3. change the understanding of the structure of experience itself 
+
+The corollary of the mind only experiencing one thing at a time is that you can really change your life experience by simply changing what the mind rests its attention on. If you stop feeding the mind unwholesome objects, feed it more wholesome ones, and learn to sustain attention on them, you can dramatically alter your own subjective reality, and enjoy all the rewards of that.^[Testing out online footnotes]
+
+If the object of awareness is causing you suffering, you can learn to change the object. An example is the experience of ruminating on a painful thought. Simply moving attention to the body effectively removes the thought from experience. You cannot hold a painful thought and the vivid experience of the body in the mind at the same moment. There's no need to continue letting the mind experience whatever it wants and creating unhappiness for yourself.
+
+The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on [[7 Response to the tone of each experience|Vedanā xxx]]. 
+
+But both of the above are temporary solutions, but the Buddha has offered a more permanent solution to the problem of suffering. This involves a radical re-assessment of the nature of experience itself, and understanding how there are structural problems in the way that we understand our own experience that are at the root of suffering. This will be discussed in much more detail later on in the [[Insight into sense experience xxx]].
+
+## Differentiate between 
+- productive thought, goal orientated thought, working thoughts
+- frivolous thought, daydreams, imagination, worry 
+- all the second category can be replaced with awareness of the sense fields
+
+
+There's no stress whatsoever in simple sense experience, just seeing. There's lots of stress in regretting the past, mentally churning over situations and worrying about the future. Simply by reducing the time you spend in unnecessary thought, and increasing the time you spend with the senses, you can greatly reduce your stress and enormously improve the quality of your life. But of course merely knowing this does not solve the problem, which is why we're practising here is a method to return to sense experience wherever possible, and only let the mind use thinking ability when absolutely necessary. 
+
+
+Fear not! This practice will not cause you to lose the ability to think. Thinking happens automatically anyway, it's not something that you actively do. Hopefully these exercises will allow you to see that for yourself. If anything, this practice will give you more control of your mind to not be overwhelmed by incessant, invasive or negative thoughts.
+
+## how to alter your reality in the most fundamental way
+- Change the object of perception 
+- Being with the senses is how to practice the instructions in satipaṭṭhāna sutta going coming back, walking standing sitting lying down, eating, drinking talking being quiet 
+- stay with awareness of what's just happened at the five senses doors
+- doing this habitually changes the habit pattern of the mind
+- bringing it to the five senses decreases useless thinking, worrying, fantasizing, useless speculation
+
+## How to alter reality
+
+
+[[4.01 Emptiness]]
 
 
