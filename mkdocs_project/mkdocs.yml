@@ -1,7 +1,7 @@
 site_name: Meditation Course on the Six Senses
 site_url: '' # Important for relative path resolution
 use_directory_urls: true
-site_dir: Meditation Course on the Six Senses
+site_dir: ../output/Meditation Course on the Six Senses
 
 theme:
   

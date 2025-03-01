@@ -10,7 +10,6 @@ from pathlib import Path
 
 
 def copy_files():
-
     # read config.ini
     config = ConfigParser()
     config.read("mkdocs_project/config.ini")
@@ -46,32 +45,32 @@ def copy_files():
 
 
 def make_index():
-    """ Make an index from file names"""
-    
+    """Make an index from file names"""
+
     # Ensure the docs folder exists
     docs_path = Path("mkdocs_project/docs")
     if not docs_path.exists():
         raise FileNotFoundError(f"Docs folder not found: {docs_path}")
-    
+
     # Find all markdown files
-    md_files = list(docs_path.glob('*.md'))
+    md_files = list(docs_path.glob("*.md"))
     md_files.sort()
 
     # Prepare the index content
     index_content = "# Contents\n\n"
-    
+
     # Process each markdown file
     for md_file in md_files:
         # Skip the index file itself
-        if md_file.stem.lower() == 'index':
+        if md_file.stem.lower() == "index":
             continue
 
         title = md_file.stem
         relative_path = md_file.name
         index_content += f"- [{title}]({relative_path})\n\n"
-    
+
     # Write the index file
-    index_path = docs_path / 'index.md'
+    index_path = docs_path / "index.md"
     index_path.write_text(index_content)
 
 
@@ -83,23 +82,27 @@ def process_md_files():
     4. Compile full course .md file
     """
 
-    full_course_path = Path("mkdocs_project/for_google_docs/for_google_docs.md")
+    full_course_path = Path(
+        "output/Meditation Course on the Six Senses.md"
+    )
     full_course_text: str = ""
 
     docs_path = Path("mkdocs_project/docs")
-    md_files = list(docs_path.glob('*.md'))
+    md_files = list(docs_path.glob("*.md"))
     md_files.sort()
 
     for md_file in md_files:
         md_text = md_file.read_text()
-        
+
         # compile full course text
         full_course_text += f"# {md_file.stem}\n\n"
         full_course_text += f"{md_text}\n\n"
 
         # convert meditation instructions into summary
         pattern = r"%%(.*?)%%"
-        md_text = re.sub(pattern, convert_meditation_instruction, md_text, flags=re.DOTALL)
+        md_text = re.sub(
+            pattern, convert_meditation_instruction, md_text, flags=re.DOTALL
+        )
 
         # convert audio links
         audio_link_pattern = r"!\[\[(.*?)\]\]"
@@ -111,7 +114,7 @@ def process_md_files():
         md_text = re.sub(link_pattern, convert_links, md_text)
 
         # write modified file
-        md_file.write_text(md_text) 
+        md_file.write_text(md_text)
 
     full_course_path.write_text(full_course_text)
 
@@ -125,11 +128,11 @@ def convert_audio_link(match):
 """
     return audio_player
 
-   
+
 def convert_meditation_instruction(match):
     # Extract heading and instructions
     instructions = match.group(1)
-    
+
     # Create HTML summary/details structure
     html = f"""
 <details>
@@ -150,54 +153,29 @@ def convert_links(match):
 
 def build_mkdocs_site():
     """Build the mkdocs site"""
-    subprocess.run(
-        [
-            "uv",
-            "run",
-            "mkdocs",
-            "build"
-        ],
-        cwd="mkdocs_project"
-    )
-
-def make_docx_file():
-    """Convert .md to .docx for google docs"""
-
-    try:
-        subprocess.run(
-            [
-                "pandoc", 
-                "mkdocs_project/for_google_docs/for_google_docs.md", 
-                "-o", 
-                "mkdocs_project/for_google_docs/for_google_docs.odt"
-            ],  
-            check=True
-        )
-    except subprocess.CalledProcessError as e:
-        print(f"Error code: {e.returncode}")
-        print(f"Standard Output: {e.stdout}")
-        print(f"Standard Error: {e.stderr}")
+    subprocess.run(["uv", "run", "mkdocs", "build"], cwd="mkdocs_project")
 
 
 def zip_site():
     """Zip the output folder."""
 
-    source_folder = Path('mkdocs_project/Meditation Course on the Six Senses')
-    zip_filename = Path('mkdocs_project/Meditation Course on the Six Senses.zip')
-    
+    source_folder = Path("output/Meditation Course on the Six Senses")
+    source_folder.mkdir(parents=True, exist_ok=True) 
+    zip_filename = Path("output/Meditation Course on the Six Senses.zip")
+
     # Check if source folder exists
     if not source_folder.exists():
         print(f"Error: Folder {source_folder} not found.")
         return
-    
+
     # Create zip file
-    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for item in source_folder.rglob('*'):
+    with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as zipf:
+        for item in source_folder.rglob("*"):
             # Calculate relative path to preserve folder structure
             relative_path = item.relative_to(source_folder)
             if item.is_file():
                 zipf.write(item, relative_path)
-    
+
     print(f"Zipped {source_folder} to {zip_filename}")
 
 
@@ -206,8 +184,8 @@ def main():
     make_index()
     process_md_files()
     build_mkdocs_site()
-    make_docx_file()
     zip_site()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

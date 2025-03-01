@@ -14,7 +14,7 @@ wheels/
 *.wav
 *.mp3
 mkdocs_project/docs/assets/audio/*
-mkdocs_project/Meditation Course on the Six Senses/assets/audio/*
+output/Meditation Course on the Six Senses/assets/audio/*
 
 # Waveform Project
 # waveform_project/Exported

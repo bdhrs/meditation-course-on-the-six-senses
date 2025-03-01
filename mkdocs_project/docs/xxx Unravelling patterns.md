@@ -37,13 +37,13 @@ We're going to look at three internal ways of altering reality based on an under
 2. change the reaction to the object of experience. 
 3. change the understanding of the structure of experience itself 
 
-The corollary of the mind only experiencing one thing at a time is that you can really change your life experience by simply changing what the mind rests its attention on. If you stop feeding the mind unwholesome objects, feed it more wholesome ones, and learn to sustain attention on them, you can dramatically alter your own subjective reality, and enjoy all the rewards of that.^[Testing out online footnotes]
+The corollary of the mind only experiencing one thing at a time is that you can really change your life experience by simply changing what the mind rests its attention on. If you stop feeding the mind unwholesome objects, feed it more wholesome ones, and learn to sustain attention on them, you can dramatically alter your own subjective reality, and enjoy all the rewards of that.
 
 If the object of awareness is causing you suffering, you can learn to change the object. An example is the experience of ruminating on a painful thought. Simply moving attention to the body effectively removes the thought from experience. You cannot hold a painful thought and the vivid experience of the body in the mind at the same moment. There's no need to continue letting the mind experience whatever it wants and creating unhappiness for yourself.
 
-The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on <a href="7 Response to the tone of each experience.html">Vedanā xxx</a>. 
+The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on Vedanā !!! link. 
 
-But both of the above are temporary solutions, but the Buddha has offered a more permanent solution to the problem of suffering. This involves a radical re-assessment of the nature of experience itself, and understanding how there are structural problems in the way that we understand our own experience that are at the root of suffering. This will be discussed in much more detail later on in the <a href="Insight into sense experience xxx.html">Insight into sense experience xxx</a>.
+But both of the above are temporary solutions, but the Buddha has offered a more permanent solution to the problem of suffering. This involves a radical re-assessment of the nature of experience itself, and understanding how there are structural problems in the way that we understand our own experience that are at the root of suffering. This will be discussed in much more detail later on in the Insight into sense experience !!! link.
 
 ## Differentiate between 
 - productive thought, goal orientated thought, working thoughts
@@ -64,6 +64,3 @@ Fear not! This practice will not cause you to lose the ability to think. Thinkin
 - bringing it to the five senses decreases useless thinking, worrying, fantasizing, useless speculation
 
 ## How to alter reality
-
-
-<a href="4.01 Emptiness.html">4.01 Emptiness</a>
