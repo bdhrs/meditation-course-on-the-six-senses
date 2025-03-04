@@ -4,51 +4,54 @@ import re
 import shutil
 import subprocess
 import zipfile
-
+from unidecode import unidecode
+from paths import ProjectPaths
 from configparser import ConfigParser
-from pathlib import Path
 
 
-def copy_files():
+def copy_files(pth: ProjectPaths):
+    print("Copying files from Obsidian folder")
+
     # read config.ini
     config = ConfigParser()
     config.read("mkdocs_project/config.ini")
     source = config["paths"]["source_folder"]
-    destination = Path("mkdocs_project/docs")
-    project_root = Path(__file__).parent.resolve()
+    destination = pth.mkdocs_docs
 
     def ignore_xxx_files(dir, files):
         return [f for f in files if f.startswith("xxx")]
 
     # remove and recopy
-    if Path(destination).exists():
+    if destination.exists():
         shutil.rmtree(destination)
     # shutil.copytree(source, destination, ignore=ignore_xxx_files)
     shutil.copytree(source, destination)
 
     # make assets folder if it doesn't exist
-    assets_dir = Path(project_root / "docs/assets/")
+    assets_dir = pth.mkdocs_assets_dir
     if not assets_dir.exists():
         assets_dir.mkdir()
 
     # copy custom css
-    source = Path(project_root / "css/custom.css")
-    destination = Path(project_root / "docs/assets/css/custom.css")
+    source = pth.mkdocs_custom_css
+    destination = pth.mkdocs_custom_css_asset
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, destination)
 
     # copy custom js
-    source = Path(project_root / "js/custom.js")
-    destination = Path(project_root / "docs/assets/js/custom.js")
+    source = pth.mkdocs_custom_js
+    destination = pth.mkdocs_custom_js_asset
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, destination)
 
 
-def make_index():
+def make_index(pth: ProjectPaths):
     """Make an index from file names"""
 
+    print("Making index")
+
     # Ensure the docs folder exists
-    docs_path = Path("mkdocs_project/docs")
+    docs_path = pth.mkdocs_docs
     if not docs_path.exists():
         raise FileNotFoundError(f"Docs folder not found: {docs_path}")
 
@@ -70,28 +73,26 @@ def make_index():
         index_content += f"- [{title}]({relative_path})\n\n"
 
     # Write the index file
-    index_path = docs_path / "index.md"
-    index_path.write_text(index_content)
+    pth.mkdocs_index.write_text(index_content)
 
 
-def process_md_files():
+def process_md_files(pth: ProjectPaths):
     """
     1. Fold the meditation instructions between %%
     2. Convert links to html
     3. Convert audio links to html players
-    4. Compile full course .md file
+    4. Add next link at bottom of page
+    5. Compile full course .md file
     """
 
-    full_course_path = Path(
-        "output/Meditation Course on the Six Senses.md"
-    )
+    print("Processing markdown files")
+
     full_course_text: str = ""
 
-    docs_path = Path("mkdocs_project/docs")
-    md_files = list(docs_path.glob("*.md"))
+    md_files = list(pth.mkdocs_docs.glob("*.md"))
     md_files.sort()
 
-    for md_file in md_files:
+    for i, md_file in enumerate(md_files):
         md_text = md_file.read_text()
 
         # compile full course text
@@ -108,6 +109,18 @@ def process_md_files():
         audio_link_pattern = r"!\[\[(.*?)\]\]"
         md_text = re.sub(audio_link_pattern, convert_audio_link, md_text)
 
+        # get the next file name
+        if i < len(md_files) - 1:
+            next_file = md_files[i + 1]
+            next_file = next_file.stem
+        else:
+            next_file = md_files[0]
+            next_file = next_file.stem
+
+        # add next link
+        if next_file:
+            md_text += f"\n\n[[{next_file}|Next]]\n\n"
+
         # convert links
         # this pattern captures both [[target]] and [[target|display text]] formats
         link_pattern = r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]"
@@ -116,7 +129,7 @@ def process_md_files():
         # write modified file
         md_file.write_text(md_text)
 
-    full_course_path.write_text(full_course_text)
+    pth.output_markdown_file.write_text(full_course_text)
 
 
 def convert_audio_link(match):
@@ -143,49 +156,49 @@ def convert_meditation_instruction(match):
     return html
 
 
+def make_id(id):
+    id = unidecode(id)
+    id = id.replace("#", "")
+    id = id.replace("(", "")
+    id = id.replace(")", "")
+    id = id.replace(" - ", "-")
+    id = id.replace(" ", "-")
+    id = id.replace(".", "")
+    id = id.lower()
+    return id
+
+
 def convert_links(match):
     # group(1) is always the target
     # group(2) is the display text (optional)
     target = match.group(1)
     display_text = match.group(2) or target
-    return f'<a href="{target}.html">{display_text}</a>'
+
+    if "#" in target:
+        page, id = target.split("#", 1)
+        page = page.replace(" ", "%20")
+        id = make_id(id)
+        href = f"{page}.html#{id}"
+        return f'<a href="{href}">{display_text}</a>'
+    else:
+        return f'<a href="{target}.html">{display_text}</a>'
 
 
 def build_mkdocs_site():
     """Build the mkdocs site"""
+
+    print("Building mkdocs site")
     subprocess.run(["uv", "run", "mkdocs", "build"], cwd="mkdocs_project")
 
 
-def zip_site():
+def zip_mkdocs(pth: ProjectPaths):
     """Zip the output folder."""
 
-    source_folder = Path("output/Meditation Course on the Six Senses")
-    source_folder.mkdir(parents=True, exist_ok=True) 
-    zip_filename = Path("output/Meditation Course on the Six Senses.zip")
-
-    # Check if source folder exists
-    if not source_folder.exists():
-        print(f"Error: Folder {source_folder} not found.")
-        return
+    print("Zipping mkdocs")
 
     # Create zip file
-    with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as zipf:
-        for item in source_folder.rglob("*"):
-            # Calculate relative path to preserve folder structure
-            relative_path = item.relative_to(source_folder)
+    with zipfile.ZipFile(pth.output_mkdocs_zip, "w", zipfile.ZIP_DEFLATED) as zipf:
+        for item in pth.output_mkdocs_dir.rglob("*"):
+            relative_path = item.relative_to(pth.output_mkdocs_dir)
             if item.is_file():
                 zipf.write(item, relative_path)
-
-    print(f"Zipped {source_folder} to {zip_filename}")
-
-
-def main():
-    copy_files()
-    make_index()
-    process_md_files()
-    build_mkdocs_site()
-    zip_site()
-
-
-if __name__ == "__main__":
-    main()
