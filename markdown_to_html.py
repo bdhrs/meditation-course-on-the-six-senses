@@ -158,7 +158,7 @@ def convert_html_to_ebooks(pth: ProjectPaths):
         print("Converting to docx")
         try:
             subprocess.run(
-                ["pandoc", str(pth.output_html_file), "-o", str(pth.output_docx_file)],
+                ["pandoc", pth.output_html_file, "-o", pth.output_docx_file],
                 check=True,
             )
         except subprocess.CalledProcessError as e:

@@ -8,16 +8,17 @@ from markdown_to_html import convert_markdown_to_html
 from markdown_to_html import zip_mp3s
 from paths import ProjectPaths
 
+
 def export_course():
     pth = ProjectPaths()
 
     copy_files(pth)
-    
+
     # make mkdocs
     process_md_files(pth)
     make_index(pth)
     build_mkdocs_site()
-    
+
     # make other output files
     convert_markdown_to_html(pth)
     convert_html_to_ebooks(pth)
