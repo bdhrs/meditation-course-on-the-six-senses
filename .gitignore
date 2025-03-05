@@ -10,11 +10,14 @@ wheels/
 .venv
 *.zip
 
+*.ini
+
 # mp3s
 *.wav
 *.mp3
 mkdocs_project/docs/assets/audio/*
-output/Meditation Course on the Six Senses/assets/audio/*
+
+output/*
 
 # Waveform Project
 # waveform_project/Exported

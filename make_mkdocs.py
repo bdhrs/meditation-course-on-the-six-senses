@@ -14,7 +14,7 @@ def copy_files(pth: ProjectPaths):
 
     # read config.ini
     config = ConfigParser()
-    config.read("mkdocs_project/config.ini")
+    config.read("config.ini")
     source = config["paths"]["source_folder"]
     destination = pth.mkdocs_docs
 
