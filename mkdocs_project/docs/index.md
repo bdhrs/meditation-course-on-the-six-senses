@@ -52,7 +52,9 @@
 
 - [4.5. Contact!](4.5. Contact!.md)
 
-- [4.6. Saṅkhata](4.6. Saṅkhata.md)
+- [4.6. Creating the World](4.6. Creating the World.md)
+
+- [4.7. Saṅkhata](4.7. Saṅkhata.md)
 
 - [5. Vedanā](5. Vedanā.md)
 
@@ -85,8 +87,6 @@
 - [7.1. References](7.1. References.md)
 
 - [7.2. Further reading](7.2. Further reading.md)
-
-- [XCreating the World](XCreating the World.md)
 
 - [XNotes to process](XNotes to process.md)
 

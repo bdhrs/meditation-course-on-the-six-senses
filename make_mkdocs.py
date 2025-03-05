@@ -16,16 +16,15 @@ def copy_files(pth: ProjectPaths):
     config = ConfigParser()
     config.read("config.ini")
     source = config["paths"]["source_folder"]
-    destination = pth.mkdocs_docs
 
     def ignore_xxx_files(dir, files):
         return [f for f in files if f.startswith("xxx")]
 
     # remove and recopy
-    if destination.exists():
-        shutil.rmtree(destination)
-    # shutil.copytree(source, destination, ignore=ignore_xxx_files)
-    shutil.copytree(source, destination)
+    if pth.mkdocs_docs.exists():
+        shutil.rmtree(pth.mkdocs_docs)
+    # shutil.copytree(source, pth.mkdocs_docs, ignore=ignore_xxx_files)
+    shutil.copytree(source, pth.mkdocs_docs)
 
     # make assets folder if it doesn't exist
     assets_dir = pth.mkdocs_assets_dir
@@ -33,16 +32,12 @@ def copy_files(pth: ProjectPaths):
         assets_dir.mkdir()
 
     # copy custom css
-    source = pth.mkdocs_custom_css
-    destination = pth.mkdocs_custom_css_asset
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(source, destination)
+    pth.mkdocs_custom_css_asset.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(pth.mkdocs_custom_css, pth.mkdocs_custom_css_asset)
 
     # copy custom js
-    source = pth.mkdocs_custom_js
-    destination = pth.mkdocs_custom_js_asset
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(source, destination)
+    pth.mkdocs_custom_js_asset.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(pth.mkdocs_custom_js, pth.mkdocs_custom_js_asset)
 
 
 def make_index(pth: ProjectPaths):
