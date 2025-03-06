@@ -39,9 +39,9 @@ The corollary of the mind only experiencing one thing at a time is that you can 
 
 If the object of awareness is causing you suffering, you can learn to change the object. An example is the experience of ruminating on a painful thought. Simply moving attention to the body effectively removes the thought from experience. You cannot hold a painful thought and the vivid experience of the body in the mind at the same moment. There's no need to continue letting the mind experience whatever it wants and creating unhappiness for yourself.
 
-The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on Vedanā !!! link.
+The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on Vedanā.
 
-But both of the above are temporary solutions, but the Buddha has offered a more permanent solution to the problem of suffering. This involves a radical re-assessment of the nature of experience itself, and understanding how there are structural problems in the way that we understand our own experience that are at the root of suffering. This will be discussed in much more detail later on in the Insight into sense experience !!! link.
+But both of the above are temporary solutions, but the Buddha has offered a more permanent solution to the problem of suffering. This involves a radical re-assessment of the nature of experience itself, and understanding how there are structural problems in the way that we understand our own experience that are at the root of suffering. This will be discussed in much more detail later on in the Insight into sense experience.
 
 ## Differentiate between 
 - productive thought, goal orientated thought, working thoughts

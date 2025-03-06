@@ -42,19 +42,17 @@
 
 - [4. Dependency](4. Dependency.md)
 
-- [4.1. Dependent Experiences](4.1. Dependent Experiences.md)
+- [4.1. The Internal Dependency](4.1. The Internal Dependency.md)
 
-- [4.2. The Internal Dependency](4.2. The Internal Dependency.md)
+- [4.2. The External Dependency](4.2. The External Dependency.md)
 
-- [4.3. The External Dependency](4.3. The External Dependency.md)
+- [4.3. Conditions for Consciousness](4.3. Conditions for Consciousness.md)
 
-- [4.4. Conditions for Consciousness](4.4. Conditions for Consciousness.md)
+- [4.4. Contact!](4.4. Contact!.md)
 
-- [4.5. Contact!](4.5. Contact!.md)
+- [4.5. Creating the World](4.5. Creating the World.md)
 
-- [4.6. Creating the World](4.6. Creating the World.md)
-
-- [4.7. Saṅkhata](4.7. Saṅkhata.md)
+- [4.6. Saṅkhata](4.6. Saṅkhata.md)
 
 - [5. Vedanā](5. Vedanā.md)
 

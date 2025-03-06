@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <EDIT appVersion="Waveform 13.2.0" projectID="830407/3550739" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="1956655191b" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="1290.0" scrubInterval="24.87021351053511"
-             start="1290.0" snapToTimecode="1" loopPoint2="0.0"/>
+      modifiedBy="bodhirasa" lastSignificantChange="195696724a3" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1260.0" scrubInterval="0.01631143118594537"
+             start="1260.0" snapToTimecode="1" loopPoint2="0.0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -84,7 +84,7 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="594.5744258087847" viewright="1838.08510133554"
+             browserSelection="result/all" viewleft="1259.843677591553" viewright="1260.65924915085"
              globalTracksVisible="0" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="3"
              lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
@@ -101,7 +101,7 @@
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
   <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
-                     comment="" date="2025" genre="" title="Sa&#7749;khata" trackNumber="18"/>
+                     comment="" date="2025" genre="" title="Sa&#7749;khata" trackNumber="17"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
@@ -212,23 +212,23 @@
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="819.2835555372537" length="59.6316611619003"
+    <AUDIOCLIP name="sa&#7749;khata" start="819.2835555372537" length="60.54792699162886"
                offset="0.0" id="1170" source="830407/3743a3b" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="11.95479215046259"
-               fadeOut="10.98919125923942" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOut="5.671434461644789" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="4" fadeOutType="4">
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="866.0450997300288" length="114.8928916642229"
-               offset="735.3438016499028" id="1169" source="830407/3743a3b"
+    <AUDIOCLIP name="sa&#7749;khata" start="878.4553256374541" length="94.72614509601885"
+               offset="755.5105482181069" id="1177" source="830407/3743a3b"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="4" fadeOutType="4">
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="968.9311658956274" length="59.63166116190018"
+    <AUDIOCLIP name="sa&#7749;khata" start="961.1746452348485" length="59.63166116190018"
                offset="0.0" id="1172" source="830407/3743a3b" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="11.95479215046259"
                fadeOut="10.98919125923942" proxyAllowed="1" resamplingQuality="lagrange"
@@ -236,7 +236,7 @@
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="1016.155239120256" length="95.63764440518355"
+    <AUDIOCLIP name="sa&#7749;khata" start="1008.398718459477" length="95.63764440518378"
                offset="855.0940487399764" id="1171" source="830407/3743a3b"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -244,7 +244,7 @@
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="1108.436080730815" length="94.48570515276128"
+    <AUDIOCLIP name="sa&#7749;khata" start="1100.679560070036" length="94.48570515276128"
                offset="957.6604784007305" id="1173" source="830407/3743a3b"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="12.85500406877751" proxyAllowed="1" resamplingQuality="lagrange"
@@ -252,7 +252,7 @@
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="1188.653195001041" length="48.82849449702258"
+    <AUDIOCLIP name="sa&#7749;khata" start="1180.896674340262" length="48.82849449702258"
                offset="0.0" id="1176" source="830407/3743a3b" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="10.53241272765695"
                fadeOut="13.26224821448989" proxyAllowed="1" resamplingQuality="lagrange"
@@ -260,7 +260,7 @@
       <LOOPINFO rootNote="-1" numBeats="2142.123129251701" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="sa&#7749;khata" start="1211.282986225365" length="48.71701377463501"
+    <AUDIOCLIP name="sa&#7749;khata" start="1203.526465564586" length="56.47353443541397"
                offset="0.0" id="1174" source="830407/3743a3b" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="10.53241272765695"
                fadeOut="25.95629615652862" proxyAllowed="1" resamplingQuality="lagrange"
