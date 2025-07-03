@@ -2,6 +2,7 @@ import re
 import flet as ft
 
 from flet_project.src.helpers import ProjectData
+from flet_project.src.navigation import NavigationHandler
 
 
 def make_index(g: ProjectData):
@@ -19,6 +20,7 @@ def make_index(g: ProjectData):
                 ft.Container(
                     content=ft.Text(
                         value=file_path.stem,
+                        data=file_path.stem,
                         color=ft.Colors.BLUE_100,
                     ),
                     padding=ft.padding.symmetric(horizontal=10, vertical=0),
@@ -27,11 +29,14 @@ def make_index(g: ProjectData):
         else:
             list_tile = ft.ListTile(
                 title=ft.Text(file_path.stem), 
-                data=file_path, 
-                dense=True
+                data=file_path.stem,
+                dense=True,
+                selected_color=ft.Colors.BLUE_500,
+                selected_tile_color=ft.Colors.BLUE_50,
+                on_click=lambda e, g=g: NavigationHandler(g).navigate(e.control.data, "")
             )
             list_tile.ink = True 
             list_tile.selected_color = ft.Colors.BLUE_500
             controls.append(list_tile)
 
-    return ft.Column(controls=controls, scroll=ft.ScrollMode.AUTO, spacing=4)
+    return ft.Column(controls=controls, scroll=ft.ScrollMode.AUTO, spacing=2)

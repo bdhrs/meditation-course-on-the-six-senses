@@ -5,14 +5,15 @@ font_family = "Noto Serif"
 
 
 class StyledText(ft.Text):
-    def __init__(self, value: str, size: int, weight=ft.FontWeight.NORMAL):
+    def __init__(self, value: str, size: int, weight=ft.FontWeight.NORMAL, id: str = None):
+        self.id = id
         spans = self.parse_inline_styles(value)
         super().__init__(
             size=size,
             font_family=font_family,
             selectable=True,
             weight=weight,
-            spans=spans,
+            spans=spans
         )
 
     def parse_inline_styles(self, text):
@@ -51,18 +52,27 @@ class StyledText(ft.Text):
 
 
 class HeadingOne(StyledText):
-    def __init__(self, value: str):
-        super().__init__(value=value, size=32, weight=ft.FontWeight.BOLD)
+    def __init__(self, value: str, id: str = None):
+        super().__init__(value=value, size=32, weight=ft.FontWeight.BOLD, id=id)
+        self.scroll = True
+        self.scroll_offset = 0.0
+        self.scroll_duration = 500
 
 
 class HeadingTwo(StyledText):
-    def __init__(self, value: str):
-        super().__init__(value=value, size=24, weight=ft.FontWeight.BOLD)
+    def __init__(self, value: str, id: str = None):
+        super().__init__(value=value, size=24, weight=ft.FontWeight.BOLD, id=id)
+        self.scroll = True
+        self.scroll_offset = 0.0
+        self.scroll_duration = 500
 
 
 class HeadingThree(StyledText):
-    def __init__(self, value: str):
-        super().__init__(value=value, size=18, weight=ft.FontWeight.BOLD)
+    def __init__(self, value: str, id: str = None):
+        super().__init__(value=value, size=18, weight=ft.FontWeight.BOLD, id=id)
+        self.scroll = True
+        self.scroll_offset = 0.0
+        self.scroll_duration = 500
 
 
 class Paragraph(StyledText):
