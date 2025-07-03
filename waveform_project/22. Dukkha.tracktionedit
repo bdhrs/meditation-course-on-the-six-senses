@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.2.0" projectID="830407/1b33fde" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="1957d757efc" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="120.0" scrubInterval="81.18129094444761"
+             start="120.0" snapToTimecode="1" loopPoint2="0.0" looping="1"
+             loopPoint1="0.0"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7409999966621399" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="8bandEq" windowLocked="1" id="1080" enabled="1" width="660"
+            presetDirty="1" height="360" freq1lm="41.78829574584961" gain1lm="0.0"
+            q1lm="0.7080547213554382" freq2lm="59.67473602294922" gain2lm="-2.439374923706055"
+            q2lm="0.9862046837806702" freq3lm="92.39259338378906" gain3lm="4.0"
+            freq4lm="104.0506744384766" gain4lm="0.1666666716337204" freq8lm="130.4415893554688"
+            gain8lm="0.0" q8lm="2.083999872207642" shape1lm="6" enable8lm="1"
+            presetName="8-Band Equaliser: vox1" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/8-Band Equaliser vox1.trkpreset">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="comp" windowLocked="1" id="1090" enabled="1" threshold="-20.0"
+            presetDirty="1" ratio="10.0" attack="29.0" release="5.0" knee="0.0"
+            presetName="Compressor: Vintage Limit" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Factory Presets/Compressor/Compressor Vintage Limit.trkpreset"
+            windowX="732" windowY="643" showFaceplate="1" rms="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="naturalReverb" windowLocked="1" id="1083" enabled="1" preDelay="0.0"
+            presetDirty="1" size="0.4919999837875366" decay="0.1079999953508377"
+            slope="0.265999972820282" definition="0.4839999675750732" diffusion="0.5640000104904175"
+            highCut="0.871999979019165" lowDamp="0.4320000112056732" highDamp="1.0"
+            presetName="Natural Reverb: master" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/Natural Reverb master.trkpreset"
+            mix="0.1000000089406967" windowX="565" windowY="380">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="midiin_170f06" name="Midi Through Port-0"/>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_57204c56" name="channel 3"/>
+    <INPUTDEVICE deviceID="wavein_57204c57" name="channel 4"/>
+    <INPUTDEVICE deviceID="wavein_57204c58" name="channel 5"/>
+    <INPUTDEVICE deviceID="wavein_57204c59" name="channel 6"/>
+    <INPUTDEVICE deviceID="wavein_57204c5a" name="channel 7"/>
+    <INPUTDEVICE deviceID="wavein_57204c5b" name="channel 8"/>
+    <INPUTDEVICE deviceID="wavein_57204c5c" name="channel 9"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5c" name="channel 10"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5d" name="channel 11"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5e" name="channel 12"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5f" name="channel 13"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e60" name="channel 14"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e61" name="channel 15"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e62" name="channel 16"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e63" name="channel 17"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e64" name="channel 18"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e65" name="channel 19"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7b" name="channel 20"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7c" name="channel 21"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7d" name="channel 22"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7e" name="channel 23"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7f" name="channel 24"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e80" name="channel 25"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e81" name="channel 26"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e82" name="channel 27"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e83" name="channel 28"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e84" name="channel 29"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+    <INPUTDEVICE deviceID="wavein_fac933b1" name="channel 1 + 2">
+      <INPUTDEVICEDESTINATION targetID="1012" targetIndex="0" armed="0"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
+             browserSelection="result/all" viewleft="-90.67158333333687" viewright="3968.392963889044"
+             globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
+             sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="3"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
+             controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
+             scrollSuspended="0" midiEditorShown="0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <ARRANGEVIEW>
+    <MIXERVIEWSTATE overviewVisible="0" smallMetersVisible="0" bigMetersVisible="0"
+                    outputsVisible="0" trackWidth="100.0" pluginsProportion="0.5"
+                    bigMetersProportion="0.5" clipsProportion="0.5" clipsScroll="0.0"
+                    clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
+                    pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
+  </ARRANGEVIEW>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2025" genre="" title="Dukkha" trackNumber="22"/>
+  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
+  <ARRANGERTRACK name="Arranger" id="1006"/>
+  <CHORDTRACK name="Chord" id="1008"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1007">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1009" height="40.0">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" height="270.0" mute="0" soloIsolate="0" playSlotClips="0"
+         colour="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="dukkha" start="0.0" length="155.5868280362476" offset="59.62359408544499"
+               id="1093" source="830407/14b074" sync="0" autoCrossfade="1" elastiqueMode="0"
+               pan="0.0" colour="ff55ff00" fadeIn="11.56938886737591" fadeOut="0.0"
+               proxyAllowed="1" resamplingQuality="lagrange" fadeInType="2"
+               fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="146.2432997629568" length="59.62359408544489"
+               offset="0.0" id="1092" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="0.005"
+               fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange" fadeInType="2"
+               fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="196.0369048256668" length="129.3398052720909"
+               offset="219.401510456314" id="1094" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="315.0511756131531" length="59.62359408544489"
+               offset="0.0" id="1096" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="364.0298834430658" length="87.61211526685986"
+               offset="353.2539984799382" id="1095" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="442.1796864629952" length="48.33205549929329"
+               offset="466.722208348897" id="1097" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="481.2000595297384" length="59.62359408544506"
+               offset="0.0" id="1098" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="531.4022653163876" length="123.6735629278513"
+               offset="517.5226938444978" id="1099" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="645.3546182216317" length="59.62359408544489"
+               offset="0.0" id="1101" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="683.912291636453" length="151.4643188183484"
+               offset="644.9927211579936" id="1100" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="827.3432376159308" length="59.62359408544489"
+               offset="0.0" id="1103" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="878.1220563888279" length="129.2914535744859"
+               offset="805.7046003354649" id="1102" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="998.6598184917343" length="59.62359408544489"
+               offset="0.0" id="1105" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="1047.873094275063" length="108.1993074778372"
+               offset="939.5609130033978" id="1104" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="1147.261291334728" length="59.62359408544489"
+               offset="0.0" id="1107" source="830407/14b074" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
+               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dukkha" start="1197.018188111451" length="62.98181188854937"
+               offset="1053.461532505843" id="1106" source="830407/14b074" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="43.27075876153914" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ffff0000" mute="1" height="180.0" solo="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
