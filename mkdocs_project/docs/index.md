@@ -86,6 +86,8 @@
 
 - [7.2. Further reading](7.2. Further reading.md)
 
+- [Abbreviations](Abbreviations.md)
+
 - [XNotes to process](XNotes to process.md)
 
 - [XSource Material](XSource Material.md)

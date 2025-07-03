@@ -373,6 +373,13 @@ The last ten suttas of Majjhima Nikāya are all based on an examination of *sa�
 ## Add a quote
 Add a quote to each main section heading 1, 2, 3, 4, 5, 6 
 
+## Conditions for consciouseness
+> *dvayaṃ, bhikkhave, paṭicca viññāṇaṃ sambhoti. kathañca, bhikkhave, dvayaṃ paṭicca viññāṇaṃ sambhoti? cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ. cakkhu aniccaṃ vipariṇāmi aññathābhāvi. rūpā aniccā vipariṇāmino aññathābhāvino. itthetaṃ dvayaṃ calañceva byathañca aniccaṃ vipariṇāmi aññathābhāvi. cakkhuviññāṇaṃ aniccaṃ vipariṇāmi aññathābhāvi. yopi hetu yopi paccayo cakkhuviññāṇassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppannaṃ cakkhuviññāṇaṃ kuto niccaṃ bhavissati! yā kho, bhikkhave, imesaṃ tiṇṇaṃ dhammānaṃ saṅgati sannipāto samavāyo, ayaṃ vuccati cakkhusamphasso. cakkhusamphassopi anicco vipariṇāmī aññathābhāvī. yopi hetu yopi paccayo cakkhusamphassassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppanno cakkhusamphasso kuto nicco bhavissati! phuṭṭho, bhikkhave, vedeti, phuṭṭho ceteti, phuṭṭho sañjānāti. itthetepi dhammā calā ceva byathā ca aniccā vipariṇāmino aññathābhāvino.* 
+> 
+> !!! translation
+> 
+> -- *SN35.93 dutiyadvayasuttaṃ*
+
 
 <a href="XSource Material.html">Next</a>
 
