@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'mkdocs_project/docs/**'
+      - 'mkdocs_project/mkdocs.yml'
   workflow_dispatch:
 jobs:
   deploy:
@@ -15,14 +16,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Copy files
-        run: |
-          mkdir -p public
-          cp -r mkdocs_project/docs/* public/
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          path: 'public'
+          python-version: '3.x'
+      - name: Install mkdocs
+        run: pip install mkdocs mkdocs-material
+      - name: Build site
+        run: cd mkdocs_project && mkdocs build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: output/Meditation Course on the Six Senses
