@@ -16,6 +16,7 @@ wheels/
 *.wav
 *.mp3
 mkdocs_project/docs/assets/audio/*
+!waveform_project/Exported/*.mp3
 
 output/*
 
