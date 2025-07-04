@@ -24,6 +24,8 @@ jobs:
         run: pip install mkdocs mkdocs-material
       - name: Build site
         run: cd mkdocs_project && mkdocs build
+      - name: Create .nojekyll file
+        run: touch output/Meditation Course on the Six Senses/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
