@@ -16,6 +16,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       
       - name: Set up Python
         uses: actions/setup-python@v5
