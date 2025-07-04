@@ -43,7 +43,7 @@ theme:
         instant: true
 
 extra_javascript:
-  - assets/js/custom.js
+  - js/custom.js
 
 extra_css:
   - assets/css/custom.css
