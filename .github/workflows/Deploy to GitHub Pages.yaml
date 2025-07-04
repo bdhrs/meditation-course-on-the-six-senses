@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'mkdocs_project/docs/**'
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
