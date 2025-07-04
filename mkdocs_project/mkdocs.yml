@@ -46,3 +46,5 @@ extra_css:
   - assets/css/custom.css
 
 use_directory_urls: false
+
+docs_dir: docs
