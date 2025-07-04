@@ -16,17 +16,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - name: Install mkdocs
         run: pip install mkdocs mkdocs-material
-      - name: Build site
+      - name: Copy mp3s
         run: |
           mkdir -p mkdocs_project/docs/assets/audio
           cp waveform_project/Exported/*.mp3 mkdocs_project/docs/assets/audio/
-          cd mkdocs_project && mkdocs build
+      - name: Build site
+        run: cd mkdocs_project && mkdocs build
       - name: Create .nojekyll file
         run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
       - name: Upload artifact
