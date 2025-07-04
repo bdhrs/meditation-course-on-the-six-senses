@@ -4,9 +4,26 @@ import re
 import shutil
 import subprocess
 import zipfile
+from pathlib import Path
 from unidecode import unidecode
 from paths import ProjectPaths
 from configparser import ConfigParser
+import cairosvg
+
+
+def generate_pwa_icons(source_svg: str, output_dir: Path):
+    """Generate PWA icons from an SVG file."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for size in [192, 512]:
+        png_path = output_dir / f"icon-{size}.png"
+        print(f"Generating {png_path} from {source_svg}")
+        cairosvg.svg2png(
+            url=source_svg,
+            write_to=str(png_path),
+            output_width=size,
+            output_height=size,
+        )
+    print("PWA icons generated successfully.")
 
 
 def copy_files(pth: ProjectPaths):
@@ -47,6 +64,9 @@ def copy_files(pth: ProjectPaths):
     print(f"Copying icon from {icon_source} to {icon_destination}")
     shutil.copyfile(icon_source, icon_destination)
     print("Icon copied successfully")
+
+    # generate PWA icons
+    generate_pwa_icons(source_svg=icon_source, output_dir=image_destination_dir)
 
 
 def make_index(pth: ProjectPaths):

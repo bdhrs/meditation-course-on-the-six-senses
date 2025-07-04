@@ -1,5 +1,5 @@
 site_name: Meditation Course on the Six Senses
-site_url: '' # Important for relative path resolution
+site_url: https://bdhrs.github.io/meditation-course-on-the-six-senses/
 use_directory_urls: true
 site_dir: ../output/Meditation Course on the Six Senses
 
@@ -30,7 +30,9 @@ theme:
   features:
     # Make sure navigation.tabs is NOT included here
     - navigation.sections
-    - navigation.collapse  
+    - navigation.collapse
+    - pwa.instant
+    - pwa.offline
   
   navigation:
     prev: true
@@ -45,6 +47,9 @@ extra_javascript:
 
 extra_css:
   - assets/css/custom.css
+
+extra:
+  manifest: manifest.webmanifest
 
 use_directory_urls: false
 
