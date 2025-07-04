@@ -63,10 +63,15 @@ def copy_files(pth: ProjectPaths):
     icon_destination = image_destination_dir / "six-senses.svg"
     print(f"Copying icon from {icon_source} to {icon_destination}")
     shutil.copyfile(icon_source, icon_destination)
-    print("Icon copied successfully")
 
     # generate PWA icons
     generate_pwa_icons(source_svg=icon_source, output_dir=image_destination_dir)
+
+    # copy manifest to docs
+    manifest_source = "mkdocs_project/manifest.webmanifest"
+    manifest_destination = pth.mkdocs_docs / "manifest.webmanifest"
+    print(f"Copying manifest from {manifest_source} to {manifest_destination}")
+    shutil.copyfile(manifest_source, manifest_destination)
 
 
 def make_index(pth: ProjectPaths):
