@@ -5,14 +5,15 @@ site_dir: ../output/Meditation Course on the Six Senses
 
 theme:
   
-  name: material 
+  name: material
+  logo: assets/images/six-senses.svg
   
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -20,8 +21,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: black
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode

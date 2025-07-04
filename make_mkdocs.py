@@ -39,6 +39,15 @@ def copy_files(pth: ProjectPaths):
     pth.mkdocs_custom_js_asset.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(pth.mkdocs_custom_js, pth.mkdocs_custom_js_asset)
 
+    # copy icon to assets/images
+    icon_source = "icon/six-senses.svg"
+    image_destination_dir = pth.mkdocs_assets_dir / "images"
+    image_destination_dir.mkdir(parents=True, exist_ok=True)
+    icon_destination = image_destination_dir / "six-senses.svg"
+    print(f"Copying icon from {icon_source} to {icon_destination}")
+    shutil.copyfile(icon_source, icon_destination)
+    print("Icon copied successfully")
+
 
 def make_index(pth: ProjectPaths):
     """Make an index from file names"""
