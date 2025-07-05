@@ -32,6 +32,10 @@ theme:
     # Make sure navigation.tabs is NOT included here
     - navigation.sections
     - navigation.collapse
+    # PWA features
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
   
   navigation:
     prev: true
@@ -47,9 +51,6 @@ extra_javascript:
 
 extra_css:
   - assets/css/custom.css
-
-extra:
-  manifest: manifest.webmanifest
 
 use_directory_urls: false
 

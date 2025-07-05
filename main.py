@@ -1,4 +1,4 @@
-from make_mkdocs import copy_files
+from make_mkdocs import copy_css_and_js, copy_md_files
 from make_mkdocs import make_index
 from make_mkdocs import build_mkdocs_site
 from make_mkdocs import zip_mkdocs
@@ -12,7 +12,9 @@ from paths import ProjectPaths
 def export_course():
     pth = ProjectPaths()
 
-    copy_files(pth)
+    # copy all relevant files
+    copy_md_files(pth)
+    copy_css_and_js(pth)
 
     # make mkdocs
     process_md_files(pth)

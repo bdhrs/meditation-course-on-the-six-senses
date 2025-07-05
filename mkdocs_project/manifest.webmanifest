@@ -2,18 +2,18 @@
   "name": "Meditation Course on the Six Senses",
   "short_name": "Six Senses",
   "description": "A meditation course on the six fields of sense experience.",
-  "start_url": "/meditation-course-on-the-six-senses/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#002b60",
   "icons": [
     {
-      "src": "/meditation-course-on-the-six-senses/assets/images/icon-192.png",
+      "src": "assets/images/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/meditation-course-on-the-six-senses/assets/images/icon-512.png",
+      "src": "assets/images/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

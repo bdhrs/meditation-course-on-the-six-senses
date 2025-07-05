@@ -26,8 +26,8 @@ def generate_pwa_icons(source_svg: str, output_dir: Path):
     print("PWA icons generated successfully.")
 
 
-def copy_files(pth: ProjectPaths):
-    print("Copying files from Obsidian folder")
+def copy_md_files(pth: ProjectPaths):
+    print("Copying .md files from Obsidian folder")
 
     # read config.ini
     config = ConfigParser()
@@ -40,8 +40,12 @@ def copy_files(pth: ProjectPaths):
     # remove and recopy
     if pth.mkdocs_docs.exists():
         shutil.rmtree(pth.mkdocs_docs)
-    # shutil.copytree(source, pth.mkdocs_docs, ignore=ignore_xxx_files)
-    shutil.copytree(source, pth.mkdocs_docs)
+    shutil.copytree(source, pth.mkdocs_docs, ignore=ignore_xxx_files)
+    # shutil.copytree(source, pth.mkdocs_docs)
+
+
+def copy_css_and_js(pth: ProjectPaths):
+    print("Copying custom CSS and JS files")
 
     # make assets folder if it doesn't exist
     assets_dir = pth.mkdocs_assets_dir
@@ -58,8 +62,18 @@ def copy_files(pth: ProjectPaths):
     js_dest_dir.mkdir(parents=True, exist_ok=True)
 
     for js_file in js_source_dir.glob("*.js"):
+        # Skip service worker - it gets copied to root separately
+        if js_file.name == "pwabuilder-sw.js":
+            continue
         print(f"Copying {js_file.name} to {js_dest_dir}")
         shutil.copy(js_file, js_dest_dir)
+
+    # copy service worker to docs root (not in assets)
+    sw_source = js_source_dir / "pwabuilder-sw.js"
+    if sw_source.exists():
+        sw_destination = pth.mkdocs_docs / "pwabuilder-sw.js"
+        print(f"Copying service worker from {sw_source} to {sw_destination}")
+        shutil.copyfile(sw_source, sw_destination)
 
     # copy icon to assets/images
     icon_source = "icon/six-senses.svg"
@@ -241,3 +255,13 @@ def zip_mkdocs(pth: ProjectPaths):
             relative_path = item.relative_to(pth.output_mkdocs_dir)
             if item.is_file():
                 zipf.write(item, relative_path)
+
+
+if __name__ == "__main__":
+    pth = ProjectPaths()
+    copy_md_files(pth)
+    process_md_files(pth)
+    make_index(pth)
+    build_mkdocs_site()
+    zip_mkdocs(pth)
+    print("Done")
