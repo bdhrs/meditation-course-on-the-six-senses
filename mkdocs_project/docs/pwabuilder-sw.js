@@ -24,7 +24,7 @@ self.addEventListener("install", function (event) {
 
 // If any fetch fails, it will look for the request in the cache and serve it from there first
 self.addEventListener("fetch", function (event) {
-  if (event.request.method !== "GET") return;
+  if (event.request.method !== "GET" || event.request.url.startsWith('chrome-extension')) return;
 
   event.respondWith(
     fetch(event.request)
@@ -52,7 +52,7 @@ function fromCache(request) {
       if (!matching || matching.status === 404) {
         // The following validates that the request was for a navigation to a new document
         if (request.destination !== "document" || request.mode !== "navigate") {
-          return Promise.reject("no-match");
+          return new Response();
         }
 
         return cache.match(offlineFallbackPage);
