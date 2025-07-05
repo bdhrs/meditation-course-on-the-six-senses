@@ -7,6 +7,7 @@ theme:
   
   name: material
   logo: assets/images/six-senses.svg
+  manifest: manifest.webmanifest
   
   palette:
     # Palette toggle for dark mode

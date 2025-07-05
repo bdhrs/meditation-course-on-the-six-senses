@@ -72,11 +72,16 @@ def copy_files(pth: ProjectPaths):
     # generate PWA icons
     generate_pwa_icons(source_svg=icon_source, output_dir=image_destination_dir)
 
-    # copy manifest to docs
+    # copy manifest and offline.html to docs
     manifest_source = "mkdocs_project/manifest.webmanifest"
     manifest_destination = pth.mkdocs_docs / "manifest.webmanifest"
     print(f"Copying manifest from {manifest_source} to {manifest_destination}")
     shutil.copyfile(manifest_source, manifest_destination)
+
+    offline_source = "mkdocs_project/html/offline.html"
+    offline_destination = pth.mkdocs_docs / "offline.html"
+    print(f"Copying offline page from {offline_source} to {offline_destination}")
+    shutil.copyfile(offline_source, offline_destination)
 
 
 def make_index(pth: ProjectPaths):

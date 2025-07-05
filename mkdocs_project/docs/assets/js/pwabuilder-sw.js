@@ -3,7 +3,7 @@
 const CACHE = "pwabuilder-offline-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "/meditation-course-on-the-six-senses/offline/index.html";
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
@@ -14,7 +14,7 @@ self.addEventListener("install", function (event) {
       console.log("[PWA Builder] Cached offline page during install");
 
       if (offlineFallbackPage === "ToDo-replace-this-name.html") {
-        return cache.add(new Response("Service worker offline page not configured"));
+        return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
 
       return cache.add(offlineFallbackPage);
