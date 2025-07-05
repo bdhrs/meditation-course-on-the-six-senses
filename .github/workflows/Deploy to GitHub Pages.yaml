@@ -30,7 +30,7 @@ jobs:
           mkdir -p mkdocs_project/docs/assets/audio
           cp waveform_project/Exported/*.mp3 mkdocs_project/docs/assets/audio/
       - name: Build site with PWA files
-        run: cd mkdocs_project && uv run mkdocs build
+        run: uv run mkdocs build
       - name: Create .nojekyll file
         run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
       - name: Upload artifact
