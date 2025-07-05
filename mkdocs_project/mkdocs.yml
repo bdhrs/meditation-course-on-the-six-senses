@@ -31,8 +31,6 @@ theme:
     # Make sure navigation.tabs is NOT included here
     - navigation.sections
     - navigation.collapse
-    - pwa.instant
-    - pwa.offline
   
   navigation:
     prev: true
@@ -43,7 +41,8 @@ theme:
         instant: true
 
 extra_javascript:
-  - js/custom.js
+  - assets/js/custom.js
+  - assets/js/rsw.js
 
 extra_css:
   - assets/css/custom.css

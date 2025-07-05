@@ -52,9 +52,14 @@ def copy_files(pth: ProjectPaths):
     pth.mkdocs_custom_css_asset.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(pth.mkdocs_custom_css, pth.mkdocs_custom_css_asset)
 
-    # copy custom js
-    pth.mkdocs_custom_js_asset.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(pth.mkdocs_custom_js, pth.mkdocs_custom_js_asset)
+    # copy custom js files
+    js_source_dir = pth.mkdocs_root / "js"
+    js_dest_dir = pth.mkdocs_assets_dir / "js"
+    js_dest_dir.mkdir(parents=True, exist_ok=True)
+
+    for js_file in js_source_dir.glob("*.js"):
+        print(f"Copying {js_file.name} to {js_dest_dir}")
+        shutil.copy(js_file, js_dest_dir)
 
     # copy icon to assets/images
     icon_source = "icon/six-senses.svg"
