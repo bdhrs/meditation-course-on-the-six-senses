@@ -23,22 +23,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      
       - name: Install uv
-        run: pip install uv
-      - name: Install mkdocs
-        run: uv pip install mkdocs mkdocs-material
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+        
+      - name: Install dependencies
+        run: uv sync
+      
       - name: Copy mp3s
         run: |
           mkdir -p mkdocs_project/docs/assets/audio
           cp waveform_project/Exported/*.mp3 mkdocs_project/docs/assets/audio/
+      
       - name: Build site with PWA files
         run: uv run mkdocs build
+      
       - name: Create .nojekyll file
         run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'output/Meditation Course on the Six Senses'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
