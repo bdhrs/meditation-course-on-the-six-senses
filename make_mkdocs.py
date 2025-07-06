@@ -63,15 +63,13 @@ def copy_css_and_js(pth: ProjectPaths):
 
     for js_file in js_source_dir.glob("*.js"):
         # Skip service worker - it gets copied to root separately
-        if js_file.name == "pwabuilder-sw.js":
-            continue
         print(f"Copying {js_file.name} to {js_dest_dir}")
         shutil.copy(js_file, js_dest_dir)
 
     # copy service worker to docs root (not in assets)
-    sw_source = js_source_dir / "pwabuilder-sw.js"
+    sw_source = js_source_dir / "sw.js"
     if sw_source.exists():
-        sw_destination = pth.mkdocs_docs / "pwabuilder-sw.js"
+        sw_destination = pth.mkdocs_docs / "sw.js"
         print(f"Copying service worker from {sw_source} to {sw_destination}")
         shutil.copyfile(sw_source, sw_destination)
 
@@ -259,32 +257,64 @@ def add_pwa_meta_tags():
     pwa_meta_tags = """
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.webmanifest">
-    
+
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#002b60">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Six Senses">
-    
+
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" href="assets/images/icon-192.png">
     <link rel="apple-touch-icon" sizes="192x192" href="assets/images/icon-192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="assets/images/icon-512.png">
-"""
+
+    <!-- Register service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/meditation-course-on-the-six-senses/sw.js', { scope: '/meditation-course-on-the-six-senses/' });
+        });
+      }
+    </script>
+    """
 
     # Process all HTML files
-    for html_file in output_dir.rglob("*.html"):
+    html_files = list(output_dir.rglob("*.html"))
+    for html_file in html_files:
         try:
             content = html_file.read_text(encoding="utf-8")
 
             # Insert PWA meta tags before </head>
             if "</head>" in content:
-                content = content.replace("</head>", f"{pwa_meta_tags}\n  </head>")
+                content = content.replace("</head>", f"{pwa_meta_tags}\\n  </head>")
                 html_file.write_text(content, encoding="utf-8")
                 print(f"Added PWA meta tags to {html_file.name}")
-
         except Exception as e:
             print(f"Error processing {html_file}: {e}")
+
+    # Generate files-to-cache.json
+    files_to_cache = [str(f.relative_to(output_dir)) for f in html_files]
+    css_files = [
+        str(f.relative_to(output_dir))
+        for f in output_dir.rglob("assets/stylesheets/*.css")
+    ]
+    js_files = [
+        str(f.relative_to(output_dir))
+        for f in output_dir.rglob("assets/javascripts/*.js")
+    ]
+    image_files = [
+        str(f.relative_to(output_dir)) for f in output_dir.rglob("assets/images/*")
+    ]
+    files_to_cache.extend(css_files)
+    files_to_cache.extend(js_files)
+    files_to_cache.extend(image_files)
+
+    import json
+
+    with open(output_dir / "files-to-cache.json", "w") as f:
+        json.dump(files_to_cache, f)
+    print("Generated files-to-cache.json")
 
 
 def zip_mkdocs(pth: ProjectPaths):
