@@ -34,13 +34,13 @@ def copy_md_files(pth: ProjectPaths):
     config.read("config.ini")
     source = config["paths"]["source_folder"]
 
-    def ignore_xxx_files(dir, files):
-        return [f for f in files if f.startswith("xxx")]
+    def ignore_x_files(dir, files):
+        return [f for f in files if f.startswith("X")]
 
     # remove and recopy
     if pth.mkdocs_docs.exists():
         shutil.rmtree(pth.mkdocs_docs)
-    shutil.copytree(source, pth.mkdocs_docs, ignore=ignore_xxx_files)
+    shutil.copytree(source, pth.mkdocs_docs, ignore=ignore_x_files)
     # shutil.copytree(source, pth.mkdocs_docs)
 
 

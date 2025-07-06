@@ -88,9 +88,3 @@
 
 - [Abbreviations](Abbreviations.md)
 
-- [XNotes to process](XNotes to process.md)
-
-- [XSource Material](XSource Material.md)
-
-- [XUnravelling patterns](XUnravelling patterns.md)
-

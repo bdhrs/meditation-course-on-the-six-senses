@@ -231,5 +231,5 @@ There are two types of abbreviations: Grammatical and Textual
 |YAM|Yamakapāḷi|
 
 
-<a href="XNotes to process.html">Next</a>
+<a href="0. Introduction.html">Next</a>
 
