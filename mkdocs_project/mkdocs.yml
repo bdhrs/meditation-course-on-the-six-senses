@@ -54,7 +54,8 @@ extra_css:
 # PWA Configuration
 extra:
   manifest: manifest.webmanifest
-  
+  generator: false
+
 plugins:
   - search
 
