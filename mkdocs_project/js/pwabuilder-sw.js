@@ -5,6 +5,13 @@ const CACHE = "pwabuilder-offline-page";
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "offline.html";
 
+// GitHub Pages base path detection
+const isGitHubPages = self.location.pathname.includes('/meditation-course-on-the-six-senses/');
+const basePath = isGitHubPages ? '/meditation-course-on-the-six-senses/' : '/';
+
+console.log("[PWA Debug] Service Worker - Base path detected:", basePath);
+console.log("[PWA Debug] Service Worker - Is GitHub Pages:", isGitHubPages);
+
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
   console.log("[PWA Builder] Install Event processing");
@@ -17,7 +24,10 @@ self.addEventListener("install", function (event) {
         return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
 
-      return cache.add(offlineFallbackPage);
+      // Use absolute path for GitHub Pages
+      const offlinePageUrl = isGitHubPages ? basePath + offlineFallbackPage : offlineFallbackPage;
+      console.log("[PWA Builder] Caching offline page:", offlinePageUrl);
+      return cache.add(offlinePageUrl);
     })
   );
 });
@@ -26,13 +36,24 @@ self.addEventListener("install", function (event) {
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET" || event.request.url.startsWith('chrome-extension')) return;
 
+  // Skip caching for external resources
+  const url = new URL(event.request.url);
+  const isOwnDomain = url.origin === self.location.origin;
+  const isWithinScope = isGitHubPages ? url.pathname.startsWith(basePath) : true;
+  
+  if (!isOwnDomain || !isWithinScope) {
+    return fetch(event.request);
+  }
+
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
         console.log("[PWA Builder] add page to offline cache: " + response.url);
 
         // If request was success, add or update it in the cache
-        event.waitUntil(updateCache(event.request, response.clone()));
+        if (response.status === 200) {
+          event.waitUntil(updateCache(event.request, response.clone()));
+        }
 
         return response;
       })
@@ -55,7 +76,10 @@ function fromCache(request) {
           return new Response();
         }
 
-        return cache.match(offlineFallbackPage);
+        // Use the same offline page URL as in install
+        const offlinePageUrl = isGitHubPages ? basePath + offlineFallbackPage : offlineFallbackPage;
+        console.log("[PWA Builder] Serving offline page:", offlinePageUrl);
+        return cache.match(offlinePageUrl);
       }
 
       return matching;

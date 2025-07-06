@@ -1,6 +1,6 @@
 site_name: Meditation Course on the Six Senses
 site_url: https://bdhrs.github.io/meditation-course-on-the-six-senses/
-use_directory_urls: true
+use_directory_urls: false
 site_dir: ../output/Meditation Course on the Six Senses
 
 theme:
@@ -58,6 +58,5 @@ extra:
 plugins:
   - search
 
-use_directory_urls: false
 
 docs_dir: docs
