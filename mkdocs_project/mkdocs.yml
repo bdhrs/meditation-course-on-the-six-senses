@@ -4,9 +4,11 @@ use_directory_urls: false
 site_dir: ../output/Meditation Course on the Six Senses
 
 theme:
-  
   name: material
   logo: assets/images/six-senses.svg
+  favicon: assets/images/six-senses.svg
+  font:
+    text: Inter
   
   palette:
     # Palette toggle for dark mode
@@ -45,7 +47,9 @@ theme:
         instant: true
 
 extra_javascript:
+  - sw.js
   - assets/js/custom.js
+  - assets/js/pwabuilder-sw.js
   - assets/js/rsw.js
 
 extra_css:
