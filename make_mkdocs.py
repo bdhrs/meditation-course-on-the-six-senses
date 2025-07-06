@@ -63,6 +63,8 @@ def copy_css_and_js(pth: ProjectPaths):
 
     for js_file in js_source_dir.glob("*.js"):
         # Skip service worker - it gets copied to root separately
+        if js_file.name == "sw.js":
+            continue
         print(f"Copying {js_file.name} to {js_dest_dir}")
         shutil.copy(js_file, js_dest_dir)
 
@@ -245,6 +247,47 @@ def build_mkdocs_site():
     add_pwa_meta_tags()
 
 
+def update_service_worker_with_files(output_dir: Path, files_to_cache: list):
+    """Update the service worker with the actual files to cache"""
+
+    print("Updating service worker with file list")
+
+    sw_path = output_dir / "sw.js"
+    if not sw_path.exists():
+        print(f"Service worker not found at {sw_path}")
+        return
+
+    # Read the current service worker
+    sw_content = sw_path.read_text()
+
+    # Create the URLs array with proper GitHub Pages paths
+    urls_array = []
+    for file in files_to_cache:
+        # Add both the GitHub Pages path and relative path for compatibility
+        urls_array.append(f"  `${{GHPATH}}/{file}`")
+        if file != "index.html":  # Don't duplicate index
+            urls_array.append("  `${GHPATH}/`")  # Add root path
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_urls = []
+    for url in urls_array:
+        if url not in seen:
+            seen.add(url)
+            unique_urls.append(url)
+
+    urls_string = ",\n".join(unique_urls)
+
+    # Replace the empty URLS array with the populated one
+    updated_content = sw_content.replace(
+        "var URLS = [];", f"var URLS = [\n{urls_string}\n];"
+    )
+
+    # Write the updated service worker
+    sw_path.write_text(updated_content)
+    print(f"Updated service worker with {len(files_to_cache)} files to cache")
+
+
 def add_pwa_meta_tags():
     """Add PWA meta tags to all HTML files in the output directory"""
 
@@ -273,7 +316,7 @@ def add_pwa_meta_tags():
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/meditation-course-on-the-six-senses/sw.js', { scope: '/meditation-course-on-the-six-senses/' });
+          navigator.serviceWorker.register('./sw.js', { scope: './' });
         });
       }
     </script>
@@ -293,7 +336,7 @@ def add_pwa_meta_tags():
         except Exception as e:
             print(f"Error processing {html_file}: {e}")
 
-    # Generate files-to-cache.json
+    # Generate files-to-cache list
     files_to_cache = [str(f.relative_to(output_dir)) for f in html_files]
     css_files = [
         str(f.relative_to(output_dir))
@@ -306,9 +349,18 @@ def add_pwa_meta_tags():
     image_files = [
         str(f.relative_to(output_dir)) for f in output_dir.rglob("assets/images/*")
     ]
+    audio_files = [
+        str(f.relative_to(output_dir))
+        for f in output_dir.rglob("assets/audio/*")
+        if f.suffix.lower() in [".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac"]
+    ]
     files_to_cache.extend(css_files)
     files_to_cache.extend(js_files)
     files_to_cache.extend(image_files)
+    files_to_cache.extend(audio_files)
+
+    # Update service worker with file list
+    update_service_worker_with_files(output_dir, files_to_cache)
 
     import json
 
@@ -328,13 +380,3 @@ def zip_mkdocs(pth: ProjectPaths):
             relative_path = item.relative_to(pth.output_mkdocs_dir)
             if item.is_file():
                 zipf.write(item, relative_path)
-
-
-if __name__ == "__main__":
-    pth = ProjectPaths()
-    copy_md_files(pth)
-    process_md_files(pth)
-    make_index(pth)
-    build_mkdocs_site()
-    zip_mkdocs(pth)
-    print("Done")
