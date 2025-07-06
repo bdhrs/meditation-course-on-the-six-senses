@@ -22,13 +22,13 @@
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="19.02887"
-     inkscape:cx="18.760967"
+     inkscape:cx="12.086897"
      inkscape:cy="12.664966"
      inkscape:window-width="2048"
      inkscape:window-height="1252"
@@ -50,7 +50,7 @@
      id="layer2"
      inkscape:label="circle">
     <circle
-       style="font-variation-settings:'opsz' 32, 'wght' 900;display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.000355602"
+       style="font-variation-settings:'opsz' 32, 'wght' 900;display:inline;fill:#000700;fill-opacity:1;fill-rule:evenodd;stroke-width:0.000355602"
        id="path3849"
        cx="3.175"
        cy="3.175"
@@ -62,14 +62,14 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#2094f3;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00118046;font-variation-settings:'opsz' 32, 'wght' 900"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 900;text-align:center;text-anchor:middle;display:inline;fill:#2094f3;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00118046"
        x="3.175"
        y="5.8098845"
        id="text3629"><tspan
          sodipodi:role="line"
          id="tspan3627"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2432998px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2094f3;fill-opacity:1;stroke-width:0.00118045;font-variation-settings:'opsz' 32.0, 'wght' 900"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2432998px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32.0, 'wght' 900;fill:#2094f3;fill-opacity:1;stroke-width:0.00118045"
          x="3.175"
-         y="5.8098845">6</tspan></text>
+         y="5.8098845">S</tspan></text>
   </g>
 </svg>
