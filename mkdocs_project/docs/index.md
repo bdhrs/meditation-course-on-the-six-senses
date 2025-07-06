@@ -86,5 +86,3 @@
 
 - [7.2. Further reading](7.2. Further reading.md)
 
-- [Abbreviations](Abbreviations.md)
-
