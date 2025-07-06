@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="19.02887"
-     inkscape:cx="12.086897"
+     inkscape:cx="5.9646211"
      inkscape:cy="12.664966"
      inkscape:window-width="2048"
      inkscape:window-height="1252"
@@ -62,14 +62,20 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 900;text-align:center;text-anchor:middle;display:inline;fill:#2094f3;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00118046"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 900;text-align:center;text-anchor:middle;display:none;fill:#2094f3;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00118046"
        x="3.175"
        y="5.8098845"
-       id="text3629"><tspan
+       id="text294"
+       inkscape:label="text"><tspan
          sodipodi:role="line"
-         id="tspan3627"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2432998px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32.0, 'wght' 900;fill:#2094f3;fill-opacity:1;stroke-width:0.00118045"
+         id="tspan292"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'opsz' 32, 'wght' 900;fill:#2094f3;fill-opacity:1;stroke-width:0.00118045"
          x="3.175"
          y="5.8098845">S</tspan></text>
+    <path
+       d="M 3.1838419,5.894767 Q 2.4552678,5.894767 1.94951,5.6825609 1.4437522,5.4703549 1.1820314,5.0600898 0.92031063,4.646288 0.92031063,4.0556478 H 2.3102603 q 0.01061,0.2122061 0.1202501,0.3642871 0.1131765,0.152081 0.3076988,0.2334267 0.1980589,0.081346 0.4633165,0.081346 0.2334267,0 0.4067283,-0.056588 0.1733016,-0.060125 0.2687943,-0.1626913 0.09903,-0.106103 0.09903,-0.2440369 0,-0.1273237 -0.091956,-0.2228164 Q 3.7921659,3.9530816 3.6011804,3.8823462 3.410195,3.8116109 3.1131065,3.7550226 L 2.5896649,3.6559931 Q 1.8257231,3.5109856 1.4225316,3.1184044 1.0193401,2.7258232 1.0193401,2.1387198 q 0,-0.502221 0.2723311,-0.8806551 0.2723311,-0.37843413 0.7568683,-0.59064018 0.4845371,-0.21220606 1.1246921,-0.21220606 0.6578387,0 1.1317656,0.20866929 0.4739268,0.20866929 0.7356476,0.60125045 0.2617208,0.3925812 0.2794047,0.944317 H 3.9690043 Q 3.9442469,1.9335873 3.7355776,1.7744328 3.5304451,1.6152782 3.2015257,1.6152782 q -0.2051325,0 -0.364287,0.060125 -0.1591546,0.056588 -0.2511105,0.1591545 -0.088419,0.099029 -0.088419,0.2334267 0,0.1273236 0.081346,0.2157428 0.081346,0.088419 0.2546473,0.1556178 0.1768384,0.063662 0.4491695,0.1131765 l 0.4244121,0.077809 q 0.4527062,0.084882 0.7780888,0.2157428 0.3289194,0.1308604 0.5375887,0.3183091 0.2086693,0.1874487 0.3076988,0.4350224 0.099029,0.2475738 0.099029,0.5623461 0,0.5517357 -0.2652576,0.9407801 Q 4.9027109,5.4880387 4.4004899,5.6931712 3.8982689,5.894767 3.1838419,5.894767 Z"
+       style="font-size:7.2433px;font-family:Inter;-inkscape-font-specification:'Inter, @opsz=32.0,wght=900';font-variation-settings:'opsz' 32, 'wght' 900;text-align:center;text-anchor:middle;display:inline;fill:#2094f3;fill-rule:evenodd;stroke-width:0.00118045"
+       id="path296"
+       inkscape:label="text paths" />
   </g>
 </svg>
