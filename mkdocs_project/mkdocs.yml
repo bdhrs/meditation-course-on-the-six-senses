@@ -7,7 +7,6 @@ theme:
   
   name: material
   logo: assets/images/six-senses.svg
-  manifest: manifest.webmanifest
   
   palette:
     # Palette toggle for dark mode
@@ -51,6 +50,13 @@ extra_javascript:
 
 extra_css:
   - assets/css/custom.css
+
+# PWA Configuration
+extra:
+  manifest: manifest.webmanifest
+  
+plugins:
+  - search
 
 use_directory_urls: false
 

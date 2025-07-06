@@ -2,6 +2,11 @@
 
 // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 
+// PWA VALIDATION LOGS - Added for debugging
+console.log("[PWA Debug] Service worker registration script loaded");
+console.log("[PWA Debug] Manifest link found:", document.querySelector('link[rel="manifest"]'));
+console.log("[PWA Debug] Service Worker support:", 'serviceWorker' in navigator);
+
 // Check compatibility for the browser we're running this in
 if ("serviceWorker" in navigator) {
   if (navigator.serviceWorker.controller) {
@@ -14,6 +19,11 @@ if ("serviceWorker" in navigator) {
       })
       .then(function (reg) {
         console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      })
+      .catch(function (error) {
+        console.error("[PWA Builder] Service worker registration failed:", error);
       });
   }
+} else {
+  console.error("[PWA Debug] Service Worker not supported in this browser");
 }

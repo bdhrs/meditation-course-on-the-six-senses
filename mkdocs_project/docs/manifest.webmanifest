@@ -3,7 +3,10 @@
   "short_name": "Six Senses",
   "description": "A meditation course on the six fields of sense experience.",
   "start_url": "./",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
   "background_color": "#ffffff",
   "theme_color": "#002b60",
   "icons": [

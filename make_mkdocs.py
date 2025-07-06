@@ -243,6 +243,49 @@ def build_mkdocs_site():
     print("Building mkdocs site")
     subprocess.run(["uv", "run", "mkdocs", "build"], cwd="mkdocs_project")
 
+    # Add PWA meta tags to all HTML files
+    add_pwa_meta_tags()
+
+
+def add_pwa_meta_tags():
+    """Add PWA meta tags to all HTML files in the output directory"""
+
+    print("Adding PWA meta tags to HTML files")
+
+    pth = ProjectPaths()
+    output_dir = pth.output_mkdocs_dir
+
+    # PWA meta tags to inject
+    pwa_meta_tags = """
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#002b60">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Six Senses">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="assets/images/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/images/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/images/icon-512.png">
+"""
+
+    # Process all HTML files
+    for html_file in output_dir.rglob("*.html"):
+        try:
+            content = html_file.read_text(encoding="utf-8")
+
+            # Insert PWA meta tags before </head>
+            if "</head>" in content:
+                content = content.replace("</head>", f"{pwa_meta_tags}\n  </head>")
+                html_file.write_text(content, encoding="utf-8")
+                print(f"Added PWA meta tags to {html_file.name}")
+
+        except Exception as e:
+            print(f"Error processing {html_file}: {e}")
+
 
 def zip_mkdocs(pth: ProjectPaths):
     """Zip the output folder."""
