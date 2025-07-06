@@ -1,4 +1,9 @@
-var GHPATH = '/meditation-course-on-the-six-senses';
+// Detect if we're on GitHub Pages or local/other hosting
+var GHPATH = '';
+if (location.hostname === 'bodhirasa.github.io') {
+  GHPATH = '/meditation-course-on-the-six-senses';
+}
+
 var APP_PREFIX = 'six-senses_';
 var VERSION = 'version_001';
 var CACHE_NAME = APP_PREFIX + VERSION;
