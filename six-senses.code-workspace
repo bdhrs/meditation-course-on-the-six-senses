@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../github-page-pwa"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"GHPATH",
+			"javascripts",
+			"zipf"
+		]
+	}
+}
