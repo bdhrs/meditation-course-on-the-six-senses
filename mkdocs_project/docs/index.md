@@ -86,3 +86,5 @@
 
 - [7.2. Further reading](7.2. Further reading.md)
 
+- [8. Schedule](8. Schedule.md)
+
