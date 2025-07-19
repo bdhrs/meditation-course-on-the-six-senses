@@ -129,7 +129,7 @@ def make_index(pth: ProjectPaths):
     pth.mkdocs_index.write_text(index_content)
 
 
-def process_md_files(pth: ProjectPaths):
+def process_md_files(pth: ProjectPaths, mode: str):
     """
     1. Fold the meditation instructions between %%
     2. Convert links to html
@@ -160,7 +160,11 @@ def process_md_files(pth: ProjectPaths):
 
         # convert audio links
         audio_link_pattern = r"!\[\[(.*?)\]\]"
-        md_text = re.sub(audio_link_pattern, convert_audio_link, md_text)
+        md_text = re.sub(
+            audio_link_pattern,
+            lambda match: convert_audio_link(match, mode),
+            md_text,
+        )
 
         # get the next file name
         if i < len(md_files) - 1:
@@ -185,11 +189,18 @@ def process_md_files(pth: ProjectPaths):
     pth.output_markdown_file.write_text(full_course_text)
 
 
-def convert_audio_link(match):
+def convert_audio_link(match, mode: str):
     audio_file_name = match.group(1)
+    if mode == "online":
+        base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
+        file_name = audio_file_name.replace(" ", ".")
+        src = f"{base_url}{file_name}"
+    else:
+        src = f"assets/audio/{audio_file_name}"
+
     audio_player = f"""
 <audio controls style="width: 100%; max-width: 600px;">
-    <source src="assets/audio/{audio_file_name}" type="audio/mpeg">
+    <source src="{src}" type="audio/mpeg">
 </audio>
 """
     return audio_player
@@ -237,14 +248,14 @@ def convert_links(match):
         return f'<a href="{target}.html">{display_text}</a>'
 
 
-def build_mkdocs_site():
+def build_mkdocs_site(mode: str):
     """Build the mkdocs site"""
 
     print("Building mkdocs site")
     subprocess.run(["uv", "run", "mkdocs", "build"], cwd="mkdocs_project")
 
     # Add PWA meta tags to all HTML files
-    add_pwa_meta_tags()
+    add_pwa_meta_tags(mode)
 
 
 def update_service_worker_with_files(output_dir: Path, files_to_cache: list):
@@ -288,7 +299,7 @@ def update_service_worker_with_files(output_dir: Path, files_to_cache: list):
     print(f"Updated service worker with {len(files_to_cache)} files to cache")
 
 
-def add_pwa_meta_tags():
+def add_pwa_meta_tags(mode: str):
     """Add PWA meta tags to all HTML files in the output directory"""
 
     print("Adding PWA meta tags to HTML files")
@@ -349,15 +360,17 @@ def add_pwa_meta_tags():
     image_files = [
         str(f.relative_to(output_dir)) for f in output_dir.rglob("assets/images/*")
     ]
-    audio_files = [
-        str(f.relative_to(output_dir))
-        for f in output_dir.rglob("assets/audio/*")
-        if f.suffix.lower() in [".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac"]
-    ]
+    if mode == "offline":
+        audio_files = [
+            str(f.relative_to(output_dir))
+            for f in output_dir.rglob("assets/audio/*")
+            if f.suffix.lower() in [".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac"]
+        ]
+        files_to_cache.extend(audio_files)
+
     files_to_cache.extend(css_files)
     files_to_cache.extend(js_files)
     files_to_cache.extend(image_files)
-    files_to_cache.extend(audio_files)
 
     # Update service worker with file list
     update_service_worker_with_files(output_dir, files_to_cache)

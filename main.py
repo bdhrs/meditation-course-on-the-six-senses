@@ -1,3 +1,4 @@
+import argparse
 from make_mkdocs import copy_css_and_js, copy_md_files
 from make_mkdocs import make_index
 from make_mkdocs import build_mkdocs_site
@@ -9,7 +10,7 @@ from markdown_to_html import zip_mp3s
 from paths import ProjectPaths
 
 
-def export_course():
+def export_course(mode):
     pth = ProjectPaths()
 
     # copy all relevant files
@@ -17,9 +18,9 @@ def export_course():
     copy_css_and_js(pth)
 
     # make mkdocs
-    process_md_files(pth)
+    process_md_files(pth, mode)
     make_index(pth)
-    build_mkdocs_site()
+    build_mkdocs_site(mode)
 
     # make other output files
     convert_markdown_to_html(pth)
@@ -31,4 +32,13 @@ def export_course():
 
 
 if __name__ == "__main__":
-    export_course()
+    parser = argparse.ArgumentParser(description="Build the Six Senses course.")
+    parser.add_argument(
+        "--mode",
+        choices=["online", "offline"],
+        default="offline",
+        help="Build mode: 'online' for github releases, 'offline' for local.",
+    )
+    args = parser.parse_args()
+
+    export_course(args.mode)

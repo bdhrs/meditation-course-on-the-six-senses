@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,13 +30,8 @@ jobs:
       - name: Install dependencies
         run: uv sync
       
-      - name: Copy mp3s
-        run: |
-          mkdir -p mkdocs_project/docs/assets/audio
-          cp waveform_project/Exported/*.mp3 mkdocs_project/docs/assets/audio/
-      
       - name: Build site with PWA files
-        run: cd mkdocs_project && uv run mkdocs build && cd ..
+        run: python main.py --mode online
       
       - name: Create .nojekyll file
         run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
