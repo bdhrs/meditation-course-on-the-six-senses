@@ -5,6 +5,7 @@
         "javascripts",
         "nojekyll",
         "pycache",
-        "venv"
+        "venv",
+        "zipf"
     ]
 }

@@ -14,7 +14,9 @@ def export_course(mode):
     pth = ProjectPaths()
 
     # copy all relevant files
-    copy_md_files(pth)
+    if mode == "offline":
+        print("Copying files for offline build...")
+        copy_md_files(pth)
     copy_css_and_js(pth)
 
     # make mkdocs
