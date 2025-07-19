@@ -195,8 +195,13 @@ def convert_audio_link(match, mode: str):
         base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
         # Extract just the filename from the path
         filename_only = Path(audio_file_name).name
+        # Remove the file extension temporarily
+        name_without_ext = Path(filename_only).stem
+        extension = Path(filename_only).suffix
         # Replace spaces with dots and remove non-ASCII characters
-        file_name = unidecode(filename_only).replace(" ", ".")
+        clean_name = unidecode(name_without_ext).replace(" ", ".")
+        # Reconstruct filename
+        file_name = f"{clean_name}{extension}"
         src = f"{base_url}{file_name}"
     else:
         src = f"assets/audio/{audio_file_name}"
@@ -346,7 +351,7 @@ def add_pwa_meta_tags(mode: str):
             # Insert PWA meta tags before </head>
             if "</head>" in content:
                 content = content.replace("</head>", f"{pwa_meta_tags}\\n  </head>")
-                html_file.write_text(content, encoding="utf-8")
+                html_file.write_text(content.strip(), encoding="utf-8")
                 print(f"Added PWA meta tags to {html_file.name}")
         except Exception as e:
             print(f"Error processing {html_file}: {e}")
