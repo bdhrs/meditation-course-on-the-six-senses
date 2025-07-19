@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.2.0" projectID="830407/34ff5b9" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="198221beff7" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1019.5" scrubInterval="53.71554143385603"
+             start="1019.5" snapToTimecode="1" loopPoint2="0.0" looping="0"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7409999966621399" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="8bandEq" windowLocked="1" id="1080" enabled="1" width="660"
+            presetDirty="1" height="360" freq1lm="41.78829574584961" gain1lm="0.0"
+            q1lm="0.7080547213554382" freq2lm="59.67473602294922" gain2lm="-2.439374923706055"
+            q2lm="0.9862046837806702" freq3lm="92.39259338378906" gain3lm="4.0"
+            freq4lm="104.0506744384766" gain4lm="0.1666666716337204" freq8lm="130.4415893554688"
+            gain8lm="0.0" q8lm="2.083999872207642" shape1lm="6" enable8lm="1"
+            presetName="8-Band Equaliser: vox1" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/8-Band Equaliser vox1.trkpreset">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="comp" windowLocked="1" id="1090" enabled="1" threshold="-20.0"
+            presetDirty="1" ratio="10.0" attack="29.0" release="5.0" knee="0.0"
+            presetName="Compressor: Vintage Limit" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Factory Presets/Compressor/Compressor Vintage Limit.trkpreset"
+            windowX="732" windowY="643" showFaceplate="1" rms="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="naturalReverb" windowLocked="1" id="1083" enabled="1" preDelay="0.0"
+            presetDirty="1" size="0.4919999837875366" decay="0.1079999953508377"
+            slope="0.265999972820282" definition="0.4839999675750732" diffusion="0.5640000104904175"
+            highCut="0.871999979019165" lowDamp="0.4320000112056732" highDamp="1.0"
+            presetName="Natural Reverb: master" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/Natural Reverb master.trkpreset"
+            mix="0.1000000089406967" windowX="565" windowY="380">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="midiin_170f06" name="Midi Through Port-0"/>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_57204c56" name="channel 3"/>
+    <INPUTDEVICE deviceID="wavein_57204c57" name="channel 4"/>
+    <INPUTDEVICE deviceID="wavein_57204c58" name="channel 5"/>
+    <INPUTDEVICE deviceID="wavein_57204c59" name="channel 6"/>
+    <INPUTDEVICE deviceID="wavein_57204c5a" name="channel 7"/>
+    <INPUTDEVICE deviceID="wavein_57204c5b" name="channel 8"/>
+    <INPUTDEVICE deviceID="wavein_57204c5c" name="channel 9"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5c" name="channel 10"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5d" name="channel 11"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5e" name="channel 12"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5f" name="channel 13"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e60" name="channel 14"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e61" name="channel 15"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e62" name="channel 16"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e63" name="channel 17"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e64" name="channel 18"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e65" name="channel 19"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7b" name="channel 20"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7c" name="channel 21"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7d" name="channel 22"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7e" name="channel 23"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7f" name="channel 24"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e80" name="channel 25"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e81" name="channel 26"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e82" name="channel 27"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e83" name="channel 28"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e84" name="channel 29"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+    <INPUTDEVICE deviceID="wavein_fac933b1" name="channel 1 + 2">
+      <INPUTDEVICEDESTINATION targetID="1003" targetIndex="0"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
+             browserSelection="result/all" viewleft="-59.9950202165183" viewright="2625.782051476283"
+             globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
+             sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="3"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
+             controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="0"
+             scrollSuspended="0" midiEditorShown="0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <ARRANGEVIEW>
+    <MIXERVIEWSTATE overviewVisible="0" smallMetersVisible="0" bigMetersVisible="0"
+                    outputsVisible="0" trackWidth="100.0" pluginsProportion="0.5"
+                    bigMetersProportion="0.5" clipsProportion="0.5" clipsScroll="0.0"
+                    clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
+                    pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
+  </ARRANGEVIEW>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2025" genre="" title="Dual Experiences" trackNumber="9"/>
+  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
+  <ARRANGERTRACK name="Arranger" id="1006"/>
+  <CHORDTRACK name="Chord" id="1008"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1007">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1009" height="40.0">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" height="332.1868979096215" mute="0" soloIsolate="0"
+         playSlotClips="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="dual experiences" start="0.0" length="10.05733545268925"
+               offset="908.1877716261815" id="1142" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="10.054294324133" fadeOut="0.003041128556249848" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="3" fadeOutType="4">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="6.989633238281611" length="32.39252591611338"
+               offset="12.23343852660081" id="1137" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="39.22190850900603" length="9.372881367306313"
+               offset="49.84942699961538" id="1143" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" gain="-4.309999942779541">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="48.91274807921189" length="38.98616849353655"
+               offset="59.54026656982123" id="1146" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="87.4555451644396" length="11.32791165301117"
+               offset="103.4815827163443" id="1147" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="96.99584573501113" length="9.754551418777098"
+               offset="938.031388862018" id="1154" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="105.3835511392021" length="10.08006020071754"
+               offset="115.1274525722549" id="1149" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="114.1634073701496" length="9.754551418777098"
+               offset="938.031388862018" id="1144" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="119.3017320232103" length="19.07001361217799"
+               offset="141.2849676188539" id="1150" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="132.702806890698" length="9.754551418777083"
+               offset="938.031388862018" id="1159" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="138.756746869166" length="20.88190950110845"
+               offset="157.12365672067" id="1155" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="152.7856846415117" length="28.37290789997598"
+               offset="951.9489990391988" id="1148" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="175.1915205722813" length="47.49305450353231"
+               offset="178.3235244246779" id="1156" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="214.9255794872371" length="9.754551418777083"
+               offset="938.031388862018" id="1162" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="223.9221872918986" length="19.01196609226986"
+               offset="230.6942713993602" id="1160" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="241.6271932039008" length="9.358151877873411"
+               offset="250.0241956945296" id="1163" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="250.3590580219912" length="27.06515441489245"
+               offset="262.5667646084457" id="1164" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="270.9951252310669" length="9.754551418777055"
+               offset="938.031388862018" id="1167" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="278.0794010907412" length="16.73226706896111"
+               offset="287.2183105734777" id="1165" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="291.418947416432" length="22.82340451512005"
+               offset="299.5606119323854" id="1168" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="308.1690505105242" length="40.50250031565434"
+               offset="938.031388862018" id="1152" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="344.565141857165" length="15.13308637572425"
+               offset="0.0" id="1169" source="830407/22bced7" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="0.0" fadeOut="0.0"
+               proxyAllowed="1" resamplingQuality="lagrange" autoTempo="0" fadeInType="2"
+               fadeOutType="2" loopStart="322.701974650405" loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="357.2932198316277" length="9.754551418777055"
+               offset="938.031388862018" id="1173" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="6.747045408716247" fadeOut="2.98823376200221" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="365.1982804096879" length="13.95273135599223"
+               offset="15.45104457862362" id="1171" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="374.7130280361966" length="9.754551418777055"
+               offset="938.031388862018" id="1170" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="6.747045408716247" fadeOut="2.98823376200221" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="382.339052784893" length="7.008295639546475"
+               offset="29.72173413751534" id="1174" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="388.782186505661" length="2.331402162134509"
+               offset="36.16486785828334" id="1175" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766" gain="-6.550000190734863">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="391.431546870695" length="10.29209808960081"
+               offset="38.81422822331734" id="1176" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="396.3332589422843" length="9.754551418777055"
+               offset="938.031388862018" id="1177" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="2.722966604161059" fadeOut="2.167449043616386" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="402.1479698243752" length="36.60957879540979"
+               offset="45.80781803570596" id="1178" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="438.5800388611645" length="23.17145554938924"
+               offset="82.73535503401519" id="1180" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="452.903722830074" length="25.96932128860476"
+               offset="99.61813164899638" id="1181" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="470.5765324668281" length="39.85194979733603"
+               offset="938.031388862018" id="1179" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="2.722966604161059" fadeOut="2.167449043616386" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="502.7566248818111" length="24.80621406087448"
+               offset="118.1569319834674" id="1182" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="524.6298788965285" length="23.39751008878784"
+               offset="138.8467337730565" id="1183" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="545.2596964864678" length="9.778005980943476"
+               offset="914.9561295574325" id="1157" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="550.910632750144" length="19.23627963137687"
+               offset="162.5622020647439" id="1185" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="566.1214205793783" length="9.778005980943476"
+               offset="914.9561295574325" id="1186" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="571.8238502376196" length="16.83538497526047"
+               offset="182.1164398990202" id="1187" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="586.8632250663585" length="28.61881493628675"
+               offset="199.2697830771802" id="1189" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="602.3761696483696" length="30.23933199785802"
+               offset="914.9561295574325" id="1192" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="630.5341688725639" length="15.44674439190658"
+               offset="238.9915347631898" id="1190" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="641.9796725146257" length="9.709766144505579"
+               offset="914.9561295574325" id="1195" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="648.0772408430192" length="47.73771454368625"
+               offset="250.8882839659584" id="1193" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="695.1289361120238" length="20.32792753620663"
+               offset="298.9439567125441" id="1196" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="710.8765760656955" length="9.709766144505579"
+               offset="914.9561295574325" id="1199" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="717.2427509645283" length="15.25849369778473"
+               offset="319.5898424516502" id="1197" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="730.0013137705877" length="9.709766144505579"
+               offset="914.9561295574325" id="1202" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="736.9197066753983" length="23.41526081968982"
+               offset="343.95752600599" id="1200" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="757.7018055315662" length="17.45089164123817"
+               offset="367.6907450285793" id="1203" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="768.7020369956008" length="29.98486519390019"
+               offset="914.9561295574325" id="1188" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="792.5832783765389" length="17.53697383183066"
+               offset="392.1989113831643" id="1204" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="807.0224793150347" length="10.39432243027284"
+               offset="924.4539339229394" id="1208" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="814.2821732821964" length="37.31933104577536"
+               offset="407.4012842438042" id="1206" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="850.3292377788151" length="12.00252484590453"
+               offset="439.1836550871818" id="1209" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="862.0980773053168" length="10.39432243027284"
+               offset="924.4539339229394" id="1212" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="871.4216780073066" length="24.86963377745997"
+               offset="456.6027127896256" id="1210" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="891.9168975981496" length="10.39432243027284"
+               offset="924.4539339229394" id="1215" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="900.5265560570543" length="14.83119234862909"
+               offset="480.0223261015" id="1213" source="830407/22bced7" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="909.7700155250081" length="10.39432243027284"
+               offset="924.4539339229394" id="1218" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="918.6223377227248" length="15.00452359063718"
+               offset="501.0994051297137" id="1216" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="932.2461733445798" length="17.91648845637735"
+               offset="512.6432658474688" id="1219" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="322.701974650405"
+               loopLength="585.4857969757766">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="942.3995255614523" length="30.57275156151047"
+               offset="924.4539339229394" id="1205" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="3.085650701748023" fadeOut="4.445027920166694" proxyAllowed="1"
+               resamplingQuality="lagrange" autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="966.098976854533" length="38.92023102545431"
+               offset="857.5874420167058" id="1224" source="830407/22bced7"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2" loopStart="0.0"
+               loopLength="0.0">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="dual experiences" start="998.0" length="22.0" offset="910.2070296028905"
+               id="1225" source="830407/22bced7" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="0.0" fadeOut="22.0"
+               proxyAllowed="1" resamplingQuality="lagrange" autoTempo="0" fadeInType="2"
+               fadeOutType="4" loopStart="0.0" loopLength="0.0">
+      <LOOPINFO rootNote="-1" numBeats="1121.127450569174" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1" volume="0.9109195470809937">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ffff0000" mute="1" height="142.6812131937264">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
