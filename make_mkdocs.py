@@ -181,8 +181,8 @@ def process_md_files(pth: ProjectPaths, mode: str):
             next_file = md_files[0]
             next_file = next_file.stem
 
-        # add next link
-        if next_file:
+        # add next link only in offline mode
+        if mode == "offline" and next_file:
             md_text += f"\n\n[[{next_file}|Next]]\n\n"
 
         # convert links
@@ -351,7 +351,7 @@ def add_pwa_meta_tags(mode: str):
 
             # Insert PWA meta tags before </head>
             if "</head>" in content:
-                content = content.replace("</head>", f"{pwa_meta_tags}\\n  </head>")
+                content = content.replace("</head>", f"{pwa_meta_tags}\n  </head>")
                 html_file.write_text(content.strip(), encoding="utf-8")
                 print(f"Added PWA meta tags to {html_file.name}")
         except Exception as e:
