@@ -70,15 +70,7 @@
 
 - [6.2. Dukkha](6.2. Dukkha.md)
 
-- [6.3. Anatta](6.3. Anatta.md)
-
 - [6.4. Emptiness](6.4. Emptiness.md)
-
-- [6.5. A Complete Investigation](6.5. A Complete Investigation.md)
-
-- [6.6. Nibbidā, virāga, nirodha](6.6. Nibbidā, virāga, nirodha.md)
-
-- [6.7. Ten Fetters](6.7. Ten Fetters.md)
 
 - [7. References](7. References.md)
 
