@@ -193,17 +193,11 @@ def convert_audio_link(match, mode: str):
     audio_file_name = match.group(1)
     if mode == "online":
         base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
-        # Extract just the filename from the path
+        # Use exact filename as-is without modification
         filename_only = Path(audio_file_name).name
-        # Remove the file extension temporarily
-        name_without_ext = Path(filename_only).stem
-        extension = Path(filename_only).suffix
-        # Replace spaces with dots and remove non-ASCII characters
-        clean_name = unidecode(name_without_ext).replace(" ", ".")
-        # Reconstruct filename
-        file_name = f"{clean_name}{extension}"
-        src = f"{base_url}{file_name}"
+        src = f"{base_url}{filename_only}"
     else:
+        # Use exact filename as-is without modification
         src = f"assets/audio/{audio_file_name}"
 
     audio_player = f"""
