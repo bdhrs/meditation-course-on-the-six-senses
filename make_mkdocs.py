@@ -193,7 +193,10 @@ def convert_audio_link(match, mode: str):
     audio_file_name = match.group(1)
     if mode == "online":
         base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
-        file_name = audio_file_name.replace(" ", ".")
+        # Extract just the filename from the path
+        filename_only = Path(audio_file_name).name
+        # Replace spaces with dots and remove non-ASCII characters
+        file_name = unidecode(filename_only).replace(" ", ".")
         src = f"{base_url}{file_name}"
     else:
         src = f"assets/audio/{audio_file_name}"
@@ -315,6 +318,7 @@ def add_pwa_meta_tags(mode: str):
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#002b60">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Six Senses">
 
