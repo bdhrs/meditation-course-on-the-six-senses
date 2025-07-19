@@ -166,6 +166,13 @@ def process_md_files(pth: ProjectPaths, mode: str):
             md_text,
         )
 
+        # In online mode, correct the audio paths that were generated during the offline build
+        if mode == "online":
+            local_path_pattern = r'(<source src=")assets/audio/([^"]+)(".*?/?>)'
+            base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
+            replacement = rf"\1{base_url}\2\3"
+            md_text = re.sub(local_path_pattern, replacement, md_text)
+
         # get the next file name
         if i < len(md_files) - 1:
             next_file = md_files[i + 1]
