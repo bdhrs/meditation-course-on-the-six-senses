@@ -30,8 +30,8 @@ jobs:
       - name: Install dependencies
         run: uv sync
       
-      - name: Build site with PWA files
-        run: python main.py --mode online
+      - name: Run build script
+        run: uv run python main.py --mode online
       
       - name: Create .nojekyll file
         run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
