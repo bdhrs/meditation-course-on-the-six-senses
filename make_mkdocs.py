@@ -158,11 +158,19 @@ def process_md_files(pth: ProjectPaths, mode: str):
             pattern, convert_meditation_instruction, md_text, flags=re.DOTALL
         )
 
-        # convert audio links
-        audio_link_pattern = r"!\[\[(.*?)\]\]"
+        # convert audio links - only process .mp3 files, exclude images
+        audio_link_pattern = r"!\[\[(.*?\.mp3)\]\]"
         md_text = re.sub(
             audio_link_pattern,
             lambda match: convert_audio_link(match, mode),
+            md_text,
+        )
+
+        # Handle SVG images as regular markdown images
+        svg_image_pattern = r"!\[\[(.*?\.svg)\]\]"
+        md_text = re.sub(
+            svg_image_pattern,
+            r"![\1](assets/images/\1)",
             md_text,
         )
 

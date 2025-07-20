@@ -8,9 +8,17 @@ from paths import ProjectPaths
 
 
 def replace_audio_links(markdown_content):
-    pattern = r"!\[\[(.*?)\]\]"
-    replacement = r"**Listen to: \1**"
-    return re.sub(pattern, replacement, markdown_content)
+    # Handle audio files
+    audio_pattern = r"!\[\[(.*?\.mp3)\]\]"
+    audio_replacement = r"**Listen to: \1**"
+    markdown_content = re.sub(audio_pattern, audio_replacement, markdown_content)
+
+    # Handle SVG images
+    svg_pattern = r"!\[\[(.*?\.svg)\]\]"
+    svg_replacement = r"![\1](assets/images/\1)"
+    markdown_content = re.sub(svg_pattern, svg_replacement, markdown_content)
+
+    return markdown_content
 
 
 def replace_summary_details(markdown_content):
