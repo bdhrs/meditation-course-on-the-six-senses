@@ -40,6 +40,8 @@
 
 - [3.3. Samatha Vipassanā](3.3. Samatha Vipassanā.md)
 
+- [3.4. Paying Attention to Attention](3.4. Paying Attention to Attention.md)
+
 - [4. Dependency](4. Dependency.md)
 
 - [4.1. The Internal Dependency](4.1. The Internal Dependency.md)
