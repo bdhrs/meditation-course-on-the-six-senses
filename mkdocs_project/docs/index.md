@@ -40,7 +40,9 @@
 
 - [3.3. Samatha Vipassanā](3.3. Samatha Vipassanā.md)
 
-- [3.4. Paying Attention to Attention](3.4. Paying Attention to Attention.md)
+- [3.4 Generating Interest](3.4 Generating Interest.md)
+
+- [3.5. Paying Attention to Attention](3.5. Paying Attention to Attention.md)
 
 - [4. Dependency](4. Dependency.md)
 
