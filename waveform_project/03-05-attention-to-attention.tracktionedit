@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <EDIT appVersion="Waveform 13.2.0" projectID="830407/307e75" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="198314b4501" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="956.0" scrubInterval="10.00826403430454"
-             start="956.0" snapToTimecode="1" loopPoint2="0.0" looping="0"/>
+      modifiedBy="bodhirasa" lastSignificantChange="19845f438fe" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="959.6716326530612" scrubInterval="20.22646542366489"
+             start="938.0605024134155" snapToTimecode="1" loopPoint2="0.0"
+             looping="0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -84,7 +85,7 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="732.5246352425384" viewright="1232.937836957765"
+             browserSelection="result/all" viewleft="-22.59098893186696" viewright="988.7322822513776"
              globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="3"
              lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
@@ -278,15 +279,23 @@
       <LOOPINFO rootNote="-1" numBeats="1605.000045351474" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="attention" start="783.0021091381948" length="62.16776414400442"
+    <AUDIOCLIP name="attention" start="783.0021091381948" length="31.38862952457919"
                offset="566.159102505099" id="1113" source="830407/3d5e9f6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
-               fadeIn="0.005" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeIn="0.005" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="1605.000045351474" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="attention" start="839.4031711094674" length="60.14358475578069"
+    <AUDIOCLIP name="attention" start="814.390738662774" length="30.45076092949284"
+               offset="597.8761057196106" id="1123" source="830407/3d5e9f6"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="1605.000045351474" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="attention" start="839.074797419535" length="60.14358475578069"
                offset="703.2860156934972" id="1116" source="830407/3d5e9f6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="6.519473031123653" fadeOut="7.571738497026672" proxyAllowed="1"
@@ -294,7 +303,7 @@
       <LOOPINFO rootNote="-1" numBeats="1605.000045351474" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="attention" start="889.9546174863374" length="55.82295639093093"
+    <AUDIOCLIP name="attention" start="889.626243796405" length="55.82295639093093"
                offset="629.6417179718214" id="1115" source="830407/3d5e9f6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.005" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
@@ -302,7 +311,7 @@
       <LOOPINFO rootNote="-1" numBeats="1605.000045351474" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="attention" start="938.3888761033479" length="21.61112389665209"
+    <AUDIOCLIP name="attention" start="938.0605024134155" length="21.93949758658448"
                offset="700.1585655504477" id="1117" source="830407/3d5e9f6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.004998441611492442" fadeOut="16.03221431775117" proxyAllowed="1"
