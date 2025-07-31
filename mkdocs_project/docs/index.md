@@ -84,3 +84,5 @@
 
 - [8. Schedule](8. Schedule.md)
 
+- [9. Copyright](9. Copyright.md)
+
