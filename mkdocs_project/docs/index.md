@@ -60,13 +60,17 @@
 
 - [5. Vedanā](5. Vedanā.md)
 
-- [5.1. Vedanā](5.1. Vedanā.md)
+- [5.1. Sukhavedanā](5.1. Sukhavedanā.md)
 
-- [5.2. Types of Vedanā](5.2. Types of Vedanā.md)
+- [5.2. Dukkhavedanā](5.2. Dukkhavedanā.md)
 
-- [5.3 Craving, Aversion and Ignorance](5.3 Craving, Aversion and Ignorance.md)
+- [5.3. Adukkhamasukkhavedanā](5.3. Adukkhamasukkhavedanā.md)
 
-- [5.4. Cultivating Equanimity](5.4. Cultivating Equanimity.md)
+- [5.4. Types of Vedanā](5.4. Types of Vedanā.md)
+
+- [5.5. Craving, Aversion and Ignorance](5.5. Craving, Aversion and Ignorance.md)
+
+- [5.6. Cultivating Equanimity](5.6. Cultivating Equanimity.md)
 
 - [6. Characteristics of Existence](6. Characteristics of Existence.md)
 
