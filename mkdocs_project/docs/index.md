@@ -66,7 +66,7 @@
 
 - [5.3. Adukkhamasukkhavedanā](5.3. Adukkhamasukkhavedanā.md)
 
-- [5.4. Types of Vedanā](5.4. Types of Vedanā.md)
+- [5.4. Three Types of Vedanā](5.4. Three Types of Vedanā.md)
 
 - [5.5. Craving, Aversion and Ignorance](5.5. Craving, Aversion and Ignorance.md)
 
