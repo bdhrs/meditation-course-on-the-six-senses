@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.2.0" projectID="830407/29cd14b" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="1986f5ccdc0" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="2470.0" scrubInterval="4.672847814362649"
+             start="2470.0" snapToTimecode="1" loopPoint2="0.0" looping="0"
+             automationRead="1"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7409999966621399" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="8bandEq" windowLocked="1" id="1080" enabled="1" width="660"
+            presetDirty="1" height="360" freq1lm="41.78829574584961" gain1lm="0.0"
+            q1lm="0.7080547213554382" freq2lm="59.67473602294922" gain2lm="-2.439374923706055"
+            q2lm="0.9862046837806702" freq3lm="92.39259338378906" gain3lm="4.0"
+            freq4lm="104.0506744384766" gain4lm="0.1666666716337204" freq8lm="130.4415893554688"
+            gain8lm="0.0" q8lm="2.083999872207642" shape1lm="6" enable8lm="1"
+            presetName="8-Band Equaliser: vox1" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/8-Band Equaliser vox1.trkpreset">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="comp" windowLocked="1" id="1090" enabled="1" threshold="-20.0"
+            presetDirty="1" ratio="10.0" attack="29.0" release="5.0" knee="0.0"
+            presetName="Compressor: Vintage Limit" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Factory Presets/Compressor/Compressor Vintage Limit.trkpreset"
+            windowX="732" windowY="643" showFaceplate="1" rms="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="naturalReverb" windowLocked="1" id="1083" enabled="1" preDelay="0.0"
+            presetDirty="1" size="0.4919999837875366" decay="0.1079999953508377"
+            slope="0.265999972820282" definition="0.4839999675750732" diffusion="0.5640000104904175"
+            highCut="0.871999979019165" lowDamp="0.4320000112056732" highDamp="1.0"
+            presetName="Natural Reverb: master" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/Natural Reverb master.trkpreset"
+            mix="0.1000000089406967" windowX="565" windowY="380">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="midiin_170f06" name="Midi Through Port-0"/>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_57204c56" name="channel 3"/>
+    <INPUTDEVICE deviceID="wavein_57204c57" name="channel 4"/>
+    <INPUTDEVICE deviceID="wavein_57204c58" name="channel 5"/>
+    <INPUTDEVICE deviceID="wavein_57204c59" name="channel 6"/>
+    <INPUTDEVICE deviceID="wavein_57204c5a" name="channel 7"/>
+    <INPUTDEVICE deviceID="wavein_57204c5b" name="channel 8"/>
+    <INPUTDEVICE deviceID="wavein_57204c5c" name="channel 9"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5c" name="channel 10"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5d" name="channel 11"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5e" name="channel 12"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5f" name="channel 13"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e60" name="channel 14"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e61" name="channel 15"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e62" name="channel 16"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e63" name="channel 17"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e64" name="channel 18"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e65" name="channel 19"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7b" name="channel 20"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7c" name="channel 21"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7d" name="channel 22"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7e" name="channel 23"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7f" name="channel 24"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e80" name="channel 25"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e81" name="channel 26"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e82" name="channel 27"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e83" name="channel 28"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e84" name="channel 29"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+    <INPUTDEVICE deviceID="wavein_fac933b1" name="channel 1 + 2">
+      <INPUTDEVICEDESTINATION targetID="1003" targetIndex="0"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
+             browserSelection="result/all" viewleft="2308.64303800151" viewright="2542.285428719643"
+             globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
+             sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="3"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
+             controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
+             scrollSuspended="0" midiEditorShown="0" automationLocked="0"
+             snapMode="264454"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <ARRANGEVIEW>
+    <MIXERVIEWSTATE overviewVisible="0" smallMetersVisible="0" bigMetersVisible="0"
+                    outputsVisible="0" trackWidth="100.0" pluginsProportion="0.5"
+                    bigMetersProportion="0.5" clipsProportion="0.5" clipsScroll="0.0"
+                    clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
+                    pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
+  </ARRANGEVIEW>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2025" genre="" title="Adukkhamasukhavedan&#257;"
+                     trackNumber="23"/>
+  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
+  <ARRANGERTRACK name="Arranger" id="1006"/>
+  <CHORDTRACK name="Chord" id="1008"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1007">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1009" height="40.0">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" height="332.1868979096215" mute="0" soloIsolate="0"
+         playSlotClips="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="adukkhamasukkha" start="0.0" length="190.0983159449195"
+               offset="6.950839581215289" id="1092" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="9.619245402054789" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="4" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="184.7185813400487" length="30.27721263166393"
+               offset="2310.869811414911" id="1093" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="207.5728578642785" length="90.77480086549519"
+               offset="198.8588668909507" id="1094" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="294.2259760737996" length="43.81197209221773"
+               offset="294.3713519141904" id="1095" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="329.2788206599205" length="60.80031228290659"
+               offset="2310.869811414911" id="1097" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="5.379734604870748" fadeOut="7.422936107434168" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="379.2454151235978" length="45.91182919581541"
+               offset="340.496531216634" id="1096" source="830407/277d4c8" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="424.3684676130937" length="70.71503610795997"
+               offset="396.1770565445592" id="1098" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="488.4383340609652" length="30.27721263166399"
+               offset="2310.869811414911" id="1100" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="5.379734604870748" fadeOut="7.422936107434168" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="510.4895607930222" length="135.5153407353228"
+               offset="469.1514915326898" id="1099" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="639.3025249780844" length="60.80031228290659"
+               offset="2310.869811414911" id="1102" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="8.759127506096775" fadeOut="10.83371781922938" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="689.5726425298843" length="70.72749995158392"
+               offset="606.4857112434622" id="1101" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="757.3319757572793" length="22.91010504916892"
+               offset="680.0484749315849" id="1103" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="771.5213053662502" length="30.27721263166404"
+               offset="2310.869811414911" id="1105" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="6.64516966008847" fadeOut="8.225985899607053" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="800.5716487971191" length="159.6481702023545"
+               offset="711.5054554371354" id="1104" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="953.0097261363499" length="60.80031228290659"
+               offset="2310.869811414911" id="1107" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="6.70237655026051" fadeOut="10.53019473110669" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="998.3097199292205" length="111.2114787460097"
+               offset="874.9146370232256" id="1106" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1096.676090619939" length="30.27721263166404"
+               offset="2310.869811414911" id="1109" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="8.720775440198054" fadeOut="1.226869200795136" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1115.329114986861" length="177.431431133331"
+               offset="989.9396864528304" id="1108" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1285.892705516503" length="60.80031228290659"
+               offset="2310.869811414911" id="1111" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="7.210092863123805" fadeOut="15.50031849003597" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1335.066335342978" length="26.73104972784245"
+               offset="1172.820921913309" id="1110" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1359.884965514351" length="110.7655101354944"
+               offset="1210.318185440535" id="1112" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1466.511280440924" length="29.55306896239927"
+               offset="1328.341462517699" id="1113" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1484.878313909784" length="30.27721263166404"
+               offset="2310.869811414911" id="1115" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="12.84510805529067" fadeOut="11.62418826474209" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1503.613996343527" length="39.32454463835188"
+               offset="1361.30259471295" id="1114" source="830407/277d4c8" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1539.947908134768" length="135.4386580980195"
+               offset="1409.27193742498" id="1116" source="830407/277d4c8" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1663.149581417934" length="60.80031228290659"
+               offset="2310.869811414911" id="1118" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="6.867840603689274" fadeOut="11.62668245643204" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1710.52374094939" length="119.9640389489841"
+               offset="1548.225972803543" id="1117" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1826.808942108136" length="39.707590044683"
+               offset="1670.274686500328" id="1119" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1856.024770310293" length="30.27721263166404"
+               offset="2310.869811414911" id="1121" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="11.18603549353907" fadeOut="11.54153019792147" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1872.807630669753" length="67.37890852175201"
+               offset="1713.356878120517" id="1120" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="1933.897601337377" length="106.0963232558315"
+               offset="1784.068926003901" id="1122" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2037.28565383751" length="31.34396386448452"
+               offset="1892.954893798075" id="1124" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2059.662386614333" length="60.80031228290636"
+               offset="2310.869811414911" id="1131" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="12.23698481485349" fadeOut="13.42615275145067" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2107.095540078964" length="18.72436830649258"
+               offset="1927.477791486824" id="1125" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2124.029207904526" length="29.92063005499904"
+               offset="1952.795193382199" id="1127" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2150.933001147888" length="31.50378916080172"
+               offset="1983.980948551756" id="1128" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2170.732417148155" length="30.27721263166404"
+               offset="2310.869811414911" id="1132" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="10.49176184252633" fadeOut="13.49435227220397" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2191.516305927129" length="182.6831834311943"
+               offset="2020.748546481895" id="1129" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2364.186735181646" length="30.27721263166404"
+               offset="2310.869811414911" id="1134" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="11.70437316053449" fadeOut="9.493323852690082" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2380.961523015566" length="67.39753597747404"
+               offset="2211.04759374483" id="1133" source="830407/277d4c8" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="adukkhamasukkha" start="2443.196071266141" length="16.80392873385881"
+               offset="2310.869811414911" id="1137" source="830407/277d4c8"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
+               fadeIn="7.147901714776153" fadeOut="9.639106649620871" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeInType="2" fadeOutType="4">
+      <LOOPINFO rootNote="-1" numBeats="4913.750249433107" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1" volume="0.740818202495575"
+            panLaw="0" pan="0.0" polarity="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ffff0000" mute="1" height="142.6812131937264">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>

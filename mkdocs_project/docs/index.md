@@ -68,9 +68,11 @@
 
 - [5.4. Three Types of Vedanā](5.4. Three Types of Vedanā.md)
 
-- [5.5. Craving, Aversion and Ignorance](5.5. Craving, Aversion and Ignorance.md)
+- [5.5. Eighteen Types of Vedanā](5.5. Eighteen Types of Vedanā.md)
 
-- [5.6. Cultivating Equanimity](5.6. Cultivating Equanimity.md)
+- [5.6. Craving, Aversion and Ignorance](5.6. Craving, Aversion and Ignorance.md)
+
+- [5.7. Cultivating Equanimity](5.7. Cultivating Equanimity.md)
 
 - [6. Characteristics of Existence](6. Characteristics of Existence.md)
 
