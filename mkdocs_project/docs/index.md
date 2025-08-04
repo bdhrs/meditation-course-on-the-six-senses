@@ -64,7 +64,7 @@
 
 - [5.2. Dukkhavedanā](5.2. Dukkhavedanā.md)
 
-- [5.3. Adukkhamasukkhavedanā](5.3. Adukkhamasukkhavedanā.md)
+- [5.3. Adukkhamasukhavedanā](5.3. Adukkhamasukhavedanā.md)
 
 - [5.4. Three Types of Vedanā](5.4. Three Types of Vedanā.md)
 
