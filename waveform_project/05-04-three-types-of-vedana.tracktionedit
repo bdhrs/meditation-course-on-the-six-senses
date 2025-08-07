@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <EDIT appVersion="Waveform 13.2.0" projectID="830407/7e5ef1" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="193c01d9293" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="1466.717573696145" scrubInterval="7.942289135710321"
-             start="1416.049605107979" snapToTimecode="0" loopPoint2="0.0"/>
+      modifiedBy="bodhirasa" lastSignificantChange="1988387334e" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1736.0" scrubInterval="3.704585915348266"
+             start="1736.0" snapToTimecode="1" loopPoint2="0.0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -84,7 +84,7 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="1378.878888356738" viewright="1775.993345142254"
+             browserSelection="result/all" viewleft="1656.098465767535" viewright="1841.327761534949"
              globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="3"
              lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
@@ -100,8 +100,9 @@
                     clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
-  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa" comment=""
-                     date="2024" genre="" title="Contact" trackNumber="13"/>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2024" genre="" title="Three Types of Vedan&#257;"
+                     trackNumber="25"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
@@ -112,8 +113,8 @@
   <MASTERTRACK name="Master" id="1009" height="40.0">
     <MODIFIERS/>
   </MASTERTRACK>
-  <TRACK id="1003" height="270.0" mute="0" soloIsolate="0" playSlotClips="0"
-         colour="0">
+  <TRACK id="1003" height="269.9999538459386" mute="0" soloIsolate="0"
+         playSlotClips="0" colour="0">
     <MODIFIERS/>
     <CLIPSLOTS/>
     <AUDIOCLIP name="vedan&#257;" start="0.0" length="11.96824224021316" offset="0.0"
@@ -124,7 +125,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="11.96824224021317" length="101.3464998631511"
+    <AUDIOCLIP name="vedan&#257;" start="11.96824224021317" length="20.42368109326107"
                offset="11.96824224021317" id="1093" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -132,7 +133,15 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="113.3147421033643" length="9.97460353885738"
+    <AUDIOCLIP name="vedan&#257;" start="32.39192333347424" length="76.93321254176729"
+               offset="36.38152956159697" id="1151" source="830407/2b562e6"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;" start="109.3251358752416" length="9.97460353885738"
                offset="116.6330808000487" id="1094" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -140,7 +149,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="119.2526429581736" length="61.05975996509274"
+    <AUDIOCLIP name="vedan&#257;" start="115.2630367300509" length="61.05975996509275"
                offset="1321.562859744551" id="1123" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -148,7 +157,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="176.5855374384476" length="40.93068266241806"
+    <AUDIOCLIP name="vedan&#257;" start="172.5959312103249" length="40.93068266241806"
                offset="133.8979406260582" id="1095" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -156,7 +165,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="217.5162201008657" length="50.80419146400274"
+    <AUDIOCLIP name="vedan&#257;" start="213.526613872743" length="50.80419146400274"
                offset="179.0964989897941" id="1096" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -164,7 +173,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="268.3204115648684" length="4.376517028890362"
+    <AUDIOCLIP name="vedan&#257;" start="264.3308053367456" length="4.376517028890362"
                offset="236.2906543406749" id="1097" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -172,7 +181,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="272.6969285937588" length="2.521242446498547"
+    <AUDIOCLIP name="vedan&#257;" start="268.7073223656361" length="2.521242446498547"
                offset="245.0732261304365" id="1098" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -180,7 +189,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="274.7163703591581" length="3.41469243967515"
+    <AUDIOCLIP name="vedan&#257;" start="270.7267641310353" length="3.41469243967515"
                offset="248.6470261031431" id="1099" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -188,7 +197,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="275.7072293403494" length="56.84895273531498"
+    <AUDIOCLIP name="vedan&#257;" start="271.7176231122266" length="56.84895273531498"
                offset="1321.562859744551" id="1125" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -196,7 +205,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="326.9493725158598" length="72.86883528070717"
+    <AUDIOCLIP name="vedan&#257;" start="322.9597662877371" length="72.86883528070717"
                offset="252.7960610029635" id="1100" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -204,7 +213,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="396.9248932398702" length="58.53913422388774"
+    <AUDIOCLIP name="vedan&#257;" start="392.9352870117474" length="58.53913422388774"
                offset="1321.562859744551" id="1127" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -212,7 +221,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="445.8115067407105" length="46.08158380182653"
+    <AUDIOCLIP name="vedan&#257;" start="441.8219005125878" length="46.08158380182653"
                offset="326.4091935338437" id="1101" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -220,7 +229,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="491.893090542537" length="19.51349290920587"
+    <AUDIOCLIP name="vedan&#257;" start="487.9034843144142" length="19.51349290920587"
                offset="380.4121063950812" id="1102" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -228,7 +237,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="507.9488540526959" length="58.88605675258634"
+    <AUDIOCLIP name="vedan&#257;" start="503.9592478245731" length="58.88605675258634"
                offset="1321.562859744551" id="1129" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -236,7 +245,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="556.5713375022268" length="14.38174799298599"
+    <AUDIOCLIP name="vedan&#257;" start="552.5817312741041" length="14.38174799298599"
                offset="400.6061603138148" id="1103" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -244,7 +253,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="570.0995426527793" length="59.20960988479294"
+    <AUDIOCLIP name="vedan&#257;" start="566.1099364246566" length="59.20960988479294"
                offset="421.276254554119" id="1104" source="830407/2b562e6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -252,7 +261,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="613.4100332574728" length="58.39611058165269"
+    <AUDIOCLIP name="vedan&#257;" start="609.4204270293501" length="58.39611058165269"
                offset="1321.562859744551" id="1131" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -260,7 +269,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="661.9486655955426" length="51.84853703847352"
+    <AUDIOCLIP name="vedan&#257;" start="657.9590593674199" length="51.84853703847352"
                offset="489.6784545693207" id="1105" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -268,7 +277,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="713.7972026340161" length="44.65853722972349"
+    <AUDIOCLIP name="vedan&#257;" start="709.8075964058934" length="44.65853722972349"
                offset="549.1630264661384" id="1106" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -276,7 +285,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="758.4557398637396" length="14.09905823669874"
+    <AUDIOCLIP name="vedan&#257;" start="754.4661336356169" length="14.09905823669874"
                offset="596.9022986017955" id="1107" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -284,7 +293,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="768.6650347042528" length="65.70511942078781"
+    <AUDIOCLIP name="vedan&#257;" start="764.67542847613" length="65.70511942078781"
                offset="604.957972589244" id="1108" source="830407/2b562e6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -292,7 +301,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="826.8946807961105" length="58.39611058165269"
+    <AUDIOCLIP name="vedan&#257;" start="822.9050745679878" length="58.39611058165269"
                offset="1321.562859744551" id="1133" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -300,7 +309,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="871.8740240459872" length="198.9094377680713"
+    <AUDIOCLIP name="vedan&#257;" start="867.8844178178645" length="198.9094377680713"
                offset="671.7909054648643" id="1109" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -308,7 +317,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1065.265330574071" length="58.64789718702968"
+    <AUDIOCLIP name="vedan&#257;" start="1061.275724345948" length="58.64789718702968"
                offset="1321.562859744551" id="1135" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -316,7 +325,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1106.556867464362" length="55.01012299432"
+    <AUDIOCLIP name="vedan&#257;" start="1102.567261236239" length="55.01012299432"
                offset="871.7945208633813" id="1110" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -324,7 +333,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1149.047715026146" length="58.16285137743853"
+    <AUDIOCLIP name="vedan&#257;" start="1145.058108798023" length="58.16285137743853"
                offset="1321.562859744551" id="1137" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -332,7 +341,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1193.254347090263" length="67.19947593557094"
+    <AUDIOCLIP name="vedan&#257;" start="1189.26474086214" length="67.19947593557094"
                offset="928.0733319648849" id="1111" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -340,7 +349,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1250.907555145926" length="59.33023632206732"
+    <AUDIOCLIP name="vedan&#257;" start="1246.917948917803" length="59.33023632206732"
                offset="1321.562859744551" id="1139" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -348,7 +357,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1300.94468159037" length="38.21809423511422"
+    <AUDIOCLIP name="vedan&#257;" start="1296.955075362247" length="38.21809423511422"
                offset="996.4986841849724" id="1112" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -356,7 +365,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1339.162775825484" length="16.33323375713235"
+    <AUDIOCLIP name="vedan&#257;" start="1335.173169597361" length="16.33323375713235"
                offset="1042.994201377882" id="1113" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -364,7 +373,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1344.546119756235" length="57.58155223227664"
+    <AUDIOCLIP name="vedan&#257;" start="1340.556513528112" length="57.58155223227664"
                offset="1321.562859744551" id="1141" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -372,7 +381,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1392.86595033655" length="35.58569672708609"
+    <AUDIOCLIP name="vedan&#257;" start="1388.876344108427" length="35.58569672708609"
                offset="1061.146770124193" id="1114" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -380,7 +389,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1416.049605107979" length="58.96266535128188"
+    <AUDIOCLIP name="vedan&#257;" start="1412.059998879856" length="58.96266535128188"
                offset="1321.562859744551" id="1149" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -388,7 +397,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1465.135339864717" length="25.50607800751709"
+    <AUDIOCLIP name="vedan&#257;" start="1461.145733636594" length="25.50607800751709"
                offset="1098.50291534554" id="1115" source="830407/2b562e6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -396,7 +405,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1490.641417872235" length="58.78139250149707"
+    <AUDIOCLIP name="vedan&#257;" start="1486.651811644112" length="58.78139250149707"
                offset="1133.209568736572" id="1116" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -404,7 +413,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1549.422810373732" length="19.11375571428584"
+    <AUDIOCLIP name="vedan&#257;" start="1545.433204145609" length="19.11375571428584"
                offset="1198.721773698679" id="1117" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -412,7 +421,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1556.404862665225" length="58.3873037585829"
+    <AUDIOCLIP name="vedan&#257;" start="1552.415256437102" length="58.3873037585829"
                offset="1321.562859744551" id="1121" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -420,7 +429,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1605.809768605819" length="62.04601371695026"
+    <AUDIOCLIP name="vedan&#257;" start="1601.820162377696" length="62.04601371695026"
                offset="1218.483199819825" id="1118" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -428,7 +437,7 @@
       <LOOPINFO rootNote="-1" numBeats="2783.72253968254" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="vedan&#257;" start="1667.85578232277" length="72.14421767723024"
+    <AUDIOCLIP name="vedan&#257;" start="1663.866176094647" length="76.13382390535276"
                offset="1290.546254393042" id="1119" source="830407/2b562e6"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffc4ff4c"
                fadeIn="0.0" fadeOut="41.34831012505001" proxyAllowed="1" resamplingQuality="lagrange"
@@ -446,7 +455,8 @@
       <DEVICE name="(default audio output)"/>
     </OUTPUTDEVICES>
   </TRACK>
-  <TRACK id="1012" colour="ffff0000" mute="1" height="180.0" solo="0">
+  <TRACK id="1012" colour="ffff0000" mute="1" height="179.9999692306257"
+         solo="0">
     <MODIFIERS/>
     <CLIPSLOTS/>
     <PLUGIN type="volume" id="1013" enabled="1">

@@ -60,11 +60,11 @@
 
 - [5. Vedanā](5. Vedanā.md)
 
-- [5.1. Sukhavedanā](5.1. Sukhavedanā.md)
+- [5.1. Sukha-vedanā](5.1. Sukha-vedanā.md)
 
-- [5.2. Dukkhavedanā](5.2. Dukkhavedanā.md)
+- [5.2. Dukkha-vedanā](5.2. Dukkha-vedanā.md)
 
-- [5.3. Adukkhamasukhavedanā](5.3. Adukkhamasukhavedanā.md)
+- [5.3. Adukkham-asukha-vedanā](5.3. Adukkham-asukha-vedanā.md)
 
 - [5.4. Three Types of Vedanā](5.4. Three Types of Vedanā.md)
 
