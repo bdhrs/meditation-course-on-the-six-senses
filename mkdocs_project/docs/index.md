@@ -76,11 +76,11 @@
 
 - [6. Characteristics of Existence](6. Characteristics of Existence.md)
 
-- [6.1. Anicca](6.1. Anicca.md)
+- [6.1. Recognizing Anicca](6.1. Recognizing Anicca.md)
 
-- [6.2. Dukkha](6.2. Dukkha.md)
+- [6.2. Analysis of Anicca](6.2. Analysis of Anicca.md)
 
-- [6.4. Emptiness](6.4. Emptiness.md)
+- [6.3. Anicca Leads Onwards](6.3. Anicca Leads Onwards.md)
 
 - [7. References](7. References.md)
 
