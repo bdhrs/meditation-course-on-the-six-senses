@@ -80,9 +80,11 @@
 
 - [6.2. Vedanā are Anicca](6.2. Vedanā are Anicca.md)
 
-- [6.3. Analysis of Anicca](6.3. Analysis of Anicca.md)
+- [6.3. Giving Up Interest in Anicca](6.3. Giving Up Interest in Anicca.md)
 
-- [6.4. Anicca Leads Onwards](6.4. Anicca Leads Onwards.md)
+- [6.4. Recognising Dukkha](6.4. Recognising Dukkha.md)
+
+- [6.5. Giving Up Interest in Dukkha](6.5. Giving Up Interest in Dukkha.md)
 
 - [7. References](7. References.md)
 
