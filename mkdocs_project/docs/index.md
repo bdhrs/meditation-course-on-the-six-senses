@@ -78,9 +78,11 @@
 
 - [6.1. Recognizing Anicca](6.1. Recognizing Anicca.md)
 
-- [6.2. Analysis of Anicca](6.2. Analysis of Anicca.md)
+- [6.2. Vedanā are Anicca](6.2. Vedanā are Anicca.md)
 
-- [6.3. Anicca Leads Onwards](6.3. Anicca Leads Onwards.md)
+- [6.3. Analysis of Anicca](6.3. Analysis of Anicca.md)
+
+- [6.4. Anicca Leads Onwards](6.4. Anicca Leads Onwards.md)
 
 - [7. References](7. References.md)
 

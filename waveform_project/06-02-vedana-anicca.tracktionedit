@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 13.2.0" projectID="830407/13cf56d" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="1989bcb8b3a" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1390.0" scrubInterval="17.89218796310408"
+             start="1390.0" snapToTimecode="1" loopPoint2="1650.0" looping="0"
+             automationRead="1" loopPoint1="0.0"/>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <VIDEO/>
+  <CLICKTRACK level="0.6025595664978027"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.7409999966621399" id="1001" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="8bandEq" windowLocked="1" id="1080" enabled="1" width="660"
+            presetDirty="1" height="360" freq1lm="41.78829574584961" gain1lm="0.0"
+            q1lm="0.7080547213554382" freq2lm="59.67473602294922" gain2lm="-2.439374923706055"
+            q2lm="0.9862046837806702" freq3lm="92.39259338378906" gain3lm="4.0"
+            freq4lm="104.0506744384766" gain4lm="0.1666666716337204" freq8lm="130.4415893554688"
+            gain8lm="0.0" q8lm="2.083999872207642" shape1lm="6" enable8lm="1"
+            presetName="8-Band Equaliser: vox1" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/8-Band Equaliser vox1.trkpreset">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="comp" windowLocked="1" id="1090" enabled="1" threshold="-20.0"
+            presetDirty="1" ratio="10.0" attack="29.0" release="5.0" knee="0.0"
+            presetName="Compressor: Vintage Limit" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Factory Presets/Compressor/Compressor Vintage Limit.trkpreset"
+            windowX="732" windowY="643" showFaceplate="1" rms="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="naturalReverb" windowLocked="1" id="1083" enabled="1" preDelay="0.0"
+            presetDirty="1" size="0.4919999837875366" decay="0.1079999953508377"
+            slope="0.265999972820282" definition="0.4839999675750732" diffusion="0.5640000104904175"
+            highCut="0.871999979019165" lowDamp="0.4320000112056732" highDamp="1.0"
+            presetName="Natural Reverb: master" presetPath="/home/bodhirasa/.config/Tracktion/Waveform/Presets/Natural Reverb master.trkpreset"
+            mix="0.1000000089406967" windowX="565" windowY="380">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <INPUTDEVICES>
+    <INPUTDEVICE deviceID="midiin_170f06" name="Midi Through Port-0"/>
+    <INPUTDEVICE deviceID="all_midi_in" name="All MIDI Ins"/>
+    <INPUTDEVICE deviceID="wavein_57204c56" name="channel 3"/>
+    <INPUTDEVICE deviceID="wavein_57204c57" name="channel 4"/>
+    <INPUTDEVICE deviceID="wavein_57204c58" name="channel 5"/>
+    <INPUTDEVICE deviceID="wavein_57204c59" name="channel 6"/>
+    <INPUTDEVICE deviceID="wavein_57204c5a" name="channel 7"/>
+    <INPUTDEVICE deviceID="wavein_57204c5b" name="channel 8"/>
+    <INPUTDEVICE deviceID="wavein_57204c5c" name="channel 9"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5c" name="channel 10"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5d" name="channel 11"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5e" name="channel 12"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e5f" name="channel 13"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e60" name="channel 14"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e61" name="channel 15"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e62" name="channel 16"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e63" name="channel 17"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e64" name="channel 18"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e65" name="channel 19"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7b" name="channel 20"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7c" name="channel 21"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7d" name="channel 22"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7e" name="channel 23"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e7f" name="channel 24"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e80" name="channel 25"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e81" name="channel 26"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e82" name="channel 27"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e83" name="channel 28"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e84" name="channel 29"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
+    <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+    <INPUTDEVICE deviceID="wavein_fac933b1" name="channel 1 + 2">
+      <INPUTDEVICEDESTINATION targetID="1003" targetIndex="0"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
+             browserSelection="result/all" viewleft="1098.283276907328" viewright="1992.892675062532"
+             globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
+             sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="3"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
+             controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
+             scrollSuspended="0" midiEditorShown="0" automationLocked="0"
+             snapMode="264454" arrangementVisible="0"/>
+  <EDITMIXGROUPS/>
+  <SCENES/>
+  <AUDIOEDITING/>
+  <ARRANGEVIEW>
+    <MIXERVIEWSTATE overviewVisible="0" smallMetersVisible="0" bigMetersVisible="0"
+                    outputsVisible="0" trackWidth="100.0" pluginsProportion="0.3969465494155884"
+                    bigMetersProportion="0.5" clipsProportion="0.5" clipsScroll="0.0"
+                    clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
+                    pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
+  </ARRANGEVIEW>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2025" genre="" title="Vedan&#257; are Anicca"
+                     trackNumber="29"/>
+  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
+  <ARRANGERTRACK name="Arranger" id="1006"/>
+  <CHORDTRACK name="Chord" id="1008"/>
+  <MARKERTRACK id="1002" name="Marker"/>
+  <TEMPOTRACK name="Global" id="1007">
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MASTERTRACK name="Master" id="1009" height="40.0">
+    <MODIFIERS/>
+  </MASTERTRACK>
+  <TRACK id="1003" height="283.6965980359265" mute="0" soloIsolate="0"
+         playSlotClips="0">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="0.0" length="138.5030933193162"
+               offset="115.2474008676635" id="1092" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="9.626947507409858" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="4" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="132.011070069342" length="60.04898362584143"
+               offset="0.0" id="1093" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="0.005"
+               fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange" fadeInType="2"
+               fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="184.2183189824608" length="137.5252320421617"
+               offset="258.1504637106541" id="1094" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="313.8193350937957" length="60.0489836258414"
+               offset="0.0" id="1097" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="363.7192398309504" length="151.6128614724173"
+               offset="401.6730635396336" id="1095" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="503.9427278040934" length="60.0489836258414"
+               offset="0.0" id="1099" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="544.2921443373561" length="158.8968850515207"
+               offset="545.7103435740835" id="1098" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="696.5914053507803" length="60.0489836258414"
+               offset="0.0" id="1101" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="736.7593146189411" length="157.6608430138778"
+               offset="707.9060427811596" id="1100" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="887.8958831556673" length="60.0489836258414"
+               offset="0.0" id="1103" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="932.7890725968247" length="55.00987244309511"
+               offset="869.1396997390541" id="1102" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="987.7989450399198" length="113.1926530523028"
+               offset="928.813526119175" id="1104" source="830407/27efeba" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1087.50439953998" length="60.0489836258414"
+               offset="0.0" id="1106" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1130.835635510901" length="191.5564716312279"
+               offset="1029.236374699063" id="1105" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1305.718263304618" length="60.0489836258414"
+               offset="0.0" id="1108" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1352.336390934176" length="159.3216755428728"
+               offset="1223.66837818965" id="1107" source="830407/27efeba" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1505.242403628118" length="60.0489836258414"
+               offset="0.0" id="1110" source="830407/27efeba" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff4cffff" fadeIn="6.492023249974125"
+               fadeOut="7.841734712722683" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1548.845131134897" length="49.65280949431008"
+               offset="1384.296947378645" id="1109" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1595.211143174009" length="30.03979999751027"
+               offset="1442.510717686495" id="1111" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="vedan&#257;_anicca" start="1620.109584500065" length="29.89041549993522"
+               offset="1482.105161449116" id="1112" source="830407/27efeba"
+               sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="4">
+      <LOOPINFO rootNote="-1" numBeats="3159.750204081633" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1004" enabled="1" volume="0.740818202495575"
+            panLaw="0" pan="0.0" polarity="0">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1005" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1012" colour="ffff0000" mute="1" height="230.1388509220407">
+    <MODIFIERS/>
+    <CLIPSLOTS/>
+    <PLUGIN type="volume" id="1013" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1014" enabled="1">
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
