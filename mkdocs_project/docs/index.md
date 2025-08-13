@@ -82,10 +82,6 @@
 
 - [6.3. Giving Up Interest in Anicca](6.3. Giving Up Interest in Anicca.md)
 
-- [6.4. Recognizing Dukkha](6.4. Recognizing Dukkha.md)
-
-- [6.5. Giving Up Interest in Dukkha](6.5. Giving Up Interest in Dukkha.md)
-
 - [7. References](7. References.md)
 
 - [7.1. References](7.1. References.md)
