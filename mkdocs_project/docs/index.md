@@ -74,7 +74,7 @@
 
 - [5.7. Cultivating Equanimity](5.7. Cultivating Equanimity.md)
 
-- [6. Characteristics of Existence](6. Characteristics of Existence.md)
+- [6. Anicca](6. Anicca.md)
 
 - [6.1. Recognizing Anicca](6.1. Recognizing Anicca.md)
 
@@ -82,15 +82,19 @@
 
 - [6.3. Giving Up Interest in Anicca](6.3. Giving Up Interest in Anicca.md)
 
-- [6.4. Recognizing Dukkha](6.4. Recognizing Dukkha.md)
+- [7. Dukkha](7. Dukkha.md)
 
-- [7. References](7. References.md)
+- [7.1. Recognizing Dukkha](7.1. Recognizing Dukkha.md)
 
-- [7.1. References](7.1. References.md)
+- [7.2. The Source of  Dukkha](7.2. The Source of  Dukkha.md)
 
-- [7.2. Further reading](7.2. Further reading.md)
+- [8. Anatta](8. Anatta.md)
 
-- [8. Schedule](8. Schedule.md)
+- [9. Resources](9. Resources.md)
 
-- [9. Copyright](9. Copyright.md)
+- [9.1. Sutta References](9.1. Sutta References.md)
+
+- [9.2. Schedule](9.2. Schedule.md)
+
+- [9.3. Copyright](9.3. Copyright.md)
 
