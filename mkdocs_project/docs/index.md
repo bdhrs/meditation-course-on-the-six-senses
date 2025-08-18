@@ -88,6 +88,8 @@
 
 - [7.2. The Source of  Dukkha](7.2. The Source of  Dukkha.md)
 
+- [7.3. Giving Up Interest in Dukkha](7.3. Giving Up Interest in Dukkha.md)
+
 - [8. Anatta](8. Anatta.md)
 
 - [9. Resources](9. Resources.md)

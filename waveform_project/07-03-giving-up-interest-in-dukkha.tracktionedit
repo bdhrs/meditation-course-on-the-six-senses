@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<EDIT appVersion="Waveform 13.2.0" projectID="830407/1b33fde" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="1957d757efc" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="120.0" scrubInterval="81.18129094444761"
-             start="120.0" snapToTimecode="1" loopPoint2="0.0" looping="1"
-             loopPoint1="0.0"/>
+<EDIT appVersion="Waveform 13.5.8" projectID="830407/1b33fde" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="198bdc13232" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1290.0" scrubInterval="38.35849214979221"
+             start="1290.0" snapToTimecode="1" loopPoint2="0.0" looping="0"
+             loopPoint1="1279.351913442881"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -85,12 +85,12 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="-90.67158333333687" viewright="3968.392963889044"
+             browserSelection="result/all" viewleft="-42.84269413602999" viewright="1875.081913353581"
              globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="3"
-             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
              controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
-             scrollSuspended="0" midiEditorShown="0"/>
+             scrollSuspended="0" midiEditorShown="0" pluginAreaWidth="0.8797131180763245"/>
   <EDITMIXGROUPS/>
   <SCENES/>
   <AUDIOEDITING/>
@@ -102,7 +102,8 @@
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
   <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
-                     comment="" date="2025" genre="" title="Dukkha" trackNumber="22"/>
+                     comment="" date="2025" genre="" title="Giving Up Interest in Dukkha"
+                     trackNumber="33"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
@@ -124,6 +125,7 @@
                fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="146.2432997629568" length="59.62359408544489"
                offset="0.0" id="1092" source="830407/14b074" sync="0" autoCrossfade="1"
@@ -132,6 +134,7 @@
                fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="196.0369048256668" length="129.3398052720909"
                offset="219.401510456314" id="1094" source="830407/14b074" sync="0"
@@ -140,6 +143,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="315.0511756131531" length="59.62359408544489"
                offset="0.0" id="1096" source="830407/14b074" sync="0" autoCrossfade="1"
@@ -148,6 +152,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="364.0298834430658" length="87.61211526685986"
                offset="353.2539984799382" id="1095" source="830407/14b074" sync="0"
@@ -156,6 +161,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="442.1796864629952" length="48.33205549929329"
                offset="466.722208348897" id="1097" source="830407/14b074" sync="0"
@@ -164,6 +170,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="481.2000595297384" length="59.62359408544506"
                offset="0.0" id="1098" source="830407/14b074" sync="0" autoCrossfade="1"
@@ -172,6 +179,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="531.4022653163876" length="123.6735629278513"
                offset="517.5226938444978" id="1099" source="830407/14b074" sync="0"
@@ -180,6 +188,7 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="dukkha" start="645.3546182216317" length="59.62359408544489"
                offset="0.0" id="1101" source="830407/14b074" sync="0" autoCrossfade="1"
@@ -188,62 +197,52 @@
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="683.912291636453" length="151.4643188183484"
-               offset="644.9927211579936" id="1100" source="830407/14b074" sync="0"
-               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
-               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
-               fadeInType="2" fadeOutType="2">
-      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
-                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
-    </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="827.3432376159308" length="59.62359408544489"
-               offset="0.0" id="1103" source="830407/14b074" sync="0" autoCrossfade="1"
-               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
-               fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
-               fadeInType="2" fadeOutType="2">
-      <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
-                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
-    </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="878.1220563888279" length="129.2914535744859"
+    <AUDIOCLIP name="dukkha" start="694.7148323451268" length="129.2914535744859"
                offset="805.7046003354649" id="1102" source="830407/14b074" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="998.6598184917343" length="59.62359408544489"
+    <AUDIOCLIP name="dukkha" start="815.2525944480332" length="59.62359408544489"
                offset="0.0" id="1105" source="830407/14b074" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
                fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="1047.873094275063" length="108.1993074778372"
+    <AUDIOCLIP name="dukkha" start="864.4658702313619" length="108.1993074778372"
                offset="939.5609130033978" id="1104" source="830407/14b074" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="1147.261291334728" length="59.62359408544489"
+    <AUDIOCLIP name="dukkha" start="963.8540672910268" length="59.62359408544489"
                offset="0.0" id="1107" source="830407/14b074" sync="0" autoCrossfade="1"
                elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="9.343528273290843"
                fadeOut="9.829989022734821" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="dukkha" start="1197.018188111451" length="62.98181188854937"
+    <AUDIOCLIP name="dukkha" start="1013.61096406775" length="66.38903593225007"
                offset="1053.461532505843" id="1106" source="830407/14b074" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="43.27075876153914" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2275.451972789116" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <PLUGIN type="volume" id="1004" enabled="1">
       <MODIFIERASSIGNMENTS/>
