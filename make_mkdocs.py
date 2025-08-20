@@ -35,7 +35,7 @@ def copy_md_files(pth: ProjectPaths):
     source = config["paths"]["source_folder"]
 
     def ignore_x_files(dir, files):
-        return [f for f in files if f.startswith("X")]
+        return [f for f in files if f.startswith("X") or f.startswith(".")]
 
     # remove and recopy
     if pth.mkdocs_docs.exists():
