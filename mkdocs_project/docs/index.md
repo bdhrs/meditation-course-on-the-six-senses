@@ -94,6 +94,8 @@
 
 - [8.1 All Experience is Anatta](8.1 All Experience is Anatta.md)
 
+- [8.2. Three Types of Anatta](8.2. Three Types of Anatta.md)
+
 - [9. Resources](9. Resources.md)
 
 - [9.1. Sutta References](9.1. Sutta References.md)
