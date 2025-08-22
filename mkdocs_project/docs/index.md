@@ -96,6 +96,8 @@
 
 - [8.2. Three Types of Anatta](8.2. Three Types of Anatta.md)
 
+- [8.3. Emptiness](8.3. Emptiness.md)
+
 - [9. Resources](9. Resources.md)
 
 - [9.1. Sutta References](9.1. Sutta References.md)
