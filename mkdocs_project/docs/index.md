@@ -96,7 +96,7 @@
 
 - [8.2. Three Types of Anatta](8.2. Three Types of Anatta.md)
 
-- [8.3. Emptiness](8.3. Emptiness.md)
+- [8.4. Emptiness](8.4. Emptiness.md)
 
 - [9. Resources](9. Resources.md)
 
