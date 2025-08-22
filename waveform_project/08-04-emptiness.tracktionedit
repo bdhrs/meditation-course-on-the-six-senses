@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<EDIT appVersion="Waveform 13.2.0" projectID="830407/51f2b3" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="193c343367d" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="138.0" scrubInterval="45.4281929803965"
-             start="138.0" snapToTimecode="0" loopPoint2="0.0"/>
+<EDIT appVersion="Waveform 13.5.8" projectID="830407/51f2b3" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="198d25589a9" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="1340.0" scrubInterval="27.68221588348902"
+             start="1340.0" snapToTimecode="1" loopPoint2="0.0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -84,7 +84,7 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="-50.73886036529765" viewright="2220.670788654527"
+             browserSelection="result/all" viewleft="731.0132191580672" viewright="2115.124013332518"
              globalTracksVisible="0" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="3"
              lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
@@ -100,8 +100,8 @@
                     clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
-  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa" comment=""
-                     date="2024" genre="" title="Emptiness" trackNumber="16"/>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2024" genre="" title="Emptiness" trackNumber="16"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
@@ -123,174 +123,187 @@
                fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="9.887819715440681" length="18.49332892374086"
+    <AUDIOCLIP name="emptiness" start="9.887819715440681" length="10.48821237709312"
                offset="24.00336456251195" id="1093" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="28.38114863918154" length="2.432655075779941"
-               offset="48.26041032845628" id="1094" source="830407/128591f"
+    <AUDIOCLIP name="emptiness" start="19.44788443652019" length="7.89955860692859"
+               offset="57.21865106499898" id="1095" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="29.77009007984473" length="7.641005639432471"
-               offset="57.4772040324951" id="1095" source="830407/128591f" sync="0"
-               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
-               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
-               fadeInType="2" fadeOutType="2">
-      <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
-                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
-    </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="36.09089719250962" length="9.72936246588818"
+    <AUDIOCLIP name="emptiness" start="26.02724451668121" length="9.729362465888173"
                offset="1116.50465332957" id="1122" source="830407/128591f" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="40.71298416091832" length="130.7175043528619"
+    <AUDIOCLIP name="emptiness" start="30.64933148508991" length="130.7175043528619"
                offset="66.39558257270846" id="1096" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="164.0452188596837" length="59.33170567383797"
+    <AUDIOCLIP name="emptiness" start="153.9815661838553" length="59.33170567383797"
                offset="1112.296069704038" id="1128" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="217.4461268039048" length="113.077361858068"
+    <AUDIOCLIP name="emptiness" start="207.3824741280764" length="113.077361858068"
                offset="201.0552731737809" id="1097" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="330.5234886619727" length="32.25063266072215"
+    <AUDIOCLIP name="emptiness" start="320.4598359861443" length="32.25063266072215"
                offset="335.9916055485677" id="1098" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="350.8375310968116" length="58.66662322795901"
+    <AUDIOCLIP name="emptiness" start="340.7738784209832" length="58.66662322795901"
                offset="1112.296069704038" id="1124" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="401.1473294244679" length="150.4902495285145"
+    <AUDIOCLIP name="emptiness" start="391.0836767486395" length="150.4902495285145"
                offset="368.7874335423933" id="1099" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="541.5323644269663" length="57.7435193989262"
+    <AUDIOCLIP name="emptiness" start="531.4687117511379" length="57.7435193989262"
                offset="1112.296069704038" id="1126" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="589.3764421404669" length="143.1911228216495"
+    <AUDIOCLIP name="emptiness" start="579.3127894646385" length="143.1911228216495"
                offset="519.9248717768771" id="1100" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="722.5098768201261" length="57.15616702615398"
+    <AUDIOCLIP name="emptiness" start="712.4462241442977" length="57.15616702615398"
                offset="1112.296069704038" id="1130" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="770.703119087058" length="142.8803366211918"
+    <AUDIOCLIP name="emptiness" start="760.6394664112296" length="142.8803366211918"
                offset="665.3704855308279" id="1101" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="906.2087705061675" length="57.69150441618262"
+    <AUDIOCLIP name="emptiness" start="896.1451178303391" length="57.69150441618262"
                offset="1112.296069704038" id="1132" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="954.9822786777615" length="139.4785056452658"
+    <AUDIOCLIP name="emptiness" start="944.9186260019331" length="139.4785056452657"
                offset="809.106955818698" id="1102" source="830407/128591f" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="1086.168022916313" length="59.5358414880543"
+    <AUDIOCLIP name="emptiness" start="1076.104370240485" length="59.5358414880543"
                offset="1112.296069704038" id="1134" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="1135.102657132146" length="69.77638520804362"
+    <AUDIOCLIP name="emptiness" start="1125.039004456318" length="69.77638520804362"
                offset="949.0295175730946" id="1103" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="1204.879042340189" length="64.33920053507018"
+    <AUDIOCLIP name="emptiness" start="1194.815389664361" length="64.33920053507018"
                offset="1023.591484849106" id="1104" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="1262.990403106314" length="59.5358414880543"
+    <AUDIOCLIP name="emptiness" start="1252.926750430486" length="59.5358414880543"
                offset="1112.296069704038" id="1108" source="830407/128591f"
                sync="0" autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4cc3ff"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="emptiness" start="1313.616906702719" length="66.38309329728077"
+    <AUDIOCLIP name="emptiness" start="1303.55325402689" length="76.4467459731095"
                offset="1092.25626637998" id="1105" source="830407/128591f" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c4cff"
-               fadeIn="0.0" fadeOut="51.88428525677885" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeIn="0.0" fadeOut="47.11964332448122" proxyAllowed="1" resamplingQuality="lagrange"
                fadeInType="2" fadeOutType="4">
       <LOOPINFO rootNote="-1" numBeats="2347.126575963719" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <PLUGIN type="volume" id="1004" enabled="1">
       <MODIFIERASSIGNMENTS/>
