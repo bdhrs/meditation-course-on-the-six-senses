@@ -2,8 +2,8 @@
 
 <EDIT appVersion="Waveform 13.5.8" projectID="830407/51f2b3" creationTime="1733753818377"
       modifiedBy="bodhirasa" lastSignificantChange="198d25589a9" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="1340.0" scrubInterval="27.68221588348902"
-             start="1340.0" snapToTimecode="1" loopPoint2="0.0"/>
+  <TRANSPORT endToEnd="1" position="1440.0" scrubInterval="27.68221588348902"
+             start="1440.0" snapToTimecode="1" loopPoint2="0.0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -101,7 +101,7 @@
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
   <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
-                     comment="" date="2024" genre="" title="Emptiness" trackNumber="16"/>
+                     comment="" date="2024" genre="" title="Emptiness" trackNumber="37"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>

@@ -29,23 +29,6 @@ It is also expressed in terms of every element of sense experience.
 
 And likewise for every other component of sense experience.
 
-
-
-
-
-## Benefits of cultivating perception of *anatta* 
-> *"cha, bhikkhave, ānisaṃse sampassamānena alameva bhikkhunā sabbadhammesu anodhiṃ karitvā anattasaññaṃ upaṭṭhāpetuṃ. katame cha? sabbaloke ca atammayo bhavissāmi, ahaṅkārā ca me uparujjhissanti, mamaṅkārā ca me uparujjhissanti, asādhāraṇena ca ñāṇena samannāgato bhavissāmi, hetu ca me sudiṭṭho bhavissati, hetusamuppannā ca dhammā. ime kho, bhikkhave, cha ānisaṃse sampassamānena alameva bhikkhunā sabbadhammesu anodhiṃ karitvā anattasaññaṃ upaṭṭhāpetu"nti.*
-> 
-> !!! translation
-> 
-> -- *AN6.104atammayasuttaṃ*
-
-> "seyyathāpi, āvuso, puriso sāratthiko sāragavesī sārapariyesanaṃ caramāno tiṇhaṃ kuṭhāriṃ ādāya vanaṃ paviseyya. so tattha passeyya mahantaṃ kadalikkhandhaṃ ujuṃ navaṃ akukkukajātaṃ . tamenaṃ mūle chindeyya, mūle chetvā agge chindeyya, agge chetvā pattavaṭṭiṃ vinibbhujeyya . so tattha pheggumpi nādhigaccheyya, kuto sāraṃ! evameva kho, āvuso, bhikkhu chasu phassāyatanesu nevattānaṃ na attaniyaṃ samanupassati. so evaṃ asamanupassanto na kiñci loke upādiyati. anupādiyaṃ na paritassati. aparitassaṃ paccattaññeva parinibbāyati. ‘khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyā’ti pajānātī"ti.
-> 
-> !!! translation
-> 
-> -- *SN35.234 udāyīsuttaṃ*
-
 ## Giving up interest in self
 
 > *sabbe dhammā anattā'ti,*  
