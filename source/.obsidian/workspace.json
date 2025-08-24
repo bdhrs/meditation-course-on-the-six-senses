@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"is is\"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,13 +172,13 @@
   },
   "active": "ad50b29d6a2acc9d",
   "lastOpenFiles": [
-    "assets/audio/08-03-anicca-dukkha-anatta.mp3",
+    "8.4. Emptiness.md",
     "8.3. Anicca, Dukkha, Anatta.md",
+    "assets/audio/08-03-anicca-dukkha-anatta.mp3",
     "8.2. Three Types of Anatta.md",
     "7.3. Giving Up Interest in Dukkha.md",
     "XAnatta.md",
     "X6x Ten Fetters.md",
-    "8.4. Emptiness.md",
     "assets/audio/08-04-emptiness.mp3",
     "assets/audio/Link to 08-04-emptiness.mp3",
     "9.2. Schedule.md",
