@@ -110,5 +110,5 @@
 
 - [9.3. Schedule](9.3. Schedule.md)
 
-- [9.4. Copyright](9.4. Copyright.md)
+- [9.4. Creative Commons License](9.4. Creative Commons License.md)
 
