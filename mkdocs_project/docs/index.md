@@ -100,11 +100,15 @@
 
 - [8.4. Emptiness](8.4. Emptiness.md)
 
+- [8.5. Nibbidā](8.5. Nibbidā.md)
+
 - [9. Resources](9. Resources.md)
 
-- [9.1. Sutta References](9.1. Sutta References.md)
+- [9.1 Course Feedback](9.1 Course Feedback.md)
 
-- [9.2. Schedule](9.2. Schedule.md)
+- [9.2. Sutta References](9.2. Sutta References.md)
 
-- [9.3. Copyright](9.3. Copyright.md)
+- [9.3. Schedule](9.3. Schedule.md)
+
+- [9.4. Copyright](9.4. Copyright.md)
 

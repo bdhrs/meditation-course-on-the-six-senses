@@ -379,3 +379,65 @@ Add a quote to each main section heading 1, 2, 3, 4, 5, 6
 > !!! translation
 > 
 > -- *SN35.93 dutiyadvayasuttaṃ*
+
+
+## Nibbidā
+
+After this, it's just a matter of spending sufficient time in this place for ever more subtle aspects of experience to appear and be cleansed by deep understanding. 
+
+It's like being a chicken in the egg, waiting to hatch. It will happen naturally when the conditions ripen, not before. This is the real test of patience, *khantī paramaṃ*, because any act of will at this stage is really going in the opposite direction.
+
+> *khantī paramaṃ tapo titikkhā,*
+> *nibbānaṃ paramaṃ vadanti buddhā*
+> 
+> Patience, endurance, is the supreme spiritual practice, 
+> Nibbāna is supreme say the Buddhas
+> 
+> -- *DHP14 buddhavagga, verse 184*
+
+At this stage, we need to just watch and wait while the gradual process of *virāga* and *nirodha* mature by themselves. It's very organic. There really is nothing to be done.
+
+> *"kathaṃ bhāvitā ca, bhikkhave, satta bojjhaṅgā kathaṃ bahulīkatā vijjāvimuttiṃ paripūrenti? idha, bhikkhave, bhikkhu satisambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. dhammavicayasambojjhaṅgaṃ bhāveti…pe… vīriyasambojjhaṅgaṃ bhāveti… pītisambojjhaṅgaṃ bhāveti… passaddhisambojjhaṅgaṃ bhāveti… samādhisambojjhaṅgaṃ bhāveti… upekkhāsambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. evaṃ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṃ bahulīkatā vijjāvimuttiṃ paripūrentī"ti.*
+> 
+> !!! translation
+> 
+> -- *MN118 ānāpānassatisuttaṃ*
+
+## Virāga
+
+## Nirodha
+
+*Nirodha* means stopping, ending, cessation.
+
+> *"rūpadhātuṃ pariññāya, arūpesu asaṇṭhitā,*
+> *nirodhe ye vimuccanti, te janā maccuhāyino.*
+> 
+> !!! translation
+> 
+> -- *ITI51 dhātusutta*
+
+Symbolically it is referred to as 'reaching the end of the world'.
+
+> *"na kho panāhaṃ, āvuso, appatvā lokassa antaṃ dukkhassa antakiriyaṃ vadāmi. api ca khvāhaṃ, āvuso, imasmiṃyeva byāmamatte kaḷevare sasaññimhi samanake lokañca paññapemi lokasamudayañca lokanirodhañca lokanirodhagāminiñca paṭipadanti.*
+> 
+> !!! translation
+> 
+> -- *SN2.26 rohitassasuttaṃ*
+
+> *"nissitassa calitaṃ, anissitassa calitaṃ natthi. calite asati passaddhi, passaddhiyā sati nati na hoti. natiyā asati āgatigati na hoti. āgatigatiyā asati cutūpapāto na hoti. cutūpapāte asati nevidha na huraṃ na ubhayamantarena . esevanto dukkhassā"ti.*
+> 
+> !!! translation
+> 
+> -- *UD74 catutthanibbānapaṭisaṃyuttasutta*
+
+There's nothing you can *do* to stop. Stopping means *stopping* doing. This is as far as activity can take you on the path. All you can do is watch and wait—without the faintest glimmer of interest—as things cool down by themselves.
+
+This is expressed in the famous Bāhiya Sutta as:
+
+> "tasmātiha te, bāhiya, evaṃ sikkhitabbaṃ – ‘diṭṭhe diṭṭhamattaṃ bhavissati, sute sutamattaṃ bhavissati, mute mutamattaṃ bhavissati, viññāte viññātamattaṃ bhavissatī’ti.
+> 
+> !!! transaltion
+> 
+> -- *UD10 bāhiyasuttaṃ*
+
+This is pointing at something very few people get to experience in life—awareness without the proliferation of concepts that usually accompany it. We see the thing and stop there, knowing it as it is, uncoloured by *vedanā*, concepts, opinions, and active responses. This is the necessary state to be in to make the leap from the normal conditioned world to the unconditioned—from the blazing fire of normal everyday sense experience, to the fire cooling down and going out.!

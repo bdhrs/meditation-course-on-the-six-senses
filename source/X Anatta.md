@@ -29,19 +29,7 @@ It is also expressed in terms of every element of sense experience.
 
 And likewise for every other component of sense experience.
 
-## Giving up interest in self
 
-> *sabbe dhammā anattā'ti,*  
-> *yadā paññāya passati,*  
-> *atha nibbindati dukkhe,*    
-> *esa maggo visuddhiyā.*  
-> 
-> All phenomena are not oneself,
-> When one sees this with wisdom,
-> Then one becomes dis-enchanted with suffering,
-> This is the path to purification.
-> 
-> -- *DHP20 Dhammpada, maggavagga, verse 279*
 
 > *"yo kho, rādha, anattā tatra te chando pahātabbo. ko ca, rādha, anattā? cakkhu kho, rādha, anattā. tatra te chando pahātabbo. rūpā… cakkhuviññāṇaṃ… cakkhusamphasso… yampidaṃ cakkhusamphassapaccayā…pe… mano anattā… dhammā… manoviññāṇaṃ… manosamphasso… yampidaṃ manosamphassapaccayā uppajjati vedayitaṃ sukhaṃ vā dukkhaṃ vā adukkhamasukhaṃ vā tampi anattā. tatra te chando pahātabbo. yo kho, rādha, anattā tatra te chando pahātabbo"ti. pañcamaṃ.*
 > 
@@ -49,15 +37,4 @@ And likewise for every other component of sense experience.
 > 
 > -- *SN35.78 rādhaanattasuttaṃ*
 
-## Meditation on Anatta
-
-%% 
-!!! write
-Based on rādhaanattasuttaṃ
-%%
-## Q&A
-
-Q: Do you have any questions or doubts at this point?
-
-## References
 

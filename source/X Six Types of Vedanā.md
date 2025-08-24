@@ -32,5 +32,5 @@ An example is given in the Sutta on the Analysis of Saḷāyatana:
 
 These are simply the three types of *vedanā* experienced in relation to the five senses and 
 
-1. [[9.1. Sutta References#MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)|MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)]]
-2. [[9.1. Sutta References#MN137 Saḷāyatanavibhangasutta - The Analysis of the Six Sense Fields|MN137 Saḷāyatanavibhangasutta - The Analysis of the Six Sense Fields]]
+1. [[9.2. Sutta References#MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)|MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)]]
+2. [[9.2. Sutta References#MN137 Saḷāyatanavibhangasutta - The Analysis of the Six Sense Fields|MN137 Saḷāyatanavibhangasutta - The Analysis of the Six Sense Fields]]
