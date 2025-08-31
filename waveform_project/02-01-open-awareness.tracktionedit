@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<EDIT appVersion="Waveform 13.2.0" projectID="830407/72c17" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="193b4df4bda" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="161.5593197278912" scrubInterval="14.4602475517259"
-             start="156.3" snapToTimecode="1" loopPoint2="0.0"/>
+<EDIT appVersion="Waveform 13.5.8" projectID="830407/72c17" creationTime="1733753818377"
+      modifiedBy="bodhirasa" lastSignificantChange="198fdced23e" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="235.5617233560091" scrubInterval="0.4042109933683787"
+             start="235.4847944440855" snapToTimecode="1" loopPoint2="0.0"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
   </PITCHSEQUENCE>
@@ -81,11 +81,12 @@
     <INPUTDEVICE deviceID="wavein_8ce93e9a" name="channel 30"/>
     <INPUTDEVICE deviceID="wavein_8ce93e9b" name="channel 31"/>
     <INPUTDEVICE deviceID="wavein_8ce93e9c" name="channel 32"/>
+    <INPUTDEVICE deviceID="wavein_fac933b1" name="channel 1 + 2"/>
   </INPUTDEVICES>
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="-16.15068602203191" viewright="706.861691564263"
+             browserSelection="result/all" viewleft="1371.458871108505" viewright="1391.669420776924"
              globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="1" tempoTrackVisible="0" markerMode="3"
              lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
@@ -101,8 +102,8 @@
                     clipsHeight="24" inputsVisible="0" clipsVisible="1" modifiersVisible="1"
                     pluginsVisible="1" levelsVisible="1" trackLeft="0.0"/>
   </ARRANGEVIEW>
-  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa" comment=""
-                     date="2024" genre="" title="Sense of Mind" trackNumber="7"/>
+  <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
+                     comment="" date="2025" genre="" title="Open Awareness" trackNumber="7"/>
   <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
@@ -123,6 +124,7 @@
                fadeInType="4" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="open awareness" start="5.100000000000001" length="7.200657328135319"
                offset="5.100000000000001" id="1190" source="830407/c8c8b6" sync="0"
@@ -131,6 +133,7 @@
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <AUDIOCLIP name="open awareness" start="12.30065732813532" length="146.017886855511"
                offset="16.65199230457787" id="1191" source="830407/c8c8b6" sync="0"
@@ -139,222 +142,259 @@
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="158.3185441836463" length="95.66283993337237"
+    <AUDIOCLIP name="open awareness" start="158.3185441836463" length="74.29380645561008"
                offset="171.7814340846429" id="1193" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="251.8723411809622" length="58.25946682493952"
+    <AUDIOCLIP name="open awareness" start="232.6123506392564" length="21.05778349517402"
+               offset="246.3864905228413" id="1235" source="830407/c8c8b6" sync="0"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0" fadeInType="2" fadeOutType="2">
+      <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="open awareness" start="251.5610911983739" length="58.25946682493949"
                offset="751.0033137911076" id="1210" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="308.671230981522" length="32.65115780324476"
+    <AUDIOCLIP name="open awareness" start="308.3599809989337" length="32.65115780324476"
                offset="276.7206489634273" id="1194" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="338.9099658485914" length="57.09451380397644"
+    <AUDIOCLIP name="open awareness" start="338.5987158660031" length="57.09451380397644"
                offset="751.0033137911076" id="1212" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="391.6884485608539" length="31.40030268882788"
+    <AUDIOCLIP name="open awareness" start="391.3771985782656" length="31.40030268882788"
                offset="309.9392821164702" id="1195" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="421.3073925435984" length="58.25946682493952"
+    <AUDIOCLIP name="open awareness" start="420.9961425610101" length="58.25946682493952"
                offset="751.0033137911076" id="1214" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="476.0399765081825" length="18.15921119353914"
+    <AUDIOCLIP name="open awareness" start="475.7287265255943" length="18.15921119353914"
                offset="342.6636939548269" id="1196" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="490.9702413570218" length="58.25946682493952"
+    <AUDIOCLIP name="open awareness" start="490.6589913744335" length="58.25946682493952"
                offset="751.0033137911076" id="1216" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="546.0785150772704" length="52.58604908129018"
+    <AUDIOCLIP name="open awareness" start="545.7672650946821" length="52.58604908129018"
                offset="361.6425917647411" id="1197" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="597.321275239604" length="57.68992980611972"
+    <AUDIOCLIP name="open awareness" start="597.0100252570157" length="57.68992980611972"
                offset="751.0033137911076" id="1218" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="651.3153463993775" length="61.49237773383163"
+    <AUDIOCLIP name="open awareness" start="651.0040964167893" length="61.49237773383163"
                offset="414.9693931400572" id="1198" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="707.5503765313964" length="58.25946682493952"
+    <AUDIOCLIP name="open awareness" start="707.2391265488081" length="58.25946682493952"
                offset="751.0033137911076" id="1220" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="762.5432557428539" length="14.1868837449523"
+    <AUDIOCLIP name="open awareness" start="762.2320057602657" length="14.1868837449523"
                offset="477.2184046736196" id="1199" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="775.1991423884172" length="60.40238079435312"
+    <AUDIOCLIP name="open awareness" start="774.8878924058289" length="60.40238079435312"
                offset="751.0033137911076" id="1222" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="830.564104179326" length="96.12858856786715"
+    <AUDIOCLIP name="open awareness" start="830.2528541967378" length="96.12858856786715"
                offset="493.2968729178988" id="1200" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="923.6168078734563" length="56.37370253185566"
+    <AUDIOCLIP name="open awareness" start="923.305557890868" length="56.37370253185566"
                offset="751.0033137911076" id="1224" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="978.1603027394401" length="11.33940307171861"
+    <AUDIOCLIP name="open awareness" start="977.8490527568518" length="11.33940307171861"
                offset="590.8930714780129" id="1201" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="989.4997058111587" length="40.831106912942"
+    <AUDIOCLIP name="open awareness" start="989.1884558285705" length="40.83110691294189"
                offset="604.5766962243348" id="1202" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1028.324935256615" length="58.51661650126903"
+    <AUDIOCLIP name="open awareness" start="1028.013685274027" length="58.51661650126903"
                offset="751.0033137911076" id="1226" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1080.346811354091" length="19.54586587232825"
+    <AUDIOCLIP name="open awareness" start="1080.035561371503" length="19.02958213039028"
                offset="646.2362385252706" id="1203" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1095.803283142032" length="60.40238079435289"
+    <AUDIOCLIP name="open awareness" start="1095.492033159444" length="60.40238079435289"
                offset="751.0033137911076" id="1228" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1149.186587080553" length="30.44187801044427"
+    <AUDIOCLIP name="open awareness" start="1148.875337097965" length="30.44187801044427"
                offset="667.1379094850751" id="1204" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1179.628465090997" length="9.731766856427384"
+    <AUDIOCLIP name="open awareness" start="1179.317215108409" length="9.731766856427384"
                offset="700.7211668978039" id="1205" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1185.944726582231" length="58.25946682493941"
+    <AUDIOCLIP name="open awareness" start="1185.633476599643" length="58.25946682493941"
                offset="751.0033137911076" id="1232" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1242.308979447826" length="23.75040369209819"
+    <AUDIOCLIP name="open awareness" start="1241.997729465238" length="23.75040369209819"
                offset="710.9983122488466" id="1206" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1262.125909347327" length="58.07549735663952"
+    <AUDIOCLIP name="open awareness" start="1261.814659364739" length="58.07549735663952"
                offset="751.0033137911076" id="1208" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
                autoTempo="0" fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="open awareness" start="1318.045328924052" length="61.95467107594777"
+    <AUDIOCLIP name="open awareness" start="1317.734078941464" length="62.26592105853615"
                offset="735.6351367265073" id="1207" source="830407/c8c8b6" sync="0"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
-               autoTempo="0" fadeInType="2" fadeOutType="2">
+               autoTempo="0" fadeInType="2" fadeOutType="4">
       <LOOPINFO rootNote="-1" numBeats="885.1242639855798" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
     </AUDIOCLIP>
     <PLUGIN type="volume" id="1004" enabled="1">
       <MODIFIERASSIGNMENTS/>

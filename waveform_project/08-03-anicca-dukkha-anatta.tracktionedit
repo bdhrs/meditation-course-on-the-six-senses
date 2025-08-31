@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <EDIT appVersion="Waveform 13.5.8" projectID="830407/19fb312" creationTime="1733753818377"
-      modifiedBy="bodhirasa" lastSignificantChange="198d7a2e0fe" timecodeFormat="seconds">
-  <TRANSPORT endToEnd="1" position="12.5728798185941" scrubInterval="11.86429291321927"
-             start="9.391741231036372" snapToTimecode="0" loopPoint2="0.0"
+      modifiedBy="bodhirasa" lastSignificantChange="198e1cd1025" timecodeFormat="seconds">
+  <TRANSPORT endToEnd="1" position="2111.119501133787" scrubInterval="12.79953369729164"
+             start="2111.119507609851" snapToTimecode="0" loopPoint2="0.0"
              looping="0" loopPoint1="1279.351913442881"/>
   <PITCHSEQUENCE>
     <PITCH startBeat="0.0" pitch="60"/>
@@ -85,12 +85,13 @@
   <TRACKCOMPS/>
   <VIEWSTATE minimalTransportBar="0" hiddenClips="" lockedClips="" chordTrackVisible="0"
              arrangerTrackVisible="0" enabledTrackTags="" currentSidePanel="Files"
-             browserSelection="result/all" viewleft="1844.232582732318" viewright="2437.447228393282"
+             browserSelection="result/all" viewleft="1873.842206840187" viewright="2513.818891704769"
              globalTracksVisible="1" tracktop="0.0" actionsPanelVisible="0"
              sidePanelsShown="0" inputsVisible="0" tempoTrackVisible="0" markerMode="0"
-             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="1"
+             lastMarkerMode="0" masterTrackVisible="0" pluginsVisible="0"
              controlsVisible="1" mixerPanelShown="0" scrollWhenPlaying="1"
-             scrollSuspended="0" midiEditorShown="0" pluginAreaWidth="0.8797131180763245"/>
+             scrollSuspended="0" midiEditorShown="0" pluginAreaWidth="0.8797131180763245"
+             automationLocked="0"/>
   <EDITMIXGROUPS/>
   <SCENES/>
   <AUDIOEDITING/>
@@ -104,74 +105,78 @@
   <ID3VORBISMETADATA album="Meditation Course on the Six Senses" artist="Bodhirasa"
                      comment="" date="2025" genre="" title="Anicca Dukkha Anatta"
                      trackNumber="36"/>
-  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"/>
+  <MIDIVIEWSTATE scrollWhenPlaying="1" verticalOffset="0.25" visibleProportion="0.25"
+                 rightTime="82.39492600936495" leftTime="72.28863945578232"/>
   <ARRANGERTRACK name="Arranger" id="1006"/>
   <CHORDTRACK name="Chord" id="1008"/>
   <MARKERTRACK id="1002" name="Marker">
-    <MARKERCLIP name="eye" start="8.545790843255489" length="61.6145288829313"
-                offset="0.0" id="1106" markerID="1" speed="1.0" sync="1" colour="ff4cff4c"/>
-    <MARKERCLIP name="visible forms" start="71.16105104579742" length="55.01291997978788"
+    <MARKERCLIP name="eye" start="8.545790843255489" length="60.27349377530658"
+                offset="0.0" id="1106" markerID="1" speed="1.0" sync="1" colour="ff4cff88"/>
+    <MARKERCLIP name="visible forms" start="71.39660869881783" length="46.90524140929153"
                 offset="0.0" id="1108" markerID="2" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="eye consciousness" start="131.1924112265418" length="55.01291997978788"
+    <MARKERCLIP name="eye consciousness" start="133.600471998075" length="57.38300974032182"
                 offset="0.0" id="1116" markerID="3" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="eye expereince" start="198.0167305670719" length="55.01291997978788"
+    <MARKERCLIP name="eye expereince" start="202.794881099139" length="55.01291997978791"
                 offset="0.0" id="1121" markerID="4" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="eye vedan&#257;" start="272.9638256207411" length="60.6966291805461"
+    <MARKERCLIP name="eye vedan&#257;" start="269.3762942781146" length="69.69152851835349"
                 offset="0.0" id="1124" markerID="5" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="ears" start="349.0632007339953" length="60.6966291805461"
-                offset="0.0" id="1129" markerID="6" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="sounds" start="418.6403876769213" length="60.6966291805461"
-                offset="0.0" id="1134" markerID="7" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="ear consciousness" start="492.281268891796" length="60.6966291805461"
-                offset="0.0" id="1138" markerID="8" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="ear expereince" start="556.0515059705911" length="60.6966291805461"
-                offset="0.0" id="1167" markerID="9" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="ear vedan&#257;" start="615.387530279203" length="60.6966291805461"
-                offset="0.0" id="1173" markerID="10" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="nose" start="687.7778717087093" length="60.6966291805461"
+    <MARKERCLIP name="ears" start="345.8518186837455" length="64.11003231764539"
+                offset="0.0" id="1129" markerID="6" speed="1.0" sync="1" colour="ffc4ff4c"/>
+    <MARKERCLIP name="sounds" start="410.2399126506988" length="51.49399969472205"
+                offset="0.0" id="1134" markerID="7" speed="1.0" sync="1" colour="ffc4ff4c"/>
+    <MARKERCLIP name="ear consciousness" start="475.3552350269915" length="47.17827932106417"
+                offset="0.0" id="1138" markerID="8" speed="1.0" sync="1" colour="ffc4ff4c"/>
+    <MARKERCLIP name="ear expereince" start="537.3757241778461" length="47.94228276473234"
+                offset="0.0" id="1167" markerID="9" speed="1.0" sync="1" colour="ffc4ff4c"/>
+    <MARKERCLIP name="ear vedan&#257;" start="601.23966516844" length="57.34965776251158"
+                offset="0.0" id="1173" markerID="10" speed="1.0" sync="1" colour="ffc4ff4c"/>
+    <MARKERCLIP name="nose" start="673.1057299933973" length="60.6966291805461"
                 offset="0.0" id="1175" markerID="11" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="smells" start="748.7153083358393" length="60.6966291805461"
+    <MARKERCLIP name="smells" start="736.5162889479907" length="60.6966291805461"
                 offset="0.0" id="1178" markerID="12" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="nose consciousness" start="831.8251320615736" length="60.6966291805461"
+    <MARKERCLIP name="nose consciousness" start="801.3890843844911" length="47.21186239369638"
                 offset="0.0" id="1182" markerID="13" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="nose expereince" start="892.9209007733957" length="60.6966291805461"
+    <MARKERCLIP name="nose expereince" start="863.6406640487963" length="48.0495612516612"
                 offset="0.0" id="1104" markerID="14" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="nose vedan&#257;" start="959.9208390022676" length="70.38170875684125"
+    <MARKERCLIP name="nose vedan&#257;" start="926.929069202305" length="70.38170875684079"
                 offset="0.0" id="1192" markerID="15" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="tongue" start="1048.177146635746" length="48.00708471551161"
-                offset="0.0" id="1184" markerID="16" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="tastes" start="1109.291031875083" length="48.00708471551161"
-                offset="0.0" id="1235" markerID="17" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="tongue consciousness" start="1169.204659367602" length="48.00708471551161"
-                offset="0.0" id="1242" markerID="18" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="tongue expereince" start="1239.228318224968" length="57.52032121951879"
-                offset="0.0" id="1244" markerID="19" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="tongue vedan&#257;" start="1315.730788513073" length="57.52032121951879"
-                offset="0.0" id="1237" markerID="20" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="body" start="1389.080746098961" length="57.52032121951879"
-                offset="0.0" id="1250" markerID="21" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="sensations" start="1457.602589828028" length="57.52032121951879"
-                offset="0.0" id="1247" markerID="22" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="body consciousness" start="1530.930296949546" length="57.52032121951879"
-                offset="0.0" id="1251" markerID="23" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="body expereince" start="1595.485283446712" length="57.52032121951879"
-                offset="0.0" id="1253" markerID="24" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="body vedan&#257;" start="1657.971950113379" length="57.52032121951879"
-                offset="0.0" id="1258" markerID="25" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="mind" start="1728.701893063065" length="57.52032121951879"
-                offset="0.0" id="1255" markerID="26" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="mental phenomena" start="1795.426445936673" length="57.52032121951879"
-                offset="0.0" id="1261" markerID="27" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="mind consciousness" start="1871.551226721177" length="57.52032121951879"
-                offset="0.0" id="1263" markerID="28" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="mind experience" start="1938.807474440468" length="57.52032121951879"
-                offset="0.0" id="1264" markerID="29" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="mind vedan&#257;" start="2005.192368158654" length="57.52032121951879"
-                offset="0.0" id="1269" markerID="30" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="this experience" start="2086.430620247977" length="57.52032121951879"
+    <MARKERCLIP name="tongue" start="1001.376001595096" length="47.77498064619851"
+                offset="0.0" id="1184" markerID="16" speed="1.0" sync="1" colour="ff4cff4c"/>
+    <MARKERCLIP name="tastes" start="1065.947032670577" length="46.7089839737157"
+                offset="0.0" id="1235" markerID="17" speed="1.0" sync="1" colour="ff4cff4c"/>
+    <MARKERCLIP name="tongue consciousness" start="1127.283278729656" length="48.00708471551161"
+                offset="0.0" id="1242" markerID="18" speed="1.0" sync="1" colour="ff4cff4c"/>
+    <MARKERCLIP name="tongue expereince" start="1191.578881247244" length="57.52032121951879"
+                offset="0.0" id="1244" markerID="19" speed="1.0" sync="1" colour="ff4cff4c"/>
+    <MARKERCLIP name="tongue vedan&#257;" start="1258.802034230343" length="55.06350296416758"
+                offset="0.0" id="1237" markerID="20" speed="1.0" sync="1" colour="ff4cff4c"/>
+    <MARKERCLIP name="body" start="1329.089243915903" length="57.52032121951879"
+                offset="0.0" id="1250" markerID="21" speed="1.0" sync="1" colour="ff88ff4c"/>
+    <MARKERCLIP name="sensations" start="1393.479678832769" length="57.52032121951879"
+                offset="0.0" id="1247" markerID="22" speed="1.0" sync="1" colour="ff88ff4c"/>
+    <MARKERCLIP name="body consciousness" start="1458.519690987141" length="47.90677409971386"
+                offset="0.0" id="1251" markerID="23" speed="1.0" sync="1" colour="ff88ff4c"/>
+    <MARKERCLIP name="body expereince" start="1522.824496129497" length="47.48994718691074"
+                offset="0.0" id="1253" markerID="24" speed="1.0" sync="1" colour="ff88ff4c"/>
+    <MARKERCLIP name="body vedan&#257;" start="1585.012934188401" length="56.78595355308858"
+                offset="0.0" id="1258" markerID="25" speed="1.0" sync="1" colour="ff88ff4c"/>
+    <MARKERCLIP name="mind" start="1657.97884885531" length="47.66908865181335"
+                offset="0.0" id="1255" markerID="26" speed="1.0" sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="mental phenomena" start="1723.075996362515" length="57.52032121951879"
+                offset="0.0" id="1261" markerID="27" speed="1.0" sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="mind consciousness" start="1787.933436697086" length="46.61655138554352"
+                offset="0.0" id="1263" markerID="28" speed="1.0" sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="mind experience" start="1848.700650593041" length="14.34399294722402"
+                offset="0.0" id="1264" markerID="29" speed="1.0" sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="mind experience 2" start="1865.3824540061" length="43.17632827229477"
+                offset="14.34399294722402" id="1421" markerID="33" speed="1.0"
+                sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="mind vedan&#257;" start="1913.088875730199" length="57.52032121951856"
+                offset="0.0" id="1269" markerID="30" speed="1.0" sync="1" colour="ff4cffc4"/>
+    <MARKERCLIP name="this experience" start="1991.817752493143" length="49.85352319197978"
                 offset="0.0" id="1287" markerID="31" speed="1.0" sync="1" colour="ff4cff88"/>
-    <MARKERCLIP name="this vedan&#257;" start="2160.927954209696" length="57.52032121951879"
-                offset="0.0" id="1266" markerID="32" speed="1.0" sync="1" colour="ff4cff88"/>
+    <MARKERCLIP name="this vedan&#257;" start="2053.543431292359" length="57.52032121951925"
+                offset="0.0" id="1266" markerID="32" speed="1.0" sync="0" colour="ff4cff88"/>
   </MARKERTRACK>
   <TEMPOTRACK name="Global" id="1007">
     <MODIFIERS/>
@@ -180,10 +185,10 @@
     <MODIFIERS/>
   </MASTERTRACK>
   <TRACK id="1003" height="235.0" mute="0" soloIsolate="0" playSlotClips="0"
-         colour="0">
+         colour="0" verticalOffset="0.4" visibleProportion="0.25">
     <MODIFIERS/>
     <CLIPSLOTS/>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="0.0" length="69.13420277070355"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="0.0" length="25.42844333609379"
                offset="5.921591412547802" id="1092" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="9.68854360404876" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -192,8 +197,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="66.07966032712982" length="5.587078236435929"
-               offset="110.1486751752391" id="1102" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="24.1922741786382" length="14.3662902082677"
+               offset="28.81087647927335" id="1291" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -201,7 +206,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="71.39906177694748" length="14.33299791072403"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="37.15534534330767" length="3.658581841214648"
+               offset="39.76934901023105" id="1294" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="40.31608404054514" length="31.1637930951406"
+               offset="43.5385626612184" id="1296" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="4">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="65.55156242669202" length="7.395555395061024"
+               offset="108.340198016614" id="1102" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="72.67944103513477" length="14.33299791072403"
                offset="85.94438908524464" id="1098" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -210,7 +242,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="78.76552100915747" length="48.29007220291444"
+    <AUDIOCLIP name="1" start="80.04590026734476" length="20.13218037736046"
                offset="22.98791681338167" id="1096" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -219,8 +251,26 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="124.8372863564435" length="18.7765748577346"
-               offset="93.01777746602694" id="1103" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="98.19796037509806" length="5.118689698964033"
+               offset="38.0014074917781" id="1302" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="102.3273647171984" length="27.47917053950351"
+               offset="43.7988184767926" id="1300" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="125.0504546248366" length="19.89676972857632"
+               offset="91.89758259518523" id="1103" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -228,7 +278,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="139.823306644238" length="23.71886844523618"
+    <AUDIOCLIP name="2" start="141.1566697834728" length="23.71886844523618"
                offset="749.8123315160586" id="1094" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="0.005" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -237,7 +287,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="158.1981568750302" length="41.52006213502986"
+    <AUDIOCLIP name="2" start="159.531520014265" length="41.52006213502986"
                offset="772.218634084063" id="1110" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
@@ -246,7 +296,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="193.8262338268685" length="24.19194550262745"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="195.1595969661033" length="24.19194550262745"
                offset="107.9993909784968" id="1109" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -255,16 +305,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="209.8241975327373" length="47.82815833173697"
+    <AUDIOCLIP name="3" start="211.157560671972" length="25.56755520940249"
                offset="810.3286699895492" id="1095" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="0.005" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeIn="0.005" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="255.6138647352157" length="19.67218438233857"
+    <AUDIOCLIP name="3" start="228.1449580140514" length="28.0612732298205"
+               offset="830.0955550914657" id="1305" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="254.1677401146134" length="15.15570176947847"
                offset="895.3458466518246" id="1093" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="0.005" fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
@@ -273,8 +332,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="269.9844648787493" length="8.018644375606129"
-               offset="159.8935788296005" id="1118" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="263.6368269832253" length="7.272439929215693"
+               offset="160.6397832759909" id="1118" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -282,7 +341,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="277.4462323798741" length="21.59327642958317"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="270.3523900379597" length="21.59327642958317"
                offset="136.6899602386811" id="1117" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -291,16 +350,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="295.4880413369482" length="53.04012781999705"
+    <AUDIOCLIP name="1" start="288.3941989950338" length="19.74558243417368"
                offset="23.28107285403683" id="1122" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="6.966538678514041" fadeOut="2.218306855628427" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="6.966538678514041" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="343.1862993532076" length="23.18410219408094"
+    <AUDIOCLIP name="1" start="305.8673358422129" length="5.785770863778851"
+               offset="36.80059421137377" id="1313" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="310.7129135410344" length="32.49703196380779"
+               offset="43.8241687102261" id="1310" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="2.218306855628427" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="337.8680757011045" length="23.18410219408094"
                offset="159.2539833224008" id="1119" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -309,16 +386,16 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="360.02337401487" length="20.2417528531181" offset="753.2894471081768"
-               id="1126" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
-               pan="0.0" colour="ffffc44c" fadeIn="3.790554569940127" fadeOut="5.344018214443906"
-               proxyAllowed="1" resamplingQuality="lagrange" fadeOutType="2"
-               fadeInType="2">
+    <AUDIOCLIP name="2" start="354.7051503627669" length="20.2417528531181"
+               offset="753.2894471081768" id="1126" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="3.790554569940127" fadeOut="5.344018214443906" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="375.0523205626807" length="41.52006213502983"
+    <AUDIOCLIP name="2" start="369.7340969105775" length="40.48482713049145"
                offset="772.218634084063" id="1127" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="5.344018214443906" fadeOut="5.891985183191622" proxyAllowed="1"
@@ -327,8 +404,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="410.4312032121442" length="24.00928719946671"
-               offset="173.4500697406295" id="1125" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="401.9422800534923" length="23.791124600866"
+               offset="173.6682323392302" id="1316" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -336,16 +413,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="425.4457789482515" length="47.31468008451372"
+    <AUDIOCLIP name="3" start="416.7386931909988" length="25.89971599268063"
                offset="810.3286699895492" id="1131" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="8.193981796758578" fadeOut="2.038491129258659" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="8.193981796758578" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="470.870013083286" length="19.67218438233857"
+    <AUDIOCLIP name="3" start="433.6727571644486" length="27.95382308330227"
+               offset="829.6895269907607" id="1317" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="2.038491129258659" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="459.7361342982716" length="15.40841257558145"
                offset="895.3458466518246" id="1132" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="2.038491129258659" fadeOut="5.301584238804878" proxyAllowed="1"
@@ -354,8 +440,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="481.6350773733172" length="26.10762281003116"
-               offset="188.3451463604991" id="1130" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="466.324150252935" length="25.66274840202982"
+               offset="188.7900207685004" id="1130" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -363,17 +449,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="499.8081877097425" length="53.040127819997" offset="23.28107285403683"
+    <AUDIOCLIP name="1" start="484.052386181359" length="19.5904445752318" offset="23.28107285403683"
                id="1136" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
-               pan="0.0" colour="ffff4c4c" fadeIn="3.551467472509046" fadeOut="5.341869803737723"
+               pan="0.0" colour="ffff4c4c" fadeIn="3.551467472509046" fadeOut="0.0"
                proxyAllowed="1" resamplingQuality="lagrange" fadeOutType="2"
                fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="549.2273849884734" length="19.58630558988659"
-               offset="210.3487703833658" id="1161" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="501.5475598126188" length="5.6857793004271" offset="36.89711989024118"
+               id="1323" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
+               pan="0.0" colour="ffff4c4c" fadeIn="0.0" fadeOut="0.0" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="506.2115330801341" length="31.02925033676973"
+               offset="43.76623396892978" id="1321" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="5.341869803737723" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="526.079153253201" length="24.63955118471961"
+               offset="205.2955247885328" id="1324" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -381,16 +484,43 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="567.1660004028871" length="50.83399959711289"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="549.0710142624478" length="6.146078243374859"
                offset="23.9187286449216" id="1140" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
-               fadeIn="9.68854360404876" fadeOut="3.054542443573737" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="6.146078243374859" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="616.5" length="27.95251366212779"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="554.3160348142619" length="12.92015714085665"
+               offset="30.28601897224695" id="1326" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="563.5603802029145" length="6.437859635379823"
+               offset="36.96172978870453" id="1329" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="569.2301767201566" length="31.16950913408516"
+               offset="43.58321910794933" id="1328" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="3.054542443573737" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="598.8996858542416" length="27.95251366212779"
                offset="237.0834037106615" id="1165" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -399,17 +529,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="641.7107053838793" length="48.57231007139035"
-               offset="22.70567894490574" id="1143" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="620.383326263307" length="19.79424746221548"
+               offset="23.45739327457812" id="1143" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="6.966538678514041" fadeOut="2.218306855628427" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="6.966538678514041" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="681.0445453474057" length="24.09235252132464"
-               offset="256.0476379639513" id="1171" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="637.0852514157434" length="6.141680750977798"
+               offset="37.04553676115535" id="1332" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="642.1961680982215" length="27.00665814212573"
+               offset="43.78850094229864" id="1331" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="665.0905550237632" length="23.33114449519223"
+               offset="256.8088459900837" id="1171" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -417,7 +565,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="699.2226894406552" length="20.2879467055958"
+    <AUDIOCLIP name="2" start="682.5074910908803" length="20.2879467055958"
                offset="753.2432532556991" id="1145" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="3.790554569940127" fadeOut="5.344018214443906" proxyAllowed="1"
@@ -426,7 +574,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="714.1666179318071" length="41.52006213502989"
+    <AUDIOCLIP name="2" start="697.4514195820321" length="39.64629945719309"
                offset="772.218634084063" id="1146" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="5.344018214443906" fadeOut="5.891985183191622" proxyAllowed="1"
@@ -435,8 +583,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="749.2761984356084" length="23.66514516214022"
-               offset="273.4346788808701" id="1170" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="729.1620275982482" length="23.85120933164171"
+               offset="272.3870223757967" id="1170" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -444,26 +592,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="765.7926585895142" length="47.82815833173697"
-               offset="810.3286699895492" id="1148" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="3" start="744.7198835256094" length="24.62373552676115"
+               offset="811.8266948063366" id="1148" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="8.193981796758578" fadeOut="2.038491129258659" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="8.193981796758578" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="811.5823257919925" length="21.49237773486311"
+    <AUDIOCLIP name="3" start="760.1815087727884" length="28.64574778574161"
+               offset="829.5110805355446" id="1338" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="2.038491129258659" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="786.7887654292714" length="12.98111353894819"
                offset="895.3458466518246" id="1149" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
-               fadeIn="2.038491129258659" fadeOut="5.301584238804878" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+               fadeIn="2.038491129258659" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="831.254510174331" length="15.77952060083612"
-               offset="295.5800872212913" id="1180" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="791.2860764855911" length="23.83218937353706"
+               offset="287.5274184485904" id="1180" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -471,17 +628,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="841.5688617264577" length="53.27173353443391"
+    <AUDIOCLIP name="1" start="809.6530968104188" length="19.75541537137019"
                offset="23.04946713959992" id="1152" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="3.551467472509046" fadeOut="5.341869803737723" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="3.551467472509046" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="891.8859322539109" length="19.06264682367055"
-               offset="311.8884973227872" id="1179" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="827.0702719294521" length="6.117564679221232"
+               offset="36.68731783174888" id="1345" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="832.3224392387096" length="31.02669521990231"
+               offset="43.88472201532038" id="1343" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="5.341869803737723" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="850.7222354629212" length="25.36573572851728"
+               offset="305.5854084179405" id="1179" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -489,26 +664,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="906.3358001188165" length="20.2417528531181"
+    <AUDIOCLIP name="2" start="871.4751922326733" length="7.08720339966078"
                offset="753.2894471081768" id="1154" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="6.347027532418508" fadeOut="5.212806305307367" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="6.347027532418508" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="921.3647466666272" length="41.52006213502989"
-               offset="772.218634084063" id="1155" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="2" start="877.0882949551539" length="16.48882479469819"
+               offset="757.0423751665967" id="1348" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="5.212806305307367" fadeOut="6.141179485566397" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="5.212806305307367" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="957.4212623684576" length="34.35055470780469"
-               offset="330.9511441464578" id="1183" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="2" start="888.5396127997182" length="38.37272171850464"
+               offset="773.0487697880355" id="1349" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="6.141179485566397" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="914.1478549091627" length="39.25975464299165"
+               offset="326.0419442112708" id="1183" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -516,8 +700,17 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="981.3714258143432" length="48.03148538990536"
+    <AUDIOCLIP name="3" start="943.0072182902351" length="26.30225840366518"
                offset="809.6118646841575" id="1186" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="3" start="964.2852032414064" length="24.06333827519416"
+               offset="833.5800117988689" id="1350" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="0.0" fadeOut="1.890445949479272" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -525,7 +718,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1027.512465254769" length="19.67218438233886"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="986.4580955671211" length="15.5637913102662"
                offset="895.3458466518246" id="1158" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="1.890445949479272" fadeOut="8.907120092307366" proxyAllowed="1"
@@ -534,16 +727,16 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1040.182947845805" length="13.34231407971174"
-               offset="5.921591412547802" id="1193" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="991.3300418071815" length="14.01295371721665"
+               offset="5.250951775042896" id="1193" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
-               fadeIn="9.68854360404876" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeIn="3.321108647010874" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1053.143142499189" length="8.322122511071939"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1004.96087609807" length="8.322122511071825"
                offset="370.4506975026668" id="1234" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -552,8 +745,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1057.317819449815" length="51.99933116669354"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1012.286822216994" length="6.799885696828028"
                offset="23.05646301655776" id="1232" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1018.171823316574" length="12.83279385552089"
+               offset="30.53404100764346" id="1354" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1028.192397853874" length="5.95144088274651"
+               offset="37.41539398041783" id="1357" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1033.119231698199" length="31.31835677427489"
+               offset="43.7374374089764" id="1356" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="3.054542443573737" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -561,7 +781,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1100.964175942518" length="26.22895001654138"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1056.084613798483" length="26.22895001654138"
                offset="375.8522188251525" id="1233" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -570,16 +790,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="1118.948468854963" length="48.29007220291444"
+    <AUDIOCLIP name="1" start="1074.068906710929" length="20.04356670908373"
                offset="22.98791681338167" id="1196" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="6.966538678514041" fadeOut="2.218306855628427" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="6.966538678514041" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1162.646559181804" length="27.24411628351186"
+    <AUDIOCLIP name="1" start="1091.573263517709" length="6.099587597532491"
+               offset="36.93189592493292" id="1362" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="1096.812811679336" length="27.38875098792778"
+               offset="43.88923802836831" id="1361" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="2.218306855628427" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1119.609580791191" length="23.89949742393105"
                offset="395.5463998833968" id="1239" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -588,8 +826,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1180.006254490043" length="23.71886844523618"
-               offset="749.8123315160586" id="1198" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="2" start="1135.200649488825" length="21.58543971966265"
+               offset="751.9457602416322" id="1198" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="3.790554569940127" fadeOut="5.344018214443906" proxyAllowed="1"
                resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
@@ -597,7 +835,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1198.381104720835" length="41.52006213502986"
+    <AUDIOCLIP name="2" start="1151.442070994044" length="37.36462658221717"
                offset="772.218634084063" id="1199" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="5.344018214443906" fadeOut="5.891985183191622" proxyAllowed="1"
@@ -606,8 +844,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1233.333276310465" length="24.56909979240277"
-               offset="417.0189640013916" id="1238" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1178.539455867991" length="30.34616873167897"
+               offset="411.2418950621154" id="1238" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -615,16 +853,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="1250.007145378542" length="47.82815833173697"
+    <AUDIOCLIP name="3" start="1200.990393875345" length="25.44792220200679"
                offset="810.3286699895492" id="1201" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="8.193981796758578" fadeOut="2.038491129258659" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="8.193981796758578" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1295.796812581021" length="19.67218438233857"
+    <AUDIOCLIP name="3" start="1218.03752146044" length="28.18078479378801"
+               offset="829.9760435274981" id="1367" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="2.038491129258659" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1244.17981512497" length="14.54915785043249"
                offset="895.3458466518246" id="1202" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="2.038491129258659" fadeOut="5.301584238804878" proxyAllowed="1"
@@ -633,8 +880,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1309.601910019799" length="29.06960560145103"
-               offset="441.5880637937944" id="1240" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1251.493237797423" length="30.07071941929871"
+               offset="440.5869499759467" id="1240" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -642,17 +889,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="1335.670989182753" length="53.04012781999705"
-               offset="23.28107285403683" id="1205" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1278.541833558268" length="17.88079098318417"
+               offset="25.3757453726543" id="1369" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="3.551467472509046" fadeOut="5.341869803737723" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1382.229336853584" length="24.80387070448796"
-               offset="470.6576693952454" id="1245" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1292.926326687727" length="6.07853090908975"
+               offset="36.8809343872819" id="1373" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="1298.04508955854" length="31.24298060527531"
+               offset="43.73642037497705" id="1371" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="5.341869803737723" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1316.280588904476" length="27.26555053739526"
+               offset="464.6066942900341" id="1245" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -660,16 +925,16 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1400.206321860675" length="20.2417528531181"
-               offset="753.2894471081768" id="1207" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="2" start="1338.16510100136" length="18.53599088919259"
+               offset="754.9952090721024" id="1375" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="6.347027532418508" fadeOut="5.212806305307367" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="5.212806305307367" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1415.235268408486" length="41.52006213502983"
+    <AUDIOCLIP name="2" start="1351.488285585245" length="41.52006213502978"
                offset="772.218634084063" id="1208" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="5.212806305307367" fadeOut="6.141179485566397" proxyAllowed="1"
@@ -678,7 +943,7 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1448.180018583328" length="27.41641564690713"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1384.433035760087" length="27.41641564690713"
                offset="488.9399854296212" id="1246" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -687,16 +952,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="1465.628726794057" length="47.31468008451372"
+    <AUDIOCLIP name="3" start="1401.881743970816" length="25.33872773607868"
                offset="810.3286699895492" id="1210" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="8.994711463359351" fadeOut="1.890445949479272" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="8.994711463359351" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1511.052960929091" length="19.67218438233857"
+    <AUDIOCLIP name="3" start="1419.188490392745" length="27.01562689848947"
+               offset="830.6277231755734" id="1378" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="1.890445949479272" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1444.313671341755" length="14.93307247381472"
                offset="895.3458466518246" id="1211" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="1.890445949479272" fadeOut="8.907120092307366" proxyAllowed="1"
@@ -705,8 +979,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1527.618014497408" length="17.85971534123632"
-               offset="513.1631501066299" id="1248" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1452.858985395064" length="21.00458658796401"
+               offset="510.0182788599022" id="1248" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -714,17 +988,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="1539.991135555548" length="53.040127819997" offset="23.28107285403683"
-               id="1213" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
-               pan="0.0" colour="ffff4c4c" fadeIn="7.934512473605878" fadeOut="3.620930541266034"
-               proxyAllowed="1" resamplingQuality="lagrange" fadeOutType="2"
-               fadeInType="2">
+    <AUDIOCLIP name="1" start="1468.376977699931" length="19.89804004638995"
+               offset="23.28107285403683" id="1213" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="7.934512473605878" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1585.596406841895" length="27.44544824983609"
-               offset="524.7041551246566" id="1252" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1485.699399375007" length="5.605769301687587"
+               offset="37.22704124805585" id="1384" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="1490.201324571998" length="30.39281101027814"
+               offset="43.76349811720495" id="1383" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="3.620930541266034" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1512.441250419639" length="27.01346116780178"
+               offset="524.7077570111867" id="1252" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -732,16 +1024,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1607.348948248692" length="51.13706553832981"
-               offset="23.9187286449216" id="1215" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1538.798635558562" length="12.8180746257342"
+               offset="30.39854117025396" id="1389" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
-               fadeIn="1.647690175472917" fadeOut="1.966395846303044" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1653.335493806107" length="35.79213460171127"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1548.668183402142" length="6.222806672480147"
+               offset="36.99380912350802" id="1393" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1553.842897627571" length="31.34444629256473"
+               offset="43.71134789068668" id="1392" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="1.966395846303044" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1580.036823939221" length="31.93765468802917"
                offset="552.1496033744927" id="1254" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -750,17 +1060,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="1681.893653229684" length="48.57231007139035"
-               offset="22.70567894490574" id="1217" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1603.872836403218" length="19.67313451686005"
+               offset="23.37435856025177" id="1396" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="2.741808278248527" fadeOut="9.238470107863918" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1721.655993367389" length="24.50498196483136"
-               offset="584.7092380671481" id="1256" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1620.871988433048" length="5.807555714017553"
+               offset="36.86390857585553" id="1400" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="1625.885705596229" length="27.22142103632768"
+               offset="43.94578406884835" id="1399" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1641.837191366506" length="31.34001179654729"
+               offset="577.0725463789024" id="1403" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -768,25 +1096,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1739.40563728646" length="20.2879467055958" offset="753.2432532556991"
-               id="1219" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
-               pan="0.0" colour="ffffc44c" fadeIn="5.914208428075085" fadeOut="5.344018214443963"
+    <AUDIOCLIP name="2" start="1666.825366403472" length="19.68022794032345"
+               offset="753.8509720209713" id="1219" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="5.914208428075085" fadeOut="5.344018214443963" proxyAllowed="1"
+               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="2" start="1681.161576129351" length="41.52006213503" offset="772.218634084063"
+               id="1220" source="830407/84a809" sync="1" autoCrossfade="1" elastiqueMode="0"
+               pan="0.0" colour="ffffc44c" fadeIn="5.344018214443963" fadeOut="6.410481631228549"
                proxyAllowed="1" resamplingQuality="lagrange" fadeOutType="2"
                fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1754.349565777612" length="41.52006213502989"
-               offset="772.218634084063" id="1220" source="830407/84a809" sync="1"
-               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="5.344018214443963" fadeOut="6.410481631228549" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
-      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
-                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
-      <AUTOMATIONCURVES/>
-    </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1792.099493637651" length="20.11527461675246"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1718.91150398939" length="19.52672446923248"
                offset="608.5336937353363" id="1259" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
@@ -795,16 +1123,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="1805.975606435319" length="47.82815833173697"
-               offset="810.3286699895492" id="1222" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="3" start="1728.914886942753" length="26.1128946813817"
+               offset="810.3358200220795" id="1222" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="7.148685008234452" fadeOut="2.038491129258659" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="7.148685008234452" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1851.765273637798" length="19.67218438233851"
+    <AUDIOCLIP name="3" start="1749.219285775542" length="25.37876029992117"
+               offset="832.7780680213649" id="1408" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="2.038491129258659" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1772.559554946206" length="15.08552663641808"
                offset="895.3458466518246" id="1223" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="2.038491129258659" fadeOut="5.301584238804878" proxyAllowed="1"
@@ -813,8 +1150,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1861.90990696119" length="28.26084072004005"
-               offset="620.4167215909822" id="1260" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1781.182305173606" length="22.90970288890821"
+               offset="623.5718477383584" id="1410" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -822,17 +1159,35 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="1" start="1881.751809572263" length="53.27173353443391"
-               offset="23.04946713959992" id="1225" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1797.541318699428" length="18.25421091956105"
+               offset="24.91771588548175" id="1225" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
-               fadeIn="4.272628576365719" fadeOut="2.954663006980695" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="4.272628576365719" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1931.504606428267" length="20.54882621353227"
-               offset="644.1866098620485" id="1262" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="1" start="1813.728416341465" length="5.657362654275857"
+               offset="36.879924109422" id="1417" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="1" start="1818.27969206654" length="30.64999232817991"
+               offset="43.7884342737779" id="1416" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffff4c4c"
+               fadeIn="0.0" fadeOut="2.954663006980695" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1835.2393318206" length="30.47129696281968"
+               offset="638.3553074279735" id="1419" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -840,16 +1195,16 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1946.518747964622" length="20.2417528531181"
-               offset="753.2894471081768" id="1227" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="2" start="1855.446759526299" length="23.21757958368471"
+               offset="750.3136203776103" id="1422" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="4.612778958765034" fadeOut="5.212806305307367" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="0.0" fadeOut="5.212806305307367" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="2" start="1961.547694512432" length="41.52006213502989"
+    <AUDIOCLIP name="2" start="1873.451532804675" length="39.75679872389446"
                offset="772.218634084063" id="1228" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="5.212806305307367" fadeOut="5.46354643319944" proxyAllowed="1"
@@ -858,8 +1213,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1995.882598368609" length="32.10892322114182"
-               offset="665.6468020505997" id="1265" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1899.078179697853" length="36.89786799751937"
+               offset="660.8578572742222" id="1265" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -867,16 +1222,25 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="2021.355894399884" length="48.22996465016968"
-               offset="809.4133854238931" id="1230" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="3" start="1928.711261426767" length="25.67551745803598"
+               offset="810.1905819329232" id="1230" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
-               fadeIn="7.952480385325885" fadeOut="1.890445949479272" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeOutType="2" fadeInType="2">
+               fadeIn="7.952480385325885" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2067.695413100574" length="19.67218438233886"
+    <AUDIOCLIP name="3" start="1944.690327200714" length="28.73500990680031"
+               offset="828.9083401672618" id="1426" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="1.890445949479272" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1971.534891158036" length="15.3582980330541"
                offset="895.3458466518246" id="1231" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
                fadeIn="1.890445949479272" fadeOut="8.907120092307366" proxyAllowed="1"
@@ -885,8 +1249,8 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2079.737143718632" length="26.00169531198708"
-               offset="697.7557252717415" id="1267" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="1976.260161152646" length="28.38689655528742"
+               offset="695.3705240284414" id="1428" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -894,8 +1258,17 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="3" start="2097.734094290644" length="46.17250310567488"
-               offset="811.9843252156114" id="1284" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="3" start="1998.995126683735" length="22.8201503246321"
+               offset="813.4641050164181" id="1431" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="3" start="2011.938729516091" length="29.33877257261088"
+               offset="828.8180557486747" id="1433" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ffffc44c"
                fadeIn="0.0" fadeOut="2.038491129258659" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -903,17 +1276,17 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2141.86810626706" length="19.6721843823384"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2039.239010959443" length="11.57236465845835"
                offset="895.3458466518246" id="1279" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff4c88ff"
-               fadeIn="2.038491129258659" fadeOut="5.301584238804878" proxyAllowed="1"
-               resamplingQuality="lagrange" fadeInType="2" fadeOutType="2">
+               fadeIn="2.038491129258659" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeInType="2" fadeOutType="2">
       <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2157.003646476353" length="94.57921245164562"
-               offset="723.5382654157224" id="1283" source="830407/84a809" sync="1"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2041.811237902094" length="38.12565711257594"
+               offset="716.0264745209106" id="1283" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
                fadeOutType="2" fadeInType="2">
@@ -921,7 +1294,34 @@
                 numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
       <AUTOMATIONCURVES/>
     </AUDIOCLIP>
-    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2231.385785823074" length="48.61421417692554"
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2070.312259126007" length="24.95655911911717"
+               offset="750.6230984743097" id="1437" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2086.672707899251" length="41.11361940357665"
+               offset="771.7244323473983" id="1438" source="830407/84a809" sync="1"
+               autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
+               fadeIn="0.0" fadeOut="0.0" proxyAllowed="1" resamplingQuality="lagrange"
+               fadeOutType="2" fadeInType="2">
+      <LOOPINFO rootNote="-1" numBeats="1934.750068027211" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="keep_on" start="2117.416758814999" length="24.16808080610554"
+               offset="0.0" id="1441" source="830407/2e33b31" sync="0" autoCrossfade="1"
+               elastiqueMode="0" pan="0.0" colour="ff55ff00" fadeIn="0.005"
+               fadeOut="0.005" proxyAllowed="1" resamplingQuality="lagrange"
+               autoTempo="0">
+      <LOOPINFO rootNote="-1" numBeats="25.82698049580754" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+      <AUTOMATIONCURVES/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="r&#257;hulov&#257;da" start="2134.356266170445" length="25.64373382955455"
                offset="863.6575090204688" id="1288" source="830407/84a809" sync="1"
                autoCrossfade="1" elastiqueMode="0" pan="0.0" colour="ff55ff00"
                fadeIn="0.0" fadeOut="21.72551267143906" proxyAllowed="1" resamplingQuality="lagrange"
@@ -940,9 +1340,44 @@
       <DEVICE name="(default audio output)"/>
     </OUTPUTDEVICES>
   </TRACK>
-  <TRACK id="1012" colour="ffff0000" mute="1" height="141.0" solo="0">
+  <TRACK id="1012" colour="ffff0000" mute="1" height="141.0" solo="0"
+         verticalOffset="0.4" visibleProportion="0.25" soloIsolate="0"
+         playSlotClips="0">
     <MODIFIERS/>
     <CLIPSLOTS/>
+    <MIDICLIP name="15 seconds" start="1458.291464658961" length="0.921422333117107"
+              offset="14.22528245574381" id="1385" sync="0" currentTake="0"
+              speed="1.0" colour="ff884cff" volDb="0.0">
+      <AUTOMATIONCURVES/>
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1"/>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="10seconds" start="2085.472998622572" length="9.9529424303214"
+              offset="0.0" id="1436" sync="0" currentTake="0" speed="1.0" colour="ff884cff"
+              volDb="0.0">
+      <AUTOMATIONCURVES/>
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1"/>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="15 seconds" start="2112.46973498238" length="15.06787143082556"
+              offset="0.0" id="1439" sync="0" currentTake="0" speed="1.0" colour="ff884cff"
+              volDb="0.0">
+      <AUTOMATIONCURVES/>
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1"/>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
     <PLUGIN type="volume" id="1013" enabled="1">
       <MODIFIERASSIGNMENTS/>
     </PLUGIN>
