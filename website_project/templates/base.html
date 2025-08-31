@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} | Six Senses</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" });
+        });
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="header-content">
+        <img
+          src="static/images/six-senses.svg"
+          alt="Six Senses Logo"
+          class="logo"
+        />
+        <span class="course-title">Meditation Course on the Six Senses</span>
+        <div class="toggles">
+          <button
+            id="theme-toggle"
+            class="toggle-button"
+            aria-label="Toggle theme"
+            data-tooltip="Light/Dark Mode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="theme-icon"
+            >
+              <path
+                d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="status-toggle"
+            class="toggle-button"
+            aria-label="Toggle offline mode"
+            data-tooltip="Online/Offline Mode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="status-icon"
+            >
+              <path
+                d="M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204ZM237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87ZM205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Zm-32.26,35.76a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-container">
+      <aside class="sidebar-left">
+        <nav>
+          <h3>Course Outline</h3>
+          <ul>
+            {% for page in all_pages %}
+            <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">{% block content %}{% endblock %}</main>
+
+      <aside class="sidebar-right">
+        <nav id="on-page-toc">
+          <h3>On This Page</h3>
+          <ul>
+            <!-- To be populated by JavaScript -->
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-nav">
+        {% if prev_page %}
+        <a href="{{ prev_page.path }}" class="prev-page">
+          &larr; {{ prev_page.title }}
+        </a>
+        {% endif %} {% if next_page %}
+        <a href="{{ next_page.path }}" class="next-page">
+          {{ next_page.title }} &rarr;
+        </a>
+        {% endif %}
+      </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

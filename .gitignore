@@ -31,3 +31,5 @@ source/.megaignore
 source/.directory
 
 source/.obsidian/workspace.json
+website_project/output/
+website_project/ref_pics/

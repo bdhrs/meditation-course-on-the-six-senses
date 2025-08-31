@@ -1,0 +1,21 @@
+- title page
+- menu icon when outline disappears
+- remove bullets from outline, keep left
+- audio player light mode style must match dark mode
+- pad transcript heading
+- remove all ## heading from transcript, find with regex
+- fix all *para para* in obsidian
+- audio using github?
+- check audio downloading properly for offline. test with one file
+- all... to …
+- glow on all audio player buttons in dark mode
+- h1 h2 headings in dark dark green / light light green
+- make urls 01-02-nicely-formatted-vedana.html
+- consistent system for quotes > >> ? or split lines?
+- rollover text not working on header menu buttons
+- global font inter
+- reference links not working
+- less padding on transcript, more on transcript heading
+- auto delete first \n in transcript 
+- footer buttons hard left and hard right, two lines only if necessary
+- error testing for common error like *para para*, extra lines, quotes no gap, 
