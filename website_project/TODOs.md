@@ -1,6 +1,5 @@
 # TODO
 
-- mobile tooltip gets stuck on
 - error testing for common errors in md and html
     - no reference
     - - *

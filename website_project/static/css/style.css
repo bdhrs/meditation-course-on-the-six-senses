@@ -381,60 +381,6 @@ body.dark-mode .menu-toggle:hover .menu-icon {
   transform: scale(0.95); /* Slight scale down on click */
 }
 
-/* Custom Tooltip Styles - positioned below the buttons */
-.toggles .toggle-button::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  transform: none;
-  background-color: var(--tooltip-bg);
-  color: var(--tooltip-text);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 1001;
-  pointer-events: none;
-  min-width: 120px;
-  text-align: center;
-}
-
-.toggles .toggle-button:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Add arrow to tooltip pointing up */
-.toggles .toggle-button::before {
-  content: "";
-  position: absolute;
-  top: calc(100% + 5px);
-  right: 10px;
-  transform: none;
-  border: 5px solid transparent;
-  border-bottom-color: var(--tooltip-bg);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1001;
-  pointer-events: none;
-}
-
-.toggles .toggle-button:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.toggles .toggle-button:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
 .footer-nav {
   display: flex;
   justify-content: space-between;
@@ -802,7 +748,8 @@ table {
   background-color: var(--background-color);
 }
 
-th, td {
+th,
+td {
   padding: 0.75rem 1rem;
   text-align: left;
   border: 1px solid var(--border-color);
@@ -822,8 +769,9 @@ tr:nth-child(even) {
   table {
     font-size: 0.9em;
   }
-  
-  th, td {
+
+  th,
+  td {
     padding: 0.5rem 0.75rem;
   }
 }
@@ -832,8 +780,9 @@ tr:nth-child(even) {
   table {
     font-size: 0.8em;
   }
-  
-  th, td {
+
+  th,
+  td {
     padding: 0.4rem 0.6rem;
   }
 }
