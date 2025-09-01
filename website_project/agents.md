@@ -6,7 +6,8 @@
 - Only make the requested changes. You make make suggestions, but no changes to the code outside the scope of the requested changes.
 - After the user expressed satisfaction with the changes, never before that:
     1. update this document
-    2. provide a github commit message
+    2. provide a github commit message, simple and lowercase. e.g. fix: updated fonts in file abc.html
+    3. DO NOT commit!
 - If any instruction is ambiguous, clarify before continuing.
 - DO NOT use SearchText tool, it fails consistently. Just open the file itself and read it. 
 - AlWAYS read the whole file, DO NOT read files piece by piece.
@@ -31,6 +32,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Fixed tooltip visibility issues by allowing overflow in header
 - Fixed inverted tooltip colors in light/dark modes
 - Fixed tooltip positioning to stay on screen by anchoring to the right
+- Global font set to Inter for better readability and available offline
 
 ## Tech Stack
 - **Python** - Core language for build scripts

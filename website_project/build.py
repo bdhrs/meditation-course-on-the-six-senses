@@ -96,6 +96,21 @@ def copy_static_files(mode="offline"):
     print("Copying static files...")
     # Copy base static assets (CSS, JS, images)
     shutil.copytree(STATIC_DIR, OUTPUT_DIR / "static", dirs_exist_ok=True)
+    
+    # Specifically handle fonts directory to ensure only necessary files are copied
+    fonts_src_dir = STATIC_DIR / "fonts"
+    fonts_dest_dir = OUTPUT_DIR / "static" / "fonts"
+    
+    if fonts_src_dir.exists():
+        # Clean the destination fonts directory
+        if fonts_dest_dir.exists():
+            shutil.rmtree(fonts_dest_dir)
+        fonts_dest_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Copy only the necessary font files
+        for font_file in fonts_src_dir.iterdir():
+            if font_file.name in ["inter-local.css", "UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"]:
+                shutil.copy2(font_file, fonts_dest_dir / font_file.name)
 
     # Generate PWA icons
     generate_pwa_icons()

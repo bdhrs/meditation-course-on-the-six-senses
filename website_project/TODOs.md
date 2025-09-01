@@ -1,6 +1,5 @@
 # TODO
 
-- global font inter
 - reference links not working
 - footer buttons hard left and hard right, two lines only if necessary
 - error testing for common error like *para para*, extra lines, quotes no gap, 

@@ -1,6 +1,5 @@
 :root {
-  --font-family-primary: "Spline Sans", sans-serif;
-  --font-family-secondary: "Noto Sans", sans-serif;
+  --font-family-primary: "Inter", sans-serif;
 
   /* Light Mode Colors */
   --background-color-light: #ffffff;
