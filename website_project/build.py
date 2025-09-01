@@ -282,7 +282,7 @@ def convert_meditation_instructions(text):
     pattern = r"%%(.*?)%%"
     return re.sub(
         pattern,
-        lambda m: f"<details><summary>Transcript</summary>{m.group(1)}</details>",
+        lambda m: f"<details class='transcript'><summary>Transcript</summary>{m.group(1)}</details>",
         text,
         flags=re.DOTALL,
     )

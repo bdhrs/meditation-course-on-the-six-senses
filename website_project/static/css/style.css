@@ -393,7 +393,9 @@ body.dark-mode .toggles .toggle-button:hover .status-icon {
 
 /* Dark mode menu toggle */
 body.dark-mode .menu-toggle {
-  background-color: var(--header-footer-bg); /* Same as header background in dark mode */
+  background-color: var(
+    --header-footer-bg
+  ); /* Same as header background in dark mode */
 }
 
 body.dark-mode .menu-toggle .menu-icon {
@@ -519,8 +521,8 @@ details {
   background-color: var(--block-bg);
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
+  padding: 0 2rem;
+  margin: 0;
   max-width: 100%;
 }
 
@@ -528,6 +530,20 @@ summary {
   cursor: pointer;
   font-weight: bold;
   color: var(--primary-color);
+  padding: 1rem 0 1rem 0;
+}
+
+/* Transcript styling - make content text smaller */
+details.transcript {
+  font-size: 0.9em;
+}
+
+/* Transcript hr styling - thin and theme-appropriate gray */
+details.transcript hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 1em 0;
 }
 
 /* Audio Player Styling - Fixed width issues */

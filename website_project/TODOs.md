@@ -1,6 +1,4 @@
-- audio player light mode style must match dark mode
-- pad transcript heading
-- remove all ## heading from transcript, find with regex
+
 - fix all *para para* in obsidian
 - audio using github?
 - check audio downloading properly for offline. test with one file
@@ -12,7 +10,8 @@
 - rollover text not working on header menu buttons
 - global font inter
 - reference links not working
-- less padding on transcript, more on transcript heading
-- auto delete first \n in transcript 
 - footer buttons hard left and hard right, two lines only if necessary
 - error testing for common error like *para para*, extra lines, quotes no gap, 
+
+## problematic
+- audio player light mode style must match dark mode
