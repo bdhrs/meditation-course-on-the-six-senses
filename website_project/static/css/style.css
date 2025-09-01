@@ -16,13 +16,13 @@
   --scrollbar-thumb-light: #366348;
 
   /* Dark Mode Colors (from stitch1.html) */
-  --background-color-dark: #122118;
+  --background-color-dark: #121614;
   --text-color-dark: #e0e0e0; /* Adjusted for better contrast */
   --primary-color-dark: #96c5a9;
   --block-bg-dark: #15271d;
   --border-color-dark: #264532;
   --header-footer-bg-dark: #0f1c14; /* Slightly darker than background */
-  --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.579);
+  --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.422);
   --tooltip-bg-dark: #f0f0f0;
   --tooltip-text-dark: #333;
   --scrollbar-bg-dark: #0f1c14; /* Same as header/footer */
@@ -189,7 +189,7 @@ p {
 
 /* Header */
 header {
-  padding: 1rem 2.5rem; /* Adjusted padding */
+  padding: 1rem; /* Keep padding consistent at 16px */
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -248,6 +248,11 @@ body.dark-mode .logo {
   flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
+/* Menu toggle button - hidden by default */
+.menu-toggle {
+  display: none;
+}
+
 .toggles .toggle-button {
   background-color: var(--block-bg);
   border: 1px solid var(--border-color);
@@ -264,6 +269,11 @@ body.dark-mode .logo {
   font-size: 1.2em;
   position: relative;
   flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+/* Remove border from menu toggle specifically */
+.menu-toggle {
+  border: none;
 }
 
 .toggles .toggle-button:hover {
@@ -432,13 +442,33 @@ audio::-webkit-media-controls-volume-slider {
 
 /* Responsive Design */
 
-/* First breakpoint: Hide left sidebar (index) */
+/* First breakpoint: Hide left sidebar (index) and show menu toggle */
 @media (max-width: 1200px) {
   .sidebar-left {
     display: none;
+    position: fixed;
+    top: 60px; /* Height of header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px);
+    z-index: 999;
+    box-shadow: var(--shadow);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(-100%);
+    background-color: var(--background-color); /* Solid background */
+  }
+
+  .sidebar-left.show {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex; /* Show menu toggle on narrow screens */
+    margin-right: 1rem;
   }
   .sidebar-right {
-    flex: 0 0 250px; /* Keep right sidebar full width */
+    flex: 0 250px; /* Keep right sidebar full width */
   }
 
   header {
@@ -447,11 +477,32 @@ audio::-webkit-media-controls-volume-slider {
   }
 }
 
-/* Second breakpoint: Hide right sidebar (outline) */
+/* Second breakpoint: Hide right sidebar (outline) but keep menu toggle */
 @media (max-width: 992px) {
   .sidebar-right {
     display: none;
+    position: fixed;
+    top: 60px; /* Height of header */
+    right: 0;
+    width: 250px;
+    height: calc(100vh - 60px);
+    z-index: 999;
+    box-shadow: var(--shadow);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(100%);
+    background-color: var(--background-color); /* Solid background */
   }
+
+  .sidebar-right.show {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex; /* Ensure menu toggle is still visible */
+    margin-right: 1rem;
+  }
+
   .main-content {
     padding: 1.5rem;
   }
@@ -470,9 +521,6 @@ audio::-webkit-media-controls-volume-slider {
   .main-content {
     padding: 1rem;
   }
-  header {
-    padding: 1rem;
-  }
   .footer-nav {
     flex-direction: column;
     gap: 1rem;
@@ -487,6 +535,12 @@ audio::-webkit-media-controls-volume-slider {
 
   .toggles {
     flex-shrink: 0;
+  }
+
+  /* Menu toggle button */
+  .menu-toggle {
+    display: flex; /* Show menu toggle on small screens */
+    margin-right: 1rem;
   }
 
   /* Audio player adjustments for mobile */
@@ -540,5 +594,82 @@ audio::-webkit-media-controls-volume-slider {
   header {
     height: auto; /* Allow height to adjust on smaller screens */
     min-height: 45px;
+  }
+}
+
+/* Title Page Styles */
+.title-page {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title-page-heading {
+  font-size: 3em;
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-page-subtitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 2em;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.title-page-content {
+  text-align: left;
+  margin-top: 3em;
+}
+
+.title-page-content p {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.title-page-content ul {
+  font-size: 1.1em;
+  line-height: 1.7;
+  text-align: left;
+  max-width: 600px;
+  margin: 1.5em auto;
+  padding-left: 1.5em;
+}
+
+.title-page-content li {
+  margin-bottom: 0.5em;
+}
+
+/* Responsive adjustments for title page */
+@media (max-width: 768px) {
+  .title-page-heading {
+    font-size: 2.2em;
+  }
+
+  .title-page-subtitle {
+    font-size: 1.2em;
+  }
+
+  .title-page-content {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-page-heading {
+    font-size: 1.8em;
+  }
+
+  .title-page-subtitle {
+    font-size: 1em;
+  }
+
+  .title-page {
+    padding: 1rem;
   }
 }

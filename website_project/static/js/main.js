@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update icon based on saved theme
         if (savedTheme === 'dark-mode') {
             // Change to moon icon
-            themeIcon.innerHTML = '<path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path>';
+            themeIcon.src = 'static/images/theme-icon-moon.svg';
         } else {
             // Keep sun icon (default)
+            themeIcon.src = 'static/images/theme-icon.svg';
         }
     }
 
@@ -22,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.remove('dark-mode');
             localStorage.setItem('theme', 'light-mode');
             // Change to sun icon
-            themeIcon.innerHTML = '<path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path>';
+            themeIcon.src = 'static/images/theme-icon.svg';
         } else {
             body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
             // Change to moon icon
-            themeIcon.innerHTML = '<path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path>';
+            themeIcon.src = 'static/images/theme-icon-moon.svg';
         }
     });
 
@@ -35,19 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusToggle = document.getElementById('status-toggle');
     const statusIcon = statusToggle.querySelector('.status-icon');
     
-    // Define the base wifi icon path
-    const wifiIconPath = 'M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204ZM237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87ZM205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Zm-32.26,35.76a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z';
-    
     // Check if we're in online or offline mode
     // For now, we'll just toggle the icon as a visual indicator
     statusToggle.addEventListener('click', () => {
-        // Toggle between online and offline (with diagonal line) icons
-        if (statusIcon.innerHTML.includes('line')) {
+        // Toggle between online and offline icons
+        if (statusIcon.src.includes('status-icon-offline.svg')) {
             // Currently showing offline icon, change to online icon
-            statusIcon.innerHTML = '<path d="' + wifiIconPath + '"></path>';
+            statusIcon.src = 'static/images/status-icon.svg';
         } else {
-            // Currently showing online icon, change to offline icon with diagonal line
-            statusIcon.innerHTML = '<path d="' + wifiIconPath + '"></path><line x1="0" y1="256" x2="256" y2="0" stroke="currentColor" stroke-width="16"/>';
+            // Currently showing online icon, change to offline icon
+            statusIcon.src = 'static/images/status-icon-offline.svg';
         }
     });
 
@@ -90,4 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         document.querySelector('#on-page-toc').style.display = 'none';
     }
+
+    // --- Menu Toggle ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebarLeft = document.querySelector('.sidebar-left');
+
+    menuToggle.addEventListener('click', () => {
+        // Toggle only the left sidebar
+        sidebarLeft.classList.toggle('show');
+    });
 });
