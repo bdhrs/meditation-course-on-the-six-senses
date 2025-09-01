@@ -97,4 +97,26 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toggle only the left sidebar
         sidebarLeft.classList.toggle('show');
     });
+
+    // --- Footer Navigation ---
+    const prevButton = document.querySelector('.prev-page');
+    const nextButton = document.querySelector('.next-page');
+
+    if (prevButton && !prevButton.classList.contains('disabled')) {
+        prevButton.addEventListener('click', (e) => {
+            const href = prevButton.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        });
+    }
+
+    if (nextButton && !nextButton.classList.contains('disabled')) {
+        nextButton.addEventListener('click', (e) => {
+            const href = nextButton.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        });
+    }
 });

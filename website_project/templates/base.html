@@ -73,42 +73,62 @@
     </header>
 
     <div class="page-container">
-      <aside class="sidebar-left">
-        <nav>
-          <h3>Course Outline</h3>
-          <ul>
-            {% for page in all_pages %}
-            <li><a href="{{ page.path }}">{{ page.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-      </aside>
+      <div class="content-wrapper">
+        <aside class="sidebar-left">
+          <nav>
+            <h3>Course Outline</h3>
+            <ul>
+              {% for page in all_pages %}
+              <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </aside>
 
-      <main class="main-content">{% block content %}{% endblock %}</main>
+        <div class="center-pane-wrapper">
+          <main class="main-content">
+            {% block content %}{% endblock %}
+          </main>
+          
+          <footer>
+            <div class="footer-nav">
+              {% if prev_page %}
+              <div class="footer-button prev-page" data-href="{{ prev_page.path }}">
+                <span class="arrow">&larr;</span>
+                <span class="button-text">{{ prev_page.title }}</span>
+              </div>
+              {% else %}
+              <div class="footer-button prev-page disabled">
+                <span class="arrow">&larr;</span>
+                <span class="button-text">No Previous Page</span>
+              </div>
+              {% endif %}
+              
+              {% if next_page %}
+              <div class="footer-button next-page" data-href="{{ next_page.path }}">
+                <span class="button-text">{{ next_page.title }}</span>
+                <span class="arrow">&rarr;</span>
+              </div>
+              {% else %}
+              <div class="footer-button next-page disabled">
+                <span class="button-text">No Next Page</span>
+                <span class="arrow">&rarr;</span>
+              </div>
+              {% endif %}
+            </div>
+          </footer>
+        </div>
 
-      <aside class="sidebar-right">
-        <nav id="on-page-toc">
-          <h3>On This Page</h3>
-          <ul>
-            <!-- To be populated by JavaScript -->
-          </ul>
-        </nav>
-      </aside>
-    </div>
-
-    <footer>
-      <div class="footer-nav">
-        {% if prev_page %}
-        <a href="{{ prev_page.path }}" class="prev-page">
-          &larr; {{ prev_page.title }}
-        </a>
-        {% endif %} {% if next_page %}
-        <a href="{{ next_page.path }}" class="next-page">
-          {{ next_page.title }} &rarr;
-        </a>
-        {% endif %}
+        <aside class="sidebar-right">
+          <nav id="on-page-toc">
+            <h3>On This Page</h3>
+            <ul>
+              <!-- To be populated by JavaScript -->
+            </ul>
+          </nav>
+        </aside>
       </div>
-    </footer>
+    </div>
 
     <script src="static/js/main.js"></script>
   </body>
