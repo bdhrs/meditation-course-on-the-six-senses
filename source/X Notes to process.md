@@ -60,7 +60,7 @@ Signal Detection Theory is about how you can focus on one stimulus among many, o
 
 Sensory Adaptation is when a sound is so regular and repetitive that you do heading it, and only hear it again when it changes in some way. Saliva has a flavour but you never taste it.
 
-Sounds are collected by the external ear and funneled to the tympanic membrane ear drum which vibrates ... Technical stuff ... In short physical vibrations are converted into electrical signals which are carried adding the auditory nerve to your brain stem.
+Sounds are collected by the external ear and funneled to the tympanic membrane ear drum which vibrates … Technical stuff … In short physical vibrations are converted into electrical signals which are carried adding the auditory nerve to your brain stem.
 
 The main difference between cognitive psychology and Buddhist model of sense perception is that the one is objective, and the other is subjective. Psychology has much to say about which regions of the brain sounds and specifically speech get processed, but none of those processes are available to experience. The brain is really s black box as far as experience goes, you can't even feel most of it with the sense of touch. The first time sound becomes available to introspection is when it occurs in the mind, something which the physical sciences struggle to explain. There is literally no accepted theory of min mind or consciousness, despite the fact that every human being has subjective knowledge of conscious experiences.
 
