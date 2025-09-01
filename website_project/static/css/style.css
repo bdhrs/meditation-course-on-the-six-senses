@@ -155,7 +155,7 @@ p {
 .sidebar-right {
   flex: 0 0 250px;
   padding: 0; /* Remove padding to be handled by children */
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
   position: sticky;
   top: 0;
@@ -178,13 +178,15 @@ p {
 }
 
 /* Course Outline Sidebar Styling */
-.sidebar-left nav {
+.sidebar-left nav,
+.sidebar-right nav {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.sidebar-left h3 {
+.sidebar-left h3,
+.sidebar-right h3 {
   margin: 0;
   padding: 1rem;
   background-color: var(--header-footer-bg);
@@ -196,31 +198,36 @@ p {
   font-weight: 700;
 }
 
-.sidebar-left ul {
+.sidebar-left ul,
+.sidebar-right ul {
   list-style: none;
   padding: 0;
   margin: 0;
   flex-grow: 1;
 }
 
-.sidebar-left li {
+.sidebar-left li,
+.sidebar-right li {
   padding: 0.75rem 1rem; /* Increased vertical padding */
   border-bottom: 1px solid var(--border-color); /* Light gray line separator */
   margin: 0;
 }
 
-.sidebar-left li:last-child {
+.sidebar-left li:last-child,
+.sidebar-right li:last-child {
   border-bottom: none;
 }
 
-.sidebar-left a {
+.sidebar-left a,
+.sidebar-right a {
   text-decoration: none;
   color: var(--text-color);
   display: block;
   transition: color 0.3s;
 }
 
-.sidebar-left a:hover {
+.sidebar-left a:hover,
+.sidebar-right a:hover {
   color: var(--primary-color);
   text-decoration: none;
 }
