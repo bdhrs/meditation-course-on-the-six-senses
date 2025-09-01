@@ -345,7 +345,7 @@ body.dark-mode .toggles .toggle-button:hover .status-icon {
 /* Menu toggle specific styling */
 .menu-toggle {
   border: none;
-  background-color: var(--header-footer-bg); /* Same as header background */
+  background-color: transparent; /* Transparent background to avoid flashing */
   transition: top 0.3s, background-color 0.3s, box-shadow 0.3s; /* Match all transition properties of header */
 }
 
@@ -364,9 +364,7 @@ body.dark-mode .toggles .toggle-button:hover .status-icon {
 
 /* Dark mode menu toggle */
 body.dark-mode .menu-toggle {
-  background-color: var(
-    --header-footer-bg
-  ); /* Same as header background in dark mode */
+  background-color: transparent; /* Transparent background in dark mode too */
 }
 
 body.dark-mode .menu-toggle .menu-icon {
