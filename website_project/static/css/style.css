@@ -331,6 +331,46 @@ body.dark-mode .logo {
   flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
+/* Ensure icons inside toggle buttons use the correct color */
+.toggles .toggle-button .theme-icon,
+.toggles .toggle-button .status-icon {
+  /* Inherit color from parent by default */
+  transition: filter 0.3s ease; /* Smooth transition for icon color changes */
+  width: 20px; /* Fixed width to prevent scaling */
+  height: 20px; /* Fixed height to prevent scaling */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Light mode: Icons use the default text color (no filter needed) */
+/* Light mode hover: Keep the same icon color */
+.toggles .toggle-button:hover .theme-icon,
+.toggles .toggle-button:hover .status-icon {
+  /* No filter needed - keep dark icons on hover in light mode */
+}
+
+/* Dark mode: Force icons to use a light color */
+body.dark-mode .toggles .toggle-button .theme-icon,
+body.dark-mode .toggles .toggle-button .status-icon {
+  filter: invert(100%); /* Light color for icons in dark mode */
+}
+
+/* Dark mode hover: Use dark icons on dark background for better contrast */
+body.dark-mode .toggles .toggle-button:hover .theme-icon,
+body.dark-mode .toggles .toggle-button:hover .status-icon {
+  filter: invert(0%); /* Dark icons on hover in dark mode */
+}
+
+/* Hover effect for toggle buttons */
+.toggles .toggle-button:hover {
+  background-color: #96c5a9; /* Use the dark mode primary color for both modes */
+  transform: scale(1.1); /* Slight scale up on hover */
+  border-color: #96c5a9;
+}
+
+.toggles .toggle-button:active {
+  transform: scale(0.95); /* Slight scale down on click */
+}
+
 /* Menu toggle specific styling */
 .menu-toggle {
   border: none;
@@ -362,13 +402,6 @@ body.dark-mode .menu-toggle .menu-icon {
 
 body.dark-mode .menu-toggle:hover .menu-icon {
   filter: invert(70%); /* Lighter gray on hover in dark mode */
-}
-
-.toggles .toggle-button:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-  transform: scale(1.1); /* Slight scale up on hover */
-  border-color: var(--primary-color);
 }
 
 .toggles .toggle-button:active {
