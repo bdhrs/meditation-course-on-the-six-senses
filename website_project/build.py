@@ -18,6 +18,36 @@ TEMPLATES_DIR = WEBSITE_ROOT / "templates"
 AUDIO_SOURCE_DIR = PROJECT_ROOT / "waveform_project" / "Exported"
 ICON_SOURCE = PROJECT_ROOT / "icon" / "six-senses.svg"
 
+
+# --- URL Generation Functions ---
+def slugify_title(title):
+    """
+    Convert a title into a human-readable URL slug.
+    
+    Args:
+        title (str): The title to convert
+        
+    Returns:
+        str: A URL-friendly slug
+    """
+    # Use unidecode to handle Unicode characters
+    slug = unidecode(title)
+    
+    # Convert to lowercase
+    slug = slug.lower()
+    
+    # Replace spaces and special characters with hyphens
+    slug = re.sub(r'[^a-z0-9]+', '-', slug)
+    
+    # Remove leading and trailing hyphens
+    slug = slug.strip('-')
+    
+    # Ensure we don't have empty slugs
+    if not slug:
+        slug = "untitled"
+        
+    return slug
+
 # --- Main Build Functions ---
 
 
@@ -100,8 +130,9 @@ def render_pages(mode="offline"):
     pages_for_nav.append({"title": "Title Page", "path": "index.html"})
     for md_file in md_files:
         if not md_file.name.startswith(("X", ".")):
+            slug = slugify_title(md_file.stem)
             pages_for_nav.append(
-                {"title": md_file.stem, "path": f"{md_file.stem}.html"}
+                {"title": md_file.stem, "path": f"{slug}.html"}
             )
 
     # Generate the title page dynamically
@@ -157,6 +188,7 @@ def render_pages(mode="offline"):
 
         html_content = md.render(processed_text)
         title = md_file.stem
+        slug = slugify_title(title)
 
         output_html = page_template.render(
             title=title,
@@ -166,7 +198,7 @@ def render_pages(mode="offline"):
             next_page=next_page,  # For the footer
         )
 
-        output_filename = OUTPUT_DIR / f"{title}.html"
+        output_filename = OUTPUT_DIR / f"{slug}.html"
         output_filename.write_text(output_html, encoding="utf-8")
 
     # Generate the table of contents page (optional)
@@ -310,9 +342,9 @@ def convert_wiki_links(text):
 
         if "#" in target:
             page, heading_id = target.split("#", 1)
-            href = f"{page}.html#{make_id(heading_id)}"
+            href = f"{slugify_title(page)}.html#{make_id(heading_id)}"
         else:
-            href = f"{target}.html"
+            href = f"{slugify_title(target)}.html"
         return f'<a href="{href}">{display_text}</a>'
 
     # Using raw string for regex pattern

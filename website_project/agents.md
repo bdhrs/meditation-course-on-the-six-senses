@@ -1,5 +1,14 @@
 # Website Project - Six Senses Meditation Course
 
+## Instructions
+- Build using `uv run website_project/build.py` from the root dir.
+- Do not run a python server, it is already running.
+- Only make the requested changes. You make make suggestions, but no changes to the code outside the scope of the requested changes.
+- After the user expressed satisfaction with the changes:
+    1. update this document
+    2. provide a github commit message
+- Follow all instructions explicitly.
+
 ## Project Overview
 This project builds a static website for the "Meditation Course on the Six Senses". The website is generated from markdown source files and includes features like:
 - Dark/light mode toggle with SVG icons
@@ -15,6 +24,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Custom styled tooltips that match the theme colors and appear below icons
 - Custom scrollbars throughout the site that match the theme (dark background with green thumb)
 - Fixed console errors (missing favicon, missing PWA icons, service worker duplicates)
+- Human-readable URLs generated from page titles
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -30,7 +40,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 ## Key Files and Directories
 
 ### Build System
-- `uv run website_project/build.py` - Main build script that orchestrates the entire process
+- `uv run website_project/build.py` - Main build script that orchestrates the entire process, including URL generation
 - `pyproject.toml` - Project dependencies and metadata (in root directory)
 
 ### Source Content
@@ -112,6 +122,14 @@ Then open `http://localhost:8000` in your browser.
 - Toggle button in `templates/base.html` uses SVG icons (wifi and computer)
 - This is currently a visual indicator only - actual mode is determined at build time
 - Custom tooltips show "Online/Offline Mode" positioned below the buttons
+
+### Human-Readable URLs
+- Implemented in `website_project/build.py`
+- Added `slugify_title()` function to convert page titles to URL-friendly slugs
+- Converts Unicode characters to ASCII equivalents using `unidecode`
+- Replaces spaces and special characters with hyphens
+- All internal links use the new URL format
+- Wiki-style links in content are automatically converted to use human-readable URLs
 
 ### Interactive Elements
 - Toggle buttons have hover and click effects for better user feedback

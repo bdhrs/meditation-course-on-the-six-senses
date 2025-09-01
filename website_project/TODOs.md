@@ -1,6 +1,5 @@
 # TODO
 
-- make urls 01-02-nicely-formatted-vedana.html
 - consistent system for quotes > >> ? or split lines?
 - rollover text not working on header menu buttons
 - global font inter
