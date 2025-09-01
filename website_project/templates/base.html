@@ -86,32 +86,34 @@
         </aside>
 
         <div class="center-pane-wrapper">
-          <main class="main-content">
-            {% block content %}{% endblock %}
-          </main>
-          
+          <main class="main-content">{% block content %}{% endblock %}</main>
+
           <footer>
             <div class="footer-nav">
               {% if prev_page %}
-              <div class="footer-button prev-page" data-href="{{ prev_page.path }}">
+              <div
+                class="footer-button prev-page"
+                data-href="{{ prev_page.path }}"
+              >
                 <span class="arrow">&larr;</span>
                 <span class="button-text">{{ prev_page.title }}</span>
               </div>
               {% else %}
               <div class="footer-button prev-page disabled">
                 <span class="arrow">&larr;</span>
-                <span class="button-text">No Previous Page</span>
+                <span class="button-text"></span>
               </div>
-              {% endif %}
-              
-              {% if next_page %}
-              <div class="footer-button next-page" data-href="{{ next_page.path }}">
+              {% endif %} {% if next_page %}
+              <div
+                class="footer-button next-page"
+                data-href="{{ next_page.path }}"
+              >
                 <span class="button-text">{{ next_page.title }}</span>
                 <span class="arrow">&rarr;</span>
               </div>
               {% else %}
               <div class="footer-button next-page disabled">
-                <span class="button-text">No Next Page</span>
+                <span class="button-text"></span>
                 <span class="arrow">&rarr;</span>
               </div>
               {% endif %}

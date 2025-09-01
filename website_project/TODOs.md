@@ -1,8 +1,5 @@
 # TODO
 
-- schedule is messed up
-- "no next page" just leave blank
-- "no previous page" just leave blank 
 - check images
 - mobile tooltip gets stuck on
 - error testing for common errors in md and html
