@@ -11,8 +11,8 @@
   --border-color-light: #e0e0e0;
   --header-footer-bg-light: #f5f5f5; /* Slightly darker than background */
   --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --tooltip-bg-light: #333;
-  --tooltip-text-light: #fff;
+  --tooltip-bg-light: #f0f0f0;
+  --tooltip-text-light: #333;
   --scrollbar-bg-light: #f5f5f5;
   --scrollbar-thumb-light: #366348;
 
@@ -25,8 +25,8 @@
   --border-color-dark: #264532;
   --header-footer-bg-dark: #0f1c14; /* Slightly darker than background */
   --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.422);
-  --tooltip-bg-dark: #f0f0f0;
-  --tooltip-text-dark: #333;
+  --tooltip-bg-dark: #333;
+  --tooltip-text-dark: #fff;
   --scrollbar-bg-dark: #0f1c14; /* Same as header/footer */
   --scrollbar-thumb-dark: #96c5a9; /* Theme green */
 
@@ -267,7 +267,7 @@ header {
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent any scrolling in header */
+  overflow: visible; /* Allow tooltips to extend beyond header */
   height: 60px; /* Fixed height to prevent vertical overflow */
 }
 
@@ -422,8 +422,8 @@ body.dark-mode .menu-toggle:hover .menu-icon {
   content: attr(data-tooltip);
   position: absolute;
   top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  transform: none;
   background-color: var(--tooltip-bg);
   color: var(--tooltip-text);
   padding: 0.5rem 1rem;
@@ -436,6 +436,8 @@ body.dark-mode .menu-toggle:hover .menu-icon {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 1001;
   pointer-events: none;
+  min-width: 120px;
+  text-align: center;
 }
 
 .toggles .toggle-button:hover::after {
@@ -448,8 +450,8 @@ body.dark-mode .menu-toggle:hover .menu-icon {
   content: "";
   position: absolute;
   top: calc(100% + 5px);
-  left: 50%;
-  transform: translateX(-50%);
+  right: 10px;
+  transform: none;
   border: 5px solid transparent;
   border-bottom-color: var(--tooltip-bg);
   opacity: 0;
@@ -457,6 +459,11 @@ body.dark-mode .menu-toggle:hover .menu-icon {
   transition: opacity 0.3s, visibility 0.3s;
   z-index: 1001;
   pointer-events: none;
+}
+
+.toggles .toggle-button:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 .toggles .toggle-button:hover::before {

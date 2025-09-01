@@ -4,9 +4,12 @@
 - Build using `uv run website_project/build.py` from the root dir.
 - Do not run a python server, it is already running.
 - Only make the requested changes. You make make suggestions, but no changes to the code outside the scope of the requested changes.
-- After the user expressed satisfaction with the changes:
+- After the user expressed satisfaction with the changes, never before that:
     1. update this document
     2. provide a github commit message
+- If any instruction is ambiguous, clarify before continuing.
+- DO NOT use SearchText tool, it fails consistently. Just open the file itself and read it. 
+- AlWAYS read the whole file, DO NOT read files piece by piece.
 - Follow all instructions explicitly.
 
 ## Project Overview
@@ -25,6 +28,9 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Custom scrollbars throughout the site that match the theme (dark background with green thumb)
 - Fixed console errors (missing favicon, missing PWA icons, service worker duplicates)
 - Human-readable URLs generated from page titles
+- Fixed tooltip visibility issues by allowing overflow in header
+- Fixed inverted tooltip colors in light/dark modes
+- Fixed tooltip positioning to stay on screen by anchoring to the right
 
 ## Tech Stack
 - **Python** - Core language for build scripts
