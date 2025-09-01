@@ -1,7 +1,4 @@
 
-- fix all *para para* in obsidian
-- audio using github?
-- check audio downloading properly for offline. test with one file
 - all... to …
 - glow on all audio player buttons in dark mode
 - h1 h2 headings in dark dark green / light light green
@@ -15,3 +12,5 @@
 
 ## problematic
 - audio player light mode style must match dark mode
+- audio using github?
+- check audio downloading properly for offline. test with one file
