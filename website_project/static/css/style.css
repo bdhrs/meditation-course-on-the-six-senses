@@ -62,7 +62,7 @@ body {
   flex-direction: column;
 }
 
-body.dark-mode {
+html.dark-mode {
   --background-color: var(--background-color-dark);
   --sidebar-bg: var(--sidebar-bg-dark);
   --text-color: var(--text-color-dark);
@@ -274,7 +274,7 @@ footer {
   flex-shrink: 0;
 }
 
-body.dark-mode .logo {
+html.dark-mode .logo {
   filter: invert(0%);
 }
 
@@ -335,14 +335,14 @@ body.dark-mode .logo {
 }
 
 /* Dark mode: Force icons to use a light color */
-body.dark-mode .toggles .toggle-button .theme-icon,
-body.dark-mode .toggles .toggle-button .status-icon {
+html.dark-mode .toggles .toggle-button .theme-icon,
+html.dark-mode .toggles .toggle-button .status-icon {
   filter: invert(100%); /* Light color for icons in dark mode */
 }
 
 /* Dark mode hover: Use dark icons on dark background for better contrast */
-body.dark-mode .toggles .toggle-button:hover .theme-icon,
-body.dark-mode .toggles .toggle-button:hover .status-icon {
+html.dark-mode .toggles .toggle-button:hover .theme-icon,
+html.dark-mode .toggles .toggle-button:hover .status-icon {
   filter: invert(0%); /* Dark icons on hover in dark mode */
 }
 
@@ -378,15 +378,15 @@ body.dark-mode .toggles .toggle-button:hover .status-icon {
 }
 
 /* Dark mode menu toggle */
-body.dark-mode .menu-toggle {
+html.dark-mode .menu-toggle {
   background-color: transparent; /* Transparent background in dark mode too */
 }
 
-body.dark-mode .menu-toggle .menu-icon {
+html.dark-mode .menu-toggle .menu-icon {
   filter: invert(100%); /* White bars in dark mode */
 }
 
-body.dark-mode .menu-toggle:hover .menu-icon {
+html.dark-mode .menu-toggle:hover .menu-icon {
   filter: invert(70%); /* Lighter gray on hover in dark mode */
 }
 

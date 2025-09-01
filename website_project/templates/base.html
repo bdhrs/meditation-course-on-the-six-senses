@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <script>
+      // Apply theme early to prevent flashing
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          document.documentElement.classList.add(savedTheme);
+        }
+      })();
+    </script>
+    <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("./sw.js", { scope: "./" });

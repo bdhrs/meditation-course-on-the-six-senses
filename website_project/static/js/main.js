@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
-        body.classList.add(savedTheme);
+        document.documentElement.classList.add(savedTheme);
         // Update icon based on saved theme
         if (savedTheme === 'dark-mode') {
             // Change to moon icon
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeToggle.addEventListener('click', () => {
-        if (body.classList.contains('dark-mode')) {
-            body.classList.remove('dark-mode');
+        if (document.documentElement.classList.contains('dark-mode')) {
+            document.documentElement.classList.remove('dark-mode');
             localStorage.setItem('theme', 'light-mode');
             // Change to sun icon
             themeIcon.src = 'static/images/theme-icon.svg';
         } else {
-            body.classList.add('dark-mode');
+            document.documentElement.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
             // Change to moon icon
             themeIcon.src = 'static/images/theme-icon-moon.svg';
