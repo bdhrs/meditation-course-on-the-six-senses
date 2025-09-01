@@ -50,19 +50,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Disappearing Header ---
-    let lastScrollY = window.scrollY;
     const header = document.getElementById('main-header');
+    const scrollableContainer = document.querySelector('.center-pane-wrapper');
+    let lastScrollTop = 0;
+    const delta = 5; // Minimum scroll change to trigger action
+    const headerHeight = header.offsetHeight;
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > lastScrollY) {
-            // Scrolling down
-            header.classList.add('header-hidden');
-        } else {
-            // Scrolling up
-            header.classList.remove('header-hidden');
-        }
-        lastScrollY = window.scrollY;
-    }, { passive: true });
+    if (scrollableContainer) {
+        scrollableContainer.addEventListener('scroll', () => {
+            const st = scrollableContainer.scrollTop;
+
+            // Make sure we scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta) {
+                return;
+            }
+
+            const scrollHeight = scrollableContainer.scrollHeight;
+            const clientHeight = scrollableContainer.clientHeight;
+            const isAtBottom = st + clientHeight >= scrollHeight - 20;
+
+            // If scrolling down, hide the header
+            if (st > lastScrollTop && st > headerHeight) {
+                header.classList.add('header-hidden');
+            } else { // If scrolling up, show the header
+                header.classList.remove('header-hidden');
+            }
+
+            // Always show header if at the bottom of the page
+            if (isAtBottom) {
+                header.classList.remove('header-hidden');
+            }
+
+            lastScrollTop = st;
+        }, { passive: true });
+    }
 
     // --- On-Page Table of Contents ---
     const tocContainer = document.querySelector('#on-page-toc ul');

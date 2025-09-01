@@ -218,6 +218,11 @@ header {
   box-shadow: var(--shadow);
   z-index: 1000;
   height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
 }
 
 footer {
