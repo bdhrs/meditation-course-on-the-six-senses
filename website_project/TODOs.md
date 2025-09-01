@@ -1,5 +1,10 @@
 # TODO
 
+## problematic
+- audio player light mode style must match dark mode
+- glow on all audio player buttons in dark mode
+- check audio downloading properly for offline. test with one file
+
 - error testing for common errors in md and html
     - no reference
     - - *
@@ -14,14 +19,8 @@
     - '>--'
     - '>\S'
 - fail on errors 
-- github build\
 
 ## Intermittent
 - website is flashing on page load
 
-## problematic
-- audio player light mode style must match dark mode
-- glow on all audio player buttons in dark mode
 
-- audio using github?
-- check audio downloading properly for offline. test with one file

@@ -1,9 +1,10 @@
-name: Deploy to GitHub Pages
+name: Deploy Custom Website to GitHub Pages
 on:
   push:
     paths:
-      - 'mkdocs_project/docs/**'
-      - 'mkdocs_project/mkdocs.yml'
+      - 'website_project/**'
+      - 'source/**'
+      - '.github/workflows/Deploy to GitHub Pages.yaml'
   workflow_dispatch:
 jobs:
   deploy:
@@ -30,11 +31,11 @@ jobs:
       - name: Install dependencies
         run: uv sync
       
-      - name: Run build script
-        run: uv run python main.py --mode online
+      - name: Build custom website
+        run: uv run website_project/build.py --mode online
       
       - name: Create .nojekyll file
-        run: mkdir -p "output/Meditation Course on the Six Senses" && touch "output/Meditation Course on the Six Senses/.nojekyll"
+        run: touch "output/Meditation Course on the Six Senses/.nojekyll"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

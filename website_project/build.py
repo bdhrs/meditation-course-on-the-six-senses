@@ -13,7 +13,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 WEBSITE_ROOT = Path(__file__).parent
 
 SOURCE_DIR = PROJECT_ROOT / "source"
-OUTPUT_DIR = PROJECT_ROOT / "output" / "webapp"
+OUTPUT_DIR = PROJECT_ROOT / "output" / "Meditation Course on the Six Senses"
 STATIC_DIR = WEBSITE_ROOT / "static"
 TEMPLATES_DIR = WEBSITE_ROOT / "templates"
 AUDIO_SOURCE_DIR = PROJECT_ROOT / "waveform_project" / "Exported"
@@ -254,23 +254,23 @@ def render_pages(mode="offline"):
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found | Six Senses</title>
-    <link rel="icon" type="image/x-icon" href="webapp/favicon.ico" />
-    <link rel="stylesheet" href="webapp/static/css/style.css" />
-    <link rel="manifest" href="webapp/manifest.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./webapp/sw.js", { scope: "./webapp/" });
+          navigator.serviceWorker.register("./sw.js", { scope: "./" });
         });
       }
     </script>
-    <link rel="stylesheet" href="webapp/static/fonts/inter-local.css" />
+    <link rel="stylesheet" href="static/fonts/inter-local.css" />
   </head>
   <body>
     <header id="main-header">
       <div class="header-content">
         <img
-          src="webapp/static/images/six-senses.svg"
+          src="static/images/six-senses.svg"
           alt="Six Senses Logo"
           class="logo"
         />
@@ -285,14 +285,14 @@ def render_pages(mode="offline"):
             <div class="error-page">
               <h1>404 - Page Not Found</h1>
               <p>Sorry, the page you're looking for has probably moved.</p>
-              <p><a href="webapp/">Return to the Title Page</a></p>
+              <p><a href="./">Return to the Title Page</a></p>
             </div>
           </main>
         </div>
       </div>
     </div>
 
-    <script src="webapp/static/js/main.js"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>"""
     (OUTPUT_DIR.parent / "404.html").write_text(root_404_html, encoding="utf-8")
@@ -417,8 +417,11 @@ def convert_audio_links(text, mode):
         audio_file = match.group(1)
         if mode == "online":
             base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
-            src = f"{base_url}{audio_file}"
+            # Use exact filename as-is without modification
+            filename_only = Path(audio_file).name
+            src = f"{base_url}{filename_only}"
         else:
+            # Use exact filename as-is without modification
             src = f"static/audio/{audio_file}"
         return f'<audio controls style="width: 100%;"><source src="{src}" type="audio/mpeg"></audio>'
 
@@ -478,7 +481,18 @@ def make_id(text):
 
 def main():
     """Main function to build the static website."""
-    mode = "offline"  # Hardcoded for now
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Build the Six Senses website.")
+    parser.add_argument(
+        "--mode",
+        choices=["online", "offline"],
+        default="offline",
+        help="Build mode: 'online' for GitHub Pages with external audio, 'offline' for local use with included audio.",
+    )
+    args = parser.parse_args()
+    mode = args.mode
+    
     print(f"--- Starting website build (mode: {mode}) ---")
 
     clean_output_directory()
