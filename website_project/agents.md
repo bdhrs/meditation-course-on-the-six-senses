@@ -44,6 +44,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - **Creative Commons logo now available offline in assets folder**
 - **Image assets are automatically copied from source/assets/images and correctly linked in the website**
 - **Custom 404 error page with link back to the title page (works with GitHub Pages)**
+- **On-page table of contents with differentiated styling for h2 and h3 headings (h3 entries are smaller and tabbed in)**
 
 ## Tech Stack
 - **Python** - Core language for build scripts

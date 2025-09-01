@@ -196,6 +196,21 @@ body.dark-mode {
   border-bottom: none;
 }
 
+/* On-Page Table of Contents Specific Styling */
+#on-page-toc .toc-h2 a {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#on-page-toc .toc-h3 {
+  padding-left: 1.5rem; /* Tab in h3 entries */
+}
+
+#on-page-toc .toc-h3 a {
+  font-size: 0.9em; /* Smaller font for h3 entries */
+  font-weight: normal;
+}
+
 .sidebar-left a,
 .sidebar-right a {
   text-decoration: none;

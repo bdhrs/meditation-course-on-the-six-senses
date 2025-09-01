@@ -103,6 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
             link.href = `#${heading.id}`;
             link.textContent = heading.textContent;
             
+            // Add different classes for h2 and h3 headings
+            if (heading.tagName === 'H2') {
+                listItem.classList.add('toc-h2');
+            } else if (heading.tagName === 'H3') {
+                listItem.classList.add('toc-h3');
+            }
+            
             listItem.appendChild(link);
             tocContainer.appendChild(listItem);
         });
