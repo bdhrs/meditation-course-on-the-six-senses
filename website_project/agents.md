@@ -1,17 +1,24 @@
 # Website Project - Six Senses Meditation Course
 
-## Instructions
+# Instructions for ai agents.
+
+## USE UV
+- Add dependencies using `uv add` from the root directory.
 - Build using `uv run website_project/build.py` from the root dir.
+
+## GENERAL
 - Do not run a python server, it is already running.
 - Only make the requested changes. You make make suggestions, but no changes to the code outside the scope of the requested changes.
-- After the user expressed satisfaction with the changes, never before that:
-    1. update this document
-    2. provide a github commit message, simple and lowercase. e.g. fix: updated fonts in file abc.html
-    3. DO NOT commit!
 - If any instruction is ambiguous, clarify before continuing.
 - DO NOT use SearchText tool, it fails consistently. Just open the file itself and read it. 
 - AlWAYS read the whole file, DO NOT read files piece by piece.
 - Follow all instructions explicitly.
+
+## UPON COMPLETION
+- After the user expressed satisfaction with the changes, never before that:
+    1. update this document
+    2. provide a github commit message, simple and lowercase. e.g. fix: updated fonts in file abc.html
+    3. DO NOT commit!
 
 ## Project Overview
 This project builds a static website for the "Meditation Course on the Six Senses". The website is generated from markdown source files and includes features like:
@@ -33,6 +40,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Fixed inverted tooltip colors in light/dark modes
 - Fixed tooltip positioning to stay on screen by anchoring to the right
 - Global font set to Inter for better readability and available offline
+- **Fixed reference links to correctly jump to specific headings on target pages**
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -79,6 +87,7 @@ All dependencies are managed with uv in the root `pyproject.toml`. Key packages 
 - `markdown-it-py` - Markdown parser (installed automatically when running the build)
 - `unidecode` - Unicode text processing
 - `cairosvg` - SVG to PNG/ICO conversion
+- `mdit-py-plugins` - Plugins for markdown-it-py (added to fix reference links)
 
 ## How to Use
 
@@ -89,7 +98,7 @@ uv sync
 
 If you encounter missing dependencies when running the build, install them with:
 ```bash
-uv add jinja2 markdown-it-py cairosvg
+uv add jinja2 markdown-it-py cairosvg mdit-py-plugins
 ```
 
 ### Run the Build
@@ -138,6 +147,13 @@ Then open `http://localhost:8000` in your browser.
 - Replaces spaces and special characters with hyphens
 - All internal links use the new URL format
 - Wiki-style links in content are automatically converted to use human-readable URLs
+
+### Reference Links to Specific Headings
+- **Fixed issue where reference links with Unicode characters weren't jumping to the correct position**
+- Updated `make_id()` function to convert Unicode to ASCII for consistent ID generation
+- Configured markdown-it anchors plugin to use the same function for HTML heading IDs
+- Ensured URL fragments in links match HTML heading IDs exactly
+- All reference links now correctly jump to their target headings
 
 ### Interactive Elements
 - Toggle buttons have hover and click effects for better user feedback

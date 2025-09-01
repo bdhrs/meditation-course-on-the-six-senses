@@ -1,6 +1,5 @@
 # TODO
 
-- reference links not working
 - footer buttons hard left and hard right, two lines only if necessary
 - error testing for common error like *para para*, extra lines, quotes no gap, 
 - pane content should scroll when scroll wheeled 

@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from markdown_it import MarkdownIt
+from mdit_py_plugins.anchors import anchors_plugin
 from unidecode import unidecode
 import cairosvg
 
@@ -130,6 +131,8 @@ def render_pages(mode="offline"):
     """Processes markdown files and renders them into HTML pages."""
     print("Rendering pages...")
     md = MarkdownIt()
+    # Use a custom slugify function that matches our make_id function
+    md.use(anchors_plugin, min_level=1, max_level=6, slug_func=make_id)
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))
     page_template = env.get_template("page.html")
 
@@ -369,9 +372,11 @@ def convert_wiki_links(text):
 
 def make_id(text):
     """Converts a string into a URL-friendly ID."""
+    # Use unidecode to convert Unicode to ASCII, matching what the browser will do
+    from unidecode import unidecode
     text = unidecode(text)
-    text = text.lower().replace(" ", "-")
-    return re.sub(r"[^a-z0-9-]+", "", text)
+    # Use the same slugify logic as the markdown-it anchors plugin
+    return re.sub(r"[^\w\u4e00-\u9fff\- ]", "", text.strip().lower().replace(" ", "-"))
 
 
 # --- Main Execution ---
