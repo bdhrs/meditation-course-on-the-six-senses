@@ -135,6 +135,8 @@ def render_pages(mode="offline"):
     """Processes markdown files and renders them into HTML pages."""
     print("Rendering pages...")
     md = MarkdownIt()
+    # Enable table support
+    md.enable("table")
     # Use a custom slugify function that matches our make_id function
     md.use(anchors_plugin, min_level=1, max_level=6, slug_func=make_id)
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))

@@ -793,3 +793,47 @@ audio::-webkit-media-controls-volume-slider {
   font-style: italic;
   /* font-weight: bold; */
 }
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background-color: var(--background-color);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--block-bg);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: var(--block-bg);
+}
+
+/* Responsive table handling */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9em;
+  }
+  
+  th, td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.8em;
+  }
+  
+  th, td {
+    padding: 0.4rem 0.6rem;
+  }
+}
