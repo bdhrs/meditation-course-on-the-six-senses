@@ -42,6 +42,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Global font set to Inter for better readability and available offline
 - **Fixed reference links to correctly jump to specific headings on target pages**
 - **Creative Commons logo now available offline in assets folder**
+- **Image assets are automatically copied from source/assets/images and correctly linked in the website**
 
 ## Tech Stack
 - **Python** - Core language for build scripts

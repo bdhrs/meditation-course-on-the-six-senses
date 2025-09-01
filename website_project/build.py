@@ -335,6 +335,7 @@ def process_markdown_content(text, mode):
     """Applies all custom processing to the markdown content."""
     text = convert_meditation_instructions(text)
     text = convert_audio_links(text, mode)
+    text = convert_image_links(text)
     text = convert_wiki_links(text)
     text = convert_sutta_references(text)
     return text
@@ -363,6 +364,18 @@ def convert_audio_links(text, mode):
     # Using raw string for regex pattern
     audio_pattern = r"!\[\[(.*?\.mp3)\]\]"
     return re.sub(audio_pattern, replace_audio, text)
+
+
+def convert_image_links(text):
+    def replace_image(match):
+        image_file = match.group(1)
+        # Images are always served locally from the assets folder
+        src = f"assets/images/{image_file}"
+        return f'![]({src})'
+
+    # Using raw string for regex pattern
+    image_pattern = r"!\[\[(.*?\.(?:png|jpg|jpeg|gif|svg))\]\]"
+    return re.sub(image_pattern, replace_image, text, flags=re.IGNORECASE)
 
 
 def convert_wiki_links(text):
