@@ -30,7 +30,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 ## Key Files and Directories
 
 ### Build System
-- `build.py` - Main build script that orchestrates the entire process
+- `uv run website_project/build.py` - Main build script that orchestrates the entire process
 - `pyproject.toml` - Project dependencies and metadata (in root directory)
 
 ### Source Content

@@ -1,4 +1,3 @@
-- title page
 - menu icon when outline disappears
 - remove bullets from outline, keep left
 - audio player light mode style must match dark mode

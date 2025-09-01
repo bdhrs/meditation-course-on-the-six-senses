@@ -20,6 +20,7 @@ ICON_SOURCE = PROJECT_ROOT / "icon" / "six-senses.svg"
 
 # --- Main Build Functions ---
 
+
 def clean_output_directory():
     """Deletes and recreates the output directory."""
     print(f"Cleaning directory: {OUTPUT_DIR}")
@@ -27,11 +28,12 @@ def clean_output_directory():
         shutil.rmtree(OUTPUT_DIR)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+
 def generate_pwa_icons():
     """Generate PWA icons from the SVG file."""
     icons_dir = OUTPUT_DIR / "static" / "images"
     icons_dir.mkdir(parents=True, exist_ok=True)
-    
+
     if ICON_SOURCE.exists():
         # Generate PWA icons (192px and 512px)
         for size in [192, 512]:
@@ -43,7 +45,7 @@ def generate_pwa_icons():
                 output_width=size,
                 output_height=size,
             )
-        
+
         # Generate favicon.ico
         favicon_path = OUTPUT_DIR / "favicon.ico"
         print(f"Generating {favicon_path} from {ICON_SOURCE}")
@@ -53,10 +55,11 @@ def generate_pwa_icons():
             output_width=32,
             output_height=32,
         )
-        
+
         print("PWA icons and favicon generated successfully.")
     else:
         print(f"Warning: Icon source not found at {ICON_SOURCE}")
+
 
 def copy_static_files(mode="offline"):
     """Copies static assets. In offline mode, also copies audio."""
@@ -77,6 +80,7 @@ def copy_static_files(mode="offline"):
             print(f"Warning: Audio source directory not found at {AUDIO_SOURCE_DIR}")
     print("Static files copied.")
 
+
 def render_pages(mode="offline"):
     """Processes markdown files and renders them into HTML pages."""
     print("Rendering pages...")
@@ -92,9 +96,31 @@ def render_pages(mode="offline"):
 
     # Create a list of page dictionaries for navigation
     pages_for_nav = []
+    # Add the title page as the first item in navigation
+    pages_for_nav.append({"title": "Title Page", "path": "index.html"})
     for md_file in md_files:
         if not md_file.name.startswith(("X", ".")):
-            pages_for_nav.append({"title": md_file.stem, "path": f"{md_file.stem}.html"})
+            pages_for_nav.append(
+                {"title": md_file.stem, "path": f"{md_file.stem}.html"}
+            )
+
+    # Generate the title page dynamically
+    print(" - Generating title page")
+    # Use the special title page template
+    title_page_template = env.get_template("title-page.html")
+
+    # Determine previous and next pages for navigation (title page has no previous page)
+    next_page = pages_for_nav[1] if len(pages_for_nav) > 1 else None
+
+    output_html = title_page_template.render(
+        title="Title Page",
+        all_pages=pages_for_nav,  # For the left sidebar
+        prev_page=None,  # For the footer
+        next_page=next_page,  # For the footer
+    )
+
+    output_filename = OUTPUT_DIR / "index.html"
+    output_filename.write_text(output_html, encoding="utf-8")
 
     # Process and render individual pages
     for i, md_file in enumerate(md_files):
@@ -103,36 +129,54 @@ def render_pages(mode="offline"):
 
         # Determine previous and next pages for navigation
         # This logic needs to be aware of the filtered list `pages_for_nav`
-        current_page_index = next((j for j, page in enumerate(pages_for_nav) if page["title"] == md_file.stem), None)
-        prev_page = pages_for_nav[current_page_index - 1] if current_page_index is not None and current_page_index > 0 else None
-        next_page = pages_for_nav[current_page_index + 1] if current_page_index is not None and current_page_index < len(pages_for_nav) - 1 else None
+        # Title page is at index 0, so we add 1 to the index to account for it
+        current_page_index = next(
+            (
+                j
+                for j, page in enumerate(pages_for_nav)
+                if page["title"] == md_file.stem
+            ),
+            None,
+        )
+        prev_page = (
+            pages_for_nav[current_page_index - 1]
+            if current_page_index is not None and current_page_index > 0
+            else None
+        )
+        next_page = (
+            pages_for_nav[current_page_index + 1]
+            if current_page_index is not None
+            and current_page_index < len(pages_for_nav) - 1
+            else None
+        )
 
         print(f"  - Processing {md_file.name}")
         raw_text = md_file.read_text(encoding="utf-8")
-        
+
         processed_text = process_markdown_content(raw_text, mode)
-        
+
         html_content = md.render(processed_text)
         title = md_file.stem
 
         output_html = page_template.render(
             title=title,
             content=html_content,
-            all_pages=pages_for_nav, # For the left sidebar
-            prev_page=prev_page,   # For the footer
-            next_page=next_page    # For the footer
+            all_pages=pages_for_nav,  # For the left sidebar
+            prev_page=prev_page,  # For the footer
+            next_page=next_page,  # For the footer
         )
 
         output_filename = OUTPUT_DIR / f"{title}.html"
         output_filename.write_text(output_html, encoding="utf-8")
 
-    # Generate the index.html file
-    print("Generating index page...")
+    # Generate the table of contents page (optional)
+    print("Generating table of contents page...")
     index_template = env.get_template("index.html")
     index_html = index_template.render(pages=pages_for_nav, title="Table of Contents")
-    (OUTPUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
+    (OUTPUT_DIR / "contents.html").write_text(index_html, encoding="utf-8")
 
     print("Page rendering complete.")
+
 
 def generate_pwa_assets(mode="offline"):
     """Generates the manifest and service worker for PWA functionality."""
@@ -151,14 +195,14 @@ def generate_pwa_assets(mode="offline"):
             {
                 "src": "static/images/icon-192.png",
                 "sizes": "192x192",
-                "type": "image/png"
+                "type": "image/png",
             },
             {
                 "src": "static/images/icon-512.png",
                 "sizes": "512x512",
-                "type": "image/png"
-            }
-        ]
+                "type": "image/png",
+            },
+        ],
     }
     (OUTPUT_DIR / "manifest.webmanifest").write_text(json.dumps(manifest, indent=2))
 
@@ -169,16 +213,33 @@ def generate_pwa_assets(mode="offline"):
         if f.is_file():
             relative_path = str(f.relative_to(OUTPUT_DIR))
             # Include common web assets
-            if f.suffix.lower() in [".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webmanifest"]:
+            if f.suffix.lower() in [
+                ".html",
+                ".css",
+                ".js",
+                ".png",
+                ".jpg",
+                ".jpeg",
+                ".gif",
+                ".svg",
+                ".webmanifest",
+            ]:
                 files_to_cache.append(relative_path)
             # Include audio files only in offline mode
-            elif mode == "offline" and f.suffix.lower() in [".mp3", ".wav", ".ogg", ".m4a", ".aac", ".flac"]:
+            elif mode == "offline" and f.suffix.lower() in [
+                ".mp3",
+                ".wav",
+                ".ogg",
+                ".m4a",
+                ".aac",
+                ".flac",
+            ]:
                 files_to_cache.append(relative_path)
 
     # Ensure index.html and root path are always cached
     if "index.html" not in files_to_cache:
         files_to_cache.append("index.html")
-        
+
     # Remove duplicates while preserving order
     seen = set()
     unique_files = []
@@ -205,7 +266,9 @@ def generate_pwa_assets(mode="offline"):
 
     print("PWA assets generated.")
 
+
 # --- Content Processing Functions ---
+
 
 def process_markdown_content(text, mode):
     """Applies all custom processing to the markdown content."""
@@ -214,14 +277,16 @@ def process_markdown_content(text, mode):
     text = convert_wiki_links(text)
     return text
 
+
 def convert_meditation_instructions(text):
     pattern = r"%%(.*?)%%"
     return re.sub(
         pattern,
-        lambda m: f'<details><summary>Transcript</summary>{m.group(1)}</details>',
+        lambda m: f"<details><summary>Transcript</summary>{m.group(1)}</details>",
         text,
-        flags=re.DOTALL
+        flags=re.DOTALL,
     )
+
 
 def convert_audio_links(text, mode):
     def replace_audio(match):
@@ -232,10 +297,11 @@ def convert_audio_links(text, mode):
         else:
             src = f"static/audio/{audio_file}"
         return f'<audio controls style="width: 100%;"><source src="{src}" type="audio/mpeg"></audio>'
-    
+
     # Using raw string for regex pattern
     audio_pattern = r"!\[\[(.*?\.mp3)\]\]"
     return re.sub(audio_pattern, replace_audio, text)
+
 
 def convert_wiki_links(text):
     def replace_link(match):
@@ -253,25 +319,29 @@ def convert_wiki_links(text):
     link_pattern = r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]"
     return re.sub(link_pattern, replace_link, text)
 
+
 def make_id(text):
     """Converts a string into a URL-friendly ID."""
     text = unidecode(text)
-    text = text.lower().replace(' ', '-')
-    return re.sub(r'[^a-z0-9-]+', '', text)
+    text = text.lower().replace(" ", "-")
+    return re.sub(r"[^a-z0-9-]+", "", text)
+
 
 # --- Main Execution ---
+
 
 def main():
     """Main function to build the static website."""
     mode = "offline"  # Hardcoded for now
     print(f"--- Starting website build (mode: {mode}) ---")
-    
+
     clean_output_directory()
     copy_static_files(mode)
     render_pages(mode)
     generate_pwa_assets(mode)
-    
+
     print("\n--- Build process completed successfully! ---")
+
 
 if __name__ == "__main__":
     main()
