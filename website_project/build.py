@@ -120,6 +120,13 @@ def copy_static_files(mode="offline"):
     # Generate PWA icons
     generate_pwa_icons()
 
+    # Copy source assets (images, etc.)
+    source_assets_dir = SOURCE_DIR / "assets"
+    output_assets_dir = OUTPUT_DIR / "assets"
+    if source_assets_dir.exists():
+        print(f"Copying source assets from {source_assets_dir} to {output_assets_dir}")
+        shutil.copytree(source_assets_dir, output_assets_dir, dirs_exist_ok=True)
+
     # In offline mode, copy audio files
     if mode == "offline":
         audio_dest_dir = OUTPUT_DIR / "static" / "audio"

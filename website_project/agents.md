@@ -41,6 +41,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - Fixed tooltip positioning to stay on screen by anchoring to the right
 - Global font set to Inter for better readability and available offline
 - **Fixed reference links to correctly jump to specific headings on target pages**
+- **Creative Commons logo now available offline in assets folder**
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -61,6 +62,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 
 ### Source Content
 - `../source/` - Directory containing all markdown content files
+- `../source/assets/` - Directory containing image and audio assets referenced in content
 
 ### Templates
 - `templates/base.html` - Base template with header, layout structure
@@ -80,6 +82,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 
 ### Output
 - `output/` - Generated static website files
+- `output/assets/` - Copied assets from source directory (images, etc.)
 
 ## Dependencies
 All dependencies are managed with uv in the root `pyproject.toml`. Key packages include:
