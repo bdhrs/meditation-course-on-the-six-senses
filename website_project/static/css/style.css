@@ -271,9 +271,37 @@ body.dark-mode .logo {
   flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
-/* Remove border from menu toggle specifically */
+/* Menu toggle specific styling */
 .menu-toggle {
   border: none;
+  background-color: var(--header-footer-bg); /* Same as header background */
+  transition: top 0.3s, background-color 0.3s, box-shadow 0.3s; /* Match all transition properties of header */
+}
+
+/* Light mode menu toggle */
+.menu-toggle .menu-icon {
+  filter: invert(0%); /* Normal colors in light mode */
+  transition: filter 0.3s; /* Smooth transition for icon color changes */
+  width: 20px; /* Fixed width to prevent scaling */
+  height: 20px; /* Fixed height to prevent scaling */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.menu-toggle:hover .menu-icon {
+  filter: invert(50%); /* Gray shade on hover in light mode */
+}
+
+/* Dark mode menu toggle */
+body.dark-mode .menu-toggle {
+  background-color: var(--header-footer-bg); /* Same as header background in dark mode */
+}
+
+body.dark-mode .menu-toggle .menu-icon {
+  filter: invert(100%); /* White bars in dark mode */
+}
+
+body.dark-mode .menu-toggle:hover .menu-icon {
+  filter: invert(70%); /* Lighter gray on hover in dark mode */
 }
 
 .toggles .toggle-button:hover {
