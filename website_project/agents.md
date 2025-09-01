@@ -43,6 +43,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - **Fixed reference links to correctly jump to specific headings on target pages**
 - **Creative Commons logo now available offline in assets folder**
 - **Image assets are automatically copied from source/assets/images and correctly linked in the website**
+- **Custom 404 error page with link back to the title page (works with GitHub Pages)**
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -69,6 +70,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - `templates/base.html` - Base template with header, layout structure
 - `templates/page.html` - Template for individual content pages
 - `templates/index.html` - Template for the table of contents page
+- `templates/404.html` - Template for the 404 error page
 - `templates/sw.js.jinja` - Service worker template for PWA functionality
 
 ### Static Assets

@@ -236,6 +236,67 @@ def render_pages(mode="offline"):
     index_html = index_template.render(pages=pages_for_nav, title="Table of Contents")
     (OUTPUT_DIR / "contents.html").write_text(index_html, encoding="utf-8")
 
+    # Generate the 404 error page
+    print("Generating 404 error page...")
+    error_template = env.get_template("404.html")
+    error_html = error_template.render(
+        title="Page Not Found",
+        all_pages=pages_for_nav,  # For the left sidebar
+        prev_page=None,  # For the footer
+        next_page=None,  # For the footer
+    )
+    (OUTPUT_DIR / "404.html").write_text(error_html, encoding="utf-8")
+
+    # Create a simplified 404 page for the root directory (for GitHub Pages)
+    root_404_html = """<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | Six Senses</title>
+    <link rel="icon" type="image/x-icon" href="webapp/favicon.ico" />
+    <link rel="stylesheet" href="webapp/static/css/style.css" />
+    <link rel="manifest" href="webapp/manifest.webmanifest" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./webapp/sw.js", { scope: "./webapp/" });
+        });
+      }
+    </script>
+    <link rel="stylesheet" href="webapp/static/fonts/inter-local.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="header-content">
+        <img
+          src="webapp/static/images/six-senses.svg"
+          alt="Six Senses Logo"
+          class="logo"
+        />
+        <span class="course-title">Meditation Course on the Six Senses</span>
+      </div>
+    </header>
+
+    <div class="page-container">
+      <div class="content-wrapper">
+        <div class="center-pane-wrapper">
+          <main class="main-content">
+            <div class="error-page">
+              <h1>404 - Page Not Found</h1>
+              <p>Sorry, the page you're looking for has probably moved.</p>
+              <p><a href="webapp/">Return to the Title Page</a></p>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="webapp/static/js/main.js"></script>
+  </body>
+</html>"""
+    (OUTPUT_DIR.parent / "404.html").write_text(root_404_html, encoding="utf-8")
+
     print("Page rendering complete.")
 
 
@@ -371,7 +432,7 @@ def convert_image_links(text):
         image_file = match.group(1)
         # Images are always served locally from the assets folder
         src = f"assets/images/{image_file}"
-        return f'![]({src})'
+        return f"![]({src})"
 
     # Using raw string for regex pattern
     image_pattern = r"!\[\[(.*?\.(?:png|jpg|jpeg|gif|svg))\]\]"

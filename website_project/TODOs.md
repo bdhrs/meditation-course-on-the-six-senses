@@ -15,7 +15,6 @@
     - '>\S'
 - fail on errors 
 - github build\
-- 404 error page with link to index 
 
 ## Intermittent
 - website is flashing on page load
