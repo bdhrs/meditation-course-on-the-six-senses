@@ -4,6 +4,7 @@
 
   /* Light Mode Colors */
   --background-color-light: #ffffff;
+  --sidebar-bg-light: #f8f8f8; /* Slightly different from main background */
   --text-color-light: #212121;
   --primary-color-light: #366348; /* Changed to green */
   --block-bg-light: #f0f0f0;
@@ -17,6 +18,7 @@
 
   /* Dark Mode Colors (from stitch1.html) */
   --background-color-dark: #121614;
+  --sidebar-bg-dark: #1a1f1c; /* Slightly different from main background */
   --text-color-dark: #e0e0e0; /* Adjusted for better contrast */
   --primary-color-dark: #96c5a9;
   --block-bg-dark: #15271d;
@@ -30,6 +32,7 @@
 
   /* Current Theme Colors */
   --background-color: var(--background-color-light);
+  --sidebar-bg: var(--sidebar-bg-light);
   --text-color: var(--text-color-light);
   --primary-color: var(--primary-color-light);
   --block-bg: var(--block-bg-light);
@@ -64,6 +67,7 @@ body {
 
 body.dark-mode {
   --background-color: var(--background-color-dark);
+  --sidebar-bg: var(--sidebar-bg-dark);
   --text-color: var(--text-color-dark);
   --primary-color: var(--primary-color-dark);
   --block-bg: var(--block-bg-dark);
@@ -150,13 +154,14 @@ p {
 .sidebar-left,
 .sidebar-right {
   flex: 0 0 250px;
-  padding: 1rem;
+  padding: 0; /* Remove padding to be handled by children */
   height: 100vh;
   overflow-y: auto;
   position: sticky;
   top: 0;
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+  background-color: var(--sidebar-bg); /* Apply sidebar background color */
 
   /* Ensure scrollbars in sidebars also use custom styling */
   scrollbar-width: thin;
@@ -170,6 +175,54 @@ p {
 
 .sidebar-right {
   border-left: 1px solid var(--border-color);
+}
+
+/* Course Outline Sidebar Styling */
+.sidebar-left nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-left h3 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--header-footer-bg);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.sidebar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar-left li {
+  padding: 0.75rem 1rem; /* Increased vertical padding */
+  border-bottom: 1px solid var(--border-color); /* Light gray line separator */
+  margin: 0;
+}
+
+.sidebar-left li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-left a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  transition: color 0.3s;
+}
+
+.sidebar-left a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .main-content {
@@ -500,8 +553,7 @@ audio::-webkit-media-controls-volume-slider {
   }
 
   header {
-    height: auto;
-    min-height: 60px;
+    height: 60px; /* Fixed height to prevent vertical overflow */
   }
 }
 
@@ -536,8 +588,7 @@ audio::-webkit-media-controls-volume-slider {
   }
 
   header {
-    height: auto;
-    min-height: 60px;
+    height: 60px; /* Fixed height to prevent vertical overflow */
   }
 }
 
@@ -577,8 +628,7 @@ audio::-webkit-media-controls-volume-slider {
   }
 
   header {
-    height: auto;
-    min-height: 50px;
+    height: 60px; /* Fixed height to prevent vertical overflow */
   }
 }
 
@@ -586,6 +636,7 @@ audio::-webkit-media-controls-volume-slider {
 @media (max-width: 480px) {
   header {
     padding: 0.75rem;
+    height: 60px; /* Fixed height to prevent vertical overflow */
   }
 
   .logo {
@@ -617,11 +668,6 @@ audio::-webkit-media-controls-volume-slider {
   /* Audio player adjustments for extra small screens */
   audio {
     padding: 0.4rem 0.6rem;
-  }
-
-  header {
-    height: auto; /* Allow height to adjust on smaller screens */
-    min-height: 45px;
   }
 }
 
