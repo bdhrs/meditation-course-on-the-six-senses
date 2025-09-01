@@ -1,6 +1,5 @@
 # TODO
 
-- h1 h2 headings in dark dark green / light light green
 - make urls 01-02-nicely-formatted-vedana.html
 - consistent system for quotes > >> ? or split lines?
 - rollover text not working on header menu buttons

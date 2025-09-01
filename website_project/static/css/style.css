@@ -120,6 +120,13 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+/* Special styling for h1 and h2 to use theme colors */
+h1 {
+  color: var(
+    --primary-color
+  ); /* Will be dark green in light mode and light green in dark mode */
+}
+
 h1 {
   font-size: 2.5em; /* Approx 32px from stitch1 */
   font-weight: 700;
