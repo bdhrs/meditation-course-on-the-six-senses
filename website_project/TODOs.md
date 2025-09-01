@@ -15,7 +15,6 @@
     - '>\S'
 - fail on errors 
 - github build\
-- clicking on transcript has a flash
 - 404 error page with link to index 
 
 ## Intermittent

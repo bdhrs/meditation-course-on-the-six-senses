@@ -459,6 +459,29 @@ summary {
   font-weight: bold;
   color: var(--primary-color);
   padding: 1rem 0 1rem 0;
+  /* Remove default focus and hover styles */
+  outline: none;
+}
+
+summary:hover, summary:focus {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/* Remove focus and hover effects on transcript summaries */
+details.transcript summary {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background-color: transparent;
+}
+
+details.transcript summary:hover, details.transcript summary:focus {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+details.transcript summary::-webkit-details-marker {
+  color: var(--primary-color);
 }
 
 /* Transcript styling - make content text smaller */
