@@ -24,30 +24,31 @@ ICON_SOURCE = PROJECT_ROOT / "icon" / "six-senses.svg"
 def slugify_title(title):
     """
     Convert a title into a human-readable URL slug.
-    
+
     Args:
         title (str): The title to convert
-        
+
     Returns:
         str: A URL-friendly slug
     """
     # Use unidecode to handle Unicode characters
     slug = unidecode(title)
-    
+
     # Convert to lowercase
     slug = slug.lower()
-    
+
     # Replace spaces and special characters with hyphens
-    slug = re.sub(r'[^a-z0-9]+', '-', slug)
-    
+    slug = re.sub(r"[^a-z0-9]+", "-", slug)
+
     # Remove leading and trailing hyphens
-    slug = slug.strip('-')
-    
+    slug = slug.strip("-")
+
     # Ensure we don't have empty slugs
     if not slug:
         slug = "untitled"
-        
+
     return slug
+
 
 # --- Main Build Functions ---
 
@@ -97,20 +98,23 @@ def copy_static_files(mode="offline"):
     print("Copying static files...")
     # Copy base static assets (CSS, JS, images)
     shutil.copytree(STATIC_DIR, OUTPUT_DIR / "static", dirs_exist_ok=True)
-    
+
     # Specifically handle fonts directory to ensure only necessary files are copied
     fonts_src_dir = STATIC_DIR / "fonts"
     fonts_dest_dir = OUTPUT_DIR / "static" / "fonts"
-    
+
     if fonts_src_dir.exists():
         # Clean the destination fonts directory
         if fonts_dest_dir.exists():
             shutil.rmtree(fonts_dest_dir)
         fonts_dest_dir.mkdir(parents=True, exist_ok=True)
-        
+
         # Copy only the necessary font files
         for font_file in fonts_src_dir.iterdir():
-            if font_file.name in ["inter-local.css", "UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"]:
+            if font_file.name in [
+                "inter-local.css",
+                "UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+            ]:
                 shutil.copy2(font_file, fonts_dest_dir / font_file.name)
 
     # Generate PWA icons
@@ -149,9 +153,7 @@ def render_pages(mode="offline"):
     for md_file in md_files:
         if not md_file.name.startswith(("X", ".")):
             slug = slugify_title(md_file.stem)
-            pages_for_nav.append(
-                {"title": md_file.stem, "path": f"{slug}.html"}
-            )
+            pages_for_nav.append({"title": md_file.stem, "path": f"{slug}.html"})
 
     # Generate the title page dynamically
     print(" - Generating title page")
@@ -325,6 +327,7 @@ def process_markdown_content(text, mode):
     text = convert_meditation_instructions(text)
     text = convert_audio_links(text, mode)
     text = convert_wiki_links(text)
+    text = convert_sutta_references(text)
     return text
 
 
@@ -370,10 +373,18 @@ def convert_wiki_links(text):
     return re.sub(link_pattern, replace_link, text)
 
 
+def convert_sutta_references(text):
+    """Wraps sutta references in a span for styling and removes the '--'."""
+    # This pattern finds '--' and captures the italicized text part.
+    pattern = r"--\s+(\*.*\*)"
+    return re.sub(pattern, r"<br><span class='sutta-reference'>\1</span>", text)
+
+
 def make_id(text):
     """Converts a string into a URL-friendly ID."""
     # Use unidecode to convert Unicode to ASCII, matching what the browser will do
     from unidecode import unidecode
+
     text = unidecode(text)
     # Use the same slugify logic as the markdown-it anchors plugin
     return re.sub(r"[^\w\u4e00-\u9fff\- ]", "", text.strip().lower().replace(" ", "-"))

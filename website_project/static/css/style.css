@@ -494,7 +494,7 @@ a:hover {
 blockquote {
   background-color: var(--block-bg);
   border-left: 5px solid var(--primary-color);
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   margin: 1.5rem 0;
   border-radius: 0.5rem; /* Rounded corners */
   overflow-x: auto; /* Handle long content */
@@ -785,4 +785,11 @@ audio::-webkit-media-controls-volume-slider {
   .title-page {
     padding: 1rem;
   }
+}
+
+/* Sutta Reference Styling */
+.sutta-reference em {
+  color: var(--primary-color);
+  font-style: italic;
+  /* font-weight: bold; */
 }

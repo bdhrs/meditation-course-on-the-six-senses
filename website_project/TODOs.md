@@ -1,5 +1,30 @@
 # TODO
-- error testing for common error like *para para*, extra lines, quotes no gap, 
+
+- schedule is messed up
+- "no next page" just leave blank
+- "no previous page" just leave blank 
+- check images
+- mobile tooltip gets stuck on
+- error testing for common errors in md and html
+    - no reference
+    - - *
+    - *para para*
+    - para starts with italic, does not end with italic
+    - extra lines
+    - quotes no gap
+    - quote styling
+    - ' >'
+    - *
+    - '> --- *'
+    - '>--'
+    - '>\S'
+- fail on errors 
+- github build\
+- clicking on transcript has a flash
+- 404 error page with link to index 
+
+## Intermittent
+- website is flashing on page load
 
 ## problematic
 - audio player light mode style must match dark mode

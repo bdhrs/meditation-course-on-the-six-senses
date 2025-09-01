@@ -148,7 +148,6 @@ The distinction highlights different paradigms of understanding consciousness: o
 ---
 ## All wrong views are based on phassa
 > *tatra, bhikkhave, ye te samaṇabrāhmaṇā pubbantakappikā ca aparantakappikā ca pubbantāparantakappikā ca pubbantāparantānudiṭṭhino pubbantāparantaṃ ārabbha anekavihitāni adhimuttipadāni abhivadanti dvāsaṭṭhiyā vatthūhi, tadapi phassapaccayā.* 
-> 
 > -- *DN1 brahmajālasuttaṃ, phassapaccayāvāro*
 
 ## Question and answers
@@ -225,10 +224,9 @@ So let's practice the meditation on emptiness to lighten the load.
 Someone came to the Buddha and asked him how to know when the job is done, the training is complete.
 
 > "katamo ca, bhikkhave, pariyāyo, yaṃ pariyāyaṃ āgamma bhikkhu aññatreva saddhāya…pe… aññatra diṭṭhinijjhānakkhantiyā aññaṃ byākaroti – khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyāti pajānāmī’ti? idha, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. yaṃ taṃ, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. api nume, bhikkhave, dhammā saddhāya vā veditabbā, ruciyā vā veditabbā, anussavena vā veditabbā, ākāraparivitakkena vā veditabbā, diṭṭhinijjhānakkhantiyā vā veditabbā"ti?
-> 
-> !!! translation
-> 
 > -- *SN35.153 atthinukhopariyāyasuttaṃ*
+ 
+> !!! translation
 
 ## Vajirā
 This was neatly summarised by the Arahant nun Vajirā:
@@ -299,10 +297,9 @@ Can you stop thinking in meditation?
 The answer to all of these is no.
 
 > *yasmā ca kho, bhikkhave, rūpaṃ anattā, tasmā rūpaṃ ābādhāya saṃvattati, na ca labbhati rūpe – ‘evaṃ me rūpaṃ hotu, evaṃ me rūpaṃ mā ahosī"’ti.*
-> 
-> Because the body is not oneself, it leads to affliction, and it isn't achievable with the body to go, "May my body be like this", "May my body not be like this." 
-> 
 > -- *SN22.59 anattalakkhaṇasuttaṃ*
+
+> Because the body is not oneself, it leads to affliction, and it isn't achievable with the body to go, "May my body be like this", "May my body not be like this." 
 
 > You can move the muscles 
 > That pull the strings
@@ -312,18 +309,16 @@ The answer to all of these is no.
 The last bastion of any sense of self is the knower, the perceiver—what is normally called consciousness or awareness. Sure, the body's not under any kind of control but surely consciousness must be oneself? Again
 
 > *viññāṇañca hidaṃ, bhikkhave, attā abhavissa, nayidaṃ viññāṇaṃ ābādhāya saṃvatteyya, labbhetha ca viññāṇe – ‘evaṃ me viññāṇaṃ hotu, evaṃ me viññāṇaṃ mā ahosī’ti.*
-> 
-> If consciousness were a self, it would never lead to affliction. And it would be achievable with consciousness to go, "May my consciousness be like thus", "May my consciousness not be like this." 
-> 
 > -- *SN22.59 anattalakkhaṇasuttaṃ*
+
+> If consciousness were a self, it would never lead to affliction. And it would be achievable with consciousness to go, "May my consciousness be like thus", "May my consciousness not be like this." 
 
 Another relevant argument quoted by Ānanda
 
 > *"cakkhuñca, āvuso, paṭicca rūpe ca uppajjati cakkhuviññāṇa"nti? "evamāvuso"ti. "yo cāvuso, hetu, yo ca paccayo cakkhuviññāṇassa uppādāya, so ca hetu, so ca paccayo sabbena sabbaṃ sabbathā sabbaṃ aparisesaṃ nirujjheyya. api nu kho cakkhuviññāṇaṃ paññāyethā"ti? "no hetaṃ, āvuso". "imināpi kho etaṃ, āvuso, pariyāyena bhagavatā akkhātaṃ vivaṭaṃ pakāsitaṃ – ‘itipidaṃ viññāṇaṃ anattāti*
-> 
-> !!! translate
-> 
 > -- *SN35.234 udāyīsuttaṃ*
+
+> !!! translate
 
 ## Purpose of anatta
 What is the real purpose of all this discussion and meditation on *anatta*? Without removing the sense of identity which inherently occupies the mind—like a squatter who has taken up permanent residence—it is impossible to becomes disenchanted (*nibbidā*) let desire for existence fade (*virāga*)and stop incessant become (*nirodha*) in order to experience the fire going out (*nibbāna*). Taking experience personally prevents one entirely from experiencing the Unconditioned, which is impersonal. *Anattasaññā* is not the goal, merely a necessary step towards the destination.
@@ -335,10 +330,9 @@ One unique and interesting fact of the Buddha's teachings is his emphasis on two
 Dependent origination is itself a description of *nirodha*.
 
 > *atha kho, bhikkhave, sutavato ariyasāvakassa aparappaccayā ñāṇamevettha hoti – ‘imasmiṃ asati idaṃ na hoti, imassa nirodhā idaṃ nirujjhati. avijjāya asati saṅkhārā na honti, saṅkhāresu asati viññāṇaṃ na hoti, viññāṇe asati nāmarūpaṃ na hoti, nāmarūpe asati saḷāyatanaṃ na hoti…pe… jātiyā asati jarāmaraṇaṃ na hotī’ti. so evaṃ pajānāti – ‘evamayaṃ loko nirujjhatī"’ti.*
-> 
-> !!! translation
-> 
 > -- *SN12.50 dutiyaariyasāvakasuttaṃ*
+
+> !!! translation
 
 ## Bhavanirodho nibbānanti
 As Ven. Sāriputta so famously said:
@@ -357,12 +351,9 @@ Ask Ven. Aggacitta, Kumāra, Ariyadhammika about mano = brain as organ of though
 > tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na cakkhuṃ upādiyissāmi, na ca me cakkhunissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.
 > 
 > "tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na sotaṃ upādiyissāmi, na ca me sotanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na ghānaṃ upādiyissāmi, na ca me ghānanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na jivhaṃ upādiyissāmi, na ca me jivhānissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na kāyaṃ upādiyissāmi, na ca me kāyanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na manaṃ upādiyissāmi, na ca me manonissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.
-> 
-> etc
-> 
-> !!! translation
-> 
 > -- *MN143 anāthapiṇḍikovādasuttaṃ*
+
+> !!! translation
 
 ## Don't get stuck anywhere for too long
 It's important to not get stuck on any single experience for too long. Sure, analyse something as much as you need to, but *dhammānupassanā* works best best when you let the phenomena flow through you naturally. Damming them up creates subtle tension in the mind and can have psychologically stressful results. In short, watch the river, don't stop the river.
@@ -375,10 +366,9 @@ Add a quote to each main section heading 1, 2, 3, 4, 5, 6
 
 ## Conditions for consciouseness
 > *dvayaṃ, bhikkhave, paṭicca viññāṇaṃ sambhoti. kathañca, bhikkhave, dvayaṃ paṭicca viññāṇaṃ sambhoti? cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ. cakkhu aniccaṃ vipariṇāmi aññathābhāvi. rūpā aniccā vipariṇāmino aññathābhāvino. itthetaṃ dvayaṃ calañceva byathañca aniccaṃ vipariṇāmi aññathābhāvi. cakkhuviññāṇaṃ aniccaṃ vipariṇāmi aññathābhāvi. yopi hetu yopi paccayo cakkhuviññāṇassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppannaṃ cakkhuviññāṇaṃ kuto niccaṃ bhavissati! yā kho, bhikkhave, imesaṃ tiṇṇaṃ dhammānaṃ saṅgati sannipāto samavāyo, ayaṃ vuccati cakkhusamphasso. cakkhusamphassopi anicco vipariṇāmī aññathābhāvī. yopi hetu yopi paccayo cakkhusamphassassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppanno cakkhusamphasso kuto nicco bhavissati! phuṭṭho, bhikkhave, vedeti, phuṭṭho ceteti, phuṭṭho sañjānāti. itthetepi dhammā calā ceva byathā ca aniccā vipariṇāmino aññathābhāvino.* 
-> 
-> !!! translation
-> 
 > -- *SN35.93 dutiyadvayasuttaṃ*
+
+> !!! translation
 
 
 ## Nibbidā
@@ -389,19 +379,17 @@ It's like being a chicken in the egg, waiting to hatch. It will happen naturally
 
 > *khantī paramaṃ tapo titikkhā,*
 > *nibbānaṃ paramaṃ vadanti buddhā*
-> 
+> -- *DHP14 buddhavagga, verse 184*
+
 > Patience, endurance, is the supreme spiritual practice, 
 > Nibbāna is supreme say the Buddhas
-> 
-> -- *DHP14 buddhavagga, verse 184*
 
 At this stage, we need to just watch and wait while the gradual process of *virāga* and *nirodha* mature by themselves. It's very organic. There really is nothing to be done.
 
 > *"kathaṃ bhāvitā ca, bhikkhave, satta bojjhaṅgā kathaṃ bahulīkatā vijjāvimuttiṃ paripūrenti? idha, bhikkhave, bhikkhu satisambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. dhammavicayasambojjhaṅgaṃ bhāveti…pe… vīriyasambojjhaṅgaṃ bhāveti… pītisambojjhaṅgaṃ bhāveti… passaddhisambojjhaṅgaṃ bhāveti… samādhisambojjhaṅgaṃ bhāveti… upekkhāsambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. evaṃ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṃ bahulīkatā vijjāvimuttiṃ paripūrentī"ti.*
-> 
-> !!! translation
-> 
 > -- *MN118 ānāpānassatisuttaṃ*
+
+> !!! translation
 
 ## Virāga
 
@@ -411,33 +399,29 @@ At this stage, we need to just watch and wait while the gradual process of *vir�
 
 > *"rūpadhātuṃ pariññāya, arūpesu asaṇṭhitā,*
 > *nirodhe ye vimuccanti, te janā maccuhāyino.*
-> 
-> !!! translation
-> 
 > -- *ITI51 dhātusutta*
+
+> !!! translation
 
 Symbolically it is referred to as 'reaching the end of the world'.
 
 > *"na kho panāhaṃ, āvuso, appatvā lokassa antaṃ dukkhassa antakiriyaṃ vadāmi. api ca khvāhaṃ, āvuso, imasmiṃyeva byāmamatte kaḷevare sasaññimhi samanake lokañca paññapemi lokasamudayañca lokanirodhañca lokanirodhagāminiñca paṭipadanti.*
-> 
-> !!! translation
-> 
 > -- *SN2.26 rohitassasuttaṃ*
 
-> *"nissitassa calitaṃ, anissitassa calitaṃ natthi. calite asati passaddhi, passaddhiyā sati nati na hoti. natiyā asati āgatigati na hoti. āgatigatiyā asati cutūpapāto na hoti. cutūpapāte asati nevidha na huraṃ na ubhayamantarena . esevanto dukkhassā"ti.*
-> 
 > !!! translation
-> 
+
+> *"nissitassa calitaṃ, anissitassa calitaṃ natthi. calite asati passaddhi, passaddhiyā sati nati na hoti. natiyā asati āgatigati na hoti. āgatigatiyā asati cutūpapāto na hoti. cutūpapāte asati nevidha na huraṃ na ubhayamantarena . esevanto dukkhassā"ti.*
 > -- *UD74 catutthanibbānapaṭisaṃyuttasutta*
+
+> !!! translation
 
 There's nothing you can *do* to stop. Stopping means *stopping* doing. This is as far as activity can take you on the path. All you can do is watch and wait—without the faintest glimmer of interest—as things cool down by themselves.
 
 This is expressed in the famous Bāhiya Sutta as:
 
 > "tasmātiha te, bāhiya, evaṃ sikkhitabbaṃ – ‘diṭṭhe diṭṭhamattaṃ bhavissati, sute sutamattaṃ bhavissati, mute mutamattaṃ bhavissati, viññāte viññātamattaṃ bhavissatī’ti.
-> 
-> !!! transaltion
-> 
 > -- *UD10 bāhiyasuttaṃ*
+
+> !!! transaltion
 
 This is pointing at something very few people get to experience in life—awareness without the proliferation of concepts that usually accompany it. We see the thing and stop there, knowing it as it is, uncoloured by *vedanā*, concepts, opinions, and active responses. This is the necessary state to be in to make the leap from the normal conditioned world to the unconditioned—from the blazing fire of normal everyday sense experience, to the fire cooling down and going out.!

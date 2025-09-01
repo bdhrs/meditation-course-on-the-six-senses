@@ -8,7 +8,6 @@ The Buddha provided is with numerous skilful ways to change our perception and s
 > sukhā, bhikkhave, vedanā dukkhato daṭṭhabbā, dukkhā vedanā sallato daṭṭhabbā, adukkhamasukhā vedanā aniccato daṭṭhabbā. 
 > 
 > yato kho, bhikkhave, bhikkhuno sukhā vedanā dukkhato diṭṭhā hoti, dukkhā vedanā sallato diṭṭhā hoti, adukkhamasukhā vedanā aniccato diṭṭhā hoti – ayaṃ vuccati, bhikkhave, ‘bhikkhu sammaddaso acchecchi taṇhaṃ, vivattayi saṃyojanaṃ, sammā mānābhisamayā antamakāsi dukkhassā"’ti.*
-> 
-> !!! translation
-> 
 > -- *SN36.5 daṭṭhabbasutta*
+
+> !!! translation
