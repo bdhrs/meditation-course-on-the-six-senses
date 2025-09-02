@@ -10,7 +10,7 @@ from unidecode import unidecode
 import cairosvg
 
 # Import for tests
-from website_project.tests import run_tests
+from tests import run_tests
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).parent.parent
