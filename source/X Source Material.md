@@ -1,7 +1,4 @@
 
-
-
-
 ## AN1.48
 
 "Bhikkhus, I do not see even one other thing that changes so quickly as the mind. It is not easy to give a simile for how quickly the mind changes."
@@ -42,7 +39,6 @@ Then, having known with his own mind the course of thought in the Venerable So�
 When the Blessed One had finished giving the Venerable Soṇa this exhortation, just as a strong man might extend his drawn-in arm or draw in his extended arm, he disappeared in the Cool Grove and reappeared on Mount Vulture Peak.
 
 Then, some time later, the Venerable Soṇa resolved on a balance of energy, achieved evenness of the spiritual faculties, and took up the object there. Then, dwelling alone, withdrawn, heedful, ardent, and resolute, in no long time the Venerable Soṇa realized for himself with direct knowledge, in this very life, that unsurpassed consummation of the spiritual life for the sake of which clansmen rightly go forth from the household life into homelessness, and having entered upon it, he dwelled in it. He directly knew: "Destroyed is birth, the spiritual life has been lived, what had to be done has been done, there is no more coming back to any state of being." And the Venerable Soṇa became one of the arahants.
-
 
 ## SN35:23 The All
 What's the "all"?
@@ -249,8 +245,6 @@ Both have been extinguished, brought to an end.
 Having known the dust-free, sorrowless state,
 The transcender of existence rightly understands.
 
-
-
 ## MN152: Indriyabhāvanāsutta - The Development of the Faculties
 On developing equanimity to sense experience.
 
@@ -301,8 +295,6 @@ Then, knowing this, the Blessed One addressed the venerable Ānanda: "Ānanda, t
 
 That is what the Blessed One said. The venerable Ānanda was satisfied and delighted in the Blessed One's words.
 
-
-
 ## SN35:85 Empty Is the World
 On emptiness.
 
@@ -348,5 +340,4 @@ Translated from the Pali by Acharya Buddharakkhita.
 "All conditioned things are unsatisfactory"—when one sees this with wisdom, one turns away from suffering. This is the path to purification.
 
 "All things are not-self"—when one sees this with wisdom, one turns away from suffering. This is the path to purification.
-
 

@@ -28,7 +28,6 @@ An example is given in the Sutta on the Analysis of Saḷāyatana:
 
 > Oh when will I attain in that dimension which the nobles attain and remain in? Thus, arousing desire for for the highest states of liberation, mental distress arises based on that longing. That is called mental distress of renunciation.
 
-
 These are simply the three types of *vedanā* experienced in relation to the five senses and 
 
 1. [[9.2. Sutta References#MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)|MN10 Mahāsatipaṭṭhāna Sutta - The Foundations of Mindfulness - Contemplation of Feeling (excerpt)]]

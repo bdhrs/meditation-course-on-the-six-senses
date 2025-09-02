@@ -60,7 +60,6 @@ Momentary experiences. On no basis for Everlasting happiness.
 
 ---
 
-
 Lucas like an empty promise. It promises you so much but it gives nothing in return. You don't need. Um, whatever is impermanent is Duka This exercise is to help. Recognise form, the perception form the recognition. That whatever changes. Is unsatisfactory. We don't have this perception, we need to create this perception that Buddha consider this one of the very best perceptions to create.
 
 So this meditation is actively creating a new perception. Um so please just go through it. Mechanically, if needs be. But slowly slowly create the perception that whatever. Whatever moves. Whatever is temporary, whatever is a nature, cannot deliver permanent happiness. That is darker.
@@ -74,7 +73,6 @@ Flavours of dukkha but they're all connected.
 ---
 ## Source of Dukkha transcript
 ## Original Text
-
 
 With each experience. Fedin arises. Our response to that word. I still like it. To Crave it. To want more. To resist it and to dislike it and push away.
 
@@ -106,7 +104,6 @@ As much as you can. Remove the craving and aversion towards that vadena.
 
 ---
 
-
 When pleasant for hidden arises. A tendency is to Crave to like, To the light.
 
 Remove that. Remove that. Craving remove that liking remove that disliking Right there.
@@ -118,7 +115,6 @@ Balanced. An alert. Non-reactive mind.
 In response. The tendency is towards Ignoring, Right there. Remove the ignoring. What remains? Balanced aware mind. An alert. Non-reactive mind.
 
 ---
-
 
 This is a delicate operation.
 

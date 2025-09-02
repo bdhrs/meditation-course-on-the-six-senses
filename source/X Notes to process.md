@@ -52,7 +52,6 @@ Mind thoughts moods memories
 To train the body, you need to stretch it and move it.
 To train the mind, you need to keep it still.
 
-
 ## psychology of sense reception
 There's an absolute minimum threshold below which sense perception does not occur, that is binary on or off. It's not like a sound keeps getting softer and softer, before a certain threshold it disappears entirely. How does this match with Buddhist idea? 
 
@@ -183,7 +182,6 @@ If the mind is fast and highly perceptive, just know that this is the "mind chan
 You don't have to be in the mood to do this. Whatever mood you're in is just "mind channel".
 
  the experience might be in a different field no problem just you just follow whatever attention prsents to you. wherever the mind goes, just follow. the mind has been doing this for as long as you've been alive. how to do this now you're just watching what the mind does so that you can learn from it understand it. to build understanding all you have to do at this stage is know very briefly what channel the experiences happening on, this is seeing, this is hearing, this is smelling, this is tasting, this is physical experience, this is mental experience, that's all. and stay with the experience note the channel that's enough for now. if knowing the channel is difficult then at very least stay with the experience.
-
 
 for some people this comes very naturally for other people it's an uphill battle from the word go. get the benefits its good. always useful things that come from this practice, every little bit of self understanding helps you to improve knowing yourself better. there's no disadvantage to knowing how you work how the mind works how this body works. on this the sense fields work is not disadvantage denying that advantage and further advantageous in every single possible way.
 
@@ -342,7 +340,6 @@ As Ven. Sāriputta so famously said:
 
 > !!! translate
 
-
 ## Nibbāna as a positive
 Avoid talking about nibbāna as a positive, keep it to the original negative representation.
 
@@ -371,7 +368,6 @@ Add a quote to each main section heading 1, 2, 3, 4, 5, 6
 > -- *SN35.93 dutiyadvayasuttaṃ*
 
 > !!! translation
-
 
 ## Nibbidā
 

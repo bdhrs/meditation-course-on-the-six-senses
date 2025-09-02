@@ -27,11 +27,8 @@ It is also expressed in terms of every element of sense experience.
 
 And likewise for every other component of sense experience.
 
-
-
 > *"yo kho, rādha, anattā tatra te chando pahātabbo. ko ca, rādha, anattā? cakkhu kho, rādha, anattā. tatra te chando pahātabbo. rūpā… cakkhuviññāṇaṃ… cakkhusamphasso… yampidaṃ cakkhusamphassapaccayā…pe… mano anattā… dhammā… manoviññāṇaṃ… manosamphasso… yampidaṃ manosamphassapaccayā uppajjati vedayitaṃ sukhaṃ vā dukkhaṃ vā adukkhamasukhaṃ vā tampi anattā. tatra te chando pahātabbo. yo kho, rādha, anattā tatra te chando pahātabbo"ti. pañcamaṃ.*
 > -- *SN35.78 rādhaanattasuttaṃ*
 
 > !!! translation
-
 

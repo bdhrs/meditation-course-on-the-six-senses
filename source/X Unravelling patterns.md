@@ -26,7 +26,6 @@ What we call reality is nothing more than the subjective experience of the five 
 
 The practice of returning to sense experience alters reality and reshapes the subjective world we live in for the better. The simple act of changing subjective experience changes the only reality you actually know.
 
-
 The normal way most people attempt to alter reality is by changing the material world out there. That is, of course, a viable option, but outside the scope of this course.
 
 We're going to look at three internal ways of altering reality based on an understanding of how the senses work.

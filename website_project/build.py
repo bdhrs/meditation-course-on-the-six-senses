@@ -1,13 +1,13 @@
 import shutil
 import re
 import json
+import sys
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from markdown_it import MarkdownIt
 from mdit_py_plugins.anchors import anchors_plugin
 from unidecode import unidecode
 import cairosvg
-import os
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -494,8 +494,9 @@ def generate_audio_files_list():
         audio_list_path = OUTPUT_DIR / "audio-files.json"
         with open(audio_list_path, "w", encoding="utf-8") as f:
             json.dump(audio_files, f, indent=2)
+        print(f"Found {len(audio_files)} audio files")
         print(f"Generated audio files list: {audio_list_path}")
-        print(f"Found {len(audio_files)} audio files: {audio_files}")
+
     else:
         print("No audio files found in markdown content.")
 
@@ -518,6 +519,15 @@ def main():
     mode = args.mode
 
     print(f"--- Starting website build (mode: {mode}) ---")
+
+    # Run tests first - stop build if tests fail
+    print("\n--- Running tests ---")
+    from website_project.tests import run_tests
+
+    if not run_tests(SOURCE_DIR):
+        print("\n--- Tests failed! Stopping build process. ---")
+        sys.exit(1)
+    print("\n--- All tests passed! ---")
 
     clean_output_directory()
     copy_static_files(mode)
