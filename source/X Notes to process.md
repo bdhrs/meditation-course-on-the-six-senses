@@ -147,7 +147,7 @@ The distinction highlights different paradigms of understanding consciousness: o
 
 ---
 ## All wrong views are based on phassa
-> *tatra, bhikkhave, ye te samaṇabrāhmaṇā pubbantakappikā ca aparantakappikā ca pubbantāparantakappikā ca pubbantāparantānudiṭṭhino pubbantāparantaṃ ārabbha anekavihitāni adhimuttipadāni abhivadanti dvāsaṭṭhiyā vatthūhi, tadapi phassapaccayā.* 
+> *tatra, bhikkhave, ye te samaṇabrāhmaṇā pubbantakappikā ca aparantakappikā ca pubbantāparantakappikā ca pubbantāparantānudiṭṭhino pubbantāparantaṃ ārabbha anekavihitāni adhimuttipadāni abhivadanti dvāsaṭṭhiyā vatthūhi, tadapi phassapaccayā.*
 > -- *DN1 brahmajālasuttaṃ, phassapaccayāvāro*
 
 ## Question and answers
@@ -223,7 +223,7 @@ So let's practice the meditation on emptiness to lighten the load.
 
 Someone came to the Buddha and asked him how to know when the job is done, the training is complete.
 
-> "katamo ca, bhikkhave, pariyāyo, yaṃ pariyāyaṃ āgamma bhikkhu aññatreva saddhāya…pe… aññatra diṭṭhinijjhānakkhantiyā aññaṃ byākaroti – khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyāti pajānāmī’ti? idha, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. yaṃ taṃ, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. api nume, bhikkhave, dhammā saddhāya vā veditabbā, ruciyā vā veditabbā, anussavena vā veditabbā, ākāraparivitakkena vā veditabbā, diṭṭhinijjhānakkhantiyā vā veditabbā"ti?
+> *"katamo ca, bhikkhave, pariyāyo, yaṃ pariyāyaṃ āgamma bhikkhu aññatreva saddhāya…pe… aññatra diṭṭhinijjhānakkhantiyā aññaṃ byākaroti – khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyāti pajānāmī’ti? idha, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. yaṃ taṃ, bhikkhave, bhikkhu cakkhunā rūpaṃ disvā santaṃ vā ajjhattaṃ rāgadosamohaṃ, atthi me ajjhattaṃ rāgadosamohoti pajānāti, asantaṃ vā ajjhattaṃ rāgadosamohaṃ, natthi me ajjhattaṃ rāgadosamohoti pajānāti. api nume, bhikkhave, dhammā saddhāya vā veditabbā, ruciyā vā veditabbā, anussavena vā veditabbā, ākāraparivitakkena vā veditabbā, diṭṭhinijjhānakkhantiyā vā veditabbā"ti?*
 > -- *SN35.153 atthinukhopariyāyasuttaṃ*
  
 > !!! translation
@@ -338,8 +338,10 @@ Dependent origination is itself a description of *nirodha*.
 As Ven. Sāriputta so famously said:
 
 > *kiṃsaññī panāyasmā sāriputto tasmiṃ samaye ahosī"ti? "bhavanirodho nibbānaṃ bhavanirodho nibbāna"nti kho me, āvuso, aññāva saññā uppajjati aññāva saññā nirujjhati. seyyathāpi, āvuso, sakalikaggissa jhāyamānassa aññāva acci uppajjati aññāva acci nirujjhati, evamevaṃ kho, āvuso, ‘bhavanirodho nibbānaṃ bhavanirodho nibbāna’nti aññāva saññā uppajjati aññāva saññā nirujjhati. ‘bhavanirodho nibbāna’nti saññī ca panāhaṃ, āvuso, tasmiṃ samaye ahosi"nti. sattamaṃ*
-> !!! translate
 > -- *AN10.7 sāriputtasutta*
+
+> !!! translate
+
 
 ## Nibbāna as a positive
 Avoid talking about nibbāna as a positive, keep it to the original negative representation.
@@ -348,9 +350,9 @@ Avoid talking about nibbāna as a positive, keep it to the original negative rep
 Ask Ven. Aggacitta, Kumāra, Ariyadhammika about mano = brain as organ of thought
 
 ## Meditation on Consciousnesses not being dependent on anything
-> tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na cakkhuṃ upādiyissāmi, na ca me cakkhunissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.
+> *tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na cakkhuṃ upādiyissāmi, na ca me cakkhunissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.*
 > 
-> "tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na sotaṃ upādiyissāmi, na ca me sotanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na ghānaṃ upādiyissāmi, na ca me ghānanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na jivhaṃ upādiyissāmi, na ca me jivhānissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na kāyaṃ upādiyissāmi, na ca me kāyanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na manaṃ upādiyissāmi, na ca me manonissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.
+> *"tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na sotaṃ upādiyissāmi, na ca me sotanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na ghānaṃ upādiyissāmi, na ca me ghānanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na jivhaṃ upādiyissāmi, na ca me jivhānissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na kāyaṃ upādiyissāmi, na ca me kāyanissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ. tasmātiha te, gahapati, evaṃ sikkhitabbaṃ – ‘na manaṃ upādiyissāmi, na ca me manonissitaṃ viññāṇaṃ bhavissatī’ti. evañhi te, gahapati, sikkhitabbaṃ.*
 > -- *MN143 anāthapiṇḍikovādasuttaṃ*
 
 > !!! translation
@@ -365,7 +367,7 @@ The last ten suttas of Majjhima Nikāya are all based on an examination of *sa�
 Add a quote to each main section heading 1, 2, 3, 4, 5, 6 
 
 ## Conditions for consciouseness
-> *dvayaṃ, bhikkhave, paṭicca viññāṇaṃ sambhoti. kathañca, bhikkhave, dvayaṃ paṭicca viññāṇaṃ sambhoti? cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ. cakkhu aniccaṃ vipariṇāmi aññathābhāvi. rūpā aniccā vipariṇāmino aññathābhāvino. itthetaṃ dvayaṃ calañceva byathañca aniccaṃ vipariṇāmi aññathābhāvi. cakkhuviññāṇaṃ aniccaṃ vipariṇāmi aññathābhāvi. yopi hetu yopi paccayo cakkhuviññāṇassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppannaṃ cakkhuviññāṇaṃ kuto niccaṃ bhavissati! yā kho, bhikkhave, imesaṃ tiṇṇaṃ dhammānaṃ saṅgati sannipāto samavāyo, ayaṃ vuccati cakkhusamphasso. cakkhusamphassopi anicco vipariṇāmī aññathābhāvī. yopi hetu yopi paccayo cakkhusamphassassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppanno cakkhusamphasso kuto nicco bhavissati! phuṭṭho, bhikkhave, vedeti, phuṭṭho ceteti, phuṭṭho sañjānāti. itthetepi dhammā calā ceva byathā ca aniccā vipariṇāmino aññathābhāvino.* 
+> *dvayaṃ, bhikkhave, paṭicca viññāṇaṃ sambhoti. kathañca, bhikkhave, dvayaṃ paṭicca viññāṇaṃ sambhoti? cakkhuñca paṭicca rūpe ca uppajjati cakkhuviññāṇaṃ. cakkhu aniccaṃ vipariṇāmi aññathābhāvi. rūpā aniccā vipariṇāmino aññathābhāvino. itthetaṃ dvayaṃ calañceva byathañca aniccaṃ vipariṇāmi aññathābhāvi. cakkhuviññāṇaṃ aniccaṃ vipariṇāmi aññathābhāvi. yopi hetu yopi paccayo cakkhuviññāṇassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppannaṃ cakkhuviññāṇaṃ kuto niccaṃ bhavissati! yā kho, bhikkhave, imesaṃ tiṇṇaṃ dhammānaṃ saṅgati sannipāto samavāyo, ayaṃ vuccati cakkhusamphasso. cakkhusamphassopi anicco vipariṇāmī aññathābhāvī. yopi hetu yopi paccayo cakkhusamphassassa uppādāya, sopi hetu sopi paccayo anicco vipariṇāmī aññathābhāvī. aniccaṃ kho pana, bhikkhave, paccayaṃ paṭicca uppanno cakkhusamphasso kuto nicco bhavissati! phuṭṭho, bhikkhave, vedeti, phuṭṭho ceteti, phuṭṭho sañjānāti. itthetepi dhammā calā ceva byathā ca aniccā vipariṇāmino aññathābhāvino.*
 > -- *SN35.93 dutiyadvayasuttaṃ*
 
 > !!! translation
@@ -419,7 +421,7 @@ There's nothing you can *do* to stop. Stopping means *stopping* doing. This is a
 
 This is expressed in the famous Bāhiya Sutta as:
 
-> "tasmātiha te, bāhiya, evaṃ sikkhitabbaṃ – ‘diṭṭhe diṭṭhamattaṃ bhavissati, sute sutamattaṃ bhavissati, mute mutamattaṃ bhavissati, viññāte viññātamattaṃ bhavissatī’ti.
+> *"tasmātiha te, bāhiya, evaṃ sikkhitabbaṃ – ‘diṭṭhe diṭṭhamattaṃ bhavissati, sute sutamattaṃ bhavissati, mute mutamattaṃ bhavissati, viññāte viññātamattaṃ bhavissatī’ti.*
 > -- *UD10 bāhiyasuttaṃ*
 
 > !!! transaltion

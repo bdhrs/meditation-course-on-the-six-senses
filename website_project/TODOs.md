@@ -1,4 +1,7 @@
-# TODO
+## TODO
+
+- offline mode working
+- check audio downloading properly for offline. test with one file
 
 - error testing for common errors in md and html
     - no reference
@@ -13,12 +16,11 @@
     - '> --- *'
     - '>--'
     - '>\S'
-- fail on errors, dont commit on errors 
+- fail on errors, don't commit on errors 
 
 ## audio player
 - audio player light mode style must match dark mode
 - glow on all audio player buttons in dark mode
-- check audio downloading properly for offline. test with one file
 
 ## Intermittent
 - website is flashing on page load

@@ -23,7 +23,7 @@ Even a monastic experiences material pleasures of sights, sounds, tastes, and ph
 
 An example is given in the Sutta on the Analysis of Saḷāyatana:
 
-> kudāssu nāmāhaṃ tadāyatanaṃ upasampajja viharissāmi yadariyā etarahi āyatanaṃ upasampajja viharantī’ti iti anuttaresu vimokkhesu pihaṃ upaṭṭhāpayato uppajjati pihapaccayā domanassaṃ. yaṃ evarūpaṃ domanassaṃ idaṃ vuccati nekkhammasitaṃ domanassaṃ.
+> *kudāssu nāmāhaṃ tadāyatanaṃ upasampajja viharissāmi yadariyā etarahi āyatanaṃ upasampajja viharantī’ti iti anuttaresu vimokkhesu pihaṃ upaṭṭhāpayato uppajjati pihapaccayā domanassaṃ. yaṃ evarūpaṃ domanassaṃ idaṃ vuccati nekkhammasitaṃ domanassaṃ.*
 > -- *MN137 saḷāyatanavibhaṅgasuttaṃ* 
 
 > Oh when will I attain in that dimension which the nobles attain and remain in? Thus, arousing desire for for the highest states of liberation, mental distress arises based on that longing. That is called mental distress of renunciation.

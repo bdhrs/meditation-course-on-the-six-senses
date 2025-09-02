@@ -1,7 +1,7 @@
 
 ## Satipaṭṭhāna Sutta analysis of saḷāyatana
 
-> puna caparaṃ, bhikkhave, bhikkhu dhammesu dhammānupassī viharati chasu ajjhattikabāhiresu āyatanesu. kathañca pana, bhikkhave, bhikkhu dhammesu dhammānupassī viharati chasu ajjhattikabāhiresu āyatanesu. idha, bhikkhave, bhikkhu cakkhuñca pajānāti, rūpe ca pajānāti, yañca tadubhayaṃ paṭicca uppajjati saṃyojanaṃ tañca pajānāti, yathā ca anuppannassa saṃyojanassa uppādo hoti tañca pajānāti, yathā ca uppannassa saṃyojanassa pahānaṃ hoti tañca pajānāti, yathā ca pahīnassa saṃyojanassa āyatiṃ anuppādo hoti tañca pajānāti.
+> *puna caparaṃ, bhikkhave, bhikkhu dhammesu dhammānupassī viharati chasu ajjhattikabāhiresu āyatanesu. kathañca pana, bhikkhave, bhikkhu dhammesu dhammānupassī viharati chasu ajjhattikabāhiresu āyatanesu. idha, bhikkhave, bhikkhu cakkhuñca pajānāti, rūpe ca pajānāti, yañca tadubhayaṃ paṭicca uppajjati saṃyojanaṃ tañca pajānāti, yathā ca anuppannassa saṃyojanassa uppādo hoti tañca pajānāti, yathā ca uppannassa saṃyojanassa pahānaṃ hoti tañca pajānāti, yathā ca pahīnassa saṃyojanassa āyatiṃ anuppādo hoti tañca pajānāti.*
 > -- *MN10 mahāsatipaṭṭhānasuttaṃ, dhammānupassanā āyatanapabbaṃ*
 
 > !!! translation
