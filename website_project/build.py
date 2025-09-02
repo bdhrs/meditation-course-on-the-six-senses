@@ -9,6 +9,9 @@ from mdit_py_plugins.anchors import anchors_plugin
 from unidecode import unidecode
 import cairosvg
 
+# Import for tests
+from website_project.tests import run_tests
+
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).parent.parent
 WEBSITE_ROOT = Path(__file__).parent
@@ -522,7 +525,6 @@ def main():
 
     # Run tests first - stop build if tests fail
     print("\n--- Running tests ---")
-    from website_project.tests import run_tests
 
     if not run_tests(SOURCE_DIR):
         print("\n--- Tests failed! Stopping build process. ---")
