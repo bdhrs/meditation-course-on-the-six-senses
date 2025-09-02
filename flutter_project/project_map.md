@@ -115,6 +115,12 @@ assets/
   - `_buildAudioWidget()`: Renders an audio player widget for audio files
   - `_buildTranscriptWidget()`: Renders an expandable transcript widget
   - `_buildLinkWidget()`: Renders a navigable link to another lesson
+- **UI Improvements**:
+  - Updated drawer styling to match website design with custom header and list items
+  - Added proper border separators and padding for list items
+  - Implemented theme-aware colors for both light and dark modes
+  - Enhanced selected state styling for current lesson
+  - Improved "Home" button styling in drawer
 
 **File: `lib/screens/download_manager_screen.dart`**
 - **Purpose**: UI for managing audio file downloads with progress tracking and error handling

@@ -45,9 +45,12 @@ class AppTheme {
         bodyLarge: TextStyle(color: lightTextColor, fontSize: 16),
         bodyMedium: TextStyle(color: lightTextColor, fontSize: 14),
         bodySmall: TextStyle(color: lightTextColor, fontSize: 12),
-        titleLarge: TextStyle(color: lightTextColor, fontSize: 24, fontWeight: FontWeight.bold),
-        titleMedium: TextStyle(color: lightTextColor, fontSize: 20, fontWeight: FontWeight.bold),
-        titleSmall: TextStyle(color: lightTextColor, fontSize: 18, fontWeight: FontWeight.bold),
+        titleLarge: TextStyle(
+            color: lightTextColor, fontSize: 24, fontWeight: FontWeight.bold),
+        titleMedium: TextStyle(
+            color: lightTextColor, fontSize: 20, fontWeight: FontWeight.bold),
+        titleSmall: TextStyle(
+            color: lightTextColor, fontSize: 18, fontWeight: FontWeight.bold),
       ),
       cardTheme: const CardThemeData(
         elevation: 2,
@@ -97,9 +100,12 @@ class AppTheme {
         bodyLarge: TextStyle(color: darkTextColor, fontSize: 16),
         bodyMedium: TextStyle(color: darkTextColor, fontSize: 14),
         bodySmall: TextStyle(color: darkTextColor, fontSize: 12),
-        titleLarge: TextStyle(color: darkTextColor, fontSize: 24, fontWeight: FontWeight.bold),
-        titleMedium: TextStyle(color: darkTextColor, fontSize: 20, fontWeight: FontWeight.bold),
-        titleSmall: TextStyle(color: darkTextColor, fontSize: 18, fontWeight: FontWeight.bold),
+        titleLarge: TextStyle(
+            color: darkTextColor, fontSize: 24, fontWeight: FontWeight.bold),
+        titleMedium: TextStyle(
+            color: darkTextColor, fontSize: 20, fontWeight: FontWeight.bold),
+        titleSmall: TextStyle(
+            color: darkTextColor, fontSize: 18, fontWeight: FontWeight.bold),
       ),
       cardTheme: const CardThemeData(
         elevation: 2,

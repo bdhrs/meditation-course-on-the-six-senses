@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
+import '../main.dart';
 
 class LandingPageScreen extends StatelessWidget {
   const LandingPageScreen({super.key});
@@ -62,8 +63,12 @@ class LandingPageScreen extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Navigate to table of contents
-                        Navigator.of(context).pushNamed('/tableOfContents');
+                        // Navigate to lessons screen
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const LessonScreenWrapper(),
+                          ),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 16),

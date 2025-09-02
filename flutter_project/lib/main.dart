@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/landing_page_screen.dart';
-import 'screens/table_of_contents_screen.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/download_manager_screen.dart';
 import 'screens/settings_screen.dart';
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
           initialRoute: '/landing',
           routes: {
             '/landing': (context) => const LandingPageScreen(),
-            '/tableOfContents': (context) => const TableOfContentsScreenWrapper(),
             '/downloadManager': (context) => const DownloadManagerScreen(),
             '/settings': (context) => const SettingsScreen(),
           },
@@ -44,14 +42,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class TableOfContentsScreenWrapper extends StatefulWidget {
-  const TableOfContentsScreenWrapper({super.key});
+class LessonScreenWrapper extends StatefulWidget {
+  const LessonScreenWrapper({super.key});
 
   @override
-  State<TableOfContentsScreenWrapper> createState() => _TableOfContentsScreenWrapperState();
+  State<LessonScreenWrapper> createState() => _LessonScreenWrapperState();
 }
 
-class _TableOfContentsScreenWrapperState extends State<TableOfContentsScreenWrapper> {
+class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
   late Future<List<Lesson>> _lessonsFuture;
   Lesson? _currentLesson;
 
@@ -59,12 +57,6 @@ class _TableOfContentsScreenWrapperState extends State<TableOfContentsScreenWrap
   void initState() {
     super.initState();
     _lessonsFuture = ContentService().loadLessons();
-  }
-
-  void _navigateToLesson(Lesson lesson) {
-    setState(() {
-      _currentLesson = lesson;
-    });
   }
 
   void _navigateToLessonBySlug(String slug) {
@@ -81,23 +73,119 @@ class _TableOfContentsScreenWrapperState extends State<TableOfContentsScreenWrap
         // If we can't find the lesson by slug, navigate back to landing page
         // We need to ensure we're still mounted before navigating
         if (mounted) {
-          Navigator.of(context).pushNamedAndRemoveUntil('/landing', (route) => false);
+          Navigator.of(context)
+              .pushNamedAndRemoveUntil('/landing', (route) => false);
         }
       }
     });
   }
 
+  void _navigateToLanding() {
+    setState(() {
+      _currentLesson = null;
+    });
+    Navigator.of(context).pushNamedAndRemoveUntil('/landing', (route) => false);
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (_currentLesson != null) {
-      return LessonScreen(
-        lesson: _currentLesson!,
-        onNavigateToLesson: _navigateToLessonBySlug,
-      );
-    }
+    return FutureBuilder<List<Lesson>>(
+      future: _lessonsFuture,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircularProgressIndicator(),
+                  SizedBox(height: 16),
+                  Text('Loading lessons...'),
+                ],
+              ),
+            ),
+          );
+        } else if (snapshot.hasError) {
+          return Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.error, size: 48, color: Colors.red),
+                  const SizedBox(height: 16),
+                  Text('Error: ${snapshot.error}'),
+                  const SizedBox(height: 16),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        _lessonsFuture = ContentService().loadLessons();
+                      });
+                    },
+                    child: const Text('Retry'),
+                  ),
+                ],
+              ),
+            ),
+          );
+        } else if (snapshot.hasData) {
+          final lessons = snapshot.data!;
 
-    return TableOfContentsScreen(
-      onNavigateToLesson: _navigateToLesson,
+          if (_currentLesson != null) {
+            return LessonScreen(
+              lesson: _currentLesson!,
+              onNavigateToLesson: _navigateToLessonBySlug,
+              lessons: lessons,
+              onNavigateToLanding: _navigateToLanding,
+            );
+          }
+
+          // If no lesson is selected, show the first lesson by default
+          if (lessons.isNotEmpty) {
+            // Only set the current lesson if it hasn't been set yet
+            if (_currentLesson == null) {
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (mounted) {
+                  setState(() {
+                    _currentLesson = lessons.first;
+                  });
+                }
+              });
+            }
+            return LessonScreen(
+              lesson: _currentLesson ?? lessons.first,
+              onNavigateToLesson: _navigateToLessonBySlug,
+              lessons: lessons,
+              onNavigateToLanding: _navigateToLanding,
+            );
+          }
+
+          return const Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.info, size: 48, color: Colors.grey),
+                  SizedBox(height: 16),
+                  Text('No lessons found'),
+                ],
+              ),
+            ),
+          );
+        } else {
+          return const Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.info, size: 48, color: Colors.grey),
+                  SizedBox(height: 16),
+                  Text('No lessons found'),
+                ],
+              ),
+            ),
+          );
+        }
+      },
     );
   }
 }
