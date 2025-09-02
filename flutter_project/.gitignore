@@ -1,0 +1,104 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/.project
+**/ios/**/Pods/Pods.xcodeproj/xcuserdata
+**/ios/**/Pods/Pods.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+**/ios/**/Pods/Pods.xcodeproj/project.xcworkspace/xcuserdata
+**/ios/**/Pods/Pods.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+**/ios/**/Pods/Target Support Files/Pods-*/Info.plist
+**/ios/**/Pods/Target Support Files/Pods-*/Pods-*.acknowledgements.markdown
+**/ios/**/Pods/Target Support Files/Pods-*/Pods-*.acknowledgements.plist
+**/ios/**/Pods/Target Support Files/Pods-*/Pods-*.framework
+**/ios/**/Pods/Target Support Files/Pods-*/Pods-*.resources.sh
+**/ios/**/Pods/Target Support Files/Pods-*/Pods-*.xcconfig
+**/ios/**/Pods/Manifest.lock
+**/ios/**/ServiceDefinitions.json
+**/ios/**/Podfile.lock
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/.gitkeep
+**/ios/Runner.xcworkspace
+**/ios/Runner.xcodeproj/project.xcworkspace
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Coverage
+coverage/
+
+# Symbols
+app.*.symbols
+
+# Obfuscation
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Linux build artifacts
+linux/build/
+
+# Windows build artifacts
+windows/build/
+
+# macOS build artifacts
+macos/build/
+
+# Web build artifacts
+web/build/

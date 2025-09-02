@@ -16,9 +16,6 @@ The root directory contains several important files and subdirectories:
 
 ## Subdirectories
 
-### `flet_project/`
-- Contains Flutter-related files and directories.
-
 ### `flutter_project/`
 - Contains Flutter project files, including Android and iOS specific configurations.
 
