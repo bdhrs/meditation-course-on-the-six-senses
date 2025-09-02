@@ -23,7 +23,7 @@
 ## Project Overview
 This project builds a static website for the "Meditation Course on the Six Senses". The website is generated from markdown source files and includes features like:
 - Dark/light mode toggle with SVG icons
-- Online/offline mode toggle with SVG icons
+- Online/offline mode toggle with SVG icons (temporarily commented out until feature is implemented)
 - Progressive Web App (PWA) support
 - Responsive design
 - Table of contents generation
@@ -144,7 +144,7 @@ Then open `http://localhost:8000` in your browser.
 - Build script supports both modes
 - Audio files are included in offline mode only
 - Online mode uses external URLs for audio
-- Toggle button in `templates/base.html` uses SVG icons (wifi and computer)
+- Toggle button in `templates/base.html` uses SVG icons (wifi and computer) - TEMPORARILY COMMENTED OUT
 - This is currently a visual indicator only - actual mode is determined at build time
 - Custom tooltips show "Online/Offline Mode" positioned below the buttons
 
