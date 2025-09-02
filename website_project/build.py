@@ -7,10 +7,14 @@ from markdown_it import MarkdownIt
 from mdit_py_plugins.anchors import anchors_plugin
 from unidecode import unidecode
 import cairosvg
+import os
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).parent.parent
 WEBSITE_ROOT = Path(__file__).parent
+
+# Global list to store all discovered audio files
+ALL_AUDIO_FILES = []
 
 SOURCE_DIR = PROJECT_ROOT / "source"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "Meditation Course on the Six Senses"
@@ -415,14 +419,19 @@ def convert_meditation_instructions(text):
 def convert_audio_links(text, mode):
     def replace_audio(match):
         audio_file = match.group(1)
+        # Add the audio file to the global list for offline mode
+        global ALL_AUDIO_FILES
+        filename_only = Path(audio_file).name
+        if filename_only not in ALL_AUDIO_FILES:
+            ALL_AUDIO_FILES.append(filename_only)
+
         if mode == "online":
             base_url = "https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/"
             # Use exact filename as-is without modification
-            filename_only = Path(audio_file).name
             src = f"{base_url}{filename_only}"
         else:
             # Use exact filename as-is without modification
-            src = f"static/audio/{audio_file}"
+            src = f"static/audio/{filename_only}"
         return f'<audio controls style="width: 100%;"><source src="{src}" type="audio/mpeg"></audio>'
 
     # Using raw string for regex pattern
@@ -476,13 +485,28 @@ def make_id(text):
     return re.sub(r"[^\w\u4e00-\u9fff\- ]", "", text.strip().lower().replace(" ", "-"))
 
 
+def generate_audio_files_list():
+    """Generates a JSON file containing all audio files needed for offline mode."""
+    global ALL_AUDIO_FILES
+    if ALL_AUDIO_FILES:
+        # Sort and deduplicate the list
+        audio_files = sorted(list(set(ALL_AUDIO_FILES)))
+        audio_list_path = OUTPUT_DIR / "audio-files.json"
+        with open(audio_list_path, "w", encoding="utf-8") as f:
+            json.dump(audio_files, f, indent=2)
+        print(f"Generated audio files list: {audio_list_path}")
+        print(f"Found {len(audio_files)} audio files: {audio_files}")
+    else:
+        print("No audio files found in markdown content.")
+
+
 # --- Main Execution ---
 
 
 def main():
     """Main function to build the static website."""
     import argparse
-    
+
     parser = argparse.ArgumentParser(description="Build the Six Senses website.")
     parser.add_argument(
         "--mode",
@@ -492,13 +516,16 @@ def main():
     )
     args = parser.parse_args()
     mode = args.mode
-    
+
     print(f"--- Starting website build (mode: {mode}) ---")
 
     clean_output_directory()
     copy_static_files(mode)
     render_pages(mode)
     generate_pwa_assets(mode)
+
+    # Generate audio files list for offline mode
+    generate_audio_files_list()
 
     print("\n--- Build process completed successfully! ---")
 
