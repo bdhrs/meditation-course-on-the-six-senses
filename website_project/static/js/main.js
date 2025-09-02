@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Status Toggle ---
+    // Commented out since offline mode feature is not yet implemented
+    /*
     const statusToggle = document.getElementById('status-toggle');
     const statusIcon = statusToggle.querySelector('.status-icon');
     
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             statusIcon.src = 'static/images/status-icon-offline.svg';
         }
     });
-
+    */
     // --- Disappearing Header ---
     const header = document.getElementById('main-header');
     const scrollableContainer = document.querySelector('.center-pane-wrapper');
