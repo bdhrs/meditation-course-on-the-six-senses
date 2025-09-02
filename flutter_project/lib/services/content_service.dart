@@ -53,6 +53,9 @@ class ContentService {
       
       if (i > 0) {
         prevSlug = lessons[i - 1].slug;
+      } else {
+        // First lesson should have a link back to the landing page
+        prevSlug = 'landing';
       }
       
       if (i < lessons.length - 1) {

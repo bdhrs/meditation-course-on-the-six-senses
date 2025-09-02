@@ -47,7 +47,15 @@ class LessonScreen extends StatelessWidget {
                 children: [
                   if (lesson.prevLessonSlug != null)
                     ElevatedButton(
-                      onPressed: () => onNavigateToLesson?.call(lesson.prevLessonSlug!),
+                      onPressed: () {
+                        if (lesson.prevLessonSlug == 'landing') {
+                          // Navigate back to landing page
+                          Navigator.of(context).pushNamedAndRemoveUntil('/landing', (route) => false);
+                        } else {
+                          // Navigate to previous lesson
+                          onNavigateToLesson?.call(lesson.prevLessonSlug!);
+                        }
+                      },
                       child: const Text('Previous'),
                     )
                   else

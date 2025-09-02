@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'screens/landing_page_screen.dart';
 import 'screens/table_of_contents_screen.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/download_manager_screen.dart';
@@ -30,8 +31,10 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: themeProvider.themeMode,
-          home: const HomeScreen(),
+          initialRoute: '/landing',
           routes: {
+            '/landing': (context) => const LandingPageScreen(),
+            '/tableOfContents': (context) => const TableOfContentsScreenWrapper(),
             '/downloadManager': (context) => const DownloadManagerScreen(),
             '/settings': (context) => const SettingsScreen(),
           },
@@ -41,14 +44,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class TableOfContentsScreenWrapper extends StatefulWidget {
+  const TableOfContentsScreenWrapper({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<TableOfContentsScreenWrapper> createState() => _TableOfContentsScreenWrapperState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _TableOfContentsScreenWrapperState extends State<TableOfContentsScreenWrapper> {
   late Future<List<Lesson>> _lessonsFuture;
   Lesson? _currentLesson;
 
@@ -66,10 +69,21 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _navigateToLessonBySlug(String slug) {
     _lessonsFuture.then((lessons) {
-      final lesson = lessons.firstWhere((l) => l.slug == slug);
-      setState(() {
-        _currentLesson = lesson;
-      });
+      try {
+        final lesson = lessons.firstWhere((l) => l.slug == slug);
+        // Check if the widget is still mounted before calling setState
+        if (mounted) {
+          setState(() {
+            _currentLesson = lesson;
+          });
+        }
+      } catch (e) {
+        // If we can't find the lesson by slug, navigate back to landing page
+        // We need to ensure we're still mounted before navigating
+        if (mounted) {
+          Navigator.of(context).pushNamedAndRemoveUntil('/landing', (route) => false);
+        }
+      }
     });
   }
 

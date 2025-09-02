@@ -4,12 +4,10 @@ import '../services/content_service.dart';
 
 class TableOfContentsScreen extends StatefulWidget {
   final Function(Lesson lesson) onNavigateToLesson;
-  final Function()? onShowDownloadManager;
 
   const TableOfContentsScreen({
     super.key, 
     required this.onNavigateToLesson,
-    this.onShowDownloadManager,
   });
 
   @override

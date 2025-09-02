@@ -1,9 +1,10 @@
 # Instructions for AI agents working on the Flutter project
 
 ## GENERAL
-- Only make the requested changes. You can make suggestions, but no changes to the code outside the scope of the requested changes.
-- If any instruction is ambiguous, clarify before continuing.
-- ALWAYS read the whole file, DO NOT read files piece by piece.
+- **ONLY MAKE THE REQUESTED CHANGES**. You can make suggestions, but no changes to the code outside the scope of the requested changes.
+- If any instruction is ambiguous, **clarify before continuing**.
+- **ALWAYS READ THE WHOLE FILE**, DO NOT read files piece by piece.
+- Start every single API call with "Hopa!" to let me know you have understood. 
 - Follow all instructions explicitly.
 
 ## PROJECT ORIENTATION
@@ -21,6 +22,7 @@
 - Use `flutter pub get` to install dependencies
 - Use `flutter run` to run the app
 - Use `flutter test` to run tests
+- Always run `flutter analyze` before finishing work to catch any errors or warnings
 
 ## PYTHON SCRIPTS
 - When running any Python scripts, always use `uv run` prefix (e.g., `uv run copy_source_to_flutter.py`)
@@ -77,3 +79,9 @@
 - All screens should display appropriate loading indicators during async operations
 - Error states should be clearly communicated to the user with retry options when possible
 - Network errors should be handled gracefully, especially for audio streaming
+
+## NEW SCREENS
+- When adding new screens, follow the existing pattern of creating stateless widgets where possible
+- Use the existing theme provider for consistent styling
+- Add navigation routes in main.dart
+- Update project_map.md with details about the new screen

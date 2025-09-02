@@ -19,7 +19,8 @@ lib/
 │   ├── table_of_contents_screen.dart  # Main screen with lesson list
 │   ├── lesson_screen.dart      # Displays individual lessons
 │   ├── download_manager_screen.dart   # Manages audio downloads
-│   └── settings_screen.dart    # Application settings
+│   ├── settings_screen.dart    # Application settings
+│   └── landing_page_screen.dart       # Landing page with course introduction
 ├── widgets/
 │   └── audio_player_widget.dart # Custom audio player component
 ├── theme/
@@ -40,7 +41,7 @@ assets/
 - **Key Functions**:
   - `main()`: Initializes the app with ThemeProvider for state management
   - `MyApp`: Root widget that configures MaterialApp with theme support
-  - `HomeScreen`: Stateful widget that manages navigation between table of contents and lesson screens
+  - `TableOfContentsScreenWrapper`: Stateful widget that manages navigation between table of contents and lesson screens
   - `_navigateToLesson()`: Navigates to a specific lesson by Lesson object
   - `_navigateToLessonBySlug()`: Navigates to a lesson by its slug identifier
 
@@ -105,7 +106,7 @@ assets/
   - `build()`: Constructs the UI with a FutureBuilder for async loading
 
 **File: `lib/screens/lesson_screen.dart`**
-- **Purpose**: Displays the content of a single lesson with custom markdown rendering
+- **Purpose**: Displays the content of a single lesson with custom markdown rendering and navigation controls
 - **Key Functions**:
   - `LessonScreen`: Stateless widget that displays a lesson's content
   - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax
@@ -131,6 +132,12 @@ assets/
 - **Key Functions**:
   - `SettingsScreen`: Stateful widget for application settings
   - `build()`: Constructs the UI with theme toggle and download manager link
+
+**File: `lib/screens/landing_page_screen.dart`**
+- **Purpose**: Landing page that shows the course title and subtitle with a starting point
+- **Key Functions**:
+  - `LandingPageScreen`: Stateless widget that displays the course title and subtitle
+  - `build()`: Constructs the UI with course title, subtitle, and a "Get Started" button
 
 ### Widgets
 **File: `lib/widgets/audio_player_widget.dart`**
@@ -162,7 +169,7 @@ assets/
 - Parse and display markdown content with custom syntax
 - Play audio files from remote URLs or local storage
 - Download all audio files for offline use
-- Navigate between lessons with previous/next buttons
+- Navigate between lessons with previous/next buttons, including navigation back to the landing page
 - Light and dark mode themes matching the website
 - Proper error handling and loading indicators
 - Responsive design for different screen sizes
