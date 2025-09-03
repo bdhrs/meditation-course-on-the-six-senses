@@ -47,7 +47,6 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - **On-page table of contents with differentiated styling for h2 and h3 headings (h3 entries are smaller and tabbed in)**
 - **Fixed dark mode flashing issue by applying theme early in the page load process**
 - **Added no-cache meta tags to prevent browser caching and ensure fresh content delivery**
-- **Added side panel hiding functionality that mirrors header behavior**
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -204,14 +203,6 @@ Then open `http://localhost:8000` in your browser.
 - Flexible layout using CSS Flexbox
 - Toggle buttons stay side-by-side even on narrow screens
 - Appropriate sizing and spacing for all screen sizes
-
-### Side Panel Hiding
-- **Side panels disappear when scrolling down, just like the header**
-- **Both left (course outline) and right (on-page TOC) panels are hidden**
-- **Panels reappear when scrolling up or reaching the bottom of the page**
-- **Smooth transition animations for better user experience**
-- **Works on all screen sizes**
-- **Implemented in `static/js/main.js` and `static/css/style.css`**
 
 ### Cache Control
 - **Added meta tags to prevent browser caching:**
