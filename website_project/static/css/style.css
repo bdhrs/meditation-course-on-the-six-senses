@@ -145,6 +145,7 @@ html.dark-mode {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
   max-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidebar-left {
@@ -238,6 +239,15 @@ header {
 
 .header-hidden {
   transform: translateY(-100%);
+}
+
+/* Classes for hiding sidebars */
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar-right.sidebar-hidden {
+  transform: translateX(100%);
 }
 
 footer {
@@ -478,7 +488,8 @@ summary {
   outline: none;
 }
 
-summary:hover, summary:focus {
+summary:hover,
+summary:focus {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -490,7 +501,8 @@ details.transcript summary {
   background-color: transparent;
 }
 
-details.transcript summary:hover, details.transcript summary:focus {
+details.transcript summary:hover,
+details.transcript summary:focus {
   background-color: transparent;
   color: var(--primary-color);
 }
