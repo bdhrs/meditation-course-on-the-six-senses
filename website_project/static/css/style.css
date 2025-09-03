@@ -145,7 +145,8 @@ html.dark-mode {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
   max-width: 100%;
-  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   overflow-x: hidden;
 }
 
@@ -226,6 +227,24 @@ html.dark-mode {
 .sidebar-right a:hover {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+/* Course Outline Specific Styling */
+.sidebar-left .section a {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.sidebar-left .subsection a {
+  font-weight: normal;
+}
+
+.sidebar-left .subsection {
+  padding-left: 1.5rem;
+}
+
+.sidebar-left .subsection a {
+  font-size: 0.9em;
 }
 
 header {

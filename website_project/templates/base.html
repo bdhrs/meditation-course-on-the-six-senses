@@ -96,7 +96,9 @@
             <h3>Course Outline</h3>
             <ul>
               {% for page in all_pages %}
-              <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+              <li class="{{ page.type }}" data-type="{{ page.type }}">
+                <a href="{{ page.path }}">{{ page.title }}</a>
+              </li>
               {% endfor %}
             </ul>
           </nav>

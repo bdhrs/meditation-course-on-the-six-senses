@@ -165,11 +165,26 @@ def render_pages(mode="offline"):
     # Create a list of page dictionaries for navigation
     pages_for_nav = []
     # Add the title page as the first item in navigation
-    pages_for_nav.append({"title": "Title Page", "path": "index.html"})
+    pages_for_nav.append(
+        {"title": "Title Page", "path": "index.html", "type": "section"}
+    )
     for md_file in md_files:
         if not md_file.name.startswith(("X", ".")):
             slug = slugify_title(md_file.stem)
-            pages_for_nav.append({"title": md_file.stem, "path": f"{slug}.html"})
+            # Determine if this is a section heading or subsection based on filename pattern
+            filename = md_file.name
+            if re.match(
+                r"^\d+\.\d+\.", filename
+            ):  # e.g., "1.1. Coming Back to Your Senses.md"
+                page_type = "subsection"
+            elif re.match(r"^\d+\.[^\.]", filename):  # e.g., "1. The Six Senses.md"
+                page_type = "section"
+            else:
+                page_type = "section"  # Default to section if pattern doesn't match
+            # Remove debug output
+            pages_for_nav.append(
+                {"title": md_file.stem, "path": f"{slug}.html", "type": page_type}
+            )
 
     # Generate the title page dynamically
     print(" - Generating title page")
