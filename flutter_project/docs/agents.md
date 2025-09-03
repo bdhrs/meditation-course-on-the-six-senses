@@ -73,7 +73,8 @@
 - Lesson content is stored as markdown files in assets/markdown/
 - Audio files can be played from remote URLs or local storage
 - Images are stored in assets/images/ (PNG format preferred)
-- Content synchronization with the remote repository is handled by ContentSyncService
+- Audio files can be played from remote URLs or local storage
+- Theme colors and styling match the website project CSS
 
 ## ERROR HANDLING
 - All screens should display appropriate loading indicators during async operations
@@ -99,19 +100,24 @@ lib/
 ├── models/
 │   └── lesson.dart             # Data model for lessons
 ├── services/
-│   ├── content_service.dart    # Processes markdown content
+│   ├── content_service.dart    # Processes markdown content and manages lesson data
 │   ├── download_service.dart   # Handles audio file downloads
 │   └── content_sync_service.dart # Manages content synchronization
 ├── providers/
 │   └── theme_provider.dart     # Manages theme state
 ├── screens/
 │   ├── table_of_contents_screen.dart  # Main screen with lesson list
-│   ├── lesson_screen.dart      # Displays individual lessons
+│   ├── lesson_screen.dart      # Displays individual lessons and manages overall layout
 │   ├── download_manager_screen.dart   # Manages audio downloads
 │   ├── settings_screen.dart    # Application settings
-│   └── landing_page_screen.dart       # Landing page with course introduction
+│   ├── app_bar.dart            # Custom app bar for the three-pane layout
+│   ├── left_sidebar.dart       # Left sidebar displaying course outline
+│   ├── right_sidebar.dart      # Right sidebar displaying on-page table of contents
+│   ├── main_content.dart       # Displays lesson content and handles title page rendering
+│   └── lesson_item_widget.dart # Widget for individual lesson items in sidebars
 ├── widgets/
-│   └── audio_player_widget.dart # Custom audio player component
+│   ├── audio_player_widget.dart # Custom audio player component
+│   └── adaptive_navigation_buttons.dart # Adaptive navigation buttons component
 ├── theme/
 │   └── app_theme.dart          # Application theme definitions
 assets/
@@ -125,147 +131,171 @@ assets/
 
 ### Main Application
 **File: `lib/main.dart`**
-- **Purpose**: Entry point of the application that initializes the app and sets up routing
+- **Purpose**: Entry point of the application that initializes the app and sets up routing.
 - **Key Functions**:
-  - `main()`: Initializes the app with ThemeProvider for state management
-  - `MyApp`: Root widget that configures MaterialApp with theme support
-  - `TableOfContentsScreenWrapper`: Stateful widget that manages navigation between table of contents and lesson screens
-  - `_navigateToLesson()`: Navigates to a specific lesson by Lesson object
-  - `_navigateToLessonBySlug()`: Navigates to a lesson by its slug identifier
+  - `main()`: Initializes the app with ThemeProvider for state management.
+  - `MyApp`: Root widget that configures MaterialApp with theme support and defines application routes.
+  - `LessonScreenWrapper`: Stateful widget that manages loading lessons and displaying the `LessonScreen`.
+  - `_navigateToLessonBySlug()`: Navigates to a specific lesson by its slug identifier, including the virtual "Title Page".
 
 ### Models
 **File: `lib/models/lesson.dart`**
-- **Purpose**: Data model representing a single lesson with all its properties
+- **Purpose**: Data model representing a single lesson with all its properties.
 - **Key Functions**:
-  - `Lesson`: Constructor that creates a lesson with title, slug, content, audio files, and navigation links
-  - `copyWith()`: Creates a copy of the lesson with optional updated properties
-  - `fromJson()`: Factory constructor that creates a Lesson from a JSON map
-  - `toJson()`: Converts a Lesson instance to a JSON-compatible map
+  - `Lesson`: Constructor that creates a lesson with title, slug, content, audio files, and navigation links.
+  - `copyWith()`: Creates a copy of the lesson with optional updated properties.
+  - `fromJson()`: Factory constructor that creates a Lesson from a JSON map.
+  - `toJson()`: Converts a Lesson instance to a JSON-compatible map.
 
 ### Services
 **File: `lib/services/content_service.dart`**
-- **Purpose**: Processes markdown files from assets and converts them into Lesson objects
+- **Purpose**: Processes markdown files from assets and converts them into Lesson objects, including a virtual "Title Page".
 - **Key Functions**:
-  - `loadLessons()`: Reads all markdown files from assets and creates Lesson objects
-  - `_getTitleFromFileName()`: Extracts and formats a title from a file name
-  - `_generateSlug()`: Creates a URL-friendly slug from a file name
-  - `_processMarkdownContent()`: Processes markdown content with custom syntax conversions
-  - `_convertMeditationInstructions()`: Converts `%%...%%` syntax to transcript placeholders
-  - `_convertAudioLinks()`: Converts `![[file.mp3]]` syntax to audio placeholders
-  - `_convertWikiLinks()`: Converts `[[Link Title]]` syntax to navigation placeholders
-  - `_extractAudioFileNames()`: Extracts all unique audio file names from content
+  - `loadLessons()`: Reads all markdown files from assets, creates Lesson objects, and prepends the virtual "Title Page" lesson.
+  - `_getTitleFromFileName()`: Extracts and formats a title from a file name, preserving full numbering and removing capitalization.
+  - `_generateSlug()`: Creates a URL-friendly slug from a file name.
+  - `_processMarkdownContent()`: Processes markdown content with custom syntax conversions.
+  - `_convertMeditationInstructions()`: Converts `%%...%%` syntax to transcript placeholders.
+  - `_convertAudioLinks()`: Converts `![[file.mp3]]` syntax to audio placeholders.
+  - `_convertWikiLinks()`: Converts `[[Link Title]]` syntax to navigation placeholders.
+  - `_extractAudioFileNames()`: Extracts all unique audio file names from content.
 
 **File: `lib/services/download_service.dart`**
-- **Purpose**: Manages downloading, checking, and deleting audio files for offline use
+- **Purpose**: Manages downloading, checking, and deleting audio files for offline use.
 - **Key Functions**:
-  - `getAllAudioFiles()`: Gets a list of all unique audio files from all lessons
-  - `isAudioFileDownloaded()`: Checks if a specific audio file exists locally
-  - `downloadAudioFile()`: Downloads a single audio file with progress tracking
-  - `downloadAllAudioFiles()`: Downloads all audio files with overall progress tracking
-  - `deleteAllAudioFiles()`: Removes all downloaded audio files
-  - `getLocalFilePath()`: Gets the local file path for a downloaded audio file
+  - `getAllAudioFiles()`: Gets a list of all unique audio files from all lessons.
+  - `isAudioFileDownloaded()`: Checks if a specific audio file exists locally.
+  - `downloadAudioFile()`: Downloads a single audio file with progress tracking.
+  - `downloadAllAudioFiles()`: Downloads all audio files with overall progress tracking.
+  - `deleteAllAudioFiles()`: Removes all downloaded audio files.
+  - `getLocalFilePath()`: Gets the local file path for a downloaded audio file.
 
 **File: `lib/services/content_sync_service.dart`**
-- **Purpose**: Manages synchronization of content from the remote GitHub repository
+- **Purpose**: Manages synchronization of content from the remote GitHub repository.
 - **Key Functions**:
-  - `getLocalDocumentsPath()`: Gets the path to the local documents directory
-  - `hasLocalContent()`: Checks if local content exists
-  - `getLastUpdated()`: Gets the last updated timestamp of local content
-  - `getLatestCommitInfo()`: Fetches the latest commit information from GitHub
-  - `isUpdateAvailable()`: Checks if an update is available by comparing timestamps
-  - `downloadAndExtractContent()`: Downloads and extracts the repository zip file
-  - `syncContent()`: Syncs content with the remote repository if updates are available
+  - `getLocalDocumentsPath()`: Gets the path to the local documents directory.
+  - `hasLocalContent()`: Checks if local content exists.
+  - `getLastUpdated()`: Gets the last updated timestamp of local content.
+  - `getLatestCommitInfo()`: Fetches the latest commit information from GitHub.
+  - `isUpdateAvailable()`: Checks if an update is available by comparing timestamps.
+  - `downloadAndExtractContent()`: Downloads and extracts the repository zip file.
+  - `syncContent()`: Syncs content with the remote repository if updates are available.
 
 ### Providers
 **File: `lib/providers/theme_provider.dart`**
-- **Purpose**: Manages application theme state (light/dark mode) using Provider pattern
+- **Purpose**: Manages application theme state (light/dark mode) using Provider pattern.
 - **Key Functions**:
-  - `setThemeMode()`: Sets the theme mode (light, dark, or system)
-  - `toggleTheme()`: Cycles through theme modes (light → dark → system → light)
-  - `isDarkMode`: Getter that determines if dark mode should be used
+  - `setThemeMode()`: Sets the theme mode (light, dark, or system).
+  - `toggleTheme()`: Cycles through theme modes (light → dark → system → light).
+  - `isDarkMode`: Getter that determines if dark mode should be used.
 
 ### Screens
 **File: `lib/screens/table_of_contents_screen.dart`**
-- **Purpose**: Main screen showing the list of all lessons with loading and error states
+- **Purpose**: Main screen showing the list of all lessons with loading and error states.
 - **Key Functions**:
-  - `TableOfContentsScreen`: Stateful widget that displays the lesson list
-  - `_lessonsFuture`: Future that holds the list of lessons from ContentService
-  - `initState()`: Loads lessons when the screen is initialized
-  - `build()`: Constructs the UI with a FutureBuilder for async loading
+  - `TableOfContentsScreen`: Stateful widget that displays the lesson list.
+  - `_lessonsFuture`: Future that holds the list of lessons from ContentService.
+  - `initState()`: Loads lessons when the screen is initialized.
+  - `build()`: Constructs the UI with a FutureBuilder for async loading.
 
 **File: `lib/screens/lesson_screen.dart`**
-- **Purpose**: Displays the content of a single lesson with custom markdown rendering and navigation controls
+- **Purpose**: Displays the content of a single lesson with custom markdown rendering and manages overall layout, including sidebars and app bar.
 - **Key Functions**:
-  - `LessonScreen`: Stateless widget that displays a lesson's content
-  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax
-  - `_buildParagraph()`: Renders a paragraph of text
-  - `_buildHeading()`: Renders a heading with appropriate styling
-  - `_buildAudioWidget()`: Renders an audio player widget for audio files
-  - `_buildTranscriptWidget()`: Renders an expandable transcript widget
-  - `_buildLinkWidget()`: Renders a navigable link to another lesson
-- **UI Improvements**:
-  - Updated drawer styling to match website design with custom header and list items
-  - Added proper border separators and padding for list items
-  - Implemented theme-aware colors for both light and dark modes
-  - Enhanced selected state styling for current lesson
-  - Improved "Home" button styling in drawer
+  - `LessonScreen`: Stateful widget that displays a lesson's content and manages responsive layout.
+  - `_scrollController`: Manages scrolling for the main content area.
+  - `_handleScroll()`: Manages app bar visibility based on scroll position.
+  - `_buildBody()`: Constructs the three-pane layout (left sidebar, main content, right sidebar).
+  - Implements responsive sidebar visibility logic based on screen width transitions.
+  - Handles navigation to other lessons and the title page.
 
 **File: `lib/screens/download_manager_screen.dart`**
-- **Purpose**: UI for managing audio file downloads with progress tracking and error handling
+- **Purpose**: UI for managing audio file downloads with progress tracking and error handling.
 - **Key Functions**:
-  - `DownloadManagerScreen`: Stateful widget for managing audio downloads
-  - `_loadAudioFiles()`: Loads the list of audio files and checks download status
-  - `_downloadAllAudio()`: Downloads all audio files with progress tracking
-  - `_deleteAllAudio()`: Deletes all downloaded audio files
-  - `build()`: Constructs the UI with download controls and file list
-  - `_getStatusText()`: Returns a human-readable status for a download
-  - `_getStatusIcon()`: Returns an appropriate icon for a download status
+  - `DownloadManagerScreen`: Stateful widget for managing audio downloads.
+  - `_loadAudioFiles()`: Loads the list of audio files and checks download status.
+  - `_downloadAllAudio()`: Downloads all audio files with progress tracking.
+  - `_deleteAllAudio()`: Deletes all downloaded audio files.
+  - `build()`: Constructs the UI with download controls and file list.
+  - `_getStatusText()`: Returns a human-readable status for a download.
+  - `_getStatusIcon()`: Returns an appropriate icon for a download status.
 
 **File: `lib/screens/settings_screen.dart`**
-- **Purpose**: Application settings screen including theme toggle and download management
+- **Purpose**: Application settings screen including theme toggle and download management.
 - **Key Functions**:
-  - `SettingsScreen`: Stateful widget for application settings
-  - `build()`: Constructs the UI with theme toggle and download manager link
+  - `SettingsScreen`: Stateful widget for application settings.
+  - `build()`: Constructs the UI with theme toggle and download manager link.
 
-**File: `lib/screens/landing_page_screen.dart`**
-- **Purpose**: Landing page that shows the course title and subtitle with a starting point
+**File: `lib/screens/app_bar.dart`**
+- **Purpose**: Custom app bar for the three-pane layout, providing navigation and settings access.
 - **Key Functions**:
-  - `LandingPageScreen`: Stateless widget that displays the course title and subtitle
-  - `build()`: Constructs the UI with course title, subtitle, and a "Get Started" button
+  - `ThreePaneAppBar`: Stateless widget for the app bar.
+  - Provides menu icon for mobile/tablet and settings icon.
+
+**File: `lib/screens/left_sidebar.dart`**
+- **Purpose**: Displays the course outline (list of lessons) and handles lesson selection.
+- **Key Functions**:
+  - `LeftSidebar`: Stateless widget displaying the list of lessons.
+  - Renders `LessonItemWidget` for each lesson.
+  - Handles navigation to selected lessons.
+
+**File: `lib/screens/right_sidebar.dart`**
+- **Purpose**: Displays an on-page table of contents (headings within the current lesson).
+- **Key Functions**:
+  - `RightSidebar`: Stateless widget displaying extracted headings.
+  - `_extractHeadings()`: Parses markdown content to extract headings.
+
+**File: `lib/screens/main_content.dart`**
+- **Purpose**: Displays the content of the current lesson, including custom markdown rendering and special handling for the "Title Page".
+- **Key Functions**:
+  - `MainContent`: Stateful widget that renders lesson content.
+  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax.
+  - `_buildTitlePage()`: Renders the custom "Title Page" content with specific styling.
+  - Manages the positioning of navigation buttons based on content length.
+
+**File: `lib/screens/lesson_item_widget.dart`**
+- **Purpose**: Renders an individual lesson item in the sidebars, applying specific styling based on its type.
+- **Key Functions**:
+  - `LessonItemWidget`: Stateful widget for a single lesson item.
+  - `_isSectionHeading()`: Determines if a title is a section heading for bolding.
+  - `_isSubSectionHeading()`: Determines if a title is a subsection heading for indentation.
+  - Applies conditional padding and font weight based on item type.
 
 ### Widgets
 **File: `lib/widgets/audio_player_widget.dart`**
-- **Purpose**: Custom audio player with play/pause controls, progress tracking, and offline support
+- **Purpose**: Custom audio player with play/pause controls, progress tracking, and offline support.
 - **Key Functions**:
-  - `AudioPlayerWidget`: Stateful widget for playing audio files
-  - `initState()`: Initializes the audio player and checks download status
-  - `_checkDownloadStatus()`: Checks if the audio file is available offline
-  - `_play()`: Plays or pauses the audio file (from local or remote source)
-  - `_stop()`: Stops the audio playback
-  - `_formatDuration()`: Formats a Duration into MM:SS format
-  - `build()`: Constructs the UI with controls and progress tracking
+  - `AudioPlayerWidget`: Stateful widget for playing audio files.
+  - Handles audio playback from local or remote sources.
+
+**File: `lib/widgets/adaptive_navigation_buttons.dart`**
+- **Purpose**: Adaptive navigation buttons for moving between lessons, providing instant jumps to the top of the page.
+- **Key Functions**:
+  - `AdaptiveNavigationButtons`: Stateless widget for displaying navigation buttons.
+  - `_navigateToLesson()`: Navigates to the previous or next lesson with an instant jump to the top.
 
 ### Theme
 **File: `lib/theme/app_theme.dart`**
-- **Purpose**: Defines light and dark theme configurations that match the website styling
+- **Purpose**: Defines light and dark theme configurations that match the website styling.
 - **Key Functions**:
-  - `lightTheme`: Getter that returns the light theme configuration
-  - `darkTheme`: Getter that returns the dark theme configuration
-  - Contains color definitions that match the website CSS
+  - `lightTheme`: Getter that returns the light theme configuration.
+  - `darkTheme`: Getter that returns the dark theme configuration.
+  - Contains color definitions that match the website CSS.
 
 ## Asset Structure
-- Documents are stored in `assets/markdown/` during development
-- Images are stored in `assets/images/`
-- Audio files are stored in `assets/audio/`
-- In production, content would be downloaded to device storage
-- Audio files can be played from remote URLs or local storage
-- Theme colors and styling match the website project CSS
+- Documents are stored in `assets/markdown/` during development.
+- Images are stored in `assets/images/`.
+- Audio files are stored in `assets/audio/`.
+- In production, content would be downloaded to device storage.
+- Audio files can be played from remote URLs or local storage.
+- Theme colors and styling match the website project CSS.
 
 ## Features
-- Parse and display markdown content with custom syntax
-- Play audio files from remote URLs or local storage
-- Download all audio files for offline use
-- Navigate between lessons with previous/next buttons, including navigation back to the landing page
-- Light and dark mode themes matching the website
-- Proper error handling and loading indicators
-- Responsive design for different screen sizes
+- Parse and display markdown content with custom syntax.
+- Play audio files from remote URLs or local storage.
+- Download all audio files for offline use.
+- Navigate between lessons with previous/next buttons, including navigation to the integrated "Title Page".
+- Light and dark mode themes matching the website.
+- Proper error handling and loading indicators.
+- Responsive design for different screen sizes, with adaptive sidebar visibility.
+- Enhanced sidebar styling for better distinction between sections and subsections.
+- Integrated "Title Page" as a virtual lesson within the course structure.

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'screens/landing_page_screen.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/download_manager_screen.dart';
 import 'screens/settings_screen.dart';
@@ -30,9 +29,9 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: themeProvider.themeMode,
-          initialRoute: '/landing',
+          initialRoute: '/',
           routes: {
-            '/landing': (context) => const LandingPageScreen(),
+            '/': (context) => const LessonScreenWrapper(),
             '/downloadManager': (context) => const DownloadManagerScreen(),
             '/settings': (context) => const SettingsScreen(),
           },
@@ -63,28 +62,17 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
     _lessonsFuture.then((lessons) {
       try {
         final lesson = lessons.firstWhere((l) => l.slug == slug);
-        // Check if the widget is still mounted before calling setState
         if (mounted) {
           setState(() {
             _currentLesson = lesson;
           });
         }
       } catch (e) {
-        // If we can't find the lesson by slug, navigate back to landing page
-        // We need to ensure we're still mounted before navigating
         if (mounted) {
-          Navigator.of(context)
-              .pushNamedAndRemoveUntil('/landing', (route) => false);
+          _navigateToLessonBySlug('title-page');
         }
       }
     });
-  }
-
-  void _navigateToLanding() {
-    setState(() {
-      _currentLesson = null;
-    });
-    Navigator.of(context).pushNamedAndRemoveUntil('/landing', (route) => false);
   }
 
   @override
@@ -135,7 +123,6 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               lesson: _currentLesson!,
               onNavigateToLesson: _navigateToLessonBySlug,
               lessons: lessons,
-              onNavigateToLanding: _navigateToLanding,
             );
           }
 
@@ -155,7 +142,6 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               lesson: _currentLesson ?? lessons.first,
               onNavigateToLesson: _navigateToLessonBySlug,
               lessons: lessons,
-              onNavigateToLanding: _navigateToLanding,
             );
           }
 

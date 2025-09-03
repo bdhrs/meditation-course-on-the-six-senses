@@ -6,14 +6,12 @@ class LeftSidebar extends StatelessWidget {
   final List<Lesson> lessons;
   final Lesson currentLesson;
   final Function(Lesson lesson) onLessonSelected;
-  final VoidCallback onHomeSelected;
 
   const LeftSidebar({
     super.key,
     required this.lessons,
     required this.currentLesson,
     required this.onLessonSelected,
-    required this.onHomeSelected,
   });
 
   @override
@@ -22,6 +20,7 @@ class LeftSidebar extends StatelessWidget {
       children: [
         // Header - Course Outline
         Container(
+          alignment: Alignment.centerLeft,
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).appBarTheme.backgroundColor,
@@ -52,36 +51,13 @@ class LeftSidebar extends StatelessWidget {
               final bool isCurrentLesson =
                   lessonItem.slug == currentLesson.slug;
 
+              // Use a regular LessonItemWidget for all items
               return LessonItemWidget(
                 lesson: lessonItem,
                 isCurrentLesson: isCurrentLesson,
                 onTap: () => onLessonSelected(lessonItem),
               );
             },
-          ),
-        ),
-        // Home Item
-        Container(
-          decoration: BoxDecoration(
-            border: Border(
-              top: BorderSide(
-                color: Theme.of(context).dividerColor,
-                width: 1,
-              ),
-            ),
-          ),
-          child: LessonItemWidget(
-            lesson: Lesson(
-              title: 'Home',
-              slug: 'landing',
-              markdownContent: '',
-              audioFileNames: [],
-              prevLessonSlug: null,
-              nextLessonSlug: null,
-            ),
-            isCurrentLesson: false,
-            onTap: onHomeSelected,
-            isHomeItem: true,
           ),
         ),
       ],

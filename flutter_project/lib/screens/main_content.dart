@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import '../../models/lesson.dart';
 import '../../widgets/audio_player_widget.dart';
+import '../../widgets/adaptive_navigation_buttons.dart';
 
-class MainContent extends StatelessWidget {
+class MainContent extends StatefulWidget {
   final Lesson lesson;
   final ScrollController scrollController;
   final bool isDesktop;
   final bool isTablet;
   final bool isMobile;
   final Function(String slug)? onNavigateToLesson;
+  final String Function(String slug) getLessonTitle;
 
   const MainContent({
     super.key,
@@ -18,34 +20,147 @@ class MainContent extends StatelessWidget {
     required this.isTablet,
     required this.isMobile,
     this.onNavigateToLesson,
+    required this.getLessonTitle,
   });
 
   @override
-  Widget build(BuildContext context) {
-    // Determine padding based on screen size
-    // Matching website CSS:
-    // Desktop (>1200px): 3rem (48px)
-    // Tablet (768px-1200px): 1.5rem (24px)
-    // Mobile (≤768px): 1rem (16px)
-    EdgeInsets padding;
-    if (isDesktop) {
-      padding = const EdgeInsets.all(48.0); // 3rem
-    } else if (isTablet) {
-      padding = const EdgeInsets.all(24.0); // 1.5rem
-    } else {
-      padding = const EdgeInsets.all(16.0); // 1rem
-    }
+  State<MainContent> createState() => _MainContentState();
+}
 
-    return SingleChildScrollView(
-      controller: scrollController,
-      child: Padding(
-        padding: padding,
-        child: _buildMarkdownContent(lesson.markdownContent),
-      ),
+class _MainContentState extends State<MainContent> {
+  final GlobalKey _contentKey = GlobalKey();
+  bool _isContentShort = false;
+
+  @override
+  void didUpdateWidget(MainContent oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.lesson != oldWidget.lesson) {
+      setState(() {
+        _isContentShort = false;
+      });
+    }
+  }
+
+  Widget _buildTitlePage() {
+    final navButtons = AdaptiveNavigationButtons(
+      prevLessonSlug: widget.lesson.prevLessonSlug,
+      nextLessonSlug: widget.lesson.nextLessonSlug,
+      getLessonTitle: widget.getLessonTitle,
+      onNavigateToLesson: widget.onNavigateToLesson,
+      scrollController: widget.scrollController,
+    );
+
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Meditation Course on the Six Senses',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                const SizedBox(height: 24),
+                Text(
+                  'A comprehensive guide to developing calm and insight through sense experience',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.normal,
+                      ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: navButtons,
+        ),
+      ],
     );
   }
 
-  Widget _buildMarkdownContent(String content) {
+  @override
+  Widget build(BuildContext context) {
+    if (widget.lesson.markdownContent == '{{TITLE_PAGE}}') {
+      return _buildTitlePage();
+    }
+
+    EdgeInsets padding;
+    if (widget.isDesktop) {
+      padding = const EdgeInsets.all(48.0);
+    } else if (widget.isTablet) {
+      padding = const EdgeInsets.all(24.0);
+    } else {
+      padding = const EdgeInsets.all(16.0);
+    }
+
+    final navButtons = AdaptiveNavigationButtons(
+      prevLessonSlug: widget.lesson.prevLessonSlug,
+      nextLessonSlug: widget.lesson.nextLessonSlug,
+      getLessonTitle: widget.getLessonTitle,
+      onNavigateToLesson: widget.onNavigateToLesson,
+      scrollController: widget.scrollController,
+    );
+
+    return LayoutBuilder(builder: (context, constraints) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        final contentContext = _contentKey.currentContext;
+        if (contentContext == null) return;
+
+        final contentHeight = contentContext.size?.height ?? 0;
+        final viewPortHeight = constraints.maxHeight;
+
+        final shouldBeShort = contentHeight < viewPortHeight;
+        if (shouldBeShort != _isContentShort) {
+          setState(() {
+            _isContentShort = shouldBeShort;
+          });
+        }
+      });
+
+      return Stack(
+        fit: StackFit.expand,
+        children: [
+          SingleChildScrollView(
+            controller: widget.scrollController,
+            child: Padding(
+              padding: padding,
+              child: Column(
+                children: [
+                  Column(
+                    key: _contentKey,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: _buildMarkdownContent(widget.lesson.markdownContent),
+                  ),
+                  if (!_isContentShort) navButtons,
+                ],
+              ),
+            ),
+          ),
+          if (_isContentShort)
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: navButtons,
+            ),
+        ],
+      );
+    });
+  }
+
+  List<Widget> _buildMarkdownContent(String content) {
     final List<Widget> widgets = [];
     final lines = content.split('\n');
 
@@ -53,40 +168,30 @@ class MainContent extends StatelessWidget {
     bool inParagraph = false;
 
     for (final line in lines) {
-      // Check for our custom syntax
       if (line.startsWith('{{audio:')) {
-        // Add any pending paragraph
         if (currentBlock.isNotEmpty) {
           widgets.add(_buildParagraph(currentBlock));
           currentBlock = '';
           inParagraph = false;
         }
-
-        // Add audio widget
         final fileName =
             line.length > 10 ? line.substring(8, line.length - 2) : '';
         widgets.add(_buildAudioWidget(fileName));
       } else if (line.startsWith('{{transcript:')) {
-        // Add any pending paragraph
         if (currentBlock.isNotEmpty) {
           widgets.add(_buildParagraph(currentBlock));
           currentBlock = '';
           inParagraph = false;
         }
-
-        // Add transcript widget
         final content =
             line.length > 15 ? line.substring(13, line.length - 2) : '';
         widgets.add(_buildTranscriptWidget(content));
       } else if (line.startsWith('{{link:')) {
-        // Add any pending paragraph
         if (currentBlock.isNotEmpty) {
           widgets.add(_buildParagraph(currentBlock));
           currentBlock = '';
           inParagraph = false;
         }
-
-        // Add link widget
         final linkContent =
             line.length > 9 ? line.substring(7, line.length - 2) : '';
         final parts = linkContent.split('|');
@@ -94,24 +199,19 @@ class MainContent extends StatelessWidget {
         final displayText = parts.length > 1 ? parts[1] : target;
         widgets.add(_buildLinkWidget(target, displayText));
       } else if (line.startsWith('#')) {
-        // Add any pending paragraph
         if (currentBlock.isNotEmpty) {
           widgets.add(_buildParagraph(currentBlock));
           currentBlock = '';
           inParagraph = false;
         }
-
-        // Add heading
         widgets.add(_buildHeading(line));
       } else if (line.isEmpty) {
-        // Empty line indicates end of paragraph
         if (currentBlock.isNotEmpty) {
           widgets.add(_buildParagraph(currentBlock));
           currentBlock = '';
           inParagraph = false;
         }
       } else {
-        // Regular text, add to current block
         if (inParagraph) {
           currentBlock = '$currentBlock $line';
         } else {
@@ -121,15 +221,11 @@ class MainContent extends StatelessWidget {
       }
     }
 
-    // Add any remaining paragraph
     if (currentBlock.isNotEmpty) {
       widgets.add(_buildParagraph(currentBlock));
     }
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: widgets,
-    );
+    return widgets;
   }
 
   Widget _buildParagraph(String text) {
@@ -146,12 +242,10 @@ class MainContent extends StatelessWidget {
     int level = 0;
     String text = line;
 
-    // Count # characters to determine heading level
     while (level < line.length && line[level] == '#') {
       level++;
     }
 
-    // Remove # characters and spaces
     if (level < line.length) {
       text = line.substring(level).trim();
     }
@@ -207,7 +301,7 @@ class MainContent extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: GestureDetector(
-        onTap: () => onNavigateToLesson?.call(target),
+        onTap: () => widget.onNavigateToLesson?.call(target),
         child: Text(
           displayText,
           style: const TextStyle(

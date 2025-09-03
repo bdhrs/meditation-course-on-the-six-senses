@@ -22,18 +22,37 @@ class LessonItemWidget extends StatefulWidget {
 class _LessonItemWidgetState extends State<LessonItemWidget> {
   bool _isHovered = false;
 
+  bool _isSectionHeading(String title) {
+    final isSingleNumber = RegExp(r'^\d+\.\s').hasMatch(title);
+    final isDoubleNumber = RegExp(r'^\d+\.\d+\.\s').hasMatch(title);
+    return isSingleNumber && !isDoubleNumber;
+  }
+
+  bool _isSubSectionHeading(String title) {
+    return RegExp(r'^\d+\.\d+\.\s').hasMatch(title);
+  }
+
   @override
   Widget build(BuildContext context) {
+    final isSection = _isSectionHeading(widget.lesson.title);
+    final isSubSection = _isSubSectionHeading(widget.lesson.title);
+
+    EdgeInsets padding;
+    if (isSubSection) {
+      padding = const EdgeInsets.fromLTRB(32.0, 14.0, 16.0, 14.0);
+    } else if (isSection) {
+      padding = const EdgeInsets.fromLTRB(16.0, 28.0, 16.0, 14.0);
+    } else {
+      padding = const EdgeInsets.fromLTRB(16.0, 14.0, 16.0, 14.0);
+    }
+
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
       child: GestureDetector(
         onTap: widget.onTap,
         child: Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16.0,
-            vertical: 12.0,
-          ),
+          padding: padding,
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(
@@ -42,7 +61,7 @@ class _LessonItemWidgetState extends State<LessonItemWidget> {
               ),
             ),
             color: widget.isCurrentLesson
-                ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)
+                ? Theme.of(context).colorScheme.primary.withAlpha(25)
                 : null,
           ),
           child: Text(
@@ -53,7 +72,9 @@ class _LessonItemWidgetState extends State<LessonItemWidget> {
                   : _isHovered
                       ? Theme.of(context).colorScheme.primary
                       : Theme.of(context).textTheme.bodyLarge?.color,
-              fontWeight: widget.isCurrentLesson || widget.isHomeItem
+              fontWeight: widget.isCurrentLesson ||
+                      widget.isHomeItem ||
+                      isSection
                   ? FontWeight.bold
                   : FontWeight.normal,
             ),

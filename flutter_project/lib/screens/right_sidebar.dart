@@ -19,6 +19,7 @@ class RightSidebar extends StatelessWidget {
       children: [
         // Header - On This Page
         Container(
+          alignment: Alignment.centerLeft,
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).appBarTheme.backgroundColor,

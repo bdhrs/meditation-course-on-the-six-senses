@@ -3,8 +3,12 @@
 - restore to last place
 - screen width not more than x
 - dark / light mode one click screen
-- settings screen indepenedent
+- settings screen independent
  
 ## DONE
 - landing page
 - table of contents not a page, on menu button
+- sidebars
+- title page
+- menu behaviour
+

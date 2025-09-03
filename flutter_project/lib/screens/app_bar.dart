@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool isMobile;
+  final bool isTablet;
   final VoidCallback onMenuPressed;
   final VoidCallback onSettingsPressed;
 
   const ThreePaneAppBar({
     super.key,
     required this.isMobile,
+    required this.isTablet,
     required this.onMenuPressed,
     required this.onSettingsPressed,
   });
@@ -34,7 +36,7 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ],
       ),
-      leading: isMobile
+      leading: isMobile || isTablet
           ? IconButton(
               icon: const Icon(Icons.menu),
               onPressed: onMenuPressed,

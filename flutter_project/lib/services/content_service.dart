@@ -47,6 +47,17 @@ class ContentService {
     // Sort lessons by slug to maintain proper order
     lessons.sort((a, b) => a.slug.compareTo(b.slug));
 
+    // Create a virtual lesson for the title page
+    final titlePageLesson = Lesson(
+      title: 'Title Page',
+      slug: 'title-page',
+      markdownContent: '{{TITLE_PAGE}}',
+      audioFileNames: [],
+    );
+
+    // Add the title page at the beginning
+    lessons.insert(0, titlePageLesson);
+
     // Populate nextLessonSlug and prevLessonSlug
     for (int i = 0; i < lessons.length; i++) {
       String? nextSlug;
@@ -55,19 +66,15 @@ class ContentService {
       if (i > 0) {
         prevSlug = lessons[i - 1].slug;
       } else {
-        // First lesson should have a link back to the landing page
-        prevSlug = 'landing';
+        // First lesson (Title Page) has no previous
+        prevSlug = null;
       }
 
       if (i < lessons.length - 1) {
         nextSlug = lessons[i + 1].slug;
       }
 
-      lessons[i] = Lesson(
-        title: lessons[i].title,
-        slug: lessons[i].slug,
-        markdownContent: lessons[i].markdownContent,
-        audioFileNames: lessons[i].audioFileNames,
+      lessons[i] = lessons[i].copyWith(
         nextLessonSlug: nextSlug,
         prevLessonSlug: prevSlug,
       );
@@ -81,27 +88,10 @@ class ContentService {
     // Remove the .md extension
     String title = fileName.replaceAll('.md', '');
 
-    // Split on dots and take everything after the first part (which is usually a number)
-    final parts = title.split('.');
-    if (parts.length > 1) {
-      title = parts.sublist(1).join('. '); // Join with spaces
-    }
-
     // Replace hyphens and underscores with spaces
     title = title.replaceAll('-', ' ').replaceAll('_', ' ');
 
-    // Capitalize first letter of each word
-    if (title.isNotEmpty) {
-      final words = title.split(' ');
-      for (int i = 0; i < words.length; i++) {
-        if (words[i].isNotEmpty) {
-          words[i] = words[i][0].toUpperCase() + words[i].substring(1);
-        }
-      }
-      title = words.join(' ');
-    }
-
-    return title;
+    return title.trim();
   }
 
   /// Generates a URL-friendly slug from the file name
