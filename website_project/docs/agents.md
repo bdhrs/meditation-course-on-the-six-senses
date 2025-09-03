@@ -46,6 +46,7 @@ This project builds a static website for the "Meditation Course on the Six Sense
 - **Custom 404 error page with link back to the title page (works with GitHub Pages)**
 - **On-page table of contents with differentiated styling for h2 and h3 headings (h3 entries are smaller and tabbed in)**
 - **Fixed dark mode flashing issue by applying theme early in the page load process**
+- **Added no-cache meta tags to prevent browser caching and ensure fresh content delivery**
 
 ## Tech Stack
 - **Python** - Core language for build scripts
@@ -202,3 +203,12 @@ Then open `http://localhost:8000` in your browser.
 - Flexible layout using CSS Flexbox
 - Toggle buttons stay side-by-side even on narrow screens
 - Appropriate sizing and spacing for all screen sizes
+
+### Cache Control
+- **Added meta tags to prevent browser caching:**
+  - `<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />`
+  - `<meta http-equiv="Pragma" content="no-cache" />`
+  - `<meta http-equiv="Expires" content="0" />`
+- **These tags ensure that browsers always fetch the latest version of pages**
+- **Particularly useful for frequently updated content**
+- **Implemented in `templates/base.html` so all pages inherit this behavior**
