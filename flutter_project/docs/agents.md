@@ -25,8 +25,8 @@
 - Always run `flutter analyze` before finishing work to catch any errors or warnings
 
 ## PYTHON SCRIPTS
-- When running any Python scripts, always use `uv run` prefix (e.g., `uv run copy_source_to_flutter.py`)
-- The main script `copy_source_to_flutter.py` copies markdown content from the main project to the Flutter assets directory
+- When running any Python scripts, always use `uv run` prefix (e.g., `uv run copy_assets.py`)
+- The main script `copy_assets.py` copies markdown content from the main project to the Flutter assets directory
 - Always run this script after updating lesson content to ensure the Flutter app has the latest content
 
 ## UPON COMPLETION
@@ -70,9 +70,9 @@
 - Lesson content is loaded asynchronously using FutureBuilder in TableOfContentsScreen
 
 ## ASSETS AND CONTENT
-- Lesson content is stored as markdown files in assets/documents/
+- Lesson content is stored as markdown files in assets/markdown/
 - Audio files can be played from remote URLs or local storage
-- Images are stored in assets/documents/assets/images/
+- Images are stored in assets/images/ (PNG format preferred)
 - Content synchronization with the remote repository is handled by ContentSyncService
 
 ## ERROR HANDLING
@@ -115,11 +115,10 @@ lib/
 ├── theme/
 │   └── app_theme.dart          # Application theme definitions
 assets/
-├── documents/                  # Markdown content (copied from source)
-│   ├── *.md                    # Lesson content files
-│   └── assets/                 # Audio and image assets
-│       ├── audio/              # Audio files
-│       └── images/             # Image files
+├── markdown/                   # Markdown content (copied from source)
+│   └── *.md                    # Lesson content files
+├── images/                     # Image assets
+├── audio/                      # Audio files
 ```
 
 ## Detailed File Information
@@ -255,7 +254,9 @@ assets/
   - Contains color definitions that match the website CSS
 
 ## Asset Structure
-- Documents are stored in `assets/documents/` during development
+- Documents are stored in `assets/markdown/` during development
+- Images are stored in `assets/images/`
+- Audio files are stored in `assets/audio/`
 - In production, content would be downloaded to device storage
 - Audio files can be played from remote URLs or local storage
 - Theme colors and styling match the website project CSS

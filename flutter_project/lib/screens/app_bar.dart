@@ -19,7 +19,7 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
         children: [
           // Logo
           Image.asset(
-            'assets/documents/assets/images/six-senses.svg',
+            'assets/images/six-senses.png',
             height: 32,
             width: 32,
             fit: BoxFit.contain,
