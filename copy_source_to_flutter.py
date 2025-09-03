@@ -34,6 +34,32 @@ def copy_source_files():
         shutil.copytree(source_assets_dir, flutter_docs_dir / "assets")
         print("Copied assets directory")
     
+    # Copy logo file
+    logo_file = project_root / "icon" / "six-senses.svg"
+    if logo_file.exists():
+        logo_dest_dir = flutter_docs_dir / "assets" / "images"
+        logo_dest_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(logo_file, logo_dest_dir / "six-senses.svg")
+        print("Copied logo file")
+    
+    # Copy theme icons
+    theme_icons_dir = project_root / "website_project" / "static" / "images"
+    if theme_icons_dir.exists():
+        logo_dest_dir = flutter_docs_dir / "assets" / "images"
+        logo_dest_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Copy sun icon
+        sun_icon = theme_icons_dir / "theme-icon.svg"
+        if sun_icon.exists():
+            shutil.copy2(sun_icon, logo_dest_dir / "theme-icon.svg")
+            print("Copied sun icon")
+        
+        # Copy moon icon
+        moon_icon = theme_icons_dir / "theme-icon-moon.svg"
+        if moon_icon.exists():
+            shutil.copy2(moon_icon, logo_dest_dir / "theme-icon-moon.svg")
+            print("Copied moon icon")
+    
     print("Source files copied successfully!")
 
 if __name__ == "__main__":
