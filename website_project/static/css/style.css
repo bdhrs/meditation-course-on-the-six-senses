@@ -145,6 +145,8 @@ html.dark-mode {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
   max-width: 100%;
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow-x: hidden;
 }
 
 .sidebar-left {
@@ -161,6 +163,7 @@ html.dark-mode {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 250px;
 }
 
 .sidebar-left h3,
@@ -238,6 +241,15 @@ header {
 
 .header-hidden {
   transform: translateY(-100%);
+}
+
+/* Classes for hiding sidebars */
+.sidebar-hidden {
+  flex-basis: 0;
+  width: 0 !important;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 footer {
@@ -478,7 +490,8 @@ summary {
   outline: none;
 }
 
-summary:hover, summary:focus {
+summary:hover,
+summary:focus {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -490,7 +503,8 @@ details.transcript summary {
   background-color: transparent;
 }
 
-details.transcript summary:hover, details.transcript summary:focus {
+details.transcript summary:hover,
+details.transcript summary:focus {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -552,18 +566,17 @@ audio::-webkit-media-controls-volume-slider {
     position: fixed;
     top: 60px; /* Height of header */
     left: 0;
-    width: 250px;
+    width: 0;
     height: calc(100vh - 60px);
     z-index: 999;
     box-shadow: var(--shadow);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: translateX(-100%);
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background-color: var(--background-color); /* Solid background */
   }
 
   .sidebar-left.show {
     display: block;
-    transform: translateX(0);
+    width: 250px;
   }
 
   .menu-toggle {
@@ -586,18 +599,17 @@ audio::-webkit-media-controls-volume-slider {
     position: fixed;
     top: 60px; /* Height of header */
     right: 0;
-    width: 250px;
+    width: 0;
     height: calc(100vh - 60px);
     z-index: 999;
     box-shadow: var(--shadow);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: translateX(100%);
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background-color: var(--background-color); /* Solid background */
   }
 
   .sidebar-right.show {
     display: block;
-    transform: translateX(0);
+    width: 250px;
   }
 
   .menu-toggle {
