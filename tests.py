@@ -10,9 +10,6 @@ from pathlib import Path
 import sys
 from typing import List, Optional
 
-# Add the parent directory to the path so we can import from the website_project
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 
 class TestPattern:
     """A class to represent a test pattern with description, regex, and exceptions."""
@@ -128,6 +125,41 @@ FILE_TEST_PATTERNS: List[FileTestPattern] = [
 ]
 
 
+def check_filename_pattern(md_files: List[Path]) -> bool:
+    """
+    Check if filenames follow the correct pattern (number.number. title.md).
+
+    Args:
+        md_files: List of markdown file paths
+
+    Returns:
+        bool: True if all filenames are correct, False otherwise
+    """
+    pattern_passed = True
+
+    # Pattern for incorrect filename format: number.number title.md (missing dot)
+    incorrect_pattern = re.compile(r"^[0-9]+\.[0-9]+ [^\.].*\.md$")
+
+    for md_file in md_files:
+        filename = md_file.name
+        # Skip files that don't start with a number
+        if not re.match(r"^[0-9]", filename):
+            continue
+
+        # Check if filename matches the incorrect pattern
+        if incorrect_pattern.match(filename):
+            print("FAIL")
+            print(f"File:    {filename}")
+            print(
+                "Pattern: Filename should be number.number. title.md not number.number title.md"
+            )
+            print(f"Found:   {filename}")
+            print()
+            pattern_passed = False
+
+    return pattern_passed
+
+
 def run_tests(source_dir: Path) -> bool:
     """
     Run all tests on markdown files in the source directory.
@@ -146,7 +178,10 @@ def run_tests(source_dir: Path) -> bool:
         return True
 
     all_tests_passed = True
-    total_tests = len(TEST_PATTERNS) + len(FILE_TEST_PATTERNS)
+    # Include the filename pattern check in the total test count
+    total_tests = (
+        len(TEST_PATTERNS) + len(FILE_TEST_PATTERNS) + 1
+    )  # +1 for filename check
     passed_tests = 0
 
     # Run line-based tests
@@ -253,10 +288,19 @@ def run_tests(source_dir: Path) -> bool:
         else:
             all_tests_passed = False
 
+    # Run filename pattern check
+    print("\nRunning filename pattern check...")
+    if check_filename_pattern(md_files):
+        passed_tests += 1
+        print("Filename pattern check passed!")
+    else:
+        all_tests_passed = False
+        print("Filename pattern check failed!")
+
     # Print summary
-    print(f"Tests: {passed_tests}/{total_tests} passed")
+    print(f"\nTests: {passed_tests}/{total_tests} passed")
     print()
-    
+
     return all_tests_passed
 
 
@@ -317,7 +361,7 @@ def main():
     print("\n--- Running files tests ---")
 
     # Calculate the correct source directory path
-    project_root = Path(__file__).parent.parent
+    project_root = Path(__file__).parent
     source_dir = project_root / "source"
 
     print(f"Running tests on markdown files in: {source_dir}")
