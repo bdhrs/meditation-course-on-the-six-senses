@@ -24,10 +24,11 @@
 - Always run this script after updating lesson content to ensure the Flutter app has the latest content
 
 ## UPON COMPLETION
-- After the user expresses satisfaction with the changes:
+- ONLY AFTER the user expresses satisfaction with the changes:
   1. Update this document if needed
   2. Provide a git commit message, simple and lowercase. e.g. fix: updated audio player widget
   3. DO NOT commit!
+- Always wait for an expression of approval before finishing. 
 
 ## DART/FLUTTER SPECIFIC
 - Follow Flutter best practices and style guide
@@ -56,7 +57,7 @@
 - The app uses custom markdown syntax for special features:
   - `%%...%%` for meditation instruction transcripts (renders as expandable sections)
   - `![[file.mp3]]` for audio files (renders as audio player widgets)
-  - `[[Link Title]]` or `[[target|Display Text]]` for internal navigation between lessons
+  - `[[Link Title]]`, `[[target|Display Text]]`, or `[[Link Title#Heading|Display Text]]` for internal navigation between lessons and specific headings
 
 ## STATE MANAGEMENT
 - Theme state is managed through ThemeProvider using the Provider package
@@ -148,7 +149,7 @@ assets/
   - `_processMarkdownContent()`: Processes markdown content with custom syntax conversions.
   - `_convertMeditationInstructions()`: Converts `%%...%%` syntax to transcript placeholders.
   - `_convertAudioLinks()`: Converts `![[file.mp3]]` syntax to audio placeholders.
-  - `_convertWikiLinks()`: Converts `[[Link Title]]` syntax to navigation placeholders.
+  - `_convertWikiLinks()`: Converts `[[Link Title#Heading|Display Text]]` syntax to navigation placeholders with support for linking to specific headings within lessons.
   - `_extractAudioFileNames()`: Extracts all unique audio file names from content.
 
 **File: `lib/services/download_service.dart`**
@@ -230,17 +231,20 @@ assets/
   - Handles navigation to selected lessons.
 
 **File: `lib/screens/right_sidebar.dart`**
-- **Purpose**: Displays an on-page table of contents (headings within the current lesson).
+- **Purpose**: Displays an on-page table of contents (headings within the current lesson) with scrolling functionality.
 - **Key Functions**:
-  - `RightSidebar`: Stateless widget displaying extracted headings.
-  - `_extractHeadings()`: Parses markdown content to extract headings.
+  - `RightSidebar`: Stateless widget displaying extracted headings with scroll-to-heading functionality.
+  - `_extractHeadings()`: Parses markdown content to extract headings for the table of contents.
+ - `onHeadingTap`: Callback function that scrolls to the corresponding heading in the main content when a table of contents item is tapped.
 
 **File: `lib/screens/main_content.dart`**
-- **Purpose**: Displays the content of the current lesson, including custom markdown rendering and special handling for the "Title Page".
+- **Purpose**: Displays the content of the current lesson, including custom markdown rendering, inline link parsing, and scrolling functionality for the "Title Page".
 - **Key Functions**:
-  - `MainContent`: Stateful widget that renders lesson content.
-  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax.
+  - `MainContent`: Stateful widget that renders lesson content with support for inline links and heading scrolling.
+  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax, including inline links.
+  - `_parseInlineContent()`: Handles parsing of inline links within paragraphs to ensure proper formatting and functionality.
   - `_buildTitlePage()`: Renders the custom "Title Page" content with specific styling.
+  - `scrollToHeading()`: Scrolls to a specific heading within the current lesson content using GlobalKey references.
   - Manages the positioning of navigation buttons based on content length.
 
 **File: `lib/screens/lesson_item_widget.dart`**
@@ -281,12 +285,14 @@ assets/
 - Theme colors and styling match the website project CSS.
 
 ## Features
-- Parse and display markdown content with custom syntax.
+- Parse and display markdown content with custom syntax, including inline links.
 - Play audio files from remote URLs or local storage.
 - Download all audio files for offline use.
 - Navigate between lessons with previous/next buttons, including navigation to the integrated "Title Page".
+- Navigate to specific headings within lessons using wiki-style links (`[[Lesson Title#Heading]]`).
 - Light and dark mode themes matching the website.
 - Proper error handling and loading indicators.
 - Responsive design for different screen sizes, with adaptive sidebar visibility.
 - Enhanced sidebar styling for better distinction between sections and subsections.
 - Integrated "Title Page" as a virtual lesson within the course structure.
+- Interactive table of contents in the right sidebar that scrolls to corresponding headings.

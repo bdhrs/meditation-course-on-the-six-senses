@@ -3,10 +3,12 @@ import '../../models/lesson.dart';
 
 class RightSidebar extends StatelessWidget {
   final Lesson lesson;
+  final Function(String headingSlug)? onHeadingTap;
 
   const RightSidebar({
     super.key,
     required this.lesson,
+    this.onHeadingTap,
   });
 
   @override
@@ -62,11 +64,19 @@ class RightSidebar extends StatelessWidget {
                         bottom: 8.0,
                       ),
                       child: TextButton(
-                        onPressed: () {
-                          // TODO: Implement scroll to heading functionality
-                          // This would require accessing the main content scroll controller
-                          // and scrolling to the element with the matching ID
-                        },
+                        onPressed: onHeadingTap != null
+                            ? () {
+                                // Find the heading slug from the lesson's headings
+                                final headingMap = lesson.headings.firstWhere(
+                                  (h) => h['text'] == text,
+                                  orElse: () => {'slug': ''},
+                                );
+                                final slug = headingMap['slug'] ?? '';
+                                if (slug.isNotEmpty) {
+                                  onHeadingTap!(slug);
+                                }
+                              }
+                            : null,
                         style: TextButton.styleFrom(
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.zero,

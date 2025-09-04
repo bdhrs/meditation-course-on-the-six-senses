@@ -1,4 +1,6 @@
-
+- h3 headings style
+- right panel add page title
+- hide panels when scrolling
 - copy all custom parsing from website
 - restore to last place
 - screen width not more than x
@@ -13,3 +15,5 @@
 - menu behaviour
 - make text selectable
 - style sutta references
+- reference links
+- right panel links

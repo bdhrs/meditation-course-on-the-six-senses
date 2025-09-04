@@ -7,14 +7,16 @@ import 'main_content.dart';
 
 class LessonScreen extends StatefulWidget {
   final Lesson lesson;
-  final Function(String slug)? onNavigateToLesson;
+  final Function(String slug, {String? headingSlug})? onNavigateToLesson;
   final List<Lesson> lessons;
+  final String? targetHeadingSlug;
 
   const LessonScreen({
     super.key,
     required this.lesson,
     this.onNavigateToLesson,
     required this.lessons,
+    this.targetHeadingSlug,
   });
 
   @override
@@ -23,6 +25,8 @@ class LessonScreen extends StatefulWidget {
 
 class _LessonScreenState extends State<LessonScreen> {
   final ScrollController _scrollController = ScrollController();
+  final GlobalKey<MainContentState> _mainContentKey =
+      GlobalKey<MainContentState>();
   bool _isLeftSidebarVisible = false;
   bool _isRightSidebarVisible = false;
   bool _isHeaderVisible = true;
@@ -33,6 +37,32 @@ class _LessonScreenState extends State<LessonScreen> {
   void initState() {
     super.initState();
     _scrollController.addListener(_handleScroll);
+    _scrollToHeadingIfNeeded(widget.targetHeadingSlug);
+  }
+
+  @override
+  void didUpdateWidget(LessonScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.lesson.slug != oldWidget.lesson.slug) {
+      // If the lesson has changed, scroll to the top.
+      if (_scrollController.hasClients) {
+        _scrollController.jumpTo(0);
+      }
+      // After the new lesson is built, scroll to the heading if one is provided.
+      _scrollToHeadingIfNeeded(widget.targetHeadingSlug);
+    } else if (widget.targetHeadingSlug != oldWidget.targetHeadingSlug) {
+      // If only the heading has changed within the same lesson, scroll to it.
+      _scrollToHeadingIfNeeded(widget.targetHeadingSlug);
+    }
+  }
+
+  void _scrollToHeadingIfNeeded(String? headingSlug) {
+    if (headingSlug != null) {
+      // We need to wait for the MainContent widget to be built or updated.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _mainContentKey.currentState?.scrollToHeading(headingSlug);
+      });
+    }
   }
 
   @override
@@ -172,17 +202,19 @@ class _LessonScreenState extends State<LessonScreen> {
               child: Container(
                 constraints: const BoxConstraints(maxWidth: 960),
                 child: MainContent(
+                  key: _mainContentKey,
                   lesson: widget.lesson,
                   scrollController: _scrollController,
                   isDesktop: isDesktop,
                   isTablet: isTablet,
                   isMobile: isMobile,
-                  onNavigateToLesson: (slug) {
+                  onNavigateToLesson: (slug, {headingSlug}) {
                     // Scroll to top when navigating to a new lesson
                     if (_scrollController.hasClients) {
                       _scrollController.jumpTo(0.0);
                     }
-                    widget.onNavigateToLesson?.call(slug);
+                    widget.onNavigateToLesson
+                        ?.call(slug, headingSlug: headingSlug);
                   },
                   getLessonTitle: _getLessonTitle,
                 ),
@@ -204,6 +236,9 @@ class _LessonScreenState extends State<LessonScreen> {
                 ),
                 child: RightSidebar(
                   lesson: widget.lesson,
+                  onHeadingTap: (headingSlug) {
+                    _mainContentKey.currentState?.scrollToHeading(headingSlug);
+                  },
                 ),
               ),
           ],

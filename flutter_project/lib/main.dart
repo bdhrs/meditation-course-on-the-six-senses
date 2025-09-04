@@ -51,6 +51,7 @@ class LessonScreenWrapper extends StatefulWidget {
 class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
   late Future<List<Lesson>> _lessonsFuture;
   Lesson? _currentLesson;
+  String? _targetHeadingSlug;
 
   @override
   void initState() {
@@ -58,13 +59,14 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
     _lessonsFuture = ContentService().loadLessons();
   }
 
-  void _navigateToLessonBySlug(String slug) {
+  void _navigateToLessonBySlug(String slug, {String? headingSlug}) {
     _lessonsFuture.then((lessons) {
       try {
         final lesson = lessons.firstWhere((l) => l.slug == slug);
         if (mounted) {
           setState(() {
             _currentLesson = lesson;
+            _targetHeadingSlug = headingSlug;
           });
         }
       } catch (e) {
@@ -123,6 +125,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               lesson: _currentLesson!,
               onNavigateToLesson: _navigateToLessonBySlug,
               lessons: lessons,
+              targetHeadingSlug: _targetHeadingSlug,
             );
           }
 

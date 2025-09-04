@@ -36,11 +36,15 @@ class ContentService {
       // Extract audio file names
       final audioFileNames = _extractAudioFileNames(fileContent);
 
+      // Extract headings
+      final headings = _extractHeadings(fileContent);
+
       lessons.add(Lesson(
         title: title,
         slug: slug,
         markdownContent: processedContent,
         audioFileNames: audioFileNames,
+        headings: headings,
       ));
     }
 
@@ -53,6 +57,7 @@ class ContentService {
       slug: 'title-page',
       markdownContent: '{{TITLE_PAGE}}',
       audioFileNames: [],
+      headings: [],
     );
 
     // Add the title page at the beginning
@@ -94,11 +99,16 @@ class ContentService {
     return title.trim();
   }
 
-  /// Generates a URL-friendly slug from the file name
-  String _generateSlug(String fileName) {
-    // Remove the .md extension
-    String slug = fileName.replaceAll('.md', '');
-
+  /// Generates a URL-friendly slug from a string
+  String _generateSlug(String text) {
+    // Remove the .md extension if present
+    String slug = text.replaceAll('.md', '');
+    // Convert to lowercase
+    slug = slug.toLowerCase();
+    // Replace spaces and underscores with hyphens
+    slug = slug.replaceAll(RegExp(r'[\s_]+'), '-');
+    // Remove any characters that are not alphanumeric or hyphens
+    slug = slug.replaceAll(RegExp(r'[^a-z0-9-]'), '');
     return slug;
   }
 
@@ -108,7 +118,7 @@ class ContentService {
     // Add the file name as an H1 heading at the top of the content
     final title = _getTitleFromFileName(fileName);
     content = '# $title\n\n$content';
-    
+
     content = _convertMeditationInstructions(content);
     content = _convertAudioLinks(content);
     content = _convertWikiLinks(content);
@@ -126,7 +136,7 @@ class ContentService {
 
   /// Converts ![[file.mp3]] to a placeholder for audio
   String _convertAudioLinks(String text) {
-    final pattern = RegExp(r'!\[\[(.*?\.mp3)\]\]');
+    final pattern = RegExp(r'![[(.*?\.mp3)]]');
     return text.replaceAllMapped(pattern, (match) {
       final fileName = match.group(1)!;
       // For markdown, we'll use a custom syntax that we can parse later
@@ -134,20 +144,29 @@ class ContentService {
     });
   }
 
-  /// Converts [[Link Title]] to a placeholder for internal navigation
+  /// Converts [[Link Title#Heading|Display Text]] to a placeholder for internal navigation
   String _convertWikiLinks(String text) {
-    final pattern = RegExp(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]');
+    final pattern = RegExp(r'\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]');
     return text.replaceAllMapped(pattern, (match) {
-      final target = match.group(1)!;
-      final displayText = match.group(2) ?? target;
-      // For markdown, we'll use a custom syntax that we can parse later
-      return '{{link:$target|$displayText}}';
+      final pageTarget = match.group(1)!.trim();
+      final headingTarget = match.group(2)?.trim();
+      final displayText = match.group(3)?.trim() ?? headingTarget ?? pageTarget;
+
+      final pageSlug = _generateSlug(pageTarget);
+      final headingSlug =
+          headingTarget != null ? _generateSlug(headingTarget) : '';
+
+      final uri = headingSlug.isNotEmpty
+          ? 'sixsenses://$pageSlug#$headingSlug'
+          : 'sixsenses://$pageSlug';
+
+      return '{{link:$uri|$displayText}}';
     });
   }
 
   /// Extracts all unique audio file names from the content
   List<String> _extractAudioFileNames(String content) {
-    final pattern = RegExp(r'!\[\[(.*?\.mp3)\]\]');
+    final pattern = RegExp(r'![[(.*?\.mp3)]]');
     final matches = pattern.allMatches(content);
     final fileNames = <String>[];
 
@@ -159,5 +178,22 @@ class ContentService {
     }
 
     return fileNames;
+  }
+
+  /// Extracts all headings from the markdown content
+  List<Map<String, String>> _extractHeadings(String content) {
+    final headings = <Map<String, String>>[];
+    final lines = content.split('\n');
+    final pattern = RegExp(r'^(#{1,6})\s+(.*)');
+
+    for (final line in lines) {
+      final match = pattern.firstMatch(line);
+      if (match != null) {
+        final text = match.group(2)!.trim();
+        final slug = _generateSlug(text);
+        headings.add({'text': text, 'slug': slug});
+      }
+    }
+    return headings;
   }
 }

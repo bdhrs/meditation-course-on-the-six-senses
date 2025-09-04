@@ -11,7 +11,7 @@ class MainContent extends StatefulWidget {
   final bool isDesktop;
   final bool isTablet;
   final bool isMobile;
-  final Function(String slug)? onNavigateToLesson;
+  final Function(String slug, {String? headingSlug})? onNavigateToLesson;
   final String Function(String slug) getLessonTitle;
 
   const MainContent({
@@ -26,19 +26,46 @@ class MainContent extends StatefulWidget {
   });
 
   @override
-  State<MainContent> createState() => _MainContentState();
+  MainContentState createState() => MainContentState();
 }
 
-class _MainContentState extends State<MainContent> {
+class MainContentState extends State<MainContent> {
   final GlobalKey _contentKey = GlobalKey();
   bool _isContentShort = false;
+  final Map<String, GlobalKey> _headingKeys = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _generateHeadingKeys();
+  }
+
   @override
   void didUpdateWidget(MainContent oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.lesson != oldWidget.lesson) {
+      _generateHeadingKeys();
       setState(() {
         _isContentShort = false;
       });
+    }
+  }
+
+  void _generateHeadingKeys() {
+    _headingKeys.clear();
+    for (var heading in widget.lesson.headings) {
+      _headingKeys[heading['slug']!] = GlobalKey();
+    }
+  }
+
+  void scrollToHeading(String headingSlug) {
+    final key = _headingKeys[headingSlug];
+    if (key != null && key.currentContext != null) {
+      Scrollable.ensureVisible(
+        key.currentContext!,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
     }
   }
 
@@ -47,7 +74,7 @@ class _MainContentState extends State<MainContent> {
       prevLessonSlug: widget.lesson.prevLessonSlug,
       nextLessonSlug: widget.lesson.nextLessonSlug,
       getLessonTitle: widget.getLessonTitle,
-      onNavigateToLesson: widget.onNavigateToLesson,
+      onNavigateToLesson: (slug) => widget.onNavigateToLesson?.call(slug),
       scrollController: widget.scrollController,
     );
 
@@ -109,7 +136,7 @@ class _MainContentState extends State<MainContent> {
       prevLessonSlug: widget.lesson.prevLessonSlug,
       nextLessonSlug: widget.lesson.nextLessonSlug,
       getLessonTitle: widget.getLessonTitle,
-      onNavigateToLesson: widget.onNavigateToLesson,
+      onNavigateToLesson: (slug) => widget.onNavigateToLesson?.call(slug),
       scrollController: widget.scrollController,
     );
 
@@ -173,7 +200,8 @@ class _MainContentState extends State<MainContent> {
 
     void flushParagraph() {
       if (currentParagraph.isNotEmpty) {
-        widgets.add(_buildParagraph(currentParagraph.trim()));
+        // Parse inline links within the paragraph
+        widgets.addAll(_parseInlineContent(currentParagraph.trim()));
         currentParagraph = '';
       }
     }
@@ -206,9 +234,9 @@ class _MainContentState extends State<MainContent> {
         flushBlockquote();
         final linkContent =
             line.length > 9 ? line.substring(7, line.length - 2) : '';
-        final parts = linkContent.split('|');
-        final target = parts.isNotEmpty ? parts[0] : '';
-        final displayText = parts.length > 1 ? parts[1] : target;
+        final linkParts = linkContent.split('|');
+        final target = linkParts.isNotEmpty ? linkParts[0] : '';
+        final displayText = linkParts.length > 1 ? linkParts[1] : target;
         widgets.add(_buildLinkWidget(target, displayText));
       } else if (line.startsWith('#')) {
         flushParagraph();
@@ -226,6 +254,67 @@ class _MainContentState extends State<MainContent> {
 
     flushParagraph();
     flushBlockquote();
+
+    return widgets;
+  }
+
+  List<Widget> _parseInlineContent(String text) {
+    final List<Widget> widgets = [];
+    final linkPattern = RegExp(r'{{link:([^}|]+(?:\|[^}]+)?)}}');
+
+    // If no links found, just add the text as a paragraph
+    if (!linkPattern.hasMatch(text)) {
+      widgets.add(_buildParagraph(text));
+      return widgets;
+    }
+
+    // Find all matches and their positions
+    final matches = linkPattern.allMatches(text);
+
+    // If links are found, we need to handle inline content differently
+    // We'll create a single row with text and links mixed together
+    final List<InlineSpan> inlineChildren = [];
+    int lastEnd = 0;
+
+    for (final match in matches) {
+      // Add text before the link
+      if (match.start > lastEnd) {
+        final beforeText = text.substring(lastEnd, match.start);
+        inlineChildren.add(TextSpan(text: beforeText));
+      }
+
+      // Add the link widget
+      final linkContent = match.group(1) ?? '';
+      final linkParts = linkContent.split('|');
+      final target = linkParts.isNotEmpty ? linkParts[0] : '';
+      final displayText = linkParts.length > 1 ? linkParts[1] : target;
+
+      // For inline links, we need to create a WidgetSpan
+      inlineChildren.add(WidgetSpan(
+        child: _buildLinkWidget(target, displayText),
+        alignment: PlaceholderAlignment.baseline,
+        baseline: TextBaseline.alphabetic,
+      ));
+
+      lastEnd = match.end;
+    }
+
+    // Add any remaining text after the last link
+    if (lastEnd < text.length) {
+      final afterText = text.substring(lastEnd);
+      inlineChildren.add(TextSpan(text: afterText));
+    }
+
+    // Create a single paragraph with mixed text and links
+    widgets.add(Padding(
+      padding: const EdgeInsets.only(bottom: 16.0),
+      child: RichText(
+        text: TextSpan(
+          style: const TextStyle(fontSize: 16.0, height: 1.6),
+          children: inlineChildren,
+        ),
+      ),
+    ));
 
     return widgets;
   }
@@ -333,6 +422,13 @@ class _MainContentState extends State<MainContent> {
     );
   }
 
+  String _generateSlug(String text) {
+    String slug = text.toLowerCase();
+    slug = slug.replaceAll(RegExp(r'[\s_]+'), '-');
+    slug = slug.replaceAll(RegExp(r'[^a-z0-9-]'), '');
+    return slug;
+  }
+
   Widget _buildHeading(String line) {
     int level = 0;
     String text = line;
@@ -344,6 +440,9 @@ class _MainContentState extends State<MainContent> {
     if (level < line.length) {
       text = line.substring(level).trim();
     }
+
+    final slug = _generateSlug(text);
+    final key = _headingKeys[slug];
 
     TextStyle style;
     switch (level) {
@@ -361,6 +460,7 @@ class _MainContentState extends State<MainContent> {
     }
 
     return Padding(
+      key: key,
       padding: const EdgeInsets.only(bottom: 16.0, top: 8.0),
       child: Text(text, style: style),
     );
@@ -396,11 +496,28 @@ class _MainContentState extends State<MainContent> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: GestureDetector(
-        onTap: () => widget.onNavigateToLesson?.call(target),
+        onTap: () {
+          final uri = Uri.parse(target);
+          if (uri.scheme == 'sixsenses') {
+            final pageSlug = uri.host;
+            final headingSlug = uri.hasFragment ? uri.fragment : null;
+
+            if (pageSlug == widget.lesson.slug) {
+              // It's a link to a heading on the current page
+              if (headingSlug != null) {
+                scrollToHeading(headingSlug);
+              }
+            } else {
+              // It's a link to another page
+              widget.onNavigateToLesson
+                  ?.call(pageSlug, headingSlug: headingSlug);
+            }
+          }
+        },
         child: Text(
           displayText,
-          style: const TextStyle(
-            color: Colors.blue,
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.primary,
             decoration: TextDecoration.underline,
           ),
         ),

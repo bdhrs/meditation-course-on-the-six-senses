@@ -5,6 +5,7 @@ class Lesson {
   final List<String> audioFileNames;
   final String? nextLessonSlug;
   final String? prevLessonSlug;
+  final List<Map<String, String>> headings;
 
   Lesson({
     required this.title,
@@ -13,6 +14,7 @@ class Lesson {
     required this.audioFileNames,
     this.nextLessonSlug,
     this.prevLessonSlug,
+    required this.headings,
   });
 
   Lesson copyWith({
@@ -22,6 +24,7 @@ class Lesson {
     List<String>? audioFileNames,
     String? nextLessonSlug,
     String? prevLessonSlug,
+    List<Map<String, String>>? headings,
   }) {
     return Lesson(
       title: title ?? this.title,
@@ -30,6 +33,7 @@ class Lesson {
       audioFileNames: audioFileNames ?? this.audioFileNames,
       nextLessonSlug: nextLessonSlug ?? this.nextLessonSlug,
       prevLessonSlug: prevLessonSlug ?? this.prevLessonSlug,
+      headings: headings ?? this.headings,
     );
   }
 
@@ -42,6 +46,7 @@ class Lesson {
       audioFileNames: List<String>.from(json['audioFileNames'] as List),
       nextLessonSlug: json['nextLessonSlug'] as String?,
       prevLessonSlug: json['prevLessonSlug'] as String?,
+      headings: List<Map<String, String>>.from(json['headings'] as List),
     );
   }
 
@@ -54,6 +59,7 @@ class Lesson {
       'audioFileNames': audioFileNames,
       'nextLessonSlug': nextLessonSlug,
       'prevLessonSlug': prevLessonSlug,
+      'headings': headings,
     };
   }
 }
