@@ -1,8 +1,10 @@
-- copy all custom parsing from website
+- audio player
 - restore to last place
 - screen width not more than x
 - dark / light mode one click screen
 - settings screen independent
+- italics in headings not rendered
+- images not rendered
  
 ## DONE
 - landing page
@@ -16,3 +18,4 @@
 - right panel links
 - h2 / h3 headings style
 - hide panels when scrolling
+- process transcripts

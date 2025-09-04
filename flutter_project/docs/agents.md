@@ -239,14 +239,16 @@ assets/
  - `onHeadingTap`: Callback function that scrolls to the corresponding heading in the main content when a table of contents item is tapped.
 
 **File: `lib/screens/main_content.dart`**
-- **Purpose**: Displays the content of the current lesson, including custom markdown rendering, inline link parsing, and scrolling functionality for the "Title Page".
+- **Purpose**: Displays the content of the current lesson, including custom markdown rendering, inline link parsing, transcript widget handling, and scrolling functionality for the "Title Page".
 - **Key Functions**:
-  - `MainContent`: Stateful widget that renders lesson content with support for inline links and heading scrolling.
-  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax, including inline links.
+  - `MainContent`: Stateful widget that renders lesson content with support for inline links, transcript widgets, and heading scrolling.
+  - `_buildMarkdownContent()`: Parses and renders markdown content with custom syntax, including inline links and multi-line transcript processing.
   - `_parseInlineContent()`: Handles parsing of inline links within paragraphs to ensure proper formatting and functionality.
+  - `_buildTranscriptWidget()`: Creates expandable transcript widgets with full markdown rendering support, proper spacing, and modern Material 3 styling.
   - `_buildTitlePage()`: Renders the custom "Title Page" content with specific styling.
   - `scrollToHeading()`: Scrolls to a specific heading within the current lesson content using GlobalKey references.
   - Manages the positioning of navigation buttons based on content length.
+  - **Transcript Processing**: Extracts multi-line transcript content before line splitting, creates widgets upfront, and inserts them at correct positions using placeholder system.
 
 **File: `lib/screens/lesson_item_widget.dart`**
 - **Purpose**: Renders an individual lesson item in the sidebars, applying specific styling based on its type.
@@ -298,3 +300,5 @@ assets/
 - Integrated "Title Page" as a virtual lesson within the course structure.
 - Interactive table of contents in the right sidebar that scrolls to corresponding headings.
 - Sidebars that appear and disappear in sync with the main header based on scroll position.
+- **Advanced Transcript Processing**: Multi-line meditation instruction transcripts with full markdown rendering, proper spacing, and expandable widgets.
+- **Modern Material 3 Compliance**: Uses current Flutter Material 3 color system and best practices.

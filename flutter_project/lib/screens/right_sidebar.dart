@@ -47,7 +47,7 @@ class RightSidebar extends StatelessWidget {
         Expanded(
           child: headings.isEmpty
               ? const Center(
-                  child: Text('No headings found'),
+                  child: Text(''),
                 )
               : ListView.builder(
                   itemCount: headings.length,

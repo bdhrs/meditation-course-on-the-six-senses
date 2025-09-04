@@ -193,7 +193,29 @@ class MainContentState extends State<MainContent> {
 
   List<Widget> _buildMarkdownContent(String content) {
     final List<Widget> widgets = [];
-    final lines = content.split('\n');
+
+    // Extract transcript widgets before line splitting
+    final transcriptWidgets = <Widget>[];
+    final transcriptPattern = RegExp(r'{{transcript:(.*?)}}', dotAll: true);
+    var processedContent = content;
+
+    // Find and extract all transcript content
+    final transcriptMatches = transcriptPattern.allMatches(content);
+    int transcriptIndex = 0;
+
+    for (final match in transcriptMatches) {
+      final transcriptContent = match.group(1) ?? '';
+      transcriptWidgets.add(_buildTranscriptWidget(transcriptContent));
+
+      // Replace transcript pattern with a simple placeholder
+      processedContent = processedContent.replaceFirst(
+        match.group(0)!,
+        '{{_transcript_widget_$transcriptIndex}}',
+      );
+      transcriptIndex++;
+    }
+
+    final lines = processedContent.split('\n');
 
     String currentParagraph = '';
     String currentBlockquote = '';
@@ -213,6 +235,8 @@ class MainContentState extends State<MainContent> {
       }
     }
 
+    int currentTranscriptIndex = 0;
+
     for (final line in lines) {
       if (line.startsWith('>')) {
         flushParagraph();
@@ -223,12 +247,14 @@ class MainContentState extends State<MainContent> {
         final fileName =
             line.length > 10 ? line.substring(8, line.length - 2) : '';
         widgets.add(_buildAudioWidget(fileName));
-      } else if (line.startsWith('{{transcript:')) {
+      } else if (line.startsWith('{{_transcript_widget_')) {
         flushParagraph();
         flushBlockquote();
-        final content =
-            line.length > 15 ? line.substring(13, line.length - 2) : '';
-        widgets.add(_buildTranscriptWidget(content));
+        // Insert the next transcript widget from our stored list
+        if (currentTranscriptIndex < transcriptWidgets.length) {
+          widgets.add(transcriptWidgets[currentTranscriptIndex]);
+          currentTranscriptIndex++;
+        }
       } else if (line.startsWith('{{link:')) {
         flushParagraph();
         flushBlockquote();
@@ -488,7 +514,40 @@ class MainContentState extends State<MainContent> {
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Text(content),
+              child: MarkdownBody(
+                data: content,
+                styleSheet: MarkdownStyleSheet(
+                  p: const TextStyle(fontSize: 16.0, height: 2.0),
+                  h1: const TextStyle(
+                      fontSize: 24.0, fontWeight: FontWeight.bold, height: 2.0),
+                  h2: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    color: Theme.of(context).colorScheme.primary,
+                    height: 1.8,
+                  ),
+                  h3: const TextStyle(
+                      fontSize: 18.0, fontWeight: FontWeight.bold, height: 2.0),
+                  h4: const TextStyle(
+                      fontSize: 16.0, fontWeight: FontWeight.bold, height: 2.0),
+                  blockquote: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Theme.of(context)
+                        .colorScheme
+                        .onSurface
+                        .withValues(alpha: 0.7),
+                    height: 2.0,
+                  ),
+                  code: TextStyle(
+                    backgroundColor:
+                        Theme.of(context).colorScheme.surfaceContainerHighest,
+                    fontFamily: 'Monospace',
+                    fontSize: 14.0,
+                    height: 2.0,
+                  ),
+                  blockSpacing: 16.0,
+                ),
+              ),
             ),
           ],
         ),
