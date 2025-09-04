@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import '../../models/lesson.dart';
+import '../../theme/app_theme.dart';
 import '../../widgets/audio_player_widget.dart';
 import '../../widgets/adaptive_navigation_buttons.dart';
 
@@ -164,34 +166,42 @@ class _MainContentState extends State<MainContent> {
     final List<Widget> widgets = [];
     final lines = content.split('\n');
 
-    String currentBlock = '';
-    bool inParagraph = false;
+    String currentParagraph = '';
+    String currentBlockquote = '';
+
+    void flushParagraph() {
+      if (currentParagraph.isNotEmpty) {
+        widgets.add(_buildParagraph(currentParagraph.trim()));
+        currentParagraph = '';
+      }
+    }
+
+    void flushBlockquote() {
+      if (currentBlockquote.isNotEmpty) {
+        widgets.add(_buildBlockquote(currentBlockquote.trim()));
+        currentBlockquote = '';
+      }
+    }
 
     for (final line in lines) {
-      if (line.startsWith('{{audio:')) {
-        if (currentBlock.isNotEmpty) {
-          widgets.add(_buildParagraph(currentBlock));
-          currentBlock = '';
-          inParagraph = false;
-        }
+      if (line.startsWith('>')) {
+        flushParagraph();
+        currentBlockquote += line.substring(1).trim() + '\n';
+      } else if (line.startsWith('{{audio:')) {
+        flushParagraph();
+        flushBlockquote();
         final fileName =
             line.length > 10 ? line.substring(8, line.length - 2) : '';
         widgets.add(_buildAudioWidget(fileName));
       } else if (line.startsWith('{{transcript:')) {
-        if (currentBlock.isNotEmpty) {
-          widgets.add(_buildParagraph(currentBlock));
-          currentBlock = '';
-          inParagraph = false;
-        }
+        flushParagraph();
+        flushBlockquote();
         final content =
             line.length > 15 ? line.substring(13, line.length - 2) : '';
         widgets.add(_buildTranscriptWidget(content));
       } else if (line.startsWith('{{link:')) {
-        if (currentBlock.isNotEmpty) {
-          widgets.add(_buildParagraph(currentBlock));
-          currentBlock = '';
-          inParagraph = false;
-        }
+        flushParagraph();
+        flushBlockquote();
         final linkContent =
             line.length > 9 ? line.substring(7, line.length - 2) : '';
         final parts = linkContent.split('|');
@@ -199,31 +209,21 @@ class _MainContentState extends State<MainContent> {
         final displayText = parts.length > 1 ? parts[1] : target;
         widgets.add(_buildLinkWidget(target, displayText));
       } else if (line.startsWith('#')) {
-        if (currentBlock.isNotEmpty) {
-          widgets.add(_buildParagraph(currentBlock));
-          currentBlock = '';
-          inParagraph = false;
-        }
+        flushParagraph();
+        flushBlockquote();
         widgets.add(_buildHeading(line));
-      } else if (line.isEmpty) {
-        if (currentBlock.isNotEmpty) {
-          widgets.add(_buildParagraph(currentBlock));
-          currentBlock = '';
-          inParagraph = false;
-        }
+      } else if (line.trim().isEmpty) {
+        flushParagraph();
+        flushBlockquote();
+        widgets.add(const SizedBox(height: 16.0)); // Add space for empty lines
       } else {
-        if (inParagraph) {
-          currentBlock = '$currentBlock $line';
-        } else {
-          currentBlock = line;
-          inParagraph = true;
-        }
+        flushBlockquote();
+        currentParagraph += line + '\n';
       }
     }
 
-    if (currentBlock.isNotEmpty) {
-      widgets.add(_buildParagraph(currentBlock));
-    }
+    flushParagraph();
+    flushBlockquote();
 
     return widgets;
   }
@@ -231,9 +231,41 @@ class _MainContentState extends State<MainContent> {
   Widget _buildParagraph(String text) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16.0),
-      child: Text(
-        text,
-        style: const TextStyle(fontSize: 16.0, height: 1.6),
+      child: MarkdownBody(
+        data: text,
+        styleSheet: MarkdownStyleSheet(
+          p: const TextStyle(fontSize: 16.0, height: 1.6),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBlockquote(String text) {
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
+    final blockBgColor =
+        isDarkMode ? AppTheme.darkBlockBg : AppTheme.lightBlockBg;
+    final primaryColor =
+        isDarkMode ? AppTheme.darkPrimaryColor : AppTheme.lightPrimaryColor;
+
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 24.0),
+      padding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 16.0),
+      decoration: BoxDecoration(
+        color: blockBgColor,
+        border: Border(
+          left: BorderSide(
+            color: primaryColor,
+            width: 5.0,
+          ),
+        ),
+        borderRadius: BorderRadius.circular(8.0),
+      ),
+      child: MarkdownBody(
+        data: text,
+        styleSheet: MarkdownStyleSheet(
+          p: const TextStyle(fontSize: 16.0, height: 1.6),
+        ),
       ),
     );
   }

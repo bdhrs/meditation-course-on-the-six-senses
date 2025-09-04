@@ -8,15 +8,9 @@
 - Follow all instructions explicitly.
 
 ## PROJECT ORIENTATION
-- Read flutter_project/project_map.md to understand the file structure and functionality of the flutter_project
 - The project is a meditation course app that displays lessons in markdown format with audio playback capabilities
 - The app supports both online streaming and offline playback of audio files
 - Themes are managed through the Provider package with light and dark mode support
-
-## PROJECT_MAP.MD
-- Read flutter_project/project_map.md to understand the file structure of the flutter_project
-- After making any changes to any file, ALWAYS UPDATE flutter_project/project_map.md
-- This helps future agents to understand the project in detail very quickly.
 
 ## FLUTTER DEVELOPMENT
 - Use `flutter pub get` to install dependencies
@@ -88,11 +82,8 @@
 - Update project_map.md with details about the new screen
 
 
-# Flutter Project Map
-
-This document provides an overview of the file structure and key components of the Six Senses Flutter application, including detailed information about each file and its functions.
-
-## Project Structure
+## PROJECT MAP
+This provides an overview of the file structure and key components of the Six Senses Flutter application, including detailed information about each file and its functions.
 
 ```
 lib/

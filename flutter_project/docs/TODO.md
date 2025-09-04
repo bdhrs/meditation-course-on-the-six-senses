@@ -1,4 +1,4 @@
-
+- make text selectable
 - copy all custom parsing from website
 - restore to last place
 - screen width not more than x

@@ -31,7 +31,7 @@ class ContentService {
           _generateSlug(fileName); // Use fileName for slug to preserve ordering
 
       // Process the markdown content
-      final processedContent = _processMarkdownContent(fileContent);
+      final processedContent = _processMarkdownContent(fileContent, fileName);
 
       // Extract audio file names
       final audioFileNames = _extractAudioFileNames(fileContent);
@@ -103,7 +103,12 @@ class ContentService {
   }
 
   /// Processes the markdown content with custom regex functions
-  String _processMarkdownContent(String content) {
+  /// Adds the file name as an H1 heading at the top of the content
+  String _processMarkdownContent(String content, String fileName) {
+    // Add the file name as an H1 heading at the top of the content
+    final title = _getTitleFromFileName(fileName);
+    content = '# $title\n\n$content';
+    
     content = _convertMeditationInstructions(content);
     content = _convertAudioLinks(content);
     content = _convertWikiLinks(content);
