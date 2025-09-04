@@ -136,17 +136,19 @@ class _MainContentState extends State<MainContent> {
         children: [
           SingleChildScrollView(
             controller: widget.scrollController,
-            child: Padding(
-              padding: padding,
-              child: Column(
-                children: [
-                  Column(
-                    key: _contentKey,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: _buildMarkdownContent(widget.lesson.markdownContent),
-                  ),
-                  if (!_isContentShort) navButtons,
-                ],
+            child: SelectionArea(
+              child: Padding(
+                padding: padding,
+                child: Column(
+                  children: [
+                    Column(
+                      key: _contentKey,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: _buildMarkdownContent(widget.lesson.markdownContent),
+                    ),
+                    if (!_isContentShort) navButtons,
+                  ],
+                ),
               ),
             ),
           ),
