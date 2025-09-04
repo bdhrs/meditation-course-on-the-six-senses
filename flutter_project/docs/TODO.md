@@ -1,4 +1,4 @@
-- right panel add page title
+
 - hide panels when scrolling
 - copy all custom parsing from website
 - restore to last place

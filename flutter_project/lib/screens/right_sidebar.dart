@@ -59,7 +59,11 @@ class RightSidebar extends StatelessWidget {
 
                     return Container(
                       padding: EdgeInsets.only(
-                        left: level == 'h3' ? 24.0 : 16.0,
+                        left: level == 'h3'
+                            ? 24.0
+                            : level == 'h1'
+                                ? 8.0
+                                : 16.0,
                         top: 8.0,
                         bottom: 8.0,
                       ),
@@ -82,16 +86,30 @@ class RightSidebar extends StatelessWidget {
                           padding: EdgeInsets.zero,
                           textStyle: TextStyle(
                             fontSize: level == 'h3'
-                                ? 14.4
-                                : 16.0, // 0.9em * 16px base font
-                            fontWeight: level == 'h3'
-                                ? FontWeight.normal
-                                : FontWeight.bold,
+                                ? 14.0
+                                : level == 'h2'
+                                    ? 16.0
+                                    : 18.0, // h1: 18px, h2: 16px, h3: 14px
+                            fontWeight: FontWeight.normal,
                           ),
-                          foregroundColor:
-                              Theme.of(context).textTheme.bodyLarge?.color,
                         ),
-                        child: Text(text),
+                        child: Text(
+                          text,
+                          style: TextStyle(
+                            fontSize: level == 'h3'
+                                ? 14.0
+                                : level == 'h2'
+                                    ? 16.0
+                                    : 18.0, // h1: 18px, h2: 16px, h3: 14px
+                            fontWeight: FontWeight.normal,
+                            color: level == 'h2'
+                                ? Theme.of(context).colorScheme.primary
+                                : Theme.of(context)
+                                    .textTheme
+                                    .bodyLarge
+                                    ?.color, // h2: green, h1 & h3: white
+                          ),
+                        ),
                       ),
                     );
                   },
@@ -120,7 +138,7 @@ class RightSidebar extends StatelessWidget {
           text = line.substring(level).trim();
         }
 
-        // Only include h2 and h3 headings
+        // Only include h2 and h3 headings (excluding h1/page title)
         if (level == 2 || level == 3) {
           // Create an ID for the heading (similar to website)
           final String id = text

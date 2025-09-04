@@ -233,8 +233,8 @@ assets/
 **File: `lib/screens/right_sidebar.dart`**
 - **Purpose**: Displays an on-page table of contents (headings within the current lesson) with scrolling functionality.
 - **Key Functions**:
-  - `RightSidebar`: Stateless widget displaying extracted headings with scroll-to-heading functionality.
-  - `_extractHeadings()`: Parses markdown content to extract headings for the table of contents.
+  - `RightSidebar`: Stateless widget displaying extracted headings (H2 and H3 only) with scroll-to-heading functionality. All headings are displayed with normal font weight for improved readability.
+  - `_extractHeadings()`: Parses markdown content to extract headings (H2 and H3 only) for the table of contents.
  - `onHeadingTap`: Callback function that scrolls to the corresponding heading in the main content when a table of contents item is tapped.
 
 **File: `lib/screens/main_content.dart`**
