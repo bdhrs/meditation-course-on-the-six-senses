@@ -32,7 +32,6 @@ class MainContent extends StatefulWidget {
 class _MainContentState extends State<MainContent> {
   final GlobalKey _contentKey = GlobalKey();
   bool _isContentShort = false;
-
   @override
   void didUpdateWidget(MainContent oldWidget) {
     super.didUpdateWidget(oldWidget);
@@ -144,7 +143,8 @@ class _MainContentState extends State<MainContent> {
                     Column(
                       key: _contentKey,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: _buildMarkdownContent(widget.lesson.markdownContent),
+                      children:
+                          _buildMarkdownContent(widget.lesson.markdownContent),
                     ),
                     if (!_isContentShort) navButtons,
                   ],
@@ -188,7 +188,7 @@ class _MainContentState extends State<MainContent> {
     for (final line in lines) {
       if (line.startsWith('>')) {
         flushParagraph();
-        currentBlockquote += line.substring(1).trim() + '\n';
+        currentBlockquote += '$line\n';
       } else if (line.startsWith('{{audio:')) {
         flushParagraph();
         flushBlockquote();
@@ -217,10 +217,10 @@ class _MainContentState extends State<MainContent> {
       } else if (line.trim().isEmpty) {
         flushParagraph();
         flushBlockquote();
-        widgets.add(const SizedBox(height: 16.0)); // Add space for empty lines
+        widgets.add(const SizedBox(height: 16.0));
       } else {
         flushBlockquote();
-        currentParagraph += line + '\n';
+        currentParagraph += '$line\n';
       }
     }
 
@@ -250,6 +250,69 @@ class _MainContentState extends State<MainContent> {
     final primaryColor =
         isDarkMode ? AppTheme.darkPrimaryColor : AppTheme.lightPrimaryColor;
 
+    final List<Widget> blockquoteContent = [];
+    final lines = text.split('\n');
+    String currentParagraph = '';
+
+    void flushParagraph() {
+      if (currentParagraph.isNotEmpty) {
+        blockquoteContent.add(
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8.0),
+            child: MarkdownBody(
+              data: currentParagraph.trim(),
+              styleSheet: MarkdownStyleSheet(
+                p: const TextStyle(
+                    fontSize: 16.0, height: 1.6, fontStyle: FontStyle.italic),
+              ),
+            ),
+          ),
+        );
+        currentParagraph = '';
+      }
+    }
+
+    for (final line in lines) {
+      if (line.trim().isEmpty) continue;
+
+      if (line.startsWith('> --')) {
+        flushParagraph();
+        // Remove the '> --' prefix and any surrounding asterisks for italics
+        String suttaText = line.substring(4).trim();
+        // Remove leading and trailing asterisks if present
+        if (suttaText.startsWith('*') &&
+            suttaText.endsWith('*') &&
+            suttaText.length > 1) {
+          suttaText = suttaText.substring(1, suttaText.length - 1);
+        }
+        blockquoteContent.add(
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Flexible(
+                  child: Text(
+                    suttaText,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      height: 1.6,
+                      fontStyle: FontStyle.italic,
+                      color: primaryColor,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      } else if (line.startsWith('>')) {
+        currentParagraph += '${line.substring(1).trim()}\n';
+      }
+    }
+    flushParagraph();
+
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 24.0),
       padding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 16.0),
@@ -263,11 +326,9 @@ class _MainContentState extends State<MainContent> {
         ),
         borderRadius: BorderRadius.circular(8.0),
       ),
-      child: MarkdownBody(
-        data: text,
-        styleSheet: MarkdownStyleSheet(
-          p: const TextStyle(fontSize: 16.0, height: 1.6),
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: blockquoteContent,
       ),
     );
   }
