@@ -1,5 +1,3 @@
-
-- hide panels when scrolling
 - copy all custom parsing from website
 - restore to last place
 - screen width not more than x
@@ -17,3 +15,4 @@
 - reference links
 - right panel links
 - h2 / h3 headings style
+- hide panels when scrolling

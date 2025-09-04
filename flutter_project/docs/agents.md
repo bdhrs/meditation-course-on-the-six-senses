@@ -195,10 +195,11 @@ assets/
 - **Key Functions**:
   - `LessonScreen`: Stateful widget that displays a lesson's content and manages responsive layout.
   - `_scrollController`: Manages scrolling for the main content area.
-  - `_handleScroll()`: Manages app bar visibility based on scroll position.
+  - `_handleScroll()`: Manages app bar and sidebar visibility based on scroll position.
   - `_buildBody()`: Constructs the three-pane layout (left sidebar, main content, right sidebar).
   - Implements responsive sidebar visibility logic based on screen width transitions.
   - Handles navigation to other lessons and the title page.
+  - `_areSidebarsVisible`: Tracks visibility state of sidebars for animation.
 
 **File: `lib/screens/download_manager_screen.dart`**
 - **Purpose**: UI for managing audio file downloads with progress tracking and error handling.
@@ -296,3 +297,4 @@ assets/
 - Enhanced sidebar styling for better distinction between sections and subsections.
 - Integrated "Title Page" as a virtual lesson within the course structure.
 - Interactive table of contents in the right sidebar that scrolls to corresponding headings.
+- Sidebars that appear and disappear in sync with the main header based on scroll position.

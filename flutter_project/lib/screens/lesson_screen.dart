@@ -30,6 +30,7 @@ class _LessonScreenState extends State<LessonScreen> {
   bool _isLeftSidebarVisible = false;
   bool _isRightSidebarVisible = false;
   bool _isHeaderVisible = true;
+  bool _areSidebarsVisible = true;
   double _lastScrollPosition = 0;
   double _previousWidth = 0;
 
@@ -86,17 +87,20 @@ class _LessonScreenState extends State<LessonScreen> {
     final bool isAtBottom = currentScrollPosition >= maxScrollExtent - 20;
 
     setState(() {
-      // If scrolling down, hide the header
+      // If scrolling down, hide the header and sidebars
       if (scrollingDown && currentScrollPosition > kToolbarHeight) {
         _isHeaderVisible = false;
+        _areSidebarsVisible = false;
       } else {
-        // If scrolling up, show the header
+        // If scrolling up, show the header and sidebars
         _isHeaderVisible = true;
+        _areSidebarsVisible = true;
       }
 
-      // Always show header if at the bottom of the page
+      // Always show header and sidebars if at the bottom of the page
       if (isAtBottom) {
         _isHeaderVisible = true;
+        _areSidebarsVisible = true;
       }
 
       _lastScrollPosition = currentScrollPosition;
@@ -174,7 +178,12 @@ class _LessonScreenState extends State<LessonScreen> {
           children: [
             // Left Sidebar - Course Outline (only on desktop when visible)
             if (showLeftSidebar)
-              Container(
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeInOut,
+                transform: Matrix4.translationValues(
+                    _areSidebarsVisible ? 0 : -300, 0, 0),
+                transformAlignment: Alignment.centerLeft,
                 width: 300,
                 decoration: BoxDecoration(
                   color: Theme.of(context).scaffoldBackgroundColor,
@@ -223,7 +232,12 @@ class _LessonScreenState extends State<LessonScreen> {
 
             // Right Sidebar - On-Page Table of Contents (only on desktop when visible)
             if (showRightSidebar)
-              Container(
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeInOut,
+                transform: Matrix4.translationValues(
+                    _areSidebarsVisible ? 0 : 300, 0, 0),
+                transformAlignment: Alignment.centerRight,
                 width: 300,
                 decoration: BoxDecoration(
                   color: Theme.of(context).scaffoldBackgroundColor,
