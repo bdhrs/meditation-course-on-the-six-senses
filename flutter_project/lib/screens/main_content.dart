@@ -450,7 +450,11 @@ class MainContentState extends State<MainContent> {
         style = const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold);
         break;
       case 2:
-        style = const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold);
+        style = TextStyle(
+          fontSize: 24.0,
+          fontWeight: FontWeight.bold,
+          color: Theme.of(context).colorScheme.primary,
+        );
         break;
       case 3:
         style = const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold);

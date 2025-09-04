@@ -1,4 +1,3 @@
-- h3 headings style
 - right panel add page title
 - hide panels when scrolling
 - copy all custom parsing from website
@@ -17,3 +16,4 @@
 - style sutta references
 - reference links
 - right panel links
+- h2 / h3 headings style
