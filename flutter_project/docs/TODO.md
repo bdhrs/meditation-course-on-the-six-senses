@@ -1,10 +1,9 @@
-- audio player
+- fix header scrolling behaviour
 - restore to last place
 - screen width not more than x
-- dark / light mode one click screen
-- settings screen independent
 - italics in headings not rendered
 - images not rendered
+- download audio
  
 ## DONE
 - landing page
@@ -19,3 +18,6 @@
 - h2 / h3 headings style
 - hide panels when scrolling
 - process transcripts
+- audio player
+- dark / light mode one click screen
+- settings screen independent

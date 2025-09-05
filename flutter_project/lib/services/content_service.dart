@@ -136,7 +136,7 @@ class ContentService {
 
   /// Converts ![[file.mp3]] to a placeholder for audio
   String _convertAudioLinks(String text) {
-    final pattern = RegExp(r'![[(.*?\.mp3)]]');
+    final pattern = RegExp(r'!\[\[(.*?\.mp3)\]\]');
     return text.replaceAllMapped(pattern, (match) {
       final fileName = match.group(1)!;
       // For markdown, we'll use a custom syntax that we can parse later
@@ -166,7 +166,7 @@ class ContentService {
 
   /// Extracts all unique audio file names from the content
   List<String> _extractAudioFileNames(String content) {
-    final pattern = RegExp(r'![[(.*?\.mp3)]]');
+    final pattern = RegExp(r'!\[\[(.*?\.mp3)\]\]');
     final matches = pattern.allMatches(content);
     final fileNames = <String>[];
 

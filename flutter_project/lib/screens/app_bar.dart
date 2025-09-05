@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../providers/theme_provider.dart';
 
 class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool isMobile;
@@ -16,6 +18,12 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    final iconColor = isDarkMode
+        ? const Color(0xFF96C5A9) // darkPrimaryColor
+        : const Color(0xFF366348); // lightPrimaryColor
+
     return AppBar(
       title: Row(
         children: [
@@ -43,9 +51,33 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
             )
           : null,
       actions: [
+        // Dark mode toggle
         IconButton(
-          icon: const Icon(Icons.settings),
-          onPressed: onSettingsPressed,
+          icon: themeProvider.isDarkMode
+              ? ColorFiltered(
+                  colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
+                  child: Image.asset('assets/images/theme-icon.png',
+                      width: 24, height: 24),
+                )
+              : ColorFiltered(
+                  colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
+                  child: Image.asset('assets/images/theme-icon-moon.png',
+                      width: 24, height: 24),
+                ),
+          onPressed: () {
+            themeProvider.toggleTheme();
+          },
+        ),
+        // Online/Offline toggle (placeholder)
+        IconButton(
+          icon: ColorFiltered(
+            colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
+            child: Image.asset('assets/images/status-icon.png',
+                width: 24, height: 24),
+          ),
+          onPressed: () {
+            // Placeholder for connectivity toggle
+          },
         ),
       ],
     );

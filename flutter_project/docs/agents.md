@@ -96,7 +96,8 @@ lib/
 │   ├── download_service.dart   # Handles audio file downloads
 │   └── content_sync_service.dart # Manages content synchronization
 ├── providers/
-│   └── theme_provider.dart     # Manages theme state
+│   ├── theme_provider.dart     # Manages theme state
+│   └── connectivity_provider.dart # Manages connectivity state (placeholder)
 ├── screens/
 │   ├── table_of_contents_screen.dart  # Main screen with lesson list
 │   ├── lesson_screen.dart      # Displays individual lessons and manages overall layout
@@ -147,9 +148,9 @@ assets/
   - `_getTitleFromFileName()`: Extracts and formats a title from a file name, preserving full numbering and removing capitalization.
   - `_generateSlug()`: Creates a URL-friendly slug from a file name.
   - `_processMarkdownContent()`: Processes markdown content with custom syntax conversions.
-  - `_convertMeditationInstructions()`: Converts `%%...%%` syntax to transcript placeholders.
+ - `_convertMeditationInstructions()`: Converts `%%...%%` syntax to transcript placeholders.
   - `_convertAudioLinks()`: Converts `![[file.mp3]]` syntax to audio placeholders.
-  - `_convertWikiLinks()`: Converts `[[Link Title#Heading|Display Text]]` syntax to navigation placeholders with support for linking to specific headings within lessons.
+ - `_convertWikiLinks()`: Converts `[[Link Title#Heading|Display Text]]` syntax to navigation placeholders with support for linking to specific headings within lessons.
   - `_extractAudioFileNames()`: Extracts all unique audio file names from content.
 
 **File: `lib/services/download_service.dart`**
@@ -177,9 +178,15 @@ assets/
 **File: `lib/providers/theme_provider.dart`**
 - **Purpose**: Manages application theme state (light/dark mode) using Provider pattern.
 - **Key Functions**:
-  - `setThemeMode()`: Sets the theme mode (light, dark, or system).
-  - `toggleTheme()`: Cycles through theme modes (light → dark → system → light).
+  - `setThemeMode()`: Sets the theme mode (light, dark).
+  - `toggleTheme()`: Toggles between light and dark mode.
   - `isDarkMode`: Getter that determines if dark mode should be used.
+
+**File: `lib/providers/connectivity_provider.dart`**
+- **Purpose**: Manages application connectivity state (online/offline) using Provider pattern.
+- **Key Functions**:
+  - `isOnline`: Getter that determines if the app is in online mode.
+  - `toggleConnectivity()`: Toggles between online and offline mode (placeholder implementation).
 
 ### Screens
 **File: `lib/screens/table_of_contents_screen.dart`**
@@ -219,10 +226,13 @@ assets/
   - `build()`: Constructs the UI with theme toggle and download manager link.
 
 **File: `lib/screens/app_bar.dart`**
-- **Purpose**: Custom app bar for the three-pane layout, providing navigation and settings access.
+- **Purpose**: Custom app bar for the three-pane layout, providing navigation, theme toggle, and connectivity toggle.
 - **Key Functions**:
   - `ThreePaneAppBar`: Stateless widget for the app bar.
-  - Provides menu icon for mobile/tablet and settings icon.
+  - Provides menu icon for mobile/tablet.
+  - Provides theme toggle icon with proper light/dark mode icons.
+  - Provides connectivity toggle icon (placeholder).
+  - Removed settings icon as settings are now accessible through other means.
 
 **File: `lib/screens/left_sidebar.dart`**
 - **Purpose**: Displays the course outline (list of lessons) and handles lesson selection.
@@ -264,6 +274,8 @@ assets/
 - **Key Functions**:
   - `AudioPlayerWidget`: Stateful widget for playing audio files.
   - Handles audio playback from local or remote sources.
+  - Properly themed for both light and dark modes.
+  - Uses just_audio package for audio playback.
 
 **File: `lib/widgets/adaptive_navigation_buttons.dart`**
 - **Purpose**: Adaptive navigation buttons for moving between lessons, providing instant jumps to the top of the page.
