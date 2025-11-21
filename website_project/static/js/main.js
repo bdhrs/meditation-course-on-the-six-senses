@@ -72,25 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const scrollHeight = scrollableContainer.scrollHeight;
         const clientHeight = scrollableContainer.clientHeight;
-        const isAtBottom = st + clientHeight >= scrollHeight - 20;
+        const isAtBottom = st + clientHeight >= scrollHeight - 50;
+        const isAtTop = st < 50;
 
-        // If scrolling down, hide the header and side panels
-        if (st > lastScrollTop && st > headerHeight) {
+        if (isAtTop || isAtBottom) {
+          // Always show header and side panels if at the top or bottom of the page
+          header.classList.remove("header-hidden");
+          sidebarLeft.classList.remove("sidebar-hidden");
+          sidebarRight.classList.remove("sidebar-hidden");
+        } else {
+          // Otherwise (scrolling in the middle), hide them
           header.classList.add("header-hidden");
           sidebarLeft.classList.add("sidebar-hidden");
           sidebarRight.classList.add("sidebar-hidden");
-        } else {
-          // If scrolling up, show the header and side panels
-          header.classList.remove("header-hidden");
-          sidebarLeft.classList.remove("sidebar-hidden");
-          sidebarRight.classList.remove("sidebar-hidden");
-        }
-
-        // Always show header and side panels if at the bottom of the page
-        if (isAtBottom) {
-          header.classList.remove("header-hidden");
-          sidebarLeft.classList.remove("sidebar-hidden");
-          sidebarRight.classList.remove("sidebar-hidden");
         }
 
         lastScrollTop = st;
