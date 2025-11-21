@@ -6,24 +6,37 @@ To make the site available offline, select **Add to Home Screen** or **Install**
 
 ## Build locally
 
-Running `main.py` generates:
+The project uses a custom build system orchestrated by `main.py`.
 
-1. custom static website
-2. mkdocs website zip
-3. single page markdown file
-4. single page html file 
-5. epub
-6. docx
-7. zip of mp3's
+### Prerequisites
 
-All files can be found in the `output/` folder
+- [uv](https://github.com/astral-sh/uv) installed.
 
-### Building the Custom Website
+### Building the Project
 
-To build the custom website locally:
+To build the entire project (website, ebooks, zips), run:
 
 ```bash
-uv run website_project/build.py [--mode online|offline]
+uv run main.py --mode offline
 ```
 
-The website will be generated in `output/Meditation Course on the Six Senses/`. Use `--mode online` for GitHub Pages deployment (external audio links) or `--mode offline` for local use (includes audio files).
+Use `--mode online` for GitHub Pages deployment (external audio links) or `--mode offline` for local use (includes audio files).
+
+### Outputs
+
+All generated files can be found in the `output/` folder:
+
+1.  **Meditation Course on the Six Senses/**: The complete static website.
+2.  **Meditation Course on the Six Senses.zip**: Zipped version of the website.
+3.  **Meditation Course on the Six Senses.epub**: Ebook version.
+4.  **Meditation Course on the Six Senses.docx**: Word document version.
+5.  **Meditation Course on the Six Senses.md**: Single-page markdown source.
+6.  **mp3s.zip**: Archive of all audio files.
+
+### Development
+
+The website build logic is located in `website_project/build.py`. You can run it independently if you only want to rebuild the website:
+
+```bash
+uv run website_project/build.py --mode offline
+```

@@ -7,25 +7,6 @@ from rich import print
 from paths import ProjectPaths
 
 
-def replace_audio_links(markdown_content):
-    # Handle audio files
-    audio_pattern = r"!\[\[(.*?\.mp3)\]\]"
-    audio_replacement = r"**Listen to: \1**"
-    markdown_content = re.sub(audio_pattern, audio_replacement, markdown_content)
-
-    # Handle SVG images
-    svg_pattern = r"!\[\[(.*?\.svg)\]\]"
-    svg_replacement = r"![\1](assets/images/\1)"
-    markdown_content = re.sub(svg_pattern, svg_replacement, markdown_content)
-
-    return markdown_content
-
-
-def replace_summary_details(markdown_content):
-    pattern = r"%%(.*?)%%"
-    replacement = r"<details><summary>Transcript</summary>\1</details>"
-    markdown_content = re.sub(pattern, replacement, markdown_content, flags=re.DOTALL)
-    return markdown_content
 
 
 def add_header_anchors(markdown_content):
@@ -84,8 +65,6 @@ def convert_markdown_to_html(pth: ProjectPaths):
         print(f"Error: File not found: {pth.output_markdown_file}")
         return
 
-    markdown_content = replace_audio_links(markdown_content)
-    markdown_content = replace_summary_details(markdown_content)
     link_pattern = r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]"
     markdown_content = re.sub(link_pattern, convert_links, markdown_content)
 
@@ -182,22 +161,3 @@ def convert_html_to_ebooks(pth: ProjectPaths):
         print(f"[red]An unexpected error occurred: {e}")
 
 
-def zip_mp3s(pth: ProjectPaths):
-    import os
-    import zipfile
-
-    try:
-        print("Zipping mp3s")
-        with zipfile.ZipFile(pth.output_mp3_zip, "w", zipfile.ZIP_DEFLATED) as zipf:
-            for root, _, files in os.walk(pth.output_mkdocs_audio_assets_dir):
-                for file in files:
-                    if file.endswith(".mp3"):
-                        file_path = os.path.join(root, file)
-                        zipf.write(
-                            file_path,
-                            os.path.relpath(
-                                file_path, pth.output_mkdocs_audio_assets_dir
-                            ),
-                        )
-    except Exception as e:
-        print(f"Error zipping mp3 files: {e}")

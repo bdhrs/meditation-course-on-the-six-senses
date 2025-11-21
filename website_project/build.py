@@ -524,20 +524,11 @@ def generate_audio_files_list():
 # --- Main Execution ---
 
 
-def main():
-    """Main function to build the static website."""
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Build the Six Senses website.")
-    parser.add_argument(
-        "--mode",
-        choices=["online", "offline"],
-        default="offline",
-        help="Build mode: 'online' for GitHub Pages with external audio, 'offline' for local use with included audio.",
-    )
-    args = parser.parse_args()
-    mode = args.mode
-
+def build_website(mode="offline"):
+    """
+    Main function to build the static website.
+    Returns True if successful, False otherwise.
+    """
     print(f"--- Starting website build (mode: {mode}) ---")
 
     # Run tests first - stop build if tests fail
@@ -545,7 +536,7 @@ def main():
 
     if not run_tests(SOURCE_DIR):
         print("\n--- Tests failed! Stopping build process. ---")
-        sys.exit(1)
+        return False
     print("\n--- All tests passed! ---")
 
     clean_output_directory()
@@ -557,7 +548,20 @@ def main():
     generate_audio_files_list()
 
     print("\n--- Build process completed successfully! ---")
+    return True
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Build the Six Senses website.")
+    parser.add_argument(
+        "--mode",
+        choices=["online", "offline"],
+        default="offline",
+        help="Build mode: 'online' for GitHub Pages with external audio, 'offline' for local use with included audio.",
+    )
+    args = parser.parse_args()
+    
+    if not build_website(args.mode):
+        sys.exit(1)
