@@ -1,6 +1,6 @@
 {
-    "name": "six_senses_app",
-    "short_name": "six_senses_app",
+    "name": "6 Senses",
+    "short_name": "6 Senses",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hex_code",

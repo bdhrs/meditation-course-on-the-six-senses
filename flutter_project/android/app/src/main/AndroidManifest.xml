@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="six_senses_app"
+        android:label="6 Senses"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
