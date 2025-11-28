@@ -68,17 +68,7 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
             themeProvider.toggleTheme();
           },
         ),
-        // Online/Offline toggle (placeholder)
-        IconButton(
-          icon: ColorFiltered(
-            colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-            child: Image.asset('assets/images/status-icon.png',
-                width: 24, height: 24),
-          ),
-          onPressed: () {
-            // Placeholder for connectivity toggle
-          },
-        ),
+
       ],
     );
   }

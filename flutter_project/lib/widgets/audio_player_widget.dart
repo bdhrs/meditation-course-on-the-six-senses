@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:path/path.dart' as path;
-import 'dart:io';
+import 'package:audio_session/audio_session.dart';
 import 'dart:math';
 
 class AudioPlayerWidget extends StatefulWidget {
@@ -28,7 +26,7 @@ class PositionData {
 
 class _AudioPlayerWidgetState extends State<AudioPlayerWidget> {
   late AudioPlayer _audioPlayer;
-  bool _isDownloaded = false;
+
 
   // Stream combining position data using RxDart
   Stream<PositionData> get _positionDataStream =>
@@ -47,49 +45,25 @@ class _AudioPlayerWidgetState extends State<AudioPlayerWidget> {
   void initState() {
     super.initState();
     _audioPlayer = AudioPlayer();
-
-    // Check if the file is downloaded and preload audio
-    _checkDownloadStatus().then((_) {
-      if (mounted) {
-        _preloadAudio();
-      }
-    });
+    _configureAudioSession();
+    _initAudio();
   }
 
-  Future<void> _checkDownloadStatus() async {
+  Future<void> _configureAudioSession() async {
     try {
-      final dir = await getApplicationDocumentsDirectory();
-      final filePath = path.join(dir.path, 'audio', widget.fileName);
-      final file = File(filePath);
-      final isDownloaded = await file.exists();
-
-      if (mounted) {
-        setState(() {
-          _isDownloaded = isDownloaded;
-        });
-      }
+      // Configure audio session for proper audio focus handling on Android
+      final session = await AudioSession.instance;
+      await session.configure(const AudioSessionConfiguration.music());
     } catch (e) {
-      // Ignore file system errors during startup
+      debugPrint('Error configuring audio session: $e');
     }
   }
 
-  Future<void> _preloadAudio() async {
+  Future<void> _initAudio() async {
     try {
-      if (_isDownloaded) {
-        // Preload from local file
-        final dir = await getApplicationDocumentsDirectory();
-        final audioPath = path.join(dir.path, 'audio', widget.fileName);
-        await _audioPlayer.setFilePath(audioPath);
-      } else {
-        // Preload from online URL
-        final baseUrl =
-            'https://github.com/bdhrs/meditation-course-on-the-six-senses/releases/download/audio-assets/';
-        final url = '$baseUrl${widget.fileName}';
-        await _audioPlayer.setUrl(url);
-      }
+      await _audioPlayer.setAsset('assets/audio/${widget.fileName}');
     } catch (e) {
-      // Silently handle preload errors
-      // The play button will handle loading when pressed
+      debugPrint('Error loading audio asset: $e');
     }
   }
 

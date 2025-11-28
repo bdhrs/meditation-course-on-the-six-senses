@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/lesson_screen.dart';
-import 'screens/download_manager_screen.dart';
+
 import 'screens/settings_screen.dart';
 import 'models/lesson.dart';
 import 'services/content_service.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (context) => const LessonScreenWrapper(),
-            '/downloadManager': (context) => const DownloadManagerScreen(),
+
             '/settings': (context) => const SettingsScreen(),
           },
         );

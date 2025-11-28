@@ -39,19 +39,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 }
               },
             ),
-            const SizedBox(height: 32),
-            const Text(
-              'Downloads',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                // Navigate to download manager
-                Navigator.of(context).pushNamed('/downloadManager');
-              },
-              child: const Text('Manage Audio Downloads'),
-            ),
+
           ],
         ),
       ),

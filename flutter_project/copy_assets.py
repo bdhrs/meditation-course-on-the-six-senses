@@ -58,6 +58,12 @@ def copy_source_files():
         shutil.copy2(logo_png_file, flutter_images_dir / "six-senses.png")
         print("Copied PNG logo file")
 
+    # Copy Flutter specific icon
+    flutter_icon_file = project_root / "icon" / "six-senses-flutter.png"
+    if flutter_icon_file.exists():
+        shutil.copy2(flutter_icon_file, flutter_images_dir / "six-senses-flutter.png")
+        print("Copied Flutter specific icon")
+
     # Copy theme icons
     theme_icons_dir = project_root / "website_project" / "static" / "images"
     if theme_icons_dir.exists():
