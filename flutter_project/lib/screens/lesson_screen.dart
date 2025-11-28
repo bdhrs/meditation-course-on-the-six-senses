@@ -7,9 +7,11 @@ import 'main_content.dart';
 
 class LessonScreen extends StatefulWidget {
   final Lesson lesson;
-  final Function(String slug, {String? headingSlug})? onNavigateToLesson;
+  final Function(String slug, {String? headingSlug, double? scrollOffset})?
+      onNavigateToLesson;
   final List<Lesson> lessons;
   final String? targetHeadingSlug;
+  final double? initialScrollOffset;
 
   const LessonScreen({
     super.key,
@@ -17,6 +19,7 @@ class LessonScreen extends StatefulWidget {
     this.onNavigateToLesson,
     required this.lessons,
     this.targetHeadingSlug,
+    this.initialScrollOffset,
   });
 
   @override
@@ -24,7 +27,7 @@ class LessonScreen extends StatefulWidget {
 }
 
 class _LessonScreenState extends State<LessonScreen> {
-  final ScrollController _scrollController = ScrollController();
+  late ScrollController _scrollController;
   final GlobalKey<MainContentState> _mainContentKey =
       GlobalKey<MainContentState>();
   bool _isLeftSidebarVisible = false;
@@ -34,6 +37,8 @@ class _LessonScreenState extends State<LessonScreen> {
   @override
   void initState() {
     super.initState();
+    _scrollController =
+        ScrollController(initialScrollOffset: widget.initialScrollOffset ?? 0.0);
     _scrollController.addListener(_handleScroll);
     _scrollToHeadingIfNeeded(widget.targetHeadingSlug);
   }
@@ -42,9 +47,9 @@ class _LessonScreenState extends State<LessonScreen> {
   void didUpdateWidget(LessonScreen oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.lesson.slug != oldWidget.lesson.slug) {
-      // If the lesson has changed, scroll to the top.
+      // If the lesson has changed, scroll to the top or initial offset.
       if (_scrollController.hasClients) {
-        _scrollController.jumpTo(0);
+        _scrollController.jumpTo(widget.initialScrollOffset ?? 0.0);
       }
       // After the new lesson is built, scroll to the heading if one is provided.
       _scrollToHeadingIfNeeded(widget.targetHeadingSlug);
@@ -170,10 +175,13 @@ class _LessonScreenState extends State<LessonScreen> {
                   lessons: widget.lessons,
                   currentLesson: widget.lesson,
                   onLessonSelected: (lesson) {
-                    if (_scrollController.hasClients) {
-                      _scrollController.jumpTo(0.0);
-                    }
-                    widget.onNavigateToLesson?.call(lesson.slug);
+                    final currentOffset = _scrollController.hasClients
+                        ? _scrollController.offset
+                        : 0.0;
+                    widget.onNavigateToLesson?.call(
+                      lesson.slug,
+                      scrollOffset: currentOffset,
+                    );
                   },
                 ),
               ),
@@ -190,13 +198,15 @@ class _LessonScreenState extends State<LessonScreen> {
                   isTablet: isTablet,
                   isMobile: isMobile,
                   onNavigateToLesson: (slug, {headingSlug}) {
-                    // Scroll to top when navigating to a new lesson
-                    if (_scrollController.hasClients) {
-                      _scrollController.jumpTo(0.0);
-                    }
+                    // Capture current offset before navigating
+                    final currentOffset = _scrollController.hasClients
+                        ? _scrollController.offset
+                        : 0.0;
+                    
                     widget.onNavigateToLesson?.call(
                       slug,
                       headingSlug: headingSlug,
+                      scrollOffset: currentOffset,
                     );
                   },
                   getLessonTitle: _getLessonTitle,
@@ -262,10 +272,15 @@ class _LessonScreenState extends State<LessonScreen> {
                     setState(() {
                       _isLeftSidebarVisible = false;
                     });
-                    if (_scrollController.hasClients) {
-                      _scrollController.jumpTo(0.0);
-                    }
-                    widget.onNavigateToLesson?.call(lesson.slug);
+                    
+                    final currentOffset = _scrollController.hasClients
+                        ? _scrollController.offset
+                        : 0.0;
+
+                    widget.onNavigateToLesson?.call(
+                      lesson.slug,
+                      scrollOffset: currentOffset,
+                    );
                   },
                 ),
               ),
