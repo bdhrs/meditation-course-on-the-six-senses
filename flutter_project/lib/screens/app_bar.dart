@@ -45,30 +45,20 @@ class ThreePaneAppBar extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       leading: isMobile || isTablet
-          ? IconButton(
-              icon: const Icon(Icons.menu),
-              onPressed: onMenuPressed,
-            )
+          ? IconButton(icon: const Icon(Icons.menu), onPressed: onMenuPressed)
           : null,
       actions: [
         // Dark mode toggle
         IconButton(
-          icon: themeProvider.isDarkMode
-              ? ColorFiltered(
-                  colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-                  child: Image.asset('assets/images/theme-icon.png',
-                      width: 24, height: 24),
-                )
-              : ColorFiltered(
-                  colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-                  child: Image.asset('assets/images/theme-icon-moon.png',
-                      width: 24, height: 24),
-                ),
+          icon: Icon(
+            themeProvider.isDarkMode ? Icons.dark_mode : Icons.light_mode,
+            color: iconColor,
+            size: 24,
+          ),
           onPressed: () {
             themeProvider.toggleTheme();
           },
         ),
-
       ],
     );
   }

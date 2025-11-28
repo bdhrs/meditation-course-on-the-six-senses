@@ -29,9 +29,6 @@ class _LessonScreenState extends State<LessonScreen> {
       GlobalKey<MainContentState>();
   bool _isLeftSidebarVisible = false;
   bool _isRightSidebarVisible = false;
-  bool _isHeaderVisible = true;
-  bool _areSidebarsVisible = true;
-  double _lastScrollPosition = 0;
   double _previousWidth = 0;
 
   @override
@@ -74,37 +71,8 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   void _handleScroll() {
-    final double currentScrollPosition = _scrollController.offset;
-    final double delta = 5.0; // Minimum scroll change to trigger action
-
-    // Make sure we scroll more than delta
-    if ((currentScrollPosition - _lastScrollPosition).abs() <= delta) {
-      return;
-    }
-
-    final bool scrollingDown = currentScrollPosition > _lastScrollPosition;
-    final double maxScrollExtent = _scrollController.position.maxScrollExtent;
-    final bool isAtBottom = currentScrollPosition >= maxScrollExtent - 20;
-
-    setState(() {
-      // If scrolling down, hide the header and sidebars
-      if (scrollingDown && currentScrollPosition > kToolbarHeight) {
-        _isHeaderVisible = false;
-        _areSidebarsVisible = false;
-      } else {
-        // If scrolling up, show the header and sidebars
-        _isHeaderVisible = true;
-        _areSidebarsVisible = true;
-      }
-
-      // Always show header and sidebars if at the bottom of the page
-      if (isAtBottom) {
-        _isHeaderVisible = true;
-        _areSidebarsVisible = true;
-      }
-
-      _lastScrollPosition = currentScrollPosition;
-    });
+    // Scroll handling for other features (like sidebar behavior) can go here
+    // Currently keeping scroll handling minimal to avoid jarring behavior
   }
 
   @override
@@ -138,34 +106,35 @@ class _LessonScreenState extends State<LessonScreen> {
         return Scaffold(
           appBar: PreferredSize(
             preferredSize: const Size.fromHeight(kToolbarHeight),
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.easeInOut,
-              transform: Matrix4.translationValues(
-                  0, _isHeaderVisible ? 0 : -kToolbarHeight, 0),
-              transformAlignment: Alignment.topCenter,
-              child: ThreePaneAppBar(
-                isMobile: isMobile,
-                isTablet: isTablet,
-                onMenuPressed: () {
-                  setState(() {
-                    _isLeftSidebarVisible = !_isLeftSidebarVisible;
-                  });
-                },
-                onSettingsPressed: () {
-                  Navigator.of(context).pushNamed('/settings');
-                },
-              ),
+            child: ThreePaneAppBar(
+              isMobile: isMobile,
+              isTablet: isTablet,
+              onMenuPressed: () {
+                setState(() {
+                  _isLeftSidebarVisible = !_isLeftSidebarVisible;
+                });
+              },
+              onSettingsPressed: () {
+                Navigator.of(context).pushNamed('/settings');
+              },
             ),
           ),
-          body: _buildBody(context, isDesktop, isTablet, isMobile),
+          body: SafeArea(
+            top: true,
+            bottom: true,
+            child: _buildBody(context, isDesktop, isTablet, isMobile),
+          ),
         );
       },
     );
   }
 
   Widget _buildBody(
-      BuildContext context, bool isDesktop, bool isTablet, bool isMobile) {
+    BuildContext context,
+    bool isDesktop,
+    bool isTablet,
+    bool isMobile,
+  ) {
     // For desktop, show all three panes
     // For tablet and mobile, hide both sidebars initially
     final bool showLeftSidebar = isDesktop && _isLeftSidebarVisible;
@@ -182,7 +151,10 @@ class _LessonScreenState extends State<LessonScreen> {
                 duration: const Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
                 transform: Matrix4.translationValues(
-                    _areSidebarsVisible ? 0 : -300, 0, 0),
+                  0,
+                  0,
+                  0,
+                ), // Always show sidebar, no animation needed
                 transformAlignment: Alignment.centerLeft,
                 width: 300,
                 decoration: BoxDecoration(
@@ -222,8 +194,10 @@ class _LessonScreenState extends State<LessonScreen> {
                     if (_scrollController.hasClients) {
                       _scrollController.jumpTo(0.0);
                     }
-                    widget.onNavigateToLesson
-                        ?.call(slug, headingSlug: headingSlug);
+                    widget.onNavigateToLesson?.call(
+                      slug,
+                      headingSlug: headingSlug,
+                    );
                   },
                   getLessonTitle: _getLessonTitle,
                 ),
@@ -236,7 +210,10 @@ class _LessonScreenState extends State<LessonScreen> {
                 duration: const Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
                 transform: Matrix4.translationValues(
-                    _areSidebarsVisible ? 0 : 300, 0, 0),
+                  0,
+                  0,
+                  0,
+                ), // Always show sidebar, no animation needed
                 transformAlignment: Alignment.centerRight,
                 width: 300,
                 decoration: BoxDecoration(
@@ -262,7 +239,7 @@ class _LessonScreenState extends State<LessonScreen> {
         if (!isDesktop && _isLeftSidebarVisible)
           Positioned(
             left: 0,
-            top: 0, // Start below the app bar
+            top: kToolbarHeight, // Always start below the app bar
             bottom: 0,
             width: 300,
             child: Material(
