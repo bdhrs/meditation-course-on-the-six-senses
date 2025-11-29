@@ -1,6 +1,8 @@
 import argparse
 import sys
 import subprocess
+import shutil
+from pathlib import Path
 from website_project.build import build_website
 from build_utils import generate_ebook_source, zip_website, zip_mp3s
 from markdown_to_html import convert_html_to_ebooks
@@ -24,6 +26,16 @@ def _build_flutter_android(pth):
     else:
         print("Successfully Built Flutter Android app.")
         print(result.stdout.decode())
+        
+        # Copy APK to output/apps directory
+        apk_source = pth.flutter_project_path / "build/app/outputs/flutter-apk/app-release.apk"
+        apk_dest_dir = pth.output_dir / "apps"
+        apk_dest_dir.mkdir(parents=True, exist_ok=True)
+        apk_dest = apk_dest_dir / "6 Senses.apk"
+        
+        print(f"Copying APK to {apk_dest}")
+        shutil.copy2(apk_source, apk_dest)
+        print(f"APK copied successfully to {apk_dest}")
 
 
 def _build_flutter_linux(pth):
@@ -41,6 +53,64 @@ def _build_flutter_linux(pth):
     else:
         print("Successfully Built Flutter Linux app.")
         print(result.stdout.decode())
+        
+        # Create AppImage
+        print("\n--- Creating AppImage ---")
+        bundle_dir = pth.flutter_project_path / "build/linux/x64/release/bundle"
+        appimage_dest_dir = pth.output_dir / "apps"
+        appimage_dest_dir.mkdir(parents=True, exist_ok=True)
+        appimage_dest = appimage_dest_dir / "6 Senses.appimage"
+        
+        # Create AppDir structure
+        appdir = Path("AppDir")
+        if appdir.exists():
+            _rmtree(appdir)
+        appdir.mkdir()
+        
+        # Copy bundle contents
+        shutil.copytree(bundle_dir, appdir / "usr/bin", dirs_exist_ok=True)
+        
+        # Create desktop file
+        desktop_file = appdir / "six_senses_app.desktop"
+        desktop_file.write_text("""[Desktop Entry]
+Name=6 Senses
+Exec=six_senses_app
+Icon=six_senses_app
+Type=Application
+Categories=Education;
+""")
+        
+        # Create AppRun
+        apprun = appdir / "AppRun"
+        apprun.write_text("""#!/bin/bash
+DIR="$(dirname "$(readlink -f "${0}")")"
+exec "$DIR/usr/bin/six_senses_app" "$@"
+""")
+        apprun.chmod(0o755)
+        
+        # Copy icon if exists
+        icon_source = pth.flutter_project_path / "assets/images/six-senses-flutter.png"
+        if icon_source.exists():
+            shutil.copy2(icon_source, appdir / "six_senses_app.png")
+        
+        # Build AppImage
+        print("Building AppImage...")
+        build_result = subprocess.run(
+            f"appimagetool AppDir '{appimage_dest}'",
+            shell=True,
+            check=False,
+            capture_output=True,
+            env={**subprocess.os.environ, "ARCH": "x86_64"},
+        )
+        
+        if build_result.returncode != 0:
+            print(f"Error creating AppImage:\n{build_result.stderr.decode()}")
+            sys.exit(1)
+        else:
+            print(f"AppImage created successfully at {appimage_dest}")
+            # Clean up
+            shutil.rmtree(appdir)
+            print(result.stdout.decode())
 
 
 def export_course(mode):

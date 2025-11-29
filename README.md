@@ -11,6 +11,14 @@ The project uses a custom build system orchestrated by `main.py`.
 ### Prerequisites
 
 - [uv](https://github.com/astral-sh/uv) installed.
+- [Flutter](https://flutter.dev/docs/get-started/install) installed (for building mobile and desktop apps).
+- **For Linux builds**: `appimagetool` installed. Download and install:
+
+```bash
+wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
+chmod +x appimagetool-x86_64.AppImage
+sudo mv appimagetool-x86_64.AppImage /usr/local/bin/appimagetool
+```
 
 ### Building the Project
 
@@ -32,6 +40,9 @@ All generated files can be found in the `output/` folder:
 4.  **Meditation Course on the Six Senses.docx**: Word document version.
 5.  **Meditation Course on the Six Senses.md**: Single-page markdown source.
 6.  **mp3s.zip**: Archive of all audio files.
+7.  **apps/**: Flutter applications:
+    - **6 Senses.apk**: Android app
+    - **6 Senses.appimage**: Linux app
 
 ### Development
 
