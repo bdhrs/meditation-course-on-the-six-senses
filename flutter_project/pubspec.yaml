@@ -49,6 +49,7 @@ dependencies:
   flutter_svg: ^2.2.3
   just_audio_media_kit: ^2.1.0
   media_kit_libs_linux: ^1.2.1
+  crypto: ^3.0.7
 
 
 dev_dependencies:

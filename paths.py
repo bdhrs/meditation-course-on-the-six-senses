@@ -17,6 +17,8 @@ class ProjectPaths:
     output_epub_file = Path(output_dir / f"{project_name}.epub")
     output_docx_file = Path(output_dir / f"{project_name}.docx")
     output_mp3_zip = Path(output_dir / "mp3s.zip")
+    
+    flutter_project_path = Path("flutter_project")
 
     # Legacy / MkDocs paths (to be removed later or kept for reference if needed)
     mkdocs_root = Path("mkdocs_project")

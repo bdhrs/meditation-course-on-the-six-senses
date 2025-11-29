@@ -27,9 +27,11 @@ class UpdateService {
 
       // Check Markdown updates
       final markdownUpdates = await _getMarkdownUpdates(prefs);
-      debugPrint('UpdateService: Found ${markdownUpdates.length} markdown updates');
+      debugPrint(
+          'UpdateService: Found ${markdownUpdates.length} markdown updates');
       if (markdownUpdates.isNotEmpty) {
-        debugPrint('UpdateService: Markdown files to update: ${markdownUpdates.map((f) => f['name']).join(', ')}');
+        debugPrint(
+            'UpdateService: Markdown files to update: ${markdownUpdates.map((f) => f['name']).join(', ')}');
         return true;
       }
 
@@ -37,7 +39,8 @@ class UpdateService {
       final audioUpdates = await _getAudioUpdates(prefs);
       debugPrint('UpdateService: Found ${audioUpdates.length} audio updates');
       if (audioUpdates.isNotEmpty) {
-        debugPrint('UpdateService: Audio files to update: ${audioUpdates.map((f) => f['name']).join(', ')}');
+        debugPrint(
+            'UpdateService: Audio files to update: ${audioUpdates.map((f) => f['name']).join(', ')}');
         return true;
       }
 
@@ -95,9 +98,9 @@ class UpdateService {
           await _downloadFile(file['browser_download_url'],
               path.join(audioDir.path, file['name']));
           // Store digest if available, otherwise use a placeholder to avoid re-downloading loop if API changes
-          final digest = file['digest'] ?? 'downloaded_${DateTime.now().toIso8601String()}';
-          await prefs.setString(
-              '$_prefKeyAudioDigest${file['name']}', digest);
+          final digest = file['digest'] ??
+              'downloaded_${DateTime.now().toIso8601String()}';
+          await prefs.setString('$_prefKeyAudioDigest${file['name']}', digest);
           downloadedCount++;
         }
       }
@@ -131,8 +134,9 @@ class UpdateService {
       final sha = file['sha'];
       final localSha = prefs.getString('$_prefKeyMarkdownSha$name');
 
-      debugPrint('UpdateService: Checking $name - Local SHA: ${localSha ?? "null"}, Remote SHA: $sha');
-      
+      debugPrint(
+          'UpdateService: Checking $name - Local SHA: ${localSha ?? "null"}, Remote SHA: $sha');
+
       // If we have a stored SHA, compare it
       if (localSha != null) {
         if (localSha != sha) {
@@ -142,12 +146,14 @@ class UpdateService {
       } else {
         // No stored SHA - compute SHA of bundled asset
         try {
-          final bundledContent = await rootBundle.loadString('assets/markdown/$name');
+          final bundledContent =
+              await rootBundle.loadString('assets/markdown/$name');
           final bundledSha = _computeGitBlobSha(bundledContent);
           debugPrint('UpdateService: $name bundled SHA: $bundledSha');
-          
+
           if (bundledSha != sha) {
-            debugPrint('UpdateService: $name needs update (bundled differs from remote)');
+            debugPrint(
+                'UpdateService: $name needs update (bundled differs from remote)');
             updates.add(file as Map<String, dynamic>);
           } else {
             debugPrint('UpdateService: $name bundled matches remote, skipping');
@@ -188,8 +194,9 @@ class UpdateService {
       final digest = asset['digest'];
       final localDigest = prefs.getString('$_prefKeyAudioDigest$name');
 
-      debugPrint('UpdateService: Checking audio $name - Local digest: ${localDigest ?? "null (using bundled)"}, Remote digest: $digest');
-      
+      debugPrint(
+          'UpdateService: Checking audio $name - Local digest: ${localDigest ?? "null (using bundled)"}, Remote digest: $digest');
+
       // If localDigest is null, we're using bundled assets
       // Only mark for update if we have a stored digest and it differs from remote
       if (localDigest != null && digest != null && localDigest != digest) {

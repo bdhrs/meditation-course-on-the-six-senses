@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 
-def copy_source_files():
+def copy_flutter_source_files():
     """Copy source files to Flutter app's asset directories."""
     project_root = Path(
         __file__
@@ -83,4 +83,4 @@ def copy_source_files():
 
 
 if __name__ == "__main__":
-    copy_source_files()
+    copy_flutter_source_files()

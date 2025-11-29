@@ -1,10 +1,46 @@
 import argparse
 import sys
+import subprocess
 from website_project.build import build_website
 from build_utils import generate_ebook_source, zip_website, zip_mp3s
 from markdown_to_html import convert_html_to_ebooks
 from markdown_to_html import convert_markdown_to_html
 from paths import ProjectPaths
+from flutter_project.copy_assets import copy_flutter_source_files
+
+
+def _build_flutter_android(pth):
+    print("\n--- Building Flutter Android app ---")
+    result = subprocess.run(
+        "flutter build apk --release",
+        cwd=pth.flutter_project_path,
+        shell=True,
+        check=False,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        print(f"Error Building Flutter Android app:\n{result.stderr.decode()}")
+        sys.exit(1)
+    else:
+        print("Successfully Built Flutter Android app.")
+        print(result.stdout.decode())
+
+
+def _build_flutter_linux(pth):
+    print("\n--- Building Flutter Linux app ---")
+    result = subprocess.run(
+        "flutter build linux --release",
+        cwd=pth.flutter_project_path,
+        shell=True,
+        check=False,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        print(f"Error Building Flutter Linux app:\n{result.stderr.decode()}")
+        sys.exit(1)
+    else:
+        print("Successfully Built Flutter Linux app.")
+        print(result.stdout.decode())
 
 
 def export_course(mode):
@@ -33,15 +69,26 @@ def export_course(mode):
     zip_website(pth)
     zip_mp3s(pth)
 
+    # 6. Copy Flutter assets
+    print("\n=== Copying Flutter assets ===")
+    copy_flutter_source_files()
+
+    # 7. Build Flutter apps
+    print("\n=== Building Flutter Apps ===")
+    _build_flutter_android(pth)
+    _build_flutter_linux(pth)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build the Six Senses course.")
+
     parser.add_argument(
         "--mode",
         choices=["online", "offline"],
         default="offline",
         help="Build mode: 'online' for github releases, 'offline' for local.",
     )
+
     args = parser.parse_args()
 
     export_course(args.mode)
