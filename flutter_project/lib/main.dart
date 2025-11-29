@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:just_audio_media_kit/just_audio_media_kit.dart';
 import 'screens/lesson_screen.dart';
-
 import 'screens/settings_screen.dart';
 import 'models/lesson.dart';
 import 'services/content_service.dart';
 import 'theme/app_theme.dart';
 import 'providers/theme_provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  JustAudioMediaKit.ensureInitialized();
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),

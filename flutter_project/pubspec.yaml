@@ -46,6 +46,9 @@ dependencies:
   path_provider: ^2.1.5
   shared_preferences: ^2.5.3
   url_launcher: ^6.3.2
+  flutter_svg: ^2.2.3
+  just_audio_media_kit: ^2.1.0
+  media_kit_libs_linux: ^1.2.1
 
 
 dev_dependencies:

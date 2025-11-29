@@ -153,6 +153,7 @@ class ContentService {
     content = '# $title\n\n$content';
 
     content = _convertMeditationInstructions(content);
+    content = _convertImageLinks(content);
     content = _convertAudioLinks(content);
     content = _convertWikiLinks(content);
     return content;
@@ -194,6 +195,16 @@ class ContentService {
           : 'sixsenses://$pageSlug';
 
       return '{{link:$uri|$displayText}}';
+    });
+  }
+
+  /// Converts ![[filename.ext]] to a placeholder for images
+  String _convertImageLinks(String text) {
+    final pattern = RegExp(r'!\[\[(.*?\.(?:png|jpg|jpeg|gif|svg))\]\]');
+    return text.replaceAllMapped(pattern, (match) {
+      final fileName = match.group(1)!;
+      // For markdown, we'll use a custom syntax that we can parse later
+      return '{{image:$fileName}}';
     });
   }
 

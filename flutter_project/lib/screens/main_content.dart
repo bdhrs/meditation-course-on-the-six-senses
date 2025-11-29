@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../models/lesson.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/audio_player_widget.dart';
@@ -248,7 +249,13 @@ class MainContentState extends State<MainContent> {
         final fileName =
             line.length > 10 ? line.substring(8, line.length - 2) : '';
         widgets.add(_buildAudioWidget(fileName));
-      } else if (line.startsWith('{{_transcript_widget_')) {
+      } else if (line.startsWith('{{image:')) { // Handle image placeholder
+        flushParagraph();
+        flushBlockquote();
+        final fileName = line.substring(8, line.length - 2);
+        widgets.add(_buildImageWidget(fileName));
+      }
+      else if (line.startsWith('{{_transcript_widget_')) {
         flushParagraph();
         flushBlockquote();
         // Insert the next transcript widget from our stored list
@@ -481,29 +488,24 @@ class MainContentState extends State<MainContent> {
     final slug = _generateSlug(text);
     final key = _headingKeys[slug];
 
-    TextStyle style;
-    switch (level) {
-      case 1:
-        style = const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold);
-        break;
-      case 2:
-        style = TextStyle(
-          fontSize: 24.0,
-          fontWeight: FontWeight.bold,
-          color: Theme.of(context).colorScheme.primary,
-        );
-        break;
-      case 3:
-        style = const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold);
-        break;
-      default:
-        style = const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold);
-    }
-
     return Padding(
       key: key,
       padding: const EdgeInsets.only(bottom: 16.0, top: 8.0),
-      child: Text(text, style: style),
+      child: MarkdownBody(
+        data: text,
+        styleSheet: MarkdownStyleSheet(
+          p: switch (level) {
+            1 => const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+            2 => TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).colorScheme.primary,
+              ),
+            3 => const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            _ => const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+          },
+        ),
+      ),
     );
   }
 
@@ -514,6 +516,42 @@ class MainContentState extends State<MainContent> {
         fileName: fileName,
       ),
     );
+  }
+
+  // New function to build image widgets
+  Widget _buildImageWidget(String fileName) {
+    // Determine if it's an SVG or other image type
+    if (fileName.toLowerCase().endsWith('.svg')) {
+      final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+      final svgPicture = SvgPicture.asset(
+        'assets/images/$fileName',
+        height: 400, // You might want to make this configurable
+      );
+
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: isDarkMode
+            ? ColorFiltered(
+                colorFilter: const ColorFilter.matrix([
+                  -1, 0, 0, 0, 255,
+                  0, -1, 0, 0, 255,
+                  0, 0, -1, 0, 255,
+                  0, 0, 0, 1, 0,
+                ]),
+                child: svgPicture,
+              )
+            : svgPicture,
+      );
+    } else {
+      // For other image types like PNG, JPG
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: Image.asset(
+          'assets/images/$fileName',
+          height: 400, // You might want to make this configurable
+        ),
+      );
+    }
   }
 
   Widget _buildTranscriptWidget(String content) {
