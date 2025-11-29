@@ -29,6 +29,7 @@ flutter run -d linux
 ## Building for Android
 
 ```bash
+cd flutter_project
 flutter build apk --release
 adb install build/app/outputs/flutter-apk/app-release.apk
 ```
