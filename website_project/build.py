@@ -249,6 +249,8 @@ def render_pages(mode="offline"):
             all_pages=pages_for_nav,  # For the left sidebar
             prev_page=prev_page,  # For the footer
             next_page=next_page,  # For the footer
+            filename=md_file.name,  # For the feedback link
+            show_feedback=re.match(r"^\d+\.\d+\.", md_file.name) is not None,
         )
 
         output_filename = OUTPUT_DIR / f"{slug}.html"

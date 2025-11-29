@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <article>
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-    </article>
+<article>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+    {% if show_feedback %}
+    <div class="feedback-footer">
+        <h2>Did you spot a mistake?</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScTjCYL-jV4MeObo7o_MjOZ120s_iZjiYZizxNat3FdxmIx-A/viewform?usp=pp_url&entry.1023147521={{ filename }}"
+            target="_blank">Please report it here</a>.
+    </div>
+    {% endif %}
+</article>
 {% endblock %}
