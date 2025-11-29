@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../models/lesson.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/audio_player_widget.dart';
@@ -353,6 +354,11 @@ class MainContentState extends State<MainContent> {
         styleSheet: MarkdownStyleSheet(
           p: const TextStyle(fontSize: 16.0, height: 1.6),
         ),
+        onTapLink: (text, href, title) {
+          if (href != null) {
+            launchUrl(Uri.parse(href));
+          }
+        },
       ),
     );
   }
@@ -380,6 +386,11 @@ class MainContentState extends State<MainContent> {
                 p: const TextStyle(
                     fontSize: 16.0, height: 1.6, fontStyle: FontStyle.italic),
               ),
+              onTapLink: (text, href, title) {
+                if (href != null) {
+                  launchUrl(Uri.parse(href));
+                }
+              },
             ),
           ),
         );
@@ -516,6 +527,11 @@ class MainContentState extends State<MainContent> {
               padding: const EdgeInsets.all(16.0),
               child: MarkdownBody(
                 data: content,
+                onTapLink: (text, href, title) {
+                  if (href != null) {
+                    launchUrl(Uri.parse(href));
+                  }
+                },
                 styleSheet: MarkdownStyleSheet(
                   p: const TextStyle(fontSize: 16.0, height: 2.0),
                   h1: const TextStyle(
@@ -559,7 +575,7 @@ class MainContentState extends State<MainContent> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: GestureDetector(
-        onTap: () {
+        onTap: () async {
           final uri = Uri.parse(target);
           if (uri.scheme == 'sixsenses') {
             final pageSlug = uri.host;
@@ -574,6 +590,11 @@ class MainContentState extends State<MainContent> {
               // It's a link to another page
               widget.onNavigateToLesson
                   ?.call(pageSlug, headingSlug: headingSlug);
+            }
+          } else {
+            // It's an external link, so launch it
+            if (await canLaunchUrl(uri)) {
+              await launchUrl(uri);
             }
           }
         },
