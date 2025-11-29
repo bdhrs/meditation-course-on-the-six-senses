@@ -25,6 +25,14 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Download audio assets
+        run: |
+          mkdir -p flutter_project/assets/audio
+          cd flutter_project/assets/audio
+          gh release download audio-assets --repo bdhrs/meditation-course-on-the-six-senses --pattern '*.mp3'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install dependencies
         working-directory: flutter_project
         run: flutter pub get
@@ -55,6 +63,14 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+
+      - name: Download audio assets
+        run: |
+          mkdir -p flutter_project/assets/audio
+          cd flutter_project/assets/audio
+          gh release download audio-assets --repo bdhrs/meditation-course-on-the-six-senses --pattern '*.mp3'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         working-directory: flutter_project
