@@ -26,9 +26,11 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
+        working-directory: flutter_project
         run: flutter pub get
 
       - name: Build Android APK
+        working-directory: flutter_project
         run: flutter build apk --release
 
       - name: Upload APK artifact
@@ -55,9 +57,11 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
+        working-directory: flutter_project
         run: flutter pub get
 
       - name: Build Linux release
+        working-directory: flutter_project
         run: flutter build linux --release
 
       - name: Archive Linux release
