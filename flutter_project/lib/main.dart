@@ -68,6 +68,16 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
     _lessonsFuture = ContentService().loadLessons();
   }
 
+  void _reloadLessons() {
+    setState(() {
+      _lessonsFuture = ContentService().loadLessons();
+      _currentLesson = null;
+      _targetHeadingSlug = null;
+      _initialScrollOffset = null;
+      _history.clear();
+    });
+  }
+
   void _navigateToLessonBySlug(String slug,
       {String? headingSlug, double? scrollOffset}) {
     _lessonsFuture.then((lessons) {
@@ -170,6 +180,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
                 lessons: lessons,
                 targetHeadingSlug: _targetHeadingSlug,
                 initialScrollOffset: _initialScrollOffset,
+                onUpdateComplete: _reloadLessons,
               );
             }
 
@@ -189,6 +200,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
                 lesson: _currentLesson ?? lessons.first,
                 onNavigateToLesson: _navigateToLessonBySlug,
                 lessons: lessons,
+                onUpdateComplete: _reloadLessons,
               );
             }
 

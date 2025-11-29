@@ -12,6 +12,7 @@ class LessonScreen extends StatefulWidget {
   final List<Lesson> lessons;
   final String? targetHeadingSlug;
   final double? initialScrollOffset;
+  final VoidCallback? onUpdateComplete;
 
   const LessonScreen({
     super.key,
@@ -20,6 +21,7 @@ class LessonScreen extends StatefulWidget {
     required this.lessons,
     this.targetHeadingSlug,
     this.initialScrollOffset,
+    this.onUpdateComplete,
   });
 
   @override
@@ -122,6 +124,7 @@ class _LessonScreenState extends State<LessonScreen> {
               onSettingsPressed: () {
                 Navigator.of(context).pushNamed('/settings');
               },
+              onUpdateComplete: widget.onUpdateComplete,
             ),
           ),
           body: SafeArea(

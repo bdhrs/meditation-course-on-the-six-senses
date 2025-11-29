@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path/path.dart' as path;
+import 'package:path_provider/path_provider.dart';
 import '../models/lesson.dart';
 
 class ContentService {
@@ -10,20 +12,51 @@ class ContentService {
   Future<List<Lesson>> loadLessons() async {
     final lessons = <Lesson>[];
 
-    // Get the list of markdown files
+    // Get bundled files from assets
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap =
         Map<String, dynamic>.from(json.decode(manifestContent));
 
-    final markdownFiles = manifestMap.keys
+    final bundledFiles = manifestMap.keys
         .where((key) => key.startsWith(_documentsPath) && key.endsWith('.md'))
         .where((key) => !path.basename(key).startsWith('X')) // Skip draft files
         .toList();
 
-    // Process each markdown file
-    for (final filePath in markdownFiles) {
-      final fileName = path.basename(filePath);
-      final fileContent = await rootBundle.loadString(filePath);
+    // Get local downloaded files (if any)
+    final appDir = await getApplicationDocumentsDirectory();
+    final localMarkdownDir = Directory(path.join(appDir.path, 'markdown'));
+    final localFileNames = <String>{};
+    
+    if (localMarkdownDir.existsSync()) {
+      localFileNames.addAll(
+        localMarkdownDir
+            .listSync()
+            .where((entity) => entity is File && entity.path.endsWith('.md'))
+            .where((entity) => !path.basename(entity.path).startsWith('X'))
+            .map((entity) => path.basename(entity.path))
+      );
+    }
+
+    // Process each file (prefer local version if it exists)
+    final processedFileNames = <String>{};
+    
+    for (final bundledPath in bundledFiles) {
+      final fileName = path.basename(bundledPath);
+      
+      if (processedFileNames.contains(fileName)) continue;
+      processedFileNames.add(fileName);
+      
+      final String fileContent;
+      final bool isLocal = localFileNames.contains(fileName);
+      
+      if (isLocal) {
+        // Load from local storage
+        final localFile = File(path.join(localMarkdownDir.path, fileName));
+        fileContent = await localFile.readAsString();
+      } else {
+        // Load from bundled assets
+        fileContent = await rootBundle.loadString(bundledPath);
+      }
 
       // Parse the file name to generate title and slug
       final title = _getTitleFromFileName(fileName);

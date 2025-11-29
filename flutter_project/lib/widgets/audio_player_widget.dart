@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:audio_session/audio_session.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as path;
+import 'dart:io';
 import 'dart:math';
 
 class AudioPlayerWidget extends StatefulWidget {
@@ -61,7 +64,17 @@ class _AudioPlayerWidgetState extends State<AudioPlayerWidget> {
 
   Future<void> _initAudio() async {
     try {
-      await _audioPlayer.setAsset('assets/audio/${widget.fileName}');
+      // Check if local audio file exists
+      final appDir = await getApplicationDocumentsDirectory();
+      final localAudioFile = File(path.join(appDir.path, 'audio', widget.fileName));
+      
+      if (localAudioFile.existsSync()) {
+        // Load from local storage
+        await _audioPlayer.setFilePath(localAudioFile.path);
+      } else {
+        // Load from assets
+        await _audioPlayer.setAsset('assets/audio/${widget.fileName}');
+      }
     } catch (e) {
       debugPrint('Error loading audio asset: $e');
     }
