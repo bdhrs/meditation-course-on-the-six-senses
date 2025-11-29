@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: flutter_project/build/app/outputs/flutter-apk/app-release.apk
 
   build-linux:
     name: Build Linux Archive
@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-archive
-          path: linux-release.tar.gz
+          path: flutter_project/linux-release.tar.gz
 
   create-release:
     name: Create Draft Release
