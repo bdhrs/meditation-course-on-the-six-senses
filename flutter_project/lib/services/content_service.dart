@@ -156,6 +156,13 @@ class ContentService {
     content = _convertImageLinks(content);
     content = _convertAudioLinks(content);
     content = _convertWikiLinks(content);
+
+    // Append feedback link only if filename matches pattern (e.g., 1.1. Something.md)
+    if (RegExp(r'^\d+\.\d+\.').hasMatch(fileName)) {
+      final encodedFileName = Uri.encodeComponent(fileName);
+      content += '\n\n## Did you spot a mistake?\n{{link:https://docs.google.com/forms/d/e/1FAIpQLScTjCYL-jV4MeObo7o_MjOZ120s_iZjiYZizxNat3FdxmIx-A/viewform?usp=pp_url&entry.1023147521=$encodedFileName|Please report it here}}';
+    }
+
     return content;
   }
 

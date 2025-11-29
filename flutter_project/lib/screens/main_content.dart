@@ -631,9 +631,7 @@ class MainContentState extends State<MainContent> {
             }
           } else {
             // It's an external link, so launch it
-            if (await canLaunchUrl(uri)) {
-              await launchUrl(uri);
-            }
+            launchUrl(uri);
           }
         },
         child: Text(
