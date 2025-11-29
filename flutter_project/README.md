@@ -22,6 +22,10 @@ A Flutter application for the "Meditation Course on the Six Senses". This app pr
 flutter run
 ```
 
+```bash
+flutter run -d linux
+```
+
 ## Building for Android
 
 ```bash
