@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:just_audio_media_kit/just_audio_media_kit.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/settings_screen.dart';
 import 'models/lesson.dart';
@@ -34,7 +35,6 @@ class MyApp extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (context) => const LessonScreenWrapper(),
-
             '/settings': (context) => const SettingsScreen(),
           },
         );
@@ -58,21 +58,29 @@ class LessonHistoryEntry {
 }
 
 class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
-  late Future<List<Lesson>> _lessonsFuture;
+  late Future<List<dynamic>> _initFuture;
   Lesson? _currentLesson;
   String? _targetHeadingSlug;
   final List<LessonHistoryEntry> _history = [];
   double? _initialScrollOffset;
+  SharedPreferences? _prefs;
 
   @override
   void initState() {
     super.initState();
-    _lessonsFuture = ContentService().loadLessons();
+    _loadData();
+  }
+
+  void _loadData() {
+    _initFuture = Future.wait([
+      ContentService().loadLessons(),
+      SharedPreferences.getInstance(),
+    ]);
   }
 
   void _reloadLessons() {
     setState(() {
-      _lessonsFuture = ContentService().loadLessons();
+      _loadData();
       _currentLesson = null;
       _targetHeadingSlug = null;
       _initialScrollOffset = null;
@@ -82,7 +90,8 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
 
   void _navigateToLessonBySlug(String slug,
       {String? headingSlug, double? scrollOffset}) {
-    _lessonsFuture.then((lessons) {
+    _initFuture.then((data) {
+      final lessons = data[0] as List<Lesson>;
       try {
         final lesson = lessons.firstWhere((l) => l.slug == slug);
         if (mounted) {
@@ -96,6 +105,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
             _currentLesson = lesson;
             _targetHeadingSlug = headingSlug;
             _initialScrollOffset = 0.0; // Reset scroll for new page
+            _prefs?.setString('last_lesson_slug', slug);
           });
         }
       } catch (e) {
@@ -109,7 +119,8 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
   void _handleBack() {
     if (_history.isNotEmpty) {
       final lastEntry = _history.removeLast();
-      _lessonsFuture.then((lessons) {
+      _initFuture.then((data) {
+        final lessons = data[0] as List<Lesson>;
         try {
           final lesson = lessons.firstWhere((l) => l.slug == lastEntry.lessonSlug);
           if (mounted) {
@@ -117,6 +128,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               _currentLesson = lesson;
               _targetHeadingSlug = null;
               _initialScrollOffset = lastEntry.scrollOffset;
+              _prefs?.setString('last_lesson_slug', lesson.slug);
             });
           }
         } catch (e) {
@@ -134,8 +146,8 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
         if (didPop) return;
         _handleBack();
       },
-      child: FutureBuilder<List<Lesson>>(
-        future: _lessonsFuture,
+      child: FutureBuilder<List<dynamic>>(
+        future: _initFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Scaffold(
@@ -163,7 +175,7 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
                     ElevatedButton(
                       onPressed: () {
                         setState(() {
-                          _lessonsFuture = ContentService().loadLessons();
+                          _loadData();
                         });
                       },
                       child: const Text('Retry'),
@@ -173,7 +185,8 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               ),
             );
           } else if (snapshot.hasData) {
-            final lessons = snapshot.data!;
+            final lessons = snapshot.data![0] as List<Lesson>;
+            _prefs = snapshot.data![1] as SharedPreferences;
 
             if (_currentLesson != null) {
               return LessonScreen(
@@ -186,23 +199,40 @@ class _LessonScreenWrapperState extends State<LessonScreenWrapper> {
               );
             }
 
-            // If no lesson is selected, show the first lesson by default
+            // If no lesson is selected, try to restore last lesson or show the first one
             if (lessons.isNotEmpty) {
               // Only set the current lesson if it hasn't been set yet
               if (_currentLesson == null) {
                 WidgetsBinding.instance.addPostFrameCallback((_) {
                   if (mounted) {
                     setState(() {
-                      _currentLesson = lessons.first;
+                      final lastSlug = _prefs?.getString('last_lesson_slug');
+                      if (lastSlug != null) {
+                        try {
+                          _currentLesson = lessons.firstWhere((l) => l.slug == lastSlug);
+                        } catch (e) {
+                          _currentLesson = lessons.first;
+                        }
+                      } else {
+                        _currentLesson = lessons.first;
+                      }
                     });
                   }
                 });
               }
-              return LessonScreen(
-                lesson: _currentLesson ?? lessons.first,
-                onNavigateToLesson: _navigateToLessonBySlug,
-                lessons: lessons,
-                onUpdateComplete: _reloadLessons,
+              // While waiting for the post frame callback, show a loading or the first lesson temporarily
+              // To avoid flicker, we can show the first lesson or a loader.
+              // Showing the first lesson might be jarring if it switches to another one.
+              // But since we are in the same frame, returning a widget is required.
+              // If we return a loader here, it might flash.
+              // If we return LessonScreen with lessons.first, it might flash.
+              // However, since we are doing setState in addPostFrameCallback, the build will run again immediately.
+              // Let's return a loader if _currentLesson is null to be safe and avoid "wrong content" flash.
+              
+              return const Scaffold(
+                body: Center(
+                  child: CircularProgressIndicator(),
+                ),
               );
             }
 
