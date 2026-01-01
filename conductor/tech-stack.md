@@ -22,5 +22,10 @@
 - **Hosting:** GitHub Pages (Static Website).
 - **CI/CD:** GitHub Actions (Automated builds for Web, Android, and Linux).
 
+## Quality Assurance
+- **Static Analysis:** Ruff (strict linting and formatting).
+- **Testing Framework:** `pytest` for all unit and integration tests.
+- **Validation Tools:** Custom Python scripts in `maintenance/` for source content auditing and build output verification.
+
 ## Future Considerations
 - **Cross-Platform Build Independence:** Investigating **Expo (React Native)** to allow building iOS/Windows binaries without native hardware.

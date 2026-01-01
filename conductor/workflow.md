@@ -3,8 +3,9 @@
 ## Guiding Principles
 
 1. **The Plan is the Source of Truth:** All work must be tracked in `plan.md`
-2. **The Tech Stack is Deliberate:** Changes to the tech stack must be documented in `tech-stack.md` *before* implementation
-3. **Test-Driven Development:** Write unit tests before implementing functionality
+2. **AI Content Policy:** The AI is strictly prohibited from modifying source markdown files (`source/*.md`). It must only provide suggestions.
+3. **The Tech Stack is Deliberate:** Changes to the tech stack must be documented in `tech-stack.md` *before* implementation
+4. **Test-Driven Development:** Write unit tests before implementing functionality
 4. **High Code Coverage:** Aim for >80% code coverage for all modules
 5. **User Experience First:** Every decision should prioritize user experience
 6. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
@@ -32,11 +33,9 @@ All tasks follow a strict lifecycle:
    - With the safety of passing tests, refactor the implementation code and the test code to improve clarity, remove duplication, and enhance performance without changing the external behavior.
    - Rerun tests to ensure they still pass after refactoring.
 
-6. **Verify Coverage:** Run coverage reports using the project's chosen tools. For example, in a Python project, this might look like:
-   ```bash
-   pytest --cov=app --cov-report=html
-   ```
-   Target: >80% coverage for new code. The specific tools and commands will vary by language and framework.
+6. **Verify Coverage:**
+   - Ensure that new code is adequately tested.
+   - Run tests to confirm they pass.
 
 7. **Document Deviations:** If implementation differs from tech stack:
    - **STOP** implementation
@@ -44,27 +43,24 @@ All tasks follow a strict lifecycle:
    - Add dated note explaining the change
    - Resume implementation
 
-8. **Commit Code Changes:**
-   - Stage all code changes related to the task.
-   - Propose a clear, concise commit message e.g, `feat(ui): Create basic HTML structure for calculator`.
-   - Perform the commit.
+8. **Stop and Ask for Review:**
+   - **Do NOT commit changes automatically.**
+   - Stage the changes if appropriate (`git add ...`).
+   - Announce to the user that the task is implemented and ready for review.
+   - Ask the user to review and perform the commit manually.
 
-9. **Attach Task Summary with Git Notes:**
-   - **Step 9.1: Get Commit Hash:** Obtain the hash of the *just-completed commit* (`git log -1 --format="%H"`).
-   - **Step 9.2: Draft Note Content:** Create a detailed summary for the completed task. This should include the task name, a summary of changes, a list of all created/modified files, and the core "why" for the change.
-   - **Step 9.3: Attach Note:** Use the `git notes` command to attach the summary to the commit.
+9. **Attach Task Summary (User Action):**
+   - Remind the user to attach the task summary using `git notes` after they commit.
      ```bash
-     # The note content from the previous step is passed via the -m flag.
-     git notes add -m "<note content>" <commit_hash>
+     git notes add -m "<Task Summary>" <commit_hash>
      ```
 
 10. **Get and Record Task Commit SHA:**
     - **Step 10.1: Update Plan:** Read `plan.md`, find the line for the completed task, update its status from `[~]` to `[x]`, and append the first 7 characters of the *just-completed commit's* commit hash.
     - **Step 10.2: Write Plan:** Write the updated content back to `plan.md`.
 
-11. **Commit Plan Update:**
-    - **Action:** Stage the modified `plan.md` file.
-    - **Action:** Commit this change with a descriptive message (e.g., `conductor(plan): Mark task 'Create user model' as complete`).
+11. **Commit Plan Update (User Action):**
+    - Ask the user to commit the plan update.
 
 ### Phase Completion Verification and Checkpointing Protocol
 
@@ -115,22 +111,20 @@ All tasks follow a strict lifecycle:
     -   After presenting the detailed plan, ask the user for confirmation: "**Does this meet your expectations? Please confirm with yes or provide feedback on what needs to be changed.**"
     -   **PAUSE** and await the user's response. Do not proceed without an explicit yes or confirmation.
 
-6.  **Create Checkpoint Commit:**
-    -   Stage all changes. If no changes occurred in this step, proceed with an empty commit.
-    -   Perform the commit with a clear and concise message (e.g., `conductor(checkpoint): Checkpoint end of Phase X`).
+6.  **Create Checkpoint Commit (User Action):**
+    -   Ask the user to create a checkpoint commit.
 
 7.  **Attach Auditable Verification Report using Git Notes:**
     -   **Step 8.1: Draft Note Content:** Create a detailed verification report including the automated test command, the manual verification steps, and the user's confirmation.
-    -   **Step 8.2: Attach Note:** Use the `git notes` command and the full commit hash from the previous step to attach the full report to the checkpoint commit.
+    -   **Step 8.2: Attach Note:** Ask the user to attach the note.
 
 8.  **Get and Record Phase Checkpoint SHA:**
     -   **Step 7.1: Get Commit Hash:** Obtain the hash of the *just-created checkpoint commit* (`git log -1 --format="%H"`).
     -   **Step 7.2: Update Plan:** Read `plan.md`, find the heading for the completed phase, and append the first 7 characters of the commit hash in the format `[checkpoint: <sha>]`.
     -   **Step 7.3: Write Plan:** Write the updated content back to `plan.md`.
 
-9. **Commit Plan Update:**
-    - **Action:** Stage the modified `plan.md` file.
-    - **Action:** Commit this change with a descriptive message following the format `conductor(plan): Mark phase '<PHASE NAME>' as complete`.
+9. **Commit Plan Update (User Action):**
+    - Ask the user to commit the plan update.
 
 10.  **Announce Completion:** Inform the user that the phase is complete and the checkpoint has been created, with the detailed verification report attached as a git note.
 
@@ -139,7 +133,7 @@ All tasks follow a strict lifecycle:
 Before marking any task complete, verify:
 
 - [ ] All tests pass
-- [ ] Code coverage meets requirements (>80%)
+- [ ] Code is adequately tested (functional correctness)
 - [ ] Code follows project's code style guidelines (as defined in `code_styleguides/`)
 - [ ] All public functions/methods are documented (e.g., docstrings, JSDoc, GoDoc)
 - [ ] Type safety is enforced (e.g., type hints, TypeScript types, Go types)
@@ -150,27 +144,21 @@ Before marking any task complete, verify:
 
 ## Development Commands
 
-**AI AGENT INSTRUCTION: This section should be adapted to the project's specific language, framework, and build tools.**
-
-### Setup
-```bash
-# Example: Commands to set up the development environment (e.g., install dependencies, configure database)
-# e.g., for a Node.js project: npm install
-# e.g., for a Go project: go mod tidy
-```
-
 ### Daily Development
+Run all tests:
 ```bash
-# Example: Commands for common daily tasks (e.g., start dev server, run tests, lint, format)
-# e.g., for a Node.js project: npm run dev, npm test, npm run lint
-# e.g., for a Go project: go run main.go, go test ./..., go fmt ./...
+uv run pytest
 ```
 
-### Before Committing
+Run a specific test file:
 ```bash
-# Example: Commands to run all pre-commit checks (e.g., format, lint, type check, run tests)
-# e.g., for a Node.js project: npm run check
-# e.g., for a Go project: make check (if a Makefile exists)
+uv run pytest tests/test_build_utils.py
+```
+
+### Before Asking for Review
+Run all tests and audit scripts:
+```bash
+uv run pytest && uv run python maintenance/audit_content.py
 ```
 
 ## 1. Testing Protocol
@@ -181,11 +169,11 @@ Before marking any task complete, verify:
 - **Code:**
     - **Focus:** Integration and Unit testing of data manipulation logic (Input/Output).
     - **Constraint:** Avoid low-value "existence" tests (e.g., "does this button exist?"). Test the *result* of the function.
-- **Coverage Goal:** Functional correctness of data pipelines and valid Markdown structure.
+- **Goal:** Functional correctness of data pipelines and valid Markdown structure.
 
 ## 2. Version Control & Commits
-- **Frequency:** Commit changes after **every completed task**.
-- **Task Summary:** Use **Git Notes** to append the "Conductor Task Summary" to the commit.
+- **Frequency:** Prepare changes for commit after **every completed task**.
+- **Task Summary:** Remind user to use **Git Notes** to append the "Conductor Task Summary" to the commit.
 - **Convention:** Follow the [Conventional Commits](https://www.conventionalcommits.org/) standard with GitHub issue integration.
     - **Format:** `type(scope): description (#issue-no)`
     - **Example:** `fix(mobile): adjust padding on main menu (#3)`
@@ -207,8 +195,8 @@ A task is complete when:
 5. Code passes all configured linting and static analysis checks
 6. Works beautifully on mobile (if applicable)
 7. Implementation notes added to `plan.md`
-8. Changes committed with proper message
-9. Git note with task summary attached to the commit
+8. Changes are ready for manual review and commit
+9. Git note with task summary is ready to be attached
 
 ## Emergency Procedures
 

@@ -12,7 +12,7 @@ import cairosvg
 # Import for tests
 # Add the project root to the Python path to import tests module
 sys.path.append(str(Path(__file__).parent.parent))
-from tests import run_tests
+from maintenance.check_markdown_patterns import run_tests
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).parent.parent
