@@ -8,11 +8,15 @@ import shutil
 from pathlib import Path
 
 
-def copy_flutter_source_files():
+def copy_flutter_source_files(project_root=None):
     """Copy source files to Flutter app's asset directories."""
-    project_root = Path(
-        __file__
-    ).parent.parent  # Go up one level since script is now in flutter_project
+    if project_root is None:
+        project_root = Path(
+            __file__
+        ).parent.parent  # Go up one level since script is now in flutter_project
+    else:
+        project_root = Path(project_root)
+        
     source_dir = project_root / "source"
 
     # Define destination directories
