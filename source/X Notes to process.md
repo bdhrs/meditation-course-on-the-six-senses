@@ -252,11 +252,11 @@ A very easy way to make rapid progress in any meditation, is to be very interest
 3: Cultivating Awareness
 4: Dependency
 5: Contact 
-6: Vedanā, Craving, Equanimity
-7: Anicca
-8: Dukkha
-9: Anatta
-10: Nibbidā
+6: *Vedanā*, Craving, Equanimity
+7: *Anicca*
+8: *Dukkha*
+9: *Anatta*
+10: *Nibbidā*
 
 ## Base Level
 Sometimes meditation practice can feel overwhelming or bewildering, like being lost in a mental maze of our own creation. If ever you feel lost, confused, unsure what you are doing, or what you should be doing, just come back to this base level of knowing what's happening at the sense level. Often it is enough to pull you out of bewilderment.
@@ -340,7 +340,7 @@ As Ven. Sāriputta so famously said:
 
 > !!! translate
 
-## Nibbāna as a positive
+## *Nibbāna* as a positive
 Avoid talking about nibbāna as a positive, keep it to the original negative representation.
 
 ## Question on mano
@@ -380,7 +380,7 @@ It's like being a chicken in the egg, waiting to hatch. It will happen naturally
 > -- *DHP14 buddhavagga, verse 184*
 
 > Patience, endurance, is the supreme spiritual practice, 
-> Nibbāna is supreme say the Buddhas
+> *Nibbāna* is supreme say the Buddhas
 
 At this stage, we need to just watch and wait while the gradual process of *virāga* and *nirodha* mature by themselves. It's very organic. There really is nothing to be done.
 

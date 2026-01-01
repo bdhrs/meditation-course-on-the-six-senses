@@ -145,11 +145,11 @@ Counterparts
 
 "What is the counterpart of deliverance?"
 
-"Nibbāna is the counterpart of deliverance."
+"*Nibbāna* is the counterpart of deliverance."
 
-"Lady, what is the counterpart of Nibbāna?"
+"Lady, what is the counterpart of *Nibbāna*?"
 
-"Friend Visākha, you have pushed this line of questioning too far; you were not able to grasp the limit to questions. For the holy life, friend Visākha, is grounded upon Nibbāna, culminates in Nibbāna, ends in Nibbāna. If you wish, friend Visākha, go to the Blessed One and ask him about the meaning of this. As the Blessed One explains it to you, so you should remember it."
+"Friend Visākha, you have pushed this line of questioning too far; you were not able to grasp the limit to questions. For the holy life, friend Visākha, is grounded upon *Nibbāna*, culminates in *Nibbāna*, ends in *Nibbāna*. If you wish, friend Visākha, go to the Blessed One and ask him about the meaning of this. As the Blessed One explains it to you, so you should remember it."
 
 ## SN36:3 Abandonment
 On the underlying rendencies
