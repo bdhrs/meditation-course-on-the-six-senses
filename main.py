@@ -61,10 +61,13 @@ def _build_flutter_linux(pth):
         appimage_dest_dir.mkdir(parents=True, exist_ok=True)
         appimage_dest = appimage_dest_dir / "6 Senses.appimage"
         
+        # Remove existing AppImage if it exists
+        if appimage_dest.exists():
+            print(f"Removing existing AppImage at {appimage_dest}")
+            appimage_dest.unlink()
+        
         # Create AppDir structure
         appdir = Path("AppDir")
-        if appdir.exists():
-            _rmtree(appdir)
         appdir.mkdir()
         
         # Copy bundle contents
