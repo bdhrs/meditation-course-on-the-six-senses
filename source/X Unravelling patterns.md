@@ -15,7 +15,7 @@ Certainly, some techniques may create a temporary change, but mostly they they d
 This is a very slow and reliable method, which requires nothing more than willingness to learn and attention.
 
 ## What is your current situation
-What does your current situation? As you receive input through the six senses, you respond with very strong preference and aversion to the most subtle stimuli. Even the smallest experience can completely throw you off kilter. Then you respond to people and situations inappropriately, which creates more stimulus, and so there's an ongoing cycle of being slightly off-balance all the time.
+What does your current situation? As you receive input through the six senses, you respond with very strong preference and aversion to the most subtle stimuli. Even the smallest experience can completely throw you off kilter. Then you respond to people and situations inappropriately, which creates more stimulus, and so there is an ongoing cycle of being slightly off-balance all the time.
 
 This practice presents an opportunity to know the smallest details of what you're experiencing, to have a very balanced mind in response to each and every one of those experiences, to respond calmly and appropriately, or not at all, as the case may be, as opposed to being pushed around, forced around, bullied by *vedanā* all the time.
 
@@ -36,7 +36,7 @@ We're going to look at three internal ways of altering reality based on an under
 
 The corollary of the mind only experiencing one thing at a time is that you can really change your life experience by simply changing what the mind rests its attention on. If you stop feeding the mind unwholesome objects, feed it more wholesome ones, and learn to sustain attention on them, you can dramatically alter your own subjective reality, and enjoy all the rewards of that.
 
-If the object of awareness is causing you suffering, you can learn to change the object. An example is the experience of ruminating on a painful thought. Simply moving attention to the body effectively removes the thought from experience. You cannot hold a painful thought and the vivid experience of the body in the mind at the same moment. There's no need to continue letting the mind experience whatever it wants and creating unhappiness for yourself.
+If the object of awareness is causing you suffering, you can learn to change the object. An example is the experience of ruminating on a painful thought. Simply moving attention to the body effectively removes the thought from experience. You cannot hold a painful thought and the vivid experience of the body in the mind at the same moment. there is no need to continue letting the mind experience whatever it wants and creating unhappiness for yourself.
 
 The second method suggested offers a deeper solution to the problem of suffering, but still not a permanent one. In many cases, it is preferable to face the reality of something painful. In those situations we cannot alter the outside world immediately, we cannot change the experience, but we can alter our *response* to the experience. This is a profound topic which will be looked at in more detail in the section on *vedanā*.
 
@@ -47,9 +47,9 @@ The second method suggested offers a deeper solution to the problem of suffering
 - frivolous thought, daydreams, imagination, worry 
 - all the second category can be replaced with awareness of the sense fields
 
-There's no stress whatsoever in simple sense experience, just seeing. There's lots of stress in regretting the past, mentally churning over situations and worrying about the future. Simply by reducing the time you spend in unnecessary thought, and increasing the time you spend with the senses, you can greatly reduce your stress and enormously improve the quality of your life. But of course merely knowing this does not solve the problem, which is why we're practising here is a method to return to sense experience wherever possible, and only let the mind use thinking ability when absolutely necessary.
+there is no stress whatsoever in simple sense experience, just seeing. There is lots of stress in regretting the past, mentally churning over situations and worrying about the future. Simply by reducing the time you spend in unnecessary thought, and increasing the time you spend with the senses, you can greatly reduce your stress and enormously improve the quality of your life. But of course merely knowing this does not solve the problem, which is why we are practising here is a method to return to sense experience wherever possible, and only let the mind use thinking ability when absolutely necessary.
 
-Fear not! This practice will not cause you to lose the ability to think. Thinking happens automatically anyway, it's not something that you actively do. Hopefully these exercises will allow you to see that for yourself. If anything, this practice will give you more control of your mind to not be overwhelmed by incessant, invasive or negative thoughts.
+Fear not! This practice will not cause you to lose the ability to think. Thinking happens automatically anyway, it is not something that you actively do. Hopefully these exercises will allow you to see that for yourself. If anything, this practice will give you more control of your mind to not be overwhelmed by incessant, invasive or negative thoughts.
 
 ## how to alter your reality in the most fundamental way
 - Change the object of perception 

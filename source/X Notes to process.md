@@ -22,7 +22,7 @@ Self awareness
 - madhipiṇḍaka
 - chacakka
 - indriyabhāvana
-- satipaṭṭhāna section on saḷāyatana 
+- satipaṭṭhāna section on *saḷāyatana* 
 - loko lokoti
 - suñño loko 
 - mogharāja
@@ -34,7 +34,7 @@ Self awareness
 - vajirāsuttaṃ
 
 ## Mahāyāna Emptiness
-Mahāyāna took this idea further to mean that if nothing had it's own inherent essence then everything exists through interconnection, or interbeing as it is sometimes called. This is an interesting philosophical development on the concept of emptiness, but it's worth noting that this id'a is never found in the earliest discourses of the Buddha, and was a later development in Buddhist thought.
+Mahāyāna took this idea further to mean that if nothing had it is own inherent essence then everything exists through interconnection, or interbeing as it is sometimes called. This is an interesting philosophical development on the concept of emptiness, but it is worth noting that this id'a is never found in the earliest discourses of the Buddha, and was a later development in Buddhist thought.
 
 ## Reality is an illusion
 The only reality you know is what is perceived through the senses. We've seen very clearly that sense experience is a shimmering and ephemeral illusion. But that illusion is the only thing you've got to work with, quite literally you know nothing else other than that, so back to work.
@@ -53,7 +53,7 @@ To train the body, you need to stretch it and move it.
 To train the mind, you need to keep it still.
 
 ## psychology of sense reception
-There's an absolute minimum threshold below which sense perception does not occur, that is binary on or off. It's not like a sound keeps getting softer and softer, before a certain threshold it disappears entirely. How does this match with Buddhist idea? 
+There is an absolute minimum threshold below which sense perception does not occur, that is binary on or off. It is not like a sound keeps getting softer and softer, before a certain threshold it disappears entirely. How does this match with Buddhist idea? 
 
 Signal Detection Theory is about how you can focus on one stimulus among many, one voice in a room full of conversations, and give it exclusive attention, to the point that other voices are not audible.
 
@@ -175,17 +175,17 @@ But what is present moment awareness? As you examine your own experience more, d
 - go so deeply into the physical aspect that your perception alters
 
 ## open awareness recording
-If the mind is distracted and confused, just know that this is the "mind channel".
+If the mind is distracted and confused, just know that this is the 'mind channel'.
 
-If the mind is fast and highly perceptive, just know that this is the "mind channel".
+If the mind is fast and highly perceptive, just know that this is the 'mind channel'.
 
-You don't have to be in the mood to do this. Whatever mood you're in is just "mind channel".
+You don't have to be in the mood to do this. Whatever mood you're in is just 'mind channel'.
 
- the experience might be in a different field no problem just you just follow whatever attention prsents to you. wherever the mind goes, just follow. the mind has been doing this for as long as you've been alive. how to do this now you're just watching what the mind does so that you can learn from it understand it. to build understanding all you have to do at this stage is know very briefly what channel the experiences happening on, this is seeing, this is hearing, this is smelling, this is tasting, this is physical experience, this is mental experience, that's all. and stay with the experience note the channel that's enough for now. if knowing the channel is difficult then at very least stay with the experience.
+ the experience might be in a different field no problem just you just follow whatever attention prsents to you. wherever the mind goes, just follow. the mind has been doing this for as long as you've been alive. how to do this now you're just watching what the mind does so that you can learn from it understand it. to build understanding all you have to do at this stage is know very briefly what channel the experiences happening on, this is seeing, this is hearing, this is smelling, this is tasting, this is physical experience, this is mental experience, that is all. and stay with the experience note the channel that is enough for now. if knowing the channel is difficult then at very least stay with the experience.
 
-for some people this comes very naturally for other people it's an uphill battle from the word go. get the benefits its good. always useful things that come from this practice, every little bit of self understanding helps you to improve knowing yourself better. there's no disadvantage to knowing how you work how the mind works how this body works. on this the sense fields work is not disadvantage denying that advantage and further advantageous in every single possible way.
+for some people this comes very naturally for other people it is an uphill battle from the word go. get the benefits its good. always useful things that come from this practice, every little bit of self understanding helps you to improve knowing yourself better. there is no disadvantage to knowing how you work how the mind works how this body works. on this the sense fields work is not disadvantage denying that advantage and further advantageous in every single possible way.
 
-your biggest challenge in the beginning is you're going to default to thinking and planning daydreaming memory memories are you going to go to the mind and do not going to know that you've gone to the mind as soon as you become aware note that this is mental experience. that's helps to give you just one step back, get a little bit of perspective. that's the most common default pattern with modern human beings is to go into the thought world and not actually know that you're in thought, just be so absorbed in the story that you're not aware that it's just a story. so this is the most important ground level practice this is the practice that you need to be able to default to at all times that is the foundation for everything which follows if you need to spend more time here spend as much time as you need to get a good foundation is really really important you don't need to build a perfect foundation you just need to have a basic awareness of what is happening and the further steps will help you to develop a more solid funded foundation. so don't think you need to do this perfectly even monks with twenty years of meditation experience are not perfect everyday, but good enough to to see what's happening that's that's enough of a basis for going deeper into the buddha's teachings on saḷāyatana so if you need to spend a day here spend a few days, spend a week. if you need to but don't don't get stuck here this this way but wait there's more, there's so much more but this is a necessary foundation a necessary prerequisite. it's also something that can be done throughout the day in daily life this is something that you can really bring into your life at all times there are some times where you have to fully engage with thinking while doing some work when interacting with other people but there's a lot of free time to sit and notice experience. and using all your free time and my free time i mean eating time washing time toilet time brushing teeth time drinking time walking time all of these kind of less important activities you can be practicing open awareness. the main thing is this practice doesn't need to be done in a sitting posture it can be done in any posture setting lying standing walking sitting lying down moving sitting still stretching anything in between. experience is always happening irrespective of what posture the body is in. so don't think this needs to be done in lotus position. my favorite is walking meditation. take this meditation and go for a solitary nature walk. its to wonderful wonderful way to get some fresh air, good exercise and get some good mental exercise as well. you could expand this into a little section how to walk in nature. each one of these is heading and paragraph, heading and a paragraph. and then over time you'll build up but if content on each one. is it then you can put your paragraphs into some kind of structure
+your biggest challenge in the beginning is you're going to default to thinking and planning daydreaming memory memories are you going to go to the mind and do not going to know that you've gone to the mind as soon as you become aware note that this is mental experience. that is helps to give you just one step back, get a little bit of perspective. that is the most common default pattern with modern human beings is to go into the thought world and not actually know that you're in thought, just be so absorbed in the story that you're not aware that it is just a story. so this is the most important ground level practice this is the practice that you need to be able to default to at all times that is the foundation for everything which follows if you need to spend more time here spend as much time as you need to get a good foundation is really really important you don't need to build a perfect foundation you just need to have a basic awareness of what is happening and the further steps will help you to develop a more solid funded foundation. so don't think you need to do this perfectly even monks with twenty years of meditation experience are not perfect everyday, but good enough to to see what's happening that is that is enough of a basis for going deeper into the buddha's teachings on *saḷāyatana* so if you need to spend a day here spend a few days, spend a week. if you need to but don't don't get stuck here this this way but wait there is more, there is so much more but this is a necessary foundation a necessary prerequisite. it is also something that can be done throughout the day in daily life this is something that you can really bring into your life at all times there are some times where you have to fully engage with thinking while doing some work when interacting with other people but there is a lot of free time to sit and notice experience. and using all your free time and my free time i mean eating time washing time toilet time brushing teeth time drinking time walking time all of these kind of less important activities you can be practicing open awareness. the main thing is this practice does not need to be done in a sitting posture it can be done in any posture setting lying standing walking sitting lying down moving sitting still stretching anything in between. experience is always happening irrespective of what posture the body is in. so don't think this needs to be done in lotus position. my favorite is walking meditation. take this meditation and go for a solitary nature walk. its to wonderful wonderful way to get some fresh air, good exercise and get some good mental exercise as well. you could expand this into a little section how to walk in nature. each one of these is heading and paragraph, heading and a paragraph. and then over time you'll build up but if content on each one. is it then you can put your paragraphs into some kind of structure
 
 ## One at a time
 I question this idea:
@@ -209,15 +209,15 @@ For example when you look at the world around you, matter seems to be a solid an
 By training your attention, the instability of matter becomes something that can be experienced directly, it can become available to perception, and be very physically and very viscerally sensed. This is a very reliable outcome of training that many meditators progress to. Through basic training, it is possible to become aware of much more detail, with much more clarity than you are experiencing right now.
 
 ## Beyond your experience
-One thing to keep in mind is that we cannot imagine where this practice goes. It's like trying to imagine an undescribed place that's not on the map. We have so little knowledge about how our minds work, that it is impossible to predict the experiences, mental states, understandings, benefits and enhancements that come from doing this practice based on our current model of reality.
+One thing to keep in mind is that we cannot imagine where this practice goes. It is like trying to imagine an undescribed place that is not on the map. We have so little knowledge about how our minds work, that it is impossible to predict the experiences, mental states, understandings, benefits and enhancements that come from doing this practice based on our current model of reality.
 
-It's not just from an appeal to antiquity that Buddhist monks say, "Hey! You should really try this meditation method, which is found in ancient Pāḷi texts". It's because the meditation works effectively at relieving the fundamental suffering of human beings, and offers new vistas of insight into the subjective world of experience that all human beings, ancient or modern, inhabit.
+It is not just from an appeal to antiquity that Buddhist monks say, "Hey! You should really try this meditation method, which is found in ancient Pāḷi texts". It is because the meditation works effectively at relieving the fundamental suffering of human beings, and offers new vistas of insight into the subjective world of experience that all human beings, ancient or modern, inhabit.
 
 This is not the teaching of some philosopher or scientist or popular personality, this is the teaching of a Buddha, an awakened being. We are fortunate to have such an encounter with a teaching which slowly, successively, and with practice, leads to the same awakening that the Buddha himself experienced.
 
 Ultimately, this is about using experience to entirely transcend experience. Firstly the experience of the sense world, then the experience of the entire mental world, and ultimately all experience itself. That's a long journey from where we are right now, but know that this is where the practice goes.
 
-So let's practice the meditation on emptiness to lighten the load.
+So let us practice the meditation on emptiness to lighten the load.
 
 Someone came to the Buddha and asked him how to know when the job is done, the training is complete.
 
@@ -239,10 +239,10 @@ This was neatly summarised by the Arahant nun Vajirā:
 ## Know Thyself
 What we are talking about here is a process of putting yourself under self-observation. How better to learn about yourself than by watching yourself, knowing each and every experience that makes up your waking reality? 
 
-If you were a zoologist, and wished to study the habits and behaviours of any animal, you would silently watch it, follow its movements day and night, keep it under continuous observation so that its tiniest habits were revealed. If you had access to that animal's inner world of experience, how much more would you understand about it? This is precisely what we're doing here, putting the inner world of a human being under observation in order to truly understand how it operates.
+If you were a zoologist, and wished to study the habits and behaviours of any animal, you would silently watch it, follow its movements day and night, keep it under continuous observation so that its tiniest habits were revealed. If you had access to that animal's inner world of experience, how much more would you understand about it? This is precisely what we are doing here, putting the inner world of a human being under observation in order to truly understand how it operates.
 
 ## Be Interested
-A very easy way to make rapid progress in any meditation, is to be very interested in the theme of meditation. And, perhaps more importantly, to sustain interest in it over time. Interest includes a sense of curiosity, "What's going on here?", "How does this work?", "What can I learn about this?". Like active thinking, interest is useful in the beginning, but also has to be abandoned later at a certain point, in order to proceed to a further level that requires a cultivated disinterest in experience. But if you're not at that stage yet, use interest to power your progress in internal development.
+A very easy way to make rapid progress in any meditation, is to be very interested in the theme of meditation. And, perhaps more importantly, to sustain interest in it over time. Interest includes a sense of curiosity, "What is going on here?", "How does this work?", "What can I learn about this?". Like active thinking, interest is useful in the beginning, but also has to be abandoned later at a certain point, in order to proceed to a further level that requires a cultivated disinterest in experience. But if you're not at that stage yet, use interest to power your progress in internal development.
 
 ## 10 Day Schedule
 
@@ -268,7 +268,7 @@ Reference samādhi based on relinquishment
 Connect dukkha with the four noble truths
 
 ## Peyyāla
-In the intro, take one heavily peyyāla'd sutta from saḷāyatanasaṃyutta and ask why reading this doesn't awaken us. At the end of the course, show the same sutta, and show how our understanding has completely changed.
+In the intro, take one heavily peyyāla'd sutta from saḷāyatanasaṃyutta and ask why reading this does not awaken us. At the end of the course, show the same sutta, and show how our understanding has completely changed.
 
 ## Beyond Language
 Find references, related to nirodha, about where the five aggregates or six sense fields cease, so does language
@@ -355,7 +355,7 @@ Ask Ven. Aggacitta, Kumāra, Ariyadhammika about mano = brain as organ of though
 > !!! translation
 
 ## Don't get stuck anywhere for too long
-It's important to not get stuck on any single experience for too long. Sure, analyse something as much as you need to, but *dhammānupassanā* works best best when you let the phenomena flow through you naturally. Damming them up creates subtle tension in the mind and can have psychologically stressful results. In short, watch the river, don't stop the river.
+It is important to not get stuck on any single experience for too long. Sure, analyse something as much as you need to, but *dhammānupassanā* works best best when you let the phenomena flow through you naturally. Damming them up creates subtle tension in the mind and can have psychologically stressful results. In short, watch the river, don't stop the river.
 
 ## Last ten suttas of MN
 The last ten suttas of Majjhima Nikāya are all based on an examination of *saḷāyatana*. This feature of powerful suttas at the end of a section also occurs in the Saḷāyatana Saṃyutta in the Saṃyutta NIkāya. It is evident that these discourses were specially placed in a prominent positions, and held in particularly high esteem by the very early Buddhist community, something that the modern tradition has sometimes forgotten.
@@ -371,9 +371,9 @@ Add a quote to each main section heading 1, 2, 3, 4, 5, 6
 
 ## Nibbidā
 
-After this, it's just a matter of spending sufficient time in this place for ever more subtle aspects of experience to appear and be cleansed by deep understanding. 
+After this, it is just a matter of spending sufficient time in this place for ever more subtle aspects of experience to appear and be cleansed by deep understanding. 
 
-It's like being a chicken in the egg, waiting to hatch. It will happen naturally when the conditions ripen, not before. This is the real test of patience, *khantī paramaṃ*, because any act of will at this stage is really going in the opposite direction.
+It is like being a chicken in the egg, waiting to hatch. It will happen naturally when the conditions ripen, not before. This is the real test of patience, *khantī paramaṃ*, because any act of will at this stage is really going in the opposite direction.
 
 > *khantī paramaṃ tapo titikkhā,*
 > *nibbānaṃ paramaṃ vadanti buddhā*
@@ -382,7 +382,7 @@ It's like being a chicken in the egg, waiting to hatch. It will happen naturally
 > Patience, endurance, is the supreme spiritual practice, 
 > *Nibbāna* is supreme say the Buddhas
 
-At this stage, we need to just watch and wait while the gradual process of *virāga* and *nirodha* mature by themselves. It's very organic. There really is nothing to be done.
+At this stage, we need to just watch and wait while the gradual process of *virāga* and *nirodha* mature by themselves. It is very organic. There really is nothing to be done.
 
 > *"kathaṃ bhāvitā ca, bhikkhave, satta bojjhaṅgā kathaṃ bahulīkatā vijjāvimuttiṃ paripūrenti? idha, bhikkhave, bhikkhu satisambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. dhammavicayasambojjhaṅgaṃ bhāveti…pe… vīriyasambojjhaṅgaṃ bhāveti… pītisambojjhaṅgaṃ bhāveti… passaddhisambojjhaṅgaṃ bhāveti… samādhisambojjhaṅgaṃ bhāveti… upekkhāsambojjhaṅgaṃ bhāveti vivekanissitaṃ virāganissitaṃ nirodhanissitaṃ vossaggapariṇāmiṃ. evaṃ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṃ bahulīkatā vijjāvimuttiṃ paripūrentī"ti.*
 > -- *MN118 ānāpānassatisuttaṃ*
@@ -413,7 +413,7 @@ Symbolically it is referred to as 'reaching the end of the world'.
 
 > !!! translation
 
-There's nothing you can *do* to stop. Stopping means *stopping* doing. This is as far as activity can take you on the path. All you can do is watch and wait—without the faintest glimmer of interest—as things cool down by themselves.
+there is nothing you can *do* to stop. Stopping means *stopping* doing. This is as far as activity can take you on the path. All you can do is watch and wait—without the faintest glimmer of interest—as things cool down by themselves.
 
 This is expressed in the famous Bāhiya Sutta as:
 

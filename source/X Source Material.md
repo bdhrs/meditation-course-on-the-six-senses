@@ -41,7 +41,7 @@ When the Blessed One had finished giving the Venerable Soṇa this exhortation, 
 Then, some time later, the Venerable Soṇa resolved on a balance of energy, achieved evenness of the spiritual faculties, and took up the object there. Then, dwelling alone, withdrawn, heedful, ardent, and resolute, in no long time the Venerable Soṇa realized for himself with direct knowledge, in this very life, that unsurpassed consummation of the spiritual life for the sake of which clansmen rightly go forth from the household life into homelessness, and having entered upon it, he dwelled in it. He directly knew: "Destroyed is birth, the spiritual life has been lived, what had to be done has been done, there is no more coming back to any state of being." And the Venerable Soṇa became one of the arahants.
 
 ## SN35:23 The All
-What's the "all"?
+What is the "all"?
 
 At Sāvatthī. "Bhikkhus, I will teach you the all.
  Listen to that … .
@@ -79,7 +79,7 @@ On one occasion the Blessed One was dwelling at Gaya, at Gaya's Head, together w
 
 "The ear is burning … … The mind is burning … and whatever feeling arises with mind-contact as condition—whether pleasant or painful or neither-painful-nor-pleasant—that too is burning. Burning with what? Burning with the fire of lust, with the fire of hatred, with the fire of delusion; burning with birth, aging, and death; with sorrow, lamentation, pain, displeasure, and despair, I say.
 
-"Seeing thus, bhikkhus, the instructed noble disciple experiences revulsion towards the eye, towards forms, towards eye-consciousness, towards eye-contact, towards whatever feeling arises with eye-contact as condition—whether pleasant or painful or neither-painful-nor-pleasant; experiences revulsion towards the ear … towards the mind … towards whatever feeling arises with mind-contact as condition … . Experiencing revulsion, he becomes dispassionate. Through dispassion his mind is liberated. When it is liberated there comes the knowledge: ‘It's liberated.’ He understands: ‘Destroyed is birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.’"
+"Seeing thus, bhikkhus, the instructed noble disciple experiences revulsion towards the eye, towards forms, towards eye-consciousness, towards eye-contact, towards whatever feeling arises with eye-contact as condition—whether pleasant or painful or neither-painful-nor-pleasant; experiences revulsion towards the ear … towards the mind … towards whatever feeling arises with mind-contact as condition … . Experiencing revulsion, he becomes dispassionate. Through dispassion his mind is liberated. When it is liberated there comes the knowledge: ‘It is liberated.’ He understands: ‘Destroyed is birth, the holy life has been lived, what had to be done has been done, there is no more for this state of being.’"
 
 This is what the Blessed One said. Elated, those bhikkhus delighted in the Blessed One's statement. And while this discourse was being spoken, the minds of the thousand bhikkhus were liberated from the taints by nonclinging.
 

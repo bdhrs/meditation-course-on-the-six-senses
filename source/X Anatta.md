@@ -1,5 +1,5 @@
 ## Relationship between a self and the world
-There's a lot of academic quibbling on how to translate the Pāḷi term *anatta*, Sanskrit *anātman*, but whether you consider it to be 'non-self', or 'not self', or 'not oneself', more important is the understand of the relationship it is referring to.
+There is a lot of academic quibbling on how to translate the Pāḷi term *anatta*, Sanskrit *anātman*, but whether you consider it to be 'non-self', or 'not self', or 'not oneself', more important is the understand of the relationship it is referring to.
 
 If x is anything in the entire physical or mental universe, and i as a self: 
 - x ≠ i (x is not me)

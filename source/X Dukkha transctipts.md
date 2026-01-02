@@ -4,17 +4,17 @@ When experiencing something pleasant, we understand this is a temporary state of
 
 When experiencing something unpleasant, we understand this is a temporary state of affairs, *dukkha* has arrived, it was just a matter of time, it was always going to come.
 
-When experiencing something neutral, we understand this is a temporary state of affairs, it will certainly change into something else, there's nothing to get attached to here.
+When experiencing something neutral, we understand this is a temporary state of affairs, it will certainly change into something else, there is nothing to get attached to here.
 
 ## Original text
 
-So, when we talk about dukkha, we're not talking about We're talking about bigger picture. Um, The structure of experience, the structure of Our Lives. Not temporary Pleasant and unpleasant experiences. We're programmed in such a way to really avoid. The topic of Duka like I think as if thinking about it, Will make us depressed.
+So, when we talk about dukkha, we are not talking about We're talking about bigger picture. Um, The structure of experience, the structure of Our Lives. Not temporary Pleasant and unpleasant experiences. We're programmed in such a way to really avoid. The topic of Duka like I think as if thinking about it, Will make us depressed.
 
-But actually what makes us depressed is avoiding the topic of dukkha. So, let's face the reality of Duka. And deal with it in a mature way instead of Covering our eyes and covering our ears and going la la and trying to pretend. It's, it's not something which doesn't exist.
+But actually what makes us depressed is avoiding the topic of dukkha. So, let us face the reality of Duka. And deal with it in a mature way instead of Covering our eyes and covering our ears and going la la and trying to pretend. It's, it is not something which does not exist.
 
 These are all facts of reality. Every birth. Ends in death. Every relationship. Ends in separation or death. That can be friendship, love relationship, all relationships.
 
-Every plate. Ends in pieces. Every so, every uh piece of Crockery ends in pieces, Every car ends in the scrap Heap. Every bunch of flowers ends in the Dustbin, Are these is this some something? These are just basic facts. Now, the question is, why do we find it? Why do people say it's depressing to think about that?
+Every plate. Ends in pieces. Every so, every uh piece of Crockery ends in pieces, Every car ends in the scrap Heap. Every bunch of flowers ends in the Dustbin, Are these is this some something? These are just basic facts. Now, the question is, why do we find it? Why do people say it is depressing to think about that?
 
 Every single mouthful of delicious food. Ends in the toilet. Every single delicious thing that you've ever drunk. Gets urinated out. Fact of fiction. So this is what's called unavoidable structural Docker. The Buddha summed it up very succinctly. He said, Whatever is a nature. That is Duka. And what is a nature?
 
@@ -22,39 +22,39 @@ Everything that is. Composed of Components part. Is a nature. The entire univers
 
 Whether at the moment, We're having a pleasant experience and unpleasant experience neutral experience. Structurally.
 
-Exists. What's the best meditation to show this? Understanding this. Do a basic meditation. The. Is impermanent. Whatever experience, whatever is impermanent.
+Exists. What is the best meditation to show this? Understanding this. Do a basic meditation. The. Is impermanent. Whatever experience, whatever is impermanent.
 
 Experience of hearing is impermanent. One of his experiences took. And so on like that. Maybe go into the components of experience. Or is that worth saving it for another another session? The meta, the meditation on. Now, you could actually look at Chula rajulovada. That might be a good time to learn to start.
 
-Putting the pieces in place. So, what we're aiming to do here, Is understanding the structure of experience. Understanding that all experience no experience can ever be satisfactory. We learn to develop a balanced mind. Towards every experience. When we're experiencing something pleasurable. We understand. Yes, it is pleasurable. Now. But it is a nature and anything that is a Niche.
+Putting the pieces in place. So, what we are aiming to do here, Is understanding the structure of experience. Understanding that all experience no experience can ever be satisfactory. We learn to develop a balanced mind. Towards every experience. When we are experiencing something pleasurable. We understand. Yes, it is pleasurable. Now. But it is a nature and anything that is a Niche.
 
-When we unders, When we actually feeling something painful. We understand our Duke has come now, Luca has arrived. This is this is just waiting to happen. And we when we experience something neutral. We understand. This is a temporary. Temporary state of affairs. It's not going to last. It's going to change into something else.
+When we unders, When we actually feeling something painful. We understand our Duke has come now, Luca has arrived. This is this is just waiting to happen. And we when we experience something neutral. We understand. This is a temporary. Temporary state of affairs. It is not going to last. It is going to change into something else.
 
-And that's took. So, this is the structural nature of
+And that is took. So, this is the structural nature of
 
 ---
 
-Temporary experiences cannot give permanent satisfaction You've seen for yourself. That vedana feeling tone. Can only do is momentary. And constantly being regenerated. Than any satisfaction that you can get from any experience. Is also only momentary. This fact that there's no that there's only momentary satisfaction. Is structural. It's definitely worth writing a paragraph.
+Temporary experiences cannot give permanent satisfaction You've seen for yourself. That vedana feeling tone. Can only do is momentary. And constantly being regenerated. Than any satisfaction that you can get from any experience. Is also only momentary. This fact that there is no that there is only momentary satisfaction. Is structural. It is definitely worth writing a paragraph.
 
-On the commentarials analysis. Um, Three types of dukkha. Which is. The actual pain. Um, I kind of took her that comes from Change. From Suka ending. And the kind of Duka that we're talking about, which is structural Docker. The fact that you must continuously go to the toilet, To urinate.
+On the commentarials analysis. Um, Three types of dukkha. Which is. The actual pain. Um, I kind of took her that comes from Change. From Suka ending. And the kind of Duka that we are talking about, which is structural Docker. The fact that you must continuously go to the toilet, To urinate.
 
 And defecate is Docker. The situation is much worse than you think. We're trying to get permanent happiness. Out of temporary experiences of temporary things. The fact that every single thing requires, Maintenance. Not to make it better. Just to keep it the same.
 
 Contemplating. Will not make you depressed. It will make you. Very, very happy. Is incredibly powerful. Mental states of pleasure to be experienced through this understanding. Not only that. It will also. Make your mind. Extremely resilient. In the face of adversity. When problems come, You ready for them? You're expecting them.
 
-2k is no longer a surprise. Okay, it's just a fact. And you deal with it. Like a fact not like Big surprise. Oh my God. Where did that come from? No, you know, it's coming. So, you can deal with it with a balanced mind. Understanding that every condition thing is to.
+2k is no longer a surprise. Okay, it is just a fact. And you deal with it. Like a fact not like Big surprise. Oh my God. Where did that come from? No, you know, it is coming. So, you can deal with it with a balanced mind. Understanding that every condition thing is to.
 
-Is one of the Things that will make you sane. Not understanding this. When it's just such a basic fact of existence. Makes people insane. So, now all of this that we've been talking about Is on a macro level. But, Generally, we don't deal with large macro level thoughts about life.
+Is one of the Things that will make you sane. Not understanding this. When it is just such a basic fact of existence. Makes people insane. So, now all of this that we've been talking about Is on a macro level. But, Generally, we don't deal with large macro level thoughts about life.
 
 We deal with Day-To-Day experiences. So, how do we convert? A day-to-day experiences. Into a simple understanding of the structural nature of looker. And put the solution is very simple. Once you've learnt to recognise impermanence everywhere, and in all things, Understand whatever is impermanent is took so straight away. We convert the perception of impermanence.
 
-Anyway, anytime any place anything. Into a perception of dukkha. Understanding that structurally. Anything that's impermanent. Is this is the simple meditation that we're now going to practise Holding on to what is? Only creates more Docker. Letting go of what is Dukkha. It's like letting go of a burning coal.
+Anyway, anytime any place anything. Into a perception of dukkha. Understanding that structurally. Anything that is impermanent. Is this is the simple meditation that we are now going to practise Holding on to what is? Only creates more Docker. Letting go of what is Dukkha. It is like letting go of a burning coal.
 
-It creates instant relief just from the act of Letting Go. Let's practise. Let go of dukkha. Everywhere that we find it. Which, In everything that's impermanent.
+It creates instant relief just from the act of Letting Go. Let us practise. Let go of dukkha. Everywhere that we find it. Which, In everything that is impermanent.
 
 Take a look at. Our Channel. This visual experience. Is impermanent. Whatever they deny rise. From seeing, I'm permanent.
 
-Whatever is impermanent. Cannot give you any lasting satisfaction. What? Temporary. Can I only deliver cannot deliver? Permanent. Satisfaction. What is temporary cannot deliver lasting pleasure? Anyway, find some Nice way of putting that into words. And then go through each sense and then open awareness. And that's the meditation for today.
+Whatever is impermanent. Cannot give you any lasting satisfaction. What? Temporary. Can I only deliver cannot deliver? Permanent. Satisfaction. What is temporary cannot deliver lasting pleasure? Anyway, find some Nice way of putting that into words. And then go through each sense and then open awareness. And that is the meditation for today.
 
 Momentary experiences. On no basis for Everlasting happiness.
 
@@ -88,7 +88,7 @@ In response to that hearing experience.
 
 As pleasant. Unpleasant or neutral verdana.
 
-In response to that vagina. There's craving and aversion.
+In response to that vagina. There is craving and aversion.
 
 Describing an aversion.
 

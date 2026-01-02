@@ -33,7 +33,7 @@ viññānā ^Tid2SiCp
 
 salāyatana ^xDUVNTHf
 
-pañcakhandā ^4pCGvwTH
+pañcakkhandhā ^4pCGvwTH
 
 %%
 ## Drawing

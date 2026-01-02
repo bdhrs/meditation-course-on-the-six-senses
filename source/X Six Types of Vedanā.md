@@ -1,7 +1,7 @@
 
 *Vedanā* are often subdivided into different types. The Bahuvedanīya Sutta in Majjhima Nikāya contains an analysis of two types, three types, five types, six types, eighteen types, thirty six types, even one hundred and eight types of *vedanā*.
 
-But for now let's just look an an analysis of *vedanā* in to six types, as found in the Satipaṭṭhāna Sutta.
+But for now let us just look an an analysis of *vedanā* in to six types, as found in the Satipaṭṭhāna Sutta.
 
 > *sāmisaṃ vā sukhaṃ vedanaṃ vedayamāno ‘sāmisaṃ sukhaṃ vedanaṃ vedayāmī’ti pajānāti, nirāmisaṃ vā sukhaṃ vedanaṃ vedayamāno ‘nirāmisaṃ sukhaṃ vedanaṃ vedayāmī’ti pajānāti. sāmisaṃ vā dukkhaṃ vedanaṃ vedayamāno ‘sāmisaṃ dukkhaṃ vedanaṃ vedayāmī’ti pajānāti, nirāmisaṃ vā dukkhaṃ vedanaṃ vedayamāno ‘nirāmisaṃ dukkhaṃ vedanaṃ vedayāmī’ti pajānāti. sāmisaṃ vā adukkhamasukhaṃ vedanaṃ vedayamāno ‘sāmisaṃ adukkhamasukhaṃ vedanaṃ vedayāmī’ti pajānāti, nirāmisaṃ vā adukkhamasukhaṃ vedanaṃ vedayamāno ‘nirāmisaṃ adukkhamasukhaṃ vedanaṃ vedayāmī’ti pajānāti.*
 > -- *MN10 mahāsatipaṭṭhānasuttaṃ, vedanānupassanā*
